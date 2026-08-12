@@ -1,0 +1,223 @@
+<mxfile host="65bd71144e">
+    <diagram id="architecture" name="High-Level Architecture">
+        <mxGraphModel dx="374" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="919" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="bounds" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry width="1400" height="920" as="geometry"/>
+                </mxCell>
+                <mxCell id="users-label" value="Users" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#333;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="22" y="68" width="120" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="fr" value="Financial Reps&#10;train.hupo.co" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#AAAAAA;fontSize=11;fontStyle=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="22" y="100" width="120" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="entry-group" value="ENTRY LAYER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF5;strokeColor=#C9A43E;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=12;fontColor=#8B7D3C;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="20" width="500" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="cf-waf" value="Cloudflare WAF&#10;CDN + DDoS Protection&#10;SSL Termination" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="208" y="68" width="148" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth0" value="Auth0 SSO&#10;SAML / OIDC&#10;JWT Validation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="368" y="68" width="148" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="tls" value="TLS 1.3 Encryption&#10;End-to-End HTTPS&#10;Certificate Mgmt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="528" y="68" width="148" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="entry-note" value="Request Validation + Rate Limiting" style="text;html=1;fontSize=10;fontColor=#AAAAAA;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="165" width="330" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="ea1" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="cf-waf" target="auth0">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ea2" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="auth0" target="tls">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="infra-group" value="INFRASTRUCTURE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF5;strokeColor=#C9A43E;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=12;fontColor=#8B7D3C;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="20" width="470" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="lb" value="Load Balancer&#10;HTTPS (443)&#10;Health Checks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="768" y="62" width="200" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="be" value="Node.js / Fastify Backend&#10;PM2 Cluster Mode" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="988" y="62" width="200" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="lk-agent" value="LiveKit Agent&#10;Python, Docker Container&#10;Real-time Voice AI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="768" y="132" width="200" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="do-sgp" value="DigitalOcean Droplets&#10;Singapore (SGP1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="988" y="132" width="200" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="ia1" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="lb" target="be">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="infra-note" value="Monitoring: Sentry + PostHog + SendGrid + CloudFront CDN" style="text;html=1;fontSize=9;fontColor=#AAAAAA;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="785" y="198" width="400" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="voice-group" value="VOICE SERVICES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF5;strokeColor=#C9A43E;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=12;fontColor=#8B7D3C;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="295" width="500" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="stt" value="Speech-to-Text&#10;Deepgram /&#10;OpenAI Whisper" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="208" y="342" width="148" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="lk-cloud" value="LiveKit Cloud&#10;WebRTC&#10;Real-time Streaming" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="368" y="342" width="148" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="elevenlabs" value="ElevenLabs&#10;TTS + Conversational AI&#10;Voice Synthesis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="528" y="342" width="148" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="va1" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="lk-cloud" target="stt">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="va2" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="lk-cloud" target="elevenlabs">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="voice-note" value="Alt A: LiveKit (STT + LLM + TTS pipeline) | Alt B: ElevenLabs (all-in-one)" style="text;html=1;fontSize=9;fontColor=#AAAAAA;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="438" width="430" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="dp-group" value="DATA PROTECTION LAYER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF5;strokeColor=#C9A43E;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=12;fontColor=#8B7D3C;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="295" width="470" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="pii" value="PII Detection&#10;Scanner&#10;LLM-based Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="768" y="342" width="130" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="masking" value="Data Masking&#10;Engine&#10;Transcript Redaction" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="912" y="342" width="130" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="isolation" value="Tenant Isolation&#10;Company-scoped&#10;Data Boundaries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="1056" y="342" width="130" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="da1" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="pii" target="masking">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="da2" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="masking" target="isolation">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai-group" value="AI PROCESSING CORE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF5;strokeColor=#C9A43E;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=12;fontColor=#8B7D3C;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="575" width="500" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="llm" value="LLM Engine&#10;Anthropic Claude /&#10;OpenAI GPT&#10;(via LangChain)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="208" y="622" width="148" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="context" value="Session Context&#10;Manager&#10;Persona Prompts +&#10;Conversation History" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="622" width="148" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="generation" value="Response&#10;Generation&#10;AI Synthesis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="528" y="622" width="148" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="feedback" value="Feedback &amp; Assessment Engine&#10;Scorecard-based Evaluation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="288" y="726" width="320" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="aia1" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="context" target="llm">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="aia2" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="llm" target="generation">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="aia3" style="rounded=1;strokeColor=#D4B84A;strokeWidth=1;endArrow=block;endFill=1;endSize=5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="generation" target="feedback">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="biz-group" value="BUSINESS LOGIC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF5;strokeColor=#C9A43E;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=12;fontColor=#8B7D3C;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="535" width="310" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="persona" value="Persona &amp; Scenario&#10;Configuration&#10;Modules / Scenarios" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="768" y="582" width="275" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="modules" value="Sales Frameworks&#10;MEDDPICC, 4C, 3F&#10;Strategic Pitch" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="768" y="662" width="130" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="scoring" value="Performance&#10;Scoring&#10;Scorecards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="912" y="662" width="130" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="reports" value="Reports &amp; Analytics&#10;Session Summaries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="768" y="748" width="275" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="data-group" value="DATA LAYER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF5;strokeColor=#C9A43E;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=12;fontColor=#8B7D3C;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="1120" y="535" width="230" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="mongo" value="MongoDB 8 Cluster&#10;Tenant-isolated&#10;AES-256 Encrypted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="1138" y="582" width="195" height="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3" value="AWS S3&#10;Audio Storage&#10;SSE-S3 Encrypted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="1138" y="678" width="195" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="audit" value="Audit Log Pipeline&#10;Access Tracking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E0CC;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="1138" y="762" width="195" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="rounded=1;strokeColor=#888;strokeWidth=1.5;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=6;exitX=1;exitY=0.5;entryX=0;entryY=0.4;" parent="1" source="fr" target="entry-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1-l" value="HTTPS" style="edgeLabel;html=1;fontSize=9;fontColor=#888;" connectable="0" vertex="1" parent="e1">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e3" style="rounded=1;strokeColor=#555;strokeWidth=1.5;endArrow=block;endFill=1;endSize=7;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="entry-group" target="infra-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3-l" value="Authenticated Requests" style="edgeLabel;html=1;fontSize=9;fontColor=#555;" connectable="0" vertex="1" parent="e3">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e4" style="rounded=1;curved=1;strokeColor=#888;strokeWidth=1.5;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=6;exitX=1;exitY=1;entryX=0;entryY=0.3;" parent="1" source="fr" target="voice-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4-l" value="WebRTC Audio" style="edgeLabel;html=1;fontSize=9;fontColor=#888;" connectable="0" vertex="1" parent="e4">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint x="-22" y="9" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e5" style="rounded=1;curved=1;strokeColor=#555;strokeWidth=1.5;endArrow=block;endFill=1;endSize=7;exitX=0;exitY=1;entryX=1;entryY=0;" parent="1" source="infra-group" target="voice-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5-l" value="Session Mgmt" style="edgeLabel;html=1;fontSize=9;fontColor=#555;" connectable="0" vertex="1" parent="e5">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#555;strokeWidth=1.5;endArrow=block;endFill=1;endSize=7;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="infra-group" target="dp-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6-l" value="Raw Data" style="edgeLabel;html=1;fontSize=9;fontColor=#555;" connectable="0" vertex="1" parent="e6">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#555;strokeWidth=1.5;endArrow=block;endFill=1;endSize=7;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="voice-group" target="ai-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7-l" value="Transcripts + Context" style="edgeLabel;html=1;fontSize=9;fontColor=#555;" connectable="0" vertex="1" parent="e7">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e8" style="rounded=1;strokeColor=#555;strokeWidth=1.5;endArrow=block;endFill=1;endSize=7;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ai-group" target="biz-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8-l" value="AI Output" style="edgeLabel;html=1;fontSize=9;fontColor=#555;" connectable="0" vertex="1" parent="e8">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e9" style="rounded=1;curved=1;strokeColor=#555;strokeWidth=1.5;endArrow=block;endFill=1;endSize=7;exitX=1;exitY=1;entryX=0.5;entryY=0;" parent="1" source="dp-group" target="data-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9-l" value="Sanitized Data" style="edgeLabel;html=1;fontSize=9;fontColor=#555;" connectable="0" vertex="1" parent="e9">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e10" style="rounded=1;strokeColor=#555;strokeWidth=1.5;endArrow=block;endFill=1;endSize=7;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="biz-group" target="data-group" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10-l" value="Scores + Reports" style="edgeLabel;html=1;fontSize=9;fontColor=#555;" connectable="0" vertex="1" parent="e10">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

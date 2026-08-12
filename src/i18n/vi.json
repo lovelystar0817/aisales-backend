@@ -1,0 +1,431 @@
+{
+  "modules": {
+    "groups": {
+      "module": "Module",
+      "prospecting": "Tìm hiểu khách hàng tiềm năng & Khám phá",
+      "relationship": "Xây dựng mối quan hệ",
+      "closing": "Chốt đơn & Đàm phán",
+      "retention": "Giữ chân & Bán thêm"
+    },
+    "items": {
+      "cold-call": {
+        "title": "Gọi điện lạnh",
+        "description": "Liên hệ khách hàng tiềm năng mới để đảm bảo cuộc gặp đầu tiên.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập gọi điện lạnh. Thử thách bán hàng của bạn hôm nay là gì?",
+        "objectives": [
+          "Thu hút sự chú ý và thiết lập uy tín với khách hàng tiềm năng",
+          "Xây dựng mối quan hệ và thu thập thông tin về tình hình hiện tại của họ",
+          "Xác định những thách thức hoặc rủi ro tiềm ẩn mà họ đang đối mặt",
+          "Đảm bảo thỏa thuận cho cuộc gặp tiếp theo hoặc cuộc trò chuyện tiếp theo"
+        ]
+      },
+      "discovery": {
+        "title": "Khám phá",
+        "description": "Tìm hiểu tình hình của khách hàng để khám phá nhu cầu và thực tế.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập các cuộc trò chuyện khám phá. Thử thách bán hàng của bạn hôm nay là gì?",
+        "objectives": [
+          "Hiểu rõ tình hình tài chính và mục tiêu hiện tại của khách hàng",
+          "Khám phá nhu cầu và điểm đau thông qua các câu hỏi thăm dò",
+          "Xác định tiêu chí ra quyết định và khung thời gian",
+          "Thu thập các sự kiện cần thiết để đề xuất giải pháp phù hợp"
+        ]
+      },
+      "competitive-proposal": {
+        "title": "Đề xuất cạnh tranh",
+        "description": "Trình bày giải pháp của bạn và vượt trội so với các sản phẩm đối thủ mà khách hàng đang cân nhắc.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập các đề xuất cạnh tranh. Thử thách bán hàng của bạn hôm nay là gì?",
+        "objectives": [
+          "Trình bày giải pháp với các đề xuất giá trị rõ ràng",
+          "Phân biệt ưu đãi của bạn với các lựa chọn thay thế của đối thủ",
+          "Giải quyết mối quan ngại của khách hàng về sản phẩm đối thủ",
+          "Đảm bảo cam kết để tiến hành với đề xuất của bạn"
+        ]
+      },
+      "objection-handling": {
+        "title": "Bài tập xử lý phản đối",
+        "description": "Ứng phó nhanh chóng với phản đối về giá cả, nhu cầu hoặc thời gian và giữ vững giá trị.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập xử lý phản đối. Thử thách bán hàng của bạn hôm nay là gì?",
+        "objectives": [
+          "Lắng nghe tích cực để hiểu nguyên nhân gốc rễ của phản đối",
+          "Phản hồi với các đề xuất giá trị và lợi ích có liên quan",
+          "Vượt qua mối quan ngại về giá cả, thời gian và nhu cầu",
+          "Duy trì sự tham gia của khách hàng và tiến bộ hướng tới thỏa thuận"
+        ]
+      },
+      "product-positioning": {
+        "title": "Định vị sản phẩm",
+        "description": "Xử lý các phản đối trong khi củng cố giá trị cốt lõi của sản phẩm.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập định vị sản phẩm. Thử thách bán hàng của bạn hôm nay là gì?",
+        "objectives": [
+          "Trình bày các tính năng sản phẩm như lợi ích cụ thể cho khách hàng",
+          "Định vị ưu thế sản phẩm so với các lựa chọn thay thế trên thị trường",
+          "Xử lý các phản đối và mối quan ngại liên quan đến sản phẩm",
+          "Tạo ra sự cấp bách và mong muốn cho giải pháp được đề xuất"
+        ]
+      },
+      "closing": {
+        "title": "Chốt đơn",
+        "description": "Xác nhận thỏa thuận và thu thập chi tiết đơn đăng ký.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập các kỹ thuật chốt đơn. Thử thách bán hàng của bạn hôm nay là gì?",
+        "objectives": [
+          "Tóm tắt các giải pháp và lợi ích đã được thỏa thuận",
+          "Xác nhận cam kết của khách hàng để tiếp tục",
+          "Thu thập thông tin đơn đăng ký và tài liệu cần thiết",
+          "Lên lịch các bước tiếp theo và khung thời gian thực hiện"
+        ]
+      },
+      "review-renewal": {
+        "title": "Đánh giá / Gia hạn",
+        "description": "Xem xét bảo hiểm hiện tại để gia hạn, điều chỉnh hoặc nâng cấp.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập các cuộc trò chuyện gia hạn. Thử thách bán hàng của bạn hôm nay là gì?",
+        "objectives": [
+          "Xem xét bảo hiểm hiện tại và hiệu suất chính sách",
+          "Xác định những thay đổi trong hoàn cảnh và nhu cầu của khách hàng",
+          "Trình bày các lựa chọn gia hạn và cải tiến tiềm năng",
+          "Đảm bảo cam kết gia hạn hoặc cơ hội nâng cấp"
+        ]
+      },
+      "fna": {
+        "title": "Phân tích nhu cầu tài chính",
+        "description": "Thực hiện phân tích nhu cầu tài chính toàn diện để xác định nhu cầu bảo vệ, tiết kiệm và đầu tư của khách hàng.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập phân tích nhu cầu tài chính. Thử thách bán hàng của bạn hôm nay là gì?",
+        "objectives": [
+          "Giới thiệu: Giao tiếp tên, vai trò của bạn với tư cách là một người cố vấn và các chứng chỉ/CSR của Manulife để thiết lập uy tín.",
+          "Xây dựng mối quan hệ & phát hiện nhu cầu: Tìm hiểu các giai đoạn cuộc sống, thăm dò các vấn đề/trái tim, chạy các câu hỏi về sự phù hợp và định lượng nhu cầu về bảo vệ/sức khỏe/giáo dục/hưu trí.",
+          "Kết thúc (bước tiếp theo): Gửi/xác nhận giấy tờ, lên lịch cuộc họp tiếp theo, lấy sự đồng ý để liên lạc, thu thập tài liệu và mời phản hồi. "
+        ]
+      },
+      "needs-analysis": {
+        "title": "Phân tích nhu cầu bảo hiểm",
+        "description": "Phân tích hồ sơ rủi ro của khách hàng và yêu cầu bảo hiểm.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập phân tích nhu cầu bảo hiểm. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "policy-explanation": {
+        "title": "Giải thích chính sách",
+        "description": "Giải thích rõ ràng các điều khoản và lợi ích bảo hiểm phức tạp.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập giải thích chính sách. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "risk-assessment": {
+        "title": "Đánh giá rủi ro",
+        "description": "Đánh giá và truyền đạt rủi ro tiềm ẩn và nhu cầu bảo vệ.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập đánh giá rủi ro. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "premium-discussion": {
+        "title": "Thảo luận phí bảo hiểm",
+        "description": "Xử lý các cuộc trò chuyện về giá cả và tùy chọn thanh toán.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập thảo luận phí bảo hiểm. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "policy-closing": {
+        "title": "Chốt đơn bảo hiểm",
+        "description": "Hoàn thiện đơn đăng ký bảo hiểm và tài liệu.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập chốt đơn bảo hiểm. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "policy-renewal": {
+        "title": "Gia hạn bảo hiểm",
+        "description": "Xem xét bảo hiểm hiện có và thảo luận các tùy chọn gia hạn.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập gia hạn bảo hiểm. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "solution-discovery": {
+        "title": "Khám phá giải pháp",
+        "description": "Xác định yêu cầu kỹ thuật và thách thức kinh doanh.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập khám phá giải pháp. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "demo-presentation": {
+        "title": "Trình diễn demo",
+        "description": "Giới thiệu các tính năng sản phẩm và khả năng kỹ thuật.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập trình diễn demo. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "technical-objections": {
+        "title": "Phản đối kỹ thuật",
+        "description": "Giải quyết các mối quan tâm kỹ thuật và câu hỏi triển khai.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập xử lý phản đối kỹ thuật. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "pricing-negotiation": {
+        "title": "Đàm phán giá cả",
+        "description": "Đàm phán giấy phép, triển khai và chi phí liên tục.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập đàm phán giá cả. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "contract-closing": {
+        "title": "Chốt hợp đồng",
+        "description": "Hoàn thiện điều khoản, điều kiện và thỏa thuận dịch vụ.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập chốt hợp đồng. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "account-expansion": {
+        "title": "Mở rộng tài khoản",
+        "description": "Xác định cơ hội bán thêm và bán chéo.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập mở rộng tài khoản. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "general-sales": {
+        "title": "Luyện tập bán hàng tổng quát",
+        "description": "Luyện tập các cuộc trò chuyện và kỹ thuật bán hàng tổng quát.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập các kỹ thuật bán hàng tổng quát. Thử thách bán hàng của bạn hôm nay là gì?"
+      },
+      "discovery-call-meddpicc": {
+        "title": "Cuộc gọi khám phá",
+        "description": "Khám phá điểm đau của khách hàng, nhu cầu và ngân sách bằng phương pháp MEDDPICC.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập Cuộc gọi Khám phá tập trung vào hiểu nhu cầu kinh doanh, thách thức và quy trình ra quyết định của khách hàng tiềm năng. Cách tiếp cận của bạn là gì?",
+        "objectives": [
+          "Xác định và định lượng các chỉ số kinh doanh và chỉ số hiệu suất chính",
+          "Hiểu tác động kinh tế và cân nhắc ngân sách",
+          "Lập bản đồ quy trình ra quyết định và xác định các bên liên quan chính",
+          "Khám phá điểm đau, tác động và nhu cầu kinh doanh quan trọng"
+        ]
+      },
+      "deal-closure": {
+        "title": "Chốt Giao Dịch",
+        "description": "Đàm phán với khách hàng tiềm năng để thống nhất các chi tiết thương mại chính và chốt giao dịch.",
+        "initialMessage": "Chào mừng! Hãy cùng thực hành Chốt Giao Dịch, nơi chúng ta sẽ tập trung vào đàm phán giai đoạn cuối, thống nhất các điều khoản thương mại và thúc đẩy giao dịch đến việc ký kết sử dụng phương pháp MEDDPICC. Cách tiếp cận của bạn ở giai đoạn cuối này là gì?",
+        "objectives": [
+          "Xác nhận các chỉ số đã thống nhất và tài liệu ROI trong trường hợp kinh doanh",
+          "Đảm bảo phê duyệt cuối cùng từ người mua kinh tế về giá cả và điều khoản",
+          "Điều hướng quy trình giấy tờ và giải quyết các yêu cầu pháp lý/tuân thủ",
+          "Thúc đẩy sự cấp bách trong khi duy trì tập trung vào giá trị để đạt được chữ ký"
+        ]
+      },
+      "telesales": {
+        "title": "Tele Sales",
+        "description": "Thực hiện các cuộc gọi telemarketing hiệu quả để tạo ra khách hàng tiềm năng và chốt bán hàng từ xa.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập các cuộc gọi telesales. Thử thách telemarketing của bạn hôm nay là gì?",
+        "objectives": [
+          "Xây dựng mối quan hệ và định vị sản phẩm phù hợp với nhu cầu của khách hàng",
+          "Xử lý phản đối và truyền đạt giá trị một cách rõ ràng",
+          "Chốt bán hàng—hoặc kết thúc cuộc gọi một cách chuyên nghiệp nếu khách hàng không quan tâm"
+        ]
+      },
+      "grab-mex": {
+        "title": "Xử Lý Hạn Chế Ngân Sách",
+        "description": "Luyện tập xử lý hạn chế ngân sách của nhà bán lẻ và mối lo ngại về P&L trong khi thúc đẩy sự tham gia chiến dịch.",
+        "initialMessage": "Chào mừng đến với khóa đào tạo Xử Lý Hạn Chế Ngân Sách! Hãy cùng luyện tập giải quyết mối lo ngại về P&L của nhà bán lẻ và hạn chế ngân sách trong khi định vị giá trị chiến dịch. Làm thế nào chúng ta có thể giúp họ vượt qua những phản đối về tài trợ hôm nay?",
+        "objectives": [
+          "Sử dụng framework LAER để xử lý phản đối",
+          "Vượt qua hạn chế ngân sách của nhà bán lẻ và mối lo ngại về P&L bằng cách chứng minh ROI chiến dịch",
+          "Định vị đề xuất giá trị truyền thông $145,000 và phân tích chi phí-lợi ích",
+          "Áp dụng phương pháp MEDDPICC để đánh giá cơ hội và chốt các giao dịch chiến dịch"
+        ]
+      },
+      "bbl-client-upgrade": {
+        "title": "Nâng cấp Khách hàng (gặp mặt trực tiếp)",
+        "description": "Liên hệ với khách hàng hiện tại để nâng cấp họ lên dịch vụ Wealth.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập cuộc trò chuyện nâng cấp khách hàng. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Chào mừng khách hàng đến với Wealth và ghi nhận những thay đổi gần đây trong cuộc sống hoặc sự nghiệp.",
+          "Trình bày các dịch vụ và lợi ích chính của Wealth phù hợp với mục tiêu của khách hàng.",
+          "Khám phá hồ sơ và ưu tiên của khách hàng để nắm bắt các cập nhật thiết yếu.",
+          "Đảm bảo thỏa thuận cho phiên tư vấn đầu tư theo dõi."
+        ]
+      },
+      "bbl-goal-planning": {
+        "title": "Lập kế hoạch Mục tiêu (gặp mặt trực tiếp)",
+        "description": "Xác định, định lượng và lập kế hoạch các mục tiêu tài chính với các giải pháp phù hợp và các bước tiếp theo.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập phiên lập kế hoạch mục tiêu. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Xác định và làm rõ các mục tiêu tài chính chính và ưu tiên của khách hàng.",
+          "Định lượng thời gian, số tiền và khả năng chấp nhận rủi ro cho từng mục tiêu.",
+          "Trình bày các giải pháp phù hợp phù hợp với mục tiêu của họ.",
+          "Đảm bảo cam kết tiếp tục với các dịch vụ lập kế hoạch dựa trên mục tiêu."
+        ]
+      },
+      "bbl-client-revival": {
+        "title": "Phục hồi Khách hàng (gặp mặt trực tiếp)",
+        "description": "Kết nối lại với khách hàng không hoạt động và khơi dậy sự tham gia trở lại.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập cuộc trò chuyện phục hồi khách hàng. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Thiết lập lại mối quan hệ và thừa nhận tình trạng không hoạt động gần đây hoặc ngưỡng số dư",
+          "Xác định các lý do chính của việc không hoạt động và rào cản để tham gia lại",
+          "Khám phá các ưu tiên hiện tại và lập bản đồ con đường tham gia lại rõ ràng",
+          "Khuyến khích bước ngay lập tức và đảm bảo điểm tiếp xúc tiếp theo"
+        ]
+      },
+      "bbl-portfolio-review": {
+        "title": "Xem xét Danh mục Đầu tư (gặp mặt trực tiếp)",
+        "description": "Xem xét hiệu suất danh mục đầu tư, thảo luận tác động thị trường, đề xuất điều chỉnh và xác nhận các bước tiếp theo.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập cuộc trò chuyện xem xét danh mục đầu tư. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Mở đầu cuộc gọi với lời chào ấm áp và tóm tắt các cập nhật cuộc sống hoặc tài chính gần đây.",
+          "Giới thiệu lý do xem xét danh mục đầu tư, liên kết nó với biến động thị trường hoặc các mốc quan trọng cá nhân.",
+          "Xem xét hiệu suất danh mục đầu tư hiện tại và xác định các khoảng trống hoặc mất cân bằng chính.",
+          "Đề xuất các giải pháp tái cân bằng hoặc bổ sung phù hợp với mục tiêu và khẩu vị rủi ro của họ, ưu tiên đề xuất giải pháp bổ sung trước.",
+          "Xác nhận các bước tiếp theo, đảm bảo thỏa thuận để tiếp tục và lên lịch xem xét theo dõi liên quan đến danh mục đầu tư.",
+          "Thử giới thiệu các sản phẩm tài sản mới, trái phiếu đa tiền tệ, cho khách hàng này."
+        ]
+      },
+      "hsbc-client-onboarding": {
+        "title": "Onboarding Khách hàng",
+        "description": "Giới thiệu HSBC & Wealth cho khách hàng Mới đến Ngân hàng (NTB)",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập cuộc trò chuyện onboarding khách hàng. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Chào mừng khách hàng và thiết lập mối quan hệ trong khi giới thiệu mô hình quản lý tài sản của ngân hàng.",
+          "Giới thiệu đề xuất tài sản của ngân hàng theo cách làm nổi bật sự khác biệt và phù hợp với ưu tiên của khách hàng.",
+          "Hiểu hồ sơ tài chính của khách hàng, khẩu vị rủi ro và yêu cầu onboarding.",
+          "Hướng dẫn khách hàng hướng tới sự tham gia đầu tiên vào các sản phẩm tài sản và thiết lập nhịp điệu quan hệ.",
+          "Thiết lập cuộc họp trực tiếp để thảo luận chi tiết về các dịch vụ của HSBC Wealth."
+        ]
+      },
+      "hsbc-client-upgrade": {
+        "title": "Mới đến Wealth",
+        "description": "Liên hệ với khách hàng hiện tại để khởi động hành trình tài sản với HSBC",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập cuộc trò chuyện nâng cấp khách hàng. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Chào mừng khách hàng đến với Wealth và ghi nhận những thay đổi gần đây trong cuộc sống hoặc sự nghiệp.",
+          "Trình bày các dịch vụ và lợi ích chính của Wealth phù hợp với mục tiêu của khách hàng.",
+          "Khám phá hồ sơ và ưu tiên của khách hàng để nắm bắt các cập nhật thiết yếu.",
+          "Đảm bảo thỏa thuận cho phiên tư vấn đầu tư theo dõi.",
+          "Thiết lập cuộc họp trực tiếp để thảo luận chi tiết về các dịch vụ của HSBC Wealth."
+        ]
+      },
+      "hsbc-goal-planning": {
+        "title": "Lập kế hoạch Mục tiêu",
+        "description": "Xác định, định lượng và lập kế hoạch các mục tiêu tài chính với các giải pháp phù hợp và các bước tiếp theo.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập phiên lập kế hoạch mục tiêu. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Xác định và làm rõ các mục tiêu tài chính chính và ưu tiên của khách hàng.",
+          "Định lượng thời gian, số tiền và khả năng chấp nhận rủi ro cho từng mục tiêu.",
+          "Trình bày các giải pháp phù hợp phù hợp với mục tiêu của họ.",
+          "Đảm bảo cam kết tiếp tục với các dịch vụ lập kế hoạch dựa trên mục tiêu."
+        ]
+      },
+      "hsbc-client-revival": {
+        "title": "Phục hồi Khách hàng",
+        "description": "Kết nối lại với khách hàng không hoạt động và khơi dậy sự tham gia trở lại.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập cuộc trò chuyện phục hồi khách hàng. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Thiết lập lại mối quan hệ và thừa nhận tình trạng không hoạt động gần đây hoặc ngưỡng số dư",
+          "Xác định các lý do chính của việc không hoạt động và rào cản để tham gia lại",
+          "Khám phá các ưu tiên hiện tại và lập bản đồ con đường tham gia lại rõ ràng",
+          "Khuyến khích bước ngay lập tức và đảm bảo điểm tiếp xúc tiếp theo"
+        ]
+      },
+      "hsbc-portfolio-review": {
+        "title": "Xem xét Danh mục Đầu tư",
+        "description": "Xem xét hiệu suất danh mục đầu tư, thảo luận tác động thị trường, đề xuất điều chỉnh và xác nhận các bước tiếp theo.",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập cuộc trò chuyện xem xét danh mục đầu tư. Thử thách tư vấn của bạn hôm nay là gì?",
+        "objectives": [
+          "Mở đầu cuộc gọi với lời chào ấm áp và tóm tắt các cập nhật cuộc sống hoặc tài chính gần đây.",
+          "Giới thiệu lý do xem xét danh mục đầu tư, liên kết nó với biến động thị trường hoặc các mốc quan trọng cá nhân.",
+          "Xem xét hiệu suất danh mục đầu tư hiện tại và xác định các khoảng trống hoặc mất cân bằng chính.",
+          "Đề xuất các giải pháp tái cân bằng hoặc bổ sung phù hợp với mục tiêu và khẩu vị rủi ro của họ.",
+          "Xác nhận các bước tiếp theo, đảm bảo thỏa thuận để tiếp tục và lên lịch xem xét theo dõi."
+        ]
+      },
+      "mtl-prospect-practice": {
+        "title": "Thành thạo Pitch",
+        "description": "Vai trò đảo ngược: Bạn đóng vai khách hàng tiềm năng quan sát một đại lý bảo hiểm hàng đầu",
+        "initialMessage": "Chào mừng! Hãy cùng luyện tập trở thành khách hàng tiềm năng. Thử thách của bạn hôm nay là gì?",
+        "objectives": [
+          "Thể hiện mục tiêu và ưu tiên tài chính của bạn một cách rõ ràng như một khách hàng tiềm năng thực tế",
+          "Đặt những câu hỏi có ý nghĩa mà một khách hàng tiềm năng thực sự sẽ hỏi về các lựa chọn tiết kiệm và đầu tư",
+          "Phản hồi một cách tự nhiên với các câu hỏi khám phá và giải thích của đại lý",
+          "Thể hiện sự tiến bộ thực tế trong suy nghĩ của bạn khi các mối quan ngại được giải quyết",
+          "Giúp cuộc trò chuyện di chuyển một cách tự nhiên hướng tới việc xem xét một cuộc hẹn tiếp theo"
+        ]
+      }
+    }
+  },
+  "assessment": {
+    "overview": "Tổng quan",
+    "title": "Đánh giá nhập vai",
+    "completedOn": "Hoàn thành vào",
+    "salesTechnique": "Kỹ thuật bán hàng",
+    "salesTechniqueDescription": "Đo lường khả năng tuân theo khung làm việc đã định để thúc đẩy cuộc trò chuyện thành công.",
+    "productKnowledge": "Kiến thức sản phẩm",
+    "productKnowledgeDescription": "Đo lường khả năng truyền đạt chính xác các tính năng, lợi ích và chi tiết quan trọng của sản phẩm.",
+    "softSkills": "Kỹ năng mềm",
+    "technicalKnowledge": "Kiến thức kỹ thuật",
+    "technicalKnowledgeDescription": "Đo lường khả năng truyền đạt chính xác các tính năng, lợi ích và chi tiết quan trọng của sản phẩm.",
+    "operationalKnowledge": "Kiến thức vận hành",
+    "advisoryTechnique": "Kỹ thuật tư vấn",
+    "advisoryTechniqueDescription": "Đo lường khả năng sử dụng kỹ thuật tư vấn để thúc đẩy cuộc trò chuyện thành công.",
+    "processAdherence": "Tuân thủ quy trình",
+    "processAdherenceDescription": "Đo lường mức độ tuân thủ các quy trình thực hành tốt nhất của công ty để thúc đẩy cuộc trò chuyện thành công.",
+    "communicationAndPresence": "Giao tiếp và sự hiện diện",
+    "communicationAndPresenceDescription": "Đo lường mức độ sử dụng giao tiếp và sự hiện diện để thúc đẩy cuộc trò chuyện thành công.",
+    "relationshipManagement": "Quản lý quan hệ",
+    "relationshipManagementDescription": "Đo lường khả năng xây dựng và duy trì mối quan hệ khách hàng bền vững.",
+    "overallScore": "Điểm tổng thể",
+    "summary": "Tóm tắt",
+    "suggestedNextSteps": "Các bước tiếp theo đề xuất",
+    "why": "Bạn nói",
+    "strengths": "Điểm mạnh",
+    "toImprove": "Cần cải thiện",
+    "correction": "Sửa chữa",
+    "suggestion": "Đề xuất",
+    "completed": "Hoàn thành",
+    "incomplete": "Chưa hoàn thành",
+    "expert": "Chuyên gia",
+    "intermediate": "Trung bình",
+    "beginner": "Mới bắt đầu",
+    "needsImprovement": "Cần cải thiện",
+    "ratings": {
+      "poor": "Kém",
+      "fair": "Khá",
+      "good": "Tốt",
+      "excellent": "Xuất sắc"
+    },
+    "standings": {
+      "currentSession": "Xếp hạng Phiên này",
+      "notAvailable": "Không có",
+      "clientVerification": "Xác minh Khách hàng",
+      "objectionHandling": "Xử lý Phản đối",
+      "dynamicFramework": "{{framework}}",
+      "threeFExecution": "Thực thi 3F",
+      "fourCExecution": "Thực thi 4C",
+      "mandatory": "Bắt buộc",
+      "incomplete": "Chưa hoàn thành",
+      "intermediate": "Trung bình",
+      "beginner": "Mới bắt đầu",
+      "expert": "Chuyên gia"
+    },
+    "prudentialMandatoryNotMet": {
+      "summary": "Chưa đáp ứng đủ tiêu chí bắt buộc. Vui lòng hoàn tất xác minh khách hàng trước khi tiếp tục.",
+      "nextStepsTitle": "Bước tiếp theo",
+      "suggestedNextStep": "Hoàn thành xác minh khách hàng và thử lại đánh giá."
+    },
+    "introduction": "Giới thiệu",
+    "presentation": "Giới thiệu sản phẩm",
+    "communication": "Giao tiếp",
+    "salesConfirmation": "Thỏa thuận",
+    "mandatoryDisclosure": "Thông báo bắt buộc",
+    "closure": "Tiếp tục",
+    "salesNovice": "Khách hàng mới",
+    "skilledAdvisor": "Chuyên gia",
+    "strategicConsultant": "Chuyên gia lão",
+    "emergingSeller": "Nhà bán hàng mới",
+    "mandatoryFailed": "Chưa đạt được chứng chỉ: Không đáp ứng đủ tiêu chí bắt buộc.",
+    "msigNextStepsTitle": "Để tiến bộ chứng chỉ, tập trung vào:",
+    "msigMandatoryNotMetSummary": "Chứng chỉ của bạn không có sẵn vì bạn đã bỏ qua một tiêu chí bắt buộc, yêu cầu tuân thủ toàn diện. Xem lại hiệu suất của bạn trong các lĩnh vực khác để xem gì đã thành công, và đảm bảo hoàn thành tất cả các bước tiếp theo để nhận được chứng chỉ của bạn.",
+    "msigMandatoryNotMetNextStep": "Đáp ứng đầy đủ tất cả các tiêu chí bắt buộc."
+  },
+  "ui": {
+    "hupoLogoAlt": "Logo Hupo",
+    "companyLogoAlt": "Logo Công ty"
+  },
+  "products": {
+    "product": "Sản phẩm"
+  },
+  "personas": {
+    "persona": "Nhân vật"
+  },
+  "common": {
+    "goals": {
+      "cold-call": "Mục tiêu của bạn là giới thiệu ngắn gọn về công ty, khơi gợi sự quan tâm và đặt lịch hẹn khám phá 30 phút",
+      "discovery": "Mục tiêu của bạn là hiểu tình hình hiện tại và xác định nhu cầu cụ thể",
+      "competitive-proposal": "Mục tiêu của bạn là trình bày giải pháp và phân biệt với đối thủ cạnh tranh",
+      "objection-handling": "Mục tiêu của bạn là giải quyết mối quan tâm và duy trì trọng tâm giá trị",
+      "closing": "Mục tiêu của bạn là đảm bảo thỏa thuận và hoàn thiện đơn đăng ký",
+      "review-renewal": "Mục tiêu của bạn là xem xét bảo hiểm hiện tại và thảo luận gia hạn hoặc nâng cấp",
+      "needs-analysis": "Mục tiêu của bạn là tiến hành đánh giá nhu cầu kỹ lưỡng và phân tích rủi ro",
+      "policy-explanation": "Mục tiêu của bạn là giải thích rõ ràng điều khoản và lợi ích chính sách",
+      "risk-assessment": "Mục tiêu của bạn là đánh giá và truyền đạt nhu cầu bảo vệ",
+      "premium-discussion": "Mục tiêu của bạn là thảo luận giá cả và tùy chọn thanh toán",
+      "policy-closing": "Mục tiêu của bạn là hoàn thiện đơn đăng ký bảo hiểm",
+      "policy-renewal": "Mục tiêu của bạn là xem xét bảo hiểm hiện có và đảm bảo gia hạn",
+      "solution-discovery": "Mục tiêu của bạn là xác định yêu cầu kỹ thuật và thách thức kinh doanh",
+      "demo-presentation": "Mục tiêu của bạn là giới thiệu giải pháp và chứng minh giá trị",
+      "discovery-call-meddpicc": "Mục tiêu của bạn là khám phá điểm đau, hiểu quy trình ra quyết định và đánh giá ngân sách bằng phương pháp MEDDPICC",
+      "telesales": "Mục tiêu của bạn là thực hiện các cuộc gọi telemarketing hiệu quả, trình bày sản phẩm rõ ràng và chốt bán hàng từ xa",
+      "deal-closure": "Mục tiêu của bạn là điều hướng các cuộc đàm phán cuối cùng, thống nhất các điều khoản thương mại và đảm bảo chữ ký hợp đồng sử dụng các nguyên tắc MEDDPICC",
+      "grab-mex": "Mục tiêu của bạn là vượt qua hạn chế ngân sách của nhà bán lẻ và mối lo ngại về P&L bằng cách chứng minh ROI chiến dịch, giải quyết phản đối tài trợ chi phí thực phẩm và định vị đề xuất giá trị truyền thông $145,000 để đảm bảo sự tham gia chiến dịch",
+      "default": "Mục tiêu của bạn là xây dựng mối quan hệ và khám phá nhu cầu"
+    }
+  }
+}

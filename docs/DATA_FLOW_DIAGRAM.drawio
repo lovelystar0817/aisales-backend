@@ -1,0 +1,293 @@
+<mxfile host="app.diagrams.net" modified="2026-02-09" agent="Claude Code" version="24.0.0" type="device">
+  <diagram id="dataflow" name="Data Flow Diagram">
+    <mxGraphModel dx="1422" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1850" pageHeight="1580" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Invisible bounding box for export padding -->
+        <mxCell id="bounds" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1850" height="1580" as="geometry" />
+        </mxCell>
+
+        <!-- Participants (columns) -->
+        <mxCell id="p-user" value="GE Financial Rep&#xa;(Web Browser)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="80" y="60" width="130" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-cf" value="Cloudflare&#xa;CDN / WAF" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="250" y="60" width="100" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-auth0" value="Auth0&#xa;SSO / SAML" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="390" y="60" width="100" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-api" value="Fastify Backend&#xa;(DO SGP1)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="530" y="60" width="120" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-db" value="MongoDB&#xa;(DO SGP1)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="690" y="60" width="100" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-lk" value="LiveKit Cloud&#xa;(WebRTC)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="830" y="60" width="110" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-agent" value="AI Voice Agent&#xa;(DO SGP1)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="980" y="60" width="110" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-stt" value="Deepgram /&#xa;OpenAI Whisper (STT)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="60" width="130" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-llm" value="OpenAI GPT-4.1 /&#xa;Anthropic Claude (LLM)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="60" width="140" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-tts" value="ElevenLabs&#xa;(TTS)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="60" width="110" height="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="p-s3" value="AWS S3&#xa;(Audio)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;size=40;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="60" width="100" height="1450" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================= -->
+        <!-- Section: Authentication Flow                  -->
+        <!-- ============================================= -->
+        <mxCell id="auth-section" value="Authentication Flow" style="shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;fontStyle=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="20" height="270" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a1" value="Navigate to train.hupo.co" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="140" as="sourcePoint" /><mxPoint x="300" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" value="Serve React SPA" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="170" as="sourcePoint" /><mxPoint x="145" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" value="Redirect to SSO Login (SAML/OIDC)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="200" as="sourcePoint" /><mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a4" value="Return JWT access token" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="230" as="sourcePoint" /><mxPoint x="145" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5" value="API call + JWT Bearer token" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="265" as="sourcePoint" /><mxPoint x="300" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a6" value="Forward request (HTTPS)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="290" as="sourcePoint" /><mxPoint x="590" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a7" value="Fetch/create user record" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="320" as="sourcePoint" /><mxPoint x="740" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8" value="User profile + company config" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="350" as="sourcePoint" /><mxPoint x="590" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a9" value="Authenticated session data" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="380" as="sourcePoint" /><mxPoint x="145" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ============================================= -->
+        <!-- Section: Roleplay Session                     -->
+        <!-- ============================================= -->
+        <mxCell id="rp-section" value="Roleplay Session Flow" style="shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;fontStyle=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="50" y="420" width="20" height="690" as="geometry" />
+        </mxCell>
+
+        <!-- Common setup -->
+        <mxCell id="r1" value="Start roleplay session" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="440" as="sourcePoint" /><mxPoint x="590" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" value="Create SalesSession (Scenario, Persona, Module)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="470" as="sourcePoint" /><mxPoint x="740" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ——— Alt A: LiveKit Voice Provider ——— -->
+        <mxCell id="altA-box" value="Alt A: LiveKit Voice Provider (select languages)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f4ff;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=11;dashed=1;dashPattern=8 4;opacity=70;" vertex="1" parent="1">
+          <mxGeometry x="100" y="505" width="1600" height="385" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rA1" value="Return session + LiveKit token" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="535" as="sourcePoint" /><mxPoint x="145" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rA2" value="Connect WebRTC (audio stream)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="565" as="sourcePoint" /><mxPoint x="885" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rA3" value="AI Agent joins voice room" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="590" as="sourcePoint" /><mxPoint x="885" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- LiveKit Conversation Loop -->
+        <mxCell id="loopA-box" value="Conversation Loop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;verticalAlign=top;fontStyle=1;fontSize=10;dashed=1;dashPattern=6 3;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="115" y="612" width="1570" height="262" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cA1" value="Speak (audio)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="640" as="sourcePoint" /><mxPoint x="885" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA2" value="Forward audio stream" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="885" y="665" as="sourcePoint" /><mxPoint x="1035" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA3" value="Transcribe audio" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="690" as="sourcePoint" /><mxPoint x="1195" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA4" value="Text transcript" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1195" y="712" as="sourcePoint" /><mxPoint x="1035" y="712" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA5" value="Send transcript + persona prompt" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="737" as="sourcePoint" /><mxPoint x="1370" y="737" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA6" value="AI response text" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1370" y="760" as="sourcePoint" /><mxPoint x="1035" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA7" value="Convert response to speech" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="785" as="sourcePoint" /><mxPoint x="1535" y="785" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA8" value="Audio stream" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1535" y="808" as="sourcePoint" /><mxPoint x="1035" y="808" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA9" value="Send AI audio" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="833" as="sourcePoint" /><mxPoint x="885" y="833" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cA10" value="Hear AI response" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="885" y="856" as="sourcePoint" /><mxPoint x="145" y="856" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ——— Alt B: ElevenLabs Conversational AI ——— -->
+        <mxCell id="altB-box" value="Alt B: ElevenLabs Conversational AI (default provider)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdf0ff;strokeColor=#9673a6;verticalAlign=top;fontStyle=1;fontSize=11;dashed=1;dashPattern=8 4;opacity=70;" vertex="1" parent="1">
+          <mxGeometry x="100" y="910" width="1600" height="195" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rB1" value="Get signed URL" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="940" as="sourcePoint" /><mxPoint x="1535" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rB2" value="Return signed URL" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1535" y="965" as="sourcePoint" /><mxPoint x="590" y="965" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rB3" value="Return session + signed URL" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="990" as="sourcePoint" /><mxPoint x="145" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rB4" value="Connect WebRTC (direct)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="1015" as="sourcePoint" /><mxPoint x="1535" y="1015" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 11Labs Conversation Loop -->
+        <mxCell id="loopB-box" value="Conversation Loop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;verticalAlign=top;fontStyle=1;fontSize=10;dashed=1;dashPattern=6 3;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="115" y="1035" width="1570" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cB1" value="User speaks → ElevenLabs handles ASR, LLM &amp; TTS internally → User hears AI response" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="1068" as="sourcePoint" /><mxPoint x="1535" y="1068" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ============================================= -->
+        <!-- Section: Post-Session Processing              -->
+        <!-- ============================================= -->
+        <mxCell id="ps-section" value="Post-Session Processing" style="shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;fontStyle=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1130" width="20" height="300" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1" value="End session" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="1150" as="sourcePoint" /><mxPoint x="590" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1b" value="[Optional] PII mask transcript" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#999999;fontSize=10;dashed=1;dashPattern=8 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="1180" as="sourcePoint" /><mxPoint x="1370" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2" value="Save conversation transcript" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="1210" as="sourcePoint" /><mxPoint x="740" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3" value="Generate feedback &amp; assessment" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="1245" as="sourcePoint" /><mxPoint x="1370" y="1245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p4" value="Structured feedback JSON" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1370" y="1275" as="sourcePoint" /><mxPoint x="590" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5" value="Store feedback + scores" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="1305" as="sourcePoint" /><mxPoint x="740" y="1305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p6" value="[Optional] Upload session audio (encrypted)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#999999;fontSize=10;dashed=1;dashPattern=8 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="1335" as="sourcePoint" /><mxPoint x="1680" y="1335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p7" value="Return session report" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#555555;fontSize=10;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="1370" as="sourcePoint" /><mxPoint x="145" y="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Data at Rest notes -->
+        <mxCell id="note-db" value="All data encrypted at rest (AES-256)&#xa;User data isolated per Company" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;size=14;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1445" width="230" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="note-s3" value="Audio files encrypted (SSE-S3)&#xa;Pre-signed URLs for access" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;size=14;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="1445" width="210" height="55" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

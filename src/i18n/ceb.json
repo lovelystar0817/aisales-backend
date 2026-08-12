@@ -1,0 +1,443 @@
+{
+  "modules": {
+    "groups": {
+      "module": "Module",
+      "prospecting": "Pagpangita ug Pagdiskobre",
+      "relationship": "Pagtukod og Relasyon",
+      "closing": "Pagsara ug Negosasyon",
+      "retention": "Pagpadayon ug Pag-upsell"
+    },
+    "items": {
+      "cold-call": {
+        "title": "Cold Call",
+        "description": "Kontaka ang bag-ong lead aron makuha ang unang miting.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og cold calling. Unsa ang imong sales challenge karon?",
+        "objectives": [
+          "Kuhaa ang atensyon ug tukora ang kredibilidad sa prospect",
+          "Pagtukod og rapport ug pagtipon og konteksto bahin sa ilang sitwasyon karon",
+          "Ilha ang mga potensyal nga hagit o peligro nga ilang giatubang",
+          "Makakuha og kasabutan alang sa follow-up meeting o sunod nga panagsultihay"
+        ]
+      },
+      "discovery": {
+        "title": "Pagdiskobre",
+        "description": "Susiha ang sitwasyon sa kliyente aron mahibaloan ang mga panginahanglan ug kamatuoran.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og discovery conversations. Unsa ang imong sales challenge karon?",
+        "objectives": [
+          "Sabta ang karon nga pinansyal nga sitwasyon ug mga tumong sa kliyente",
+          "Diskobri ang mga panginahanglan ug pain points pinaagi sa mga pangutana",
+          "Ilha ang mga sukdanan sa pagdesisyon ug timeline",
+          "Pagtipon og mga kamatuoran nga gikinahanglan aron isugyot ang angay nga mga solusyon"
+        ]
+      },
+      "competitive-proposal": {
+        "title": "Competitive Proposal",
+        "description": "Ipresentar ang imong solusyon ug labwan ang kompetensya nga produkto nga gikonsiderar sa kliyente.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og competitive proposals. Unsa ang imong sales challenge karon?",
+        "objectives": [
+          "Ipresentar ang imong solusyon nga adunay tin-aw nga value propositions",
+          "Lahi-lahi ang imong tanyag gikan sa mga alternatibo sa kompetensya",
+          "Tubaga ang mga kabalaka sa kliyente bahin sa mga produkto sa kompetensya",
+          "Makakuha og commitment nga mopadayon sa imong proposal"
+        ]
+      },
+      "objection-handling": {
+        "title": "Pagsanay sa Pagtubag sa Objection",
+        "description": "Paspas nga tubag sa mga reklamo bahin sa presyo, panginahanglan, o timing ug ipadayon ang value nga naka-anchor.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og objection handling. Unsa ang imong sales challenge karon?",
+        "objectives": [
+          "Paminaw og aktibo aron masabtan ang gamot nga hinungdan sa objection",
+          "Tubaga gamit ang mga relevant nga value propositions ug benepisyo",
+          "Labwan ang mga kabalaka bahin sa presyo, timing, ug panginahanglan",
+          "Padayona ang pakig-uban sa kliyente ug pag-uswag ngadto sa kasabutan"
+        ]
+      },
+      "product-positioning": {
+        "title": "Product Positioning",
+        "description": "Lakaw sa mga objection samtang gipalig-on ang core value sa imong produkto.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og product positioning. Unsa ang imong sales challenge karon?",
+        "objectives": [
+          "Ipresentar ang mga feature sa produkto ingon nga mga espisipiko nga benepisyo sa kliyente",
+          "I-position ang mga bentaha sa produkto batok sa mga alternatibo sa merkado",
+          "Atubanga ang mga objection ug kabalaka nga may kalabotan sa produkto",
+          "Paghimo og urgency ug tinguha alang sa girekomenda nga solusyon"
+        ]
+      },
+      "closing": {
+        "title": "Pagsara",
+        "description": "Kumpirma ang kasabutan ug tigoma ang application details.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og closing techniques. Unsa ang imong sales challenge karon?",
+        "objectives": [
+          "Summarya ang mga napag-uyonan nga solusyon ug benepisyo",
+          "Kumpirma ang commitment sa kliyente nga mopadayon",
+          "Tigoma ang gikinahanglan nga impormasyon sa application ug dokumentasyon",
+          "Mag-iskedyul og sunod nga mga lakang ug timeline sa pagpatuman"
+        ]
+      },
+      "review-renewal": {
+        "title": "Rebyu / Pagbag-o",
+        "description": "Balika ang karon nga coverage aron mag-renew, mag-adjust, o mag-upsell.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og renewal conversations. Unsa ang imong sales challenge karon?",
+        "objectives": [
+          "Ribyu ang karon nga coverage ug performance sa policy",
+          "Ilha ang mga pagbag-o sa mga kahimtang ug panginahanglan sa kliyente",
+          "Ipresentar ang mga kapilian sa renewal ug mga potensyal nga pagpauswag",
+          "Makakuha og commitment sa renewal o mga oportunidad sa upselling"
+        ]
+      },
+      "fna": {
+        "title": "Financial Needs Analysis",
+        "description": "Paghimo og komprehensibo nga pagsusi sa pinansyal nga panginahanglan aron mahibaloan ang proteksyon, pagtipig, ug mga kinahanglanon sa pamuhunan sa kliyente.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og Financial Needs Analysis. Unsa ang imong sales challenge karon?",
+        "objectives": [
+          "Introduksyon: Kumusta pinaagi sa ngalan, isulti ang imong papel isip tagpayo ug ang kredibilidad sa Manulife/CSR aron magtukod og kredibilidad.",
+          "Pagtukod og rapport ug pagdiskobre sa mga panginahanglan: Lakaw sa mga yugto sa kinabuhi, susiha ang mga kagubot/mga damgo, paghimo og mga pangutana sa pagka-angay, ug sukda ang proteksyon/kahimsog/edukasyon/retirement nga mga panginahanglan.",
+          "Pagsara (sunod nga mga lakang): Ipadala/kumpirma ang mga papel, iskedyul ang sunod nga miting, kuha og pagtugot sa pagkontak, kuha og mga referensya ug dah-a og feedback."
+        ]
+      },
+      "manulife-product-pitch": {
+        "title": "Product Pitch",
+        "description": "Susiha ang pinansyal nga mga tumong sa kliyente ug irekomenda ang angay nga mga produkto sa Manulife isip solusyon aron makatabang kanila nga makab-ot ang ilang mga pinansyal nga tumong.",
+        "objectives": [
+          "Pagtukod ug rapport ug magtukod ug pagsalig",
+          "Kumpirmaha pag-usab ang ilang nangunang prioridad gikan sa FNA",
+          "Ipresentar ang produkto nga tin-aw ug may pagsalig",
+          "Tubaga ang mga pagsupak uban ang empatiya ug katin-aw",
+          "Giyahan sila ngadto sa sunod nga lakang (aplikasyon o follow-up)"
+        ]
+      },
+      "needs-analysis": {
+        "title": "Insurance Needs Analysis",
+        "description": "Analisaha ang risk profile sa kliyente ug mga requirement sa coverage.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og insurance needs analysis. Unsa ang imong sales challenge karon?"
+      },
+      "policy-explanation": {
+        "title": "Pagpatin-aw sa Policy",
+        "description": "Ipasabot og tin-aw ang komplikado nga insurance terms ug benefits.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og policy explanations. Unsa ang imong sales challenge karon?"
+      },
+      "risk-assessment": {
+        "title": "Pagsusi sa Peligro",
+        "description": "Timbang-timbanga ug ipahayag ang mga potensyal nga peligro ug mga panginahanglan sa proteksyon.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og risk assessment. Unsa ang imong sales challenge karon?"
+      },
+      "premium-discussion": {
+        "title": "Diskusyon sa Premium",
+        "description": "Atubanga ang mga panagsultihay bahin sa presyo ug mga kapilian sa pagbayad.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og premium discussions. Unsa ang imong sales challenge karon?"
+      },
+      "policy-closing": {
+        "title": "Pagsara sa Policy",
+        "description": "Taposa ang insurance application ug dokumentasyon.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og policy closing. Unsa ang imong sales challenge karon?"
+      },
+      "policy-renewal": {
+        "title": "Pagbag-o sa Policy",
+        "description": "Ribyu ang karon nga coverage ug hisguti ang renewal options.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og policy renewals. Unsa ang imong sales challenge karon?"
+      },
+      "solution-discovery": {
+        "title": "Pagdiskobre sa Solusyon",
+        "description": "Ilha ang mga technical requirements ug business challenges.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og solution discovery. Unsa ang imong sales challenge karon?"
+      },
+      "demo-presentation": {
+        "title": "Pagpresentar sa Demo",
+        "description": "Ipakita ang mga feature sa produkto ug technical capabilities.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og demo presentations. Unsa ang imong sales challenge karon?"
+      },
+      "technical-objections": {
+        "title": "Mga Technical Objections",
+        "description": "Atubanga ang mga technical concerns ug mga pangutana sa pagpatuman.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og pag-handle sa technical objections. Unsa ang imong sales challenge karon?"
+      },
+      "pricing-negotiation": {
+        "title": "Negosasyon sa Presyo",
+        "description": "Mag-negosyar sa licensing, pagpatuman, ug nagpadayon nga mga gasto.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og pricing negotiations. Unsa ang imong sales challenge karon?"
+      },
+      "contract-closing": {
+        "title": "Pagsara sa Kontrata",
+        "description": "Taposa ang mga termino, kondisyon, ug mga kasabutan sa serbisyo.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og contract closing. Unsa ang imong sales challenge karon?"
+      },
+      "account-expansion": {
+        "title": "Pagpalapad sa Account",
+        "description": "Ilha ang mga oportunidad sa upselling ug cross-selling.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og account expansion. Unsa ang imong sales challenge karon?"
+      },
+      "general-sales": {
+        "title": "Kinatibuk-ang Pagsanay sa Pagbaligya",
+        "description": "Mag-praktis og general sales conversations ug techniques.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og general sales techniques. Unsa ang imong sales challenge karon?"
+      },
+      "discovery-call-meddpicc": {
+        "title": "Discovery Call",
+        "description": "Diskobri ang mga pain points, panginahanglan, ug badyet sa kliyente gamit ang MEDDPICC methodology.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og Discovery Call nga nakapokus sa pagsabut sa business needs, challenges, ug decision-making process sa imong prospect. Unsa ang imong approach?",
+        "objectives": [
+          "Ilha ug sukda ang mga business metrics ug nag-unang performance indicators",
+          "Sabta ang economic impact ug mga konsiderasyon sa badyet",
+          "I-map ang decision-making process ug ilha ang mga key stakeholders",
+          "Diskobri ang mga pain points, implications, ug mga critical business needs"
+        ]
+      },
+      "deal-closure": {
+        "title": "Deal Closure",
+        "description": "Mag-negosyar sa prospect aron mag-align sa key commercial details ug isara ang deal.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og Deal Closure diin mag-focus kita sa late-stage negotiations, pag-align sa commercial terms, ug pag-drive sa deal ngadto sa signature gamit ang MEDDPICC methodology. Unsaon nimo pag-approach kining final stage?",
+        "objectives": [
+          "Kumpirma ang agreed metrics ug ROI documentation sa business case",
+          "Kuha og final sign-off gikan sa economic buyer sa pricing ug terms",
+          "I-navigate ang paper process ug atubanga ang legal/compliance requirements",
+          "Mag-drive og urgency samtang gipadayon ang value focus aron makab-ot ang signature"
+        ]
+      },
+      "telesales": {
+        "title": "Tele Sales",
+        "description": "Paghimo og epektibo nga telemarketing calls aron makamugna og mga leads ug makasara og mga baligya sa layo.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og telesales calls. Unsa ang imong telemarketing challenge karon?",
+        "objectives": [
+          "Pagtukod og rapport ug i-position ang produkto ingon nga may kalabutan sa mga panginahanglan sa kliyente",
+          "Atubanga ang mga objections ug ipahayag og tin-aw ang bili",
+          "Isara ang baligya—o paggawas sa tawag og propesyonal kon dili interesado ang kliyente"
+        ]
+      },
+      "grab-mex": {
+        "title": "Pag-handle sa Budget Constraint",
+        "description": "Mag-praktis og pag-handle sa mga budget constraints sa merchant ug mga kabalaka sa P&L samtang gidrive ang campaign participation.",
+        "initialMessage": "Maayong pag-abot sa Budget Constraint Handling training! Mag-praktis kita og pagtubag sa mga kabalaka sa P&L sa merchant ug mga limitasyon sa budget samtang gi-position ang campaign value. Unsaon nato og buntog ang ilang funding objections karon?",
+        "objectives": [
+          "Gamita ang LAER framework aron ma-handle ang mga objections",
+          "Buntoga ang mga budget constraints sa merchant ug mga kabalaka sa P&L pinaagi sa pagpakita sa campaign ROI",
+          "I-position ang $145,000 media value proposition ug cost-benefit analysis",
+          "Gamita ang MEDDPICC methodology aron ma-qualify ang mga oportunidad ug isara ang campaign deals"
+        ]
+      },
+      "bbl-client-upgrade": {
+        "title": "Client Upgrade (in-person meeting)",
+        "description": "Kontaka ang existing client aron i-upgrade sila sa Wealth services.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og client upgrade conversations. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Dawata ang kliyente sa Wealth ug timan-i ang bisan unsang bag-ong pagbag-o sa kinabuhi o karera.",
+          "Ipresentar ang nag-unang Wealth services ug benefits nga mohaum sa mga tumong sa kliyente.",
+          "Susiha ang profile ug mga prioridad sa kliyente aron makuha ang importanteng mga update.",
+          "Makakuha og kasabutan alang sa follow-up investment advisory session."
+        ]
+      },
+      "bbl-goal-planning": {
+        "title": "Goal Planning (in-person meeting)",
+        "description": "Ipasabot, sukda, ug planuha ang mga pinansyal nga tumong uban sa tailored solutions ug sunod nga mga lakang.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og goal planning sessions. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Ilha ug klaruha ang nag-unang pinansyal nga mga tumong ug prioridad sa kliyente.",
+          "Sukda ang mga timeline, kantidad, ug risk tolerance alang sa matag tumong.",
+          "Ipresentar ang tailored solutions nga nag-align sa ilang mga tumong.",
+          "Makakuha og commitment nga mopadayon sa goal-based planning services."
+        ]
+      },
+      "bbl-client-revival": {
+        "title": "Client Revival (in-person meeting)",
+        "description": "Mag-reconnect sa mga inactive clients ug pagsugod og re-engagement.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og client revival conversations. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Ibalik ang relasyon ug ilha ang bag-o nga inactivity o balance thresholds",
+          "Ilha ang mga nag-unang hinungdan sa inactivity ug mga hadlang sa re-engagement",
+          "Susiha ang karon nga mga prioridad ug i-map ang tin-aw nga re-engagement path",
+          "Dasiga ang usa ka diha-diha nga lakang ug makakuha sa sunod nga touchpoint"
+        ]
+      },
+      "bbl-portfolio-review": {
+        "title": "Portfolio Review (in-person meeting)",
+        "description": "Ribyu ang portfolio performance, hisguti ang market impact, isugyot ang mga adjustment, ug kumpirma ang sunod nga mga lakang.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og portfolio review conversations. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Ablihi ang meeting uban sa mainit nga pagdawat ug recap sa bag-o nga kinabuhi o pinansyal nga mga update.",
+          "Ipaila ang hinungdan alang sa portfolio review, i-link kini sa market movements o personal milestones.",
+          "Ribyu ang karon nga portfolio performance ug ilha ang nag-unang gaps o imbalances.",
+          "Irekomenda ang tailored rebalancing o top-up solutions nga nag-align sa iyang mga tumong ug risk appetite, una nga isugyot ang top-up solutions.",
+          "Kumpirma ang sunod nga mga lakang, makakuha og kasabutan nga mopadayon, ug mag-iskedyul og follow-up review mahitungod sa portfolio."
+        ]
+      },
+      "hsbc-client-onboarding": {
+        "title": "Client Onboarding",
+        "description": "Pagpaila sa HSBC & Wealth sa New to Bank (NTB) clients",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og client onboarding conversations. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Dawata ang kliyente ug pagtukod og rapport samtang gipaila ang bank's wealth management relationship model.",
+          "Ipresentar ang wealth proposition sa bank sa paagi nga nagpasiugda sa differentiation ug alignment sa mga prioridad sa kliyente.",
+          "Sabta ang financial profile sa kliyente, risk appetite, ug onboarding requirements.",
+          "Giya ang kliyente ngadto sa unang engagement sa wealth products ug pagtukod sa relationship rhythm.",
+          "Mag-set up og in-person meeting aron hisgutan og mas detalyado ang mga ginatanyag sa HSBC Wealth."
+        ]
+      },
+      "hsbc-client-upgrade": {
+        "title": "New to Wealth",
+        "description": "Kontaka ang existing client aron magsugod og wealth journey uban sa HSBC",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og client upgrade conversations. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Dawata ang kliyente sa Wealth ug timan-i ang bisan unsang bag-ong pagbag-o sa kinabuhi o karera.",
+          "Ipresentar ang nag-unang Wealth services ug benefits nga mohaum sa mga tumong sa kliyente.",
+          "Susiha ang profile ug mga prioridad sa kliyente aron makuha ang importanteng mga update.",
+          "Makakuha og kasabutan alang sa follow-up investment advisory session.",
+          "Mag-set up og in-person meeting aron hisgutan og mas detalyado ang mga ginatanyag sa HSBC Wealth."
+        ]
+      },
+      "hsbc-goal-planning": {
+        "title": "Goal Planning",
+        "description": "Ipasabot, sukda, ug planuha ang mga pinansyal nga tumong uban sa tailored solutions ug sunod nga mga lakang.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og goal planning sessions. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Ilha ug klaruha ang nag-unang pinansyal nga mga tumong ug prioridad sa kliyente.",
+          "Sukda ang mga timeline, kantidad, ug risk tolerance alang sa matag tumong.",
+          "Ipresentar ang tailored solutions nga nag-align sa ilang mga tumong.",
+          "Makakuha og commitment nga mopadayon sa goal-based planning services."
+        ]
+      },
+      "hsbc-client-revival": {
+        "title": "Client Revival",
+        "description": "Mag-reconnect sa mga inactive clients ug pagsugod og re-engagement.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og client revival conversations. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Ibalik ang relasyon ug ilha ang bag-o nga inactivity o balance thresholds",
+          "Ilha ang mga nag-unang hinungdan sa inactivity ug mga hadlang sa re-engagement",
+          "Susiha ang karon nga mga prioridad ug i-map ang tin-aw nga re-engagement path",
+          "Dasiga ang usa ka diha-diha nga lakang ug makakuha sa sunod nga touchpoint"
+        ]
+      },
+      "hsbc-portfolio-review": {
+        "title": "Portfolio Review",
+        "description": "Ribyu ang portfolio performance, hisguti ang market impact, isugyot ang mga adjustment, ug kumpirma ang sunod nga mga lakang.",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og portfolio review conversations. Unsa ang imong advisory challenge karon?",
+        "objectives": [
+          "Ablihi ang tawag uban sa mainit nga pagdawat ug recap sa bag-o nga kinabuhi o pinansyal nga mga update.",
+          "Ipaila ang hinungdan alang sa portfolio review, i-link kini sa market movements o personal milestones.",
+          "Ribyu ang karon nga portfolio performance ug ilha ang nag-unang gaps o imbalances.",
+          "Irekomenda ang tailored rebalancing o top-up solutions nga nag-align sa iyang mga tumong ug risk appetite.",
+          "Kumpirma ang sunod nga mga lakang, makakuha og kasabutan nga mopadayon, ug mag-iskedyul og follow-up review."
+        ]
+      },
+      "mtl-prospect-practice": {
+        "title": "Pagkahibalo sa Pitch",
+        "description": "Baligtad nga papel: Ikaw magdula isip prospect nga nag-obserbar sa usa ka top-performing insurance agent",
+        "initialMessage": "Maayong pag-abot! Mag-praktis kita og pagka-prospect. Unsa ang imong hagit karon?",
+        "objectives": [
+          "Ipahayag ang imong financial goals ug mga prioridad og tin-aw isip usa ka realistic prospect",
+          "Pangutana og makahuluganon nga mga pangutana nga pangutan-on sa tinuod nga prospect bahin sa savings ug investment options",
+          "Tubaga og natural sa discovery questions ug product explanations sa agent",
+          "Ipakita ang realistic progression sa imong paghunahuna samtang giatubang ang mga kabalaka",
+          "Kompleto ang needs discovery ug product explanation sa usa ka panagsultihay"
+        ]
+      }
+    }
+  },
+  "assessment": {
+    "overview": "Kinatibuk-ang Panan-aw",
+    "title": "Roleplay Assessment",
+    "completedOn": "Nahuman sa",
+    "salesTechnique": "Sales technique",
+    "salesTechniqueDescription": "Nagsukod sa abilidad sa pagsunod sa gitakda nga framework aron makab-ot ang usa ka malampuson nga panagsultihay.",
+    "productKnowledge": "Kahibalo sa produkto",
+    "productKnowledgeDescription": "Nagsukod sa abilidad sa pagsulti og tukma sa mga feature, benepisyo, ug importanteng detalye sa produkto.",
+    "softSkills": "Soft skills",
+    "technicalKnowledge": "Technical knowledge",
+    "technicalKnowledgeDescription": "Nagsukod sa abilidad sa pagsulti og tukma sa mga feature, benepisyo, ug importanteng detalye sa produkto.",
+    "operationalKnowledge": "Operational knowledge",
+    "advisoryTechnique": "Advisory Technique",
+    "advisoryTechniqueDescription": "Nagsukod sa abilidad sa paggamit og advisory techniques aron makab-ot ang usa ka malampuson nga panagsultihay.",
+    "processAdherence": "Process Adherence",
+    "processAdherenceDescription": "Nagsukod kung unsa ka maayo ang pagsunod sa company best-practice processes aron makab-ot ang usa ka malampuson nga panagsultihay.",
+    "communicationAndPresence": "Communication and Presence",
+    "communicationAndPresenceDescription": "Nagsukod kung unsa ka maayo ang paggamit sa komunikasyon ug presence aron makab-ot ang usa ka malampuson nga panagsultihay.",
+    "relationshipManagement": "Relationship Management",
+    "relationshipManagementDescription": "Nagsukod sa abilidad sa pagtukod ug pagpadayon og lig-on nga relasyon sa kliyente.",
+    "overallScore": "Kinatibuk-ang iskor",
+    "summary": "Summary",
+    "suggestedNextSteps": "Gisugyot nga sunod nga mga lakang",
+    "why": "Ngano",
+    "strengths": "Mga kalig-onan",
+    "toImprove": "Pagpauswag",
+    "correction": "Koreksyon",
+    "suggestion": "Sugyot",
+    "completed": "Nahuman",
+    "incomplete": "Wala Mahuman",
+    "expert": "Eksperto",
+    "intermediate": "Intermediate",
+    "beginner": "Nagsugod",
+    "needsImprovement": "Kinahanglan og Pagpauswag",
+    "ratings": {
+      "poor": "Kulang",
+      "fair": "Maayo",
+      "good": "Maayo kaayo",
+      "excellent": "Perpekto"
+    },
+    "standings": {
+      "currentSession": "Karon nga Standing",
+      "notAvailable": "Wala Magamit",
+      "clientVerification": "Client Verification",
+      "objectionHandling": "Objection Handling",
+      "dynamicFramework": "{{framework}}",
+      "threeFExecution": "3F Execution",
+      "fourCExecution": "4C Execution",
+      "mandatory": "Mandatory",
+      "incomplete": "Wala Mahuman",
+      "intermediate": "Intermediate",
+      "beginner": "Nagsugod",
+      "expert": "Eksperto"
+    },
+    "introduction": "Introduksyon",
+    "presentation": "Presentasyon",
+    "communication": "Komunikasyon",
+    "salesConfirmation": "Pagkumpirma sa Pagbaligya",
+    "mandatoryDisclosure": "Mandatory Disclosure",
+    "closure": "Pagsara",
+    "salesNovice": "Bag-o sa Pagbaligya",
+    "skilledAdvisor": "Hanas nga Tagpayo",
+    "strategicConsultant": "Strategic Consultant",
+    "emergingSeller": "Nag-uswag nga Mamaligyaon",
+    "mandatoryFailed": "Dili magamit ang Standing: Ang mga mandatory criteria wala matubag.",
+    "msigNextStepsTitle": "Aron mapadayon ang imong standing, focus sa:",
+    "msigMandatoryNotMetSummary": "Ang imong standing wala magamit tungod kay nakabiya ka og usa ka mandatory criteria, nga nanginahanglan og tibuok nga pagsunod. Ribyu ang imong performance sa ubang mga lugar aron makita kung unsa ang maayo, ug siguruha nga makompleto ang tanan nga mga lakang sunod higayon aron makadawat sa imong standing.",
+    "msigMandatoryNotMetNextStep": "Pagkompleto sa tanan nga mandatory criteria.",
+    "prudentialMandatoryNotMet": {
+      "summary": "Ang mandatory criteria wala matubag. Palihug kompleto ang client verification sa dili pa mopadayon.",
+      "nextStepsTitle": "Sunod nga mga Lakang",
+      "suggestedNextStep": "Kompleto ang client verification requirements ug sulayi pag-usab ang assessment."
+    }
+  },
+  "ui": {
+    "hupoLogoAlt": "Hupo Logo",
+    "companyLogoAlt": "Logo sa Kompanya"
+  },
+  "products": {
+    "product": "Produkto"
+  },
+  "personas": {
+    "persona": "Persona"
+  },
+  "common": {
+    "goals": {
+      "cold-call": "Ang imong tumong mao ang pag-introduce sa among firm og mubo, paghimo og interes, ug pag-book og 30-minute discovery meeting",
+      "discovery": "Ang imong tumong mao ang pagsabut sa ilang karon nga sitwasyon ug pag-ila sa mga espisipiko nga panginahanglan",
+      "competitive-proposal": "Ang imong tumong mao ang pagpresentar sa imong solusyon ug pag-lahi gikan sa mga kompetensya",
+      "objection-handling": "Ang imong tumong mao ang pagtubag sa ilang mga kabalaka ug pagpadayon sa value focus",
+      "closing": "Ang imong tumong mao ang pagkuha og kasabutan ug pagtapos sa application",
+      "review-renewal": "Ang imong tumong mao ang pag-rebyu sa karon nga coverage ug paghisgot sa renewal o upgrade options",
+      "fna": "Ang imong tumong mao ang paghimo og komprehensibo nga pagsusi sa pinansyal nga panginahanglan, pagtukod og rapport, ug pagdiskobre sa proteksyon, kahimsog, edukasyon ug retirement nga mga panginahanglan",
+      "needs-analysis": "Ang imong tumong mao ang paghimo og bug-os nga needs assessment ug risk analysis",
+      "policy-explanation": "Ang imong tumong mao ang pagpatin-aw og tin-aw sa mga policy terms ug benefits",
+      "risk-assessment": "Ang imong tumong mao ang pagtimbang ug pagpahayag sa ilang mga panginahanglan sa proteksyon",
+      "premium-discussion": "Ang imong tumong mao ang paghisgot sa pricing ug mga kapilian sa pagbayad",
+      "policy-closing": "Ang imong tumong mao ang pagtapos sa insurance application",
+      "policy-renewal": "Ang imong tumong mao ang pag-rebyu sa karon nga coverage ug pagkuha og renewal",
+      "solution-discovery": "Ang imong tumong mao ang pag-ila sa mga technical requirements ug business challenges",
+      "demo-presentation": "Ang imong tumong mao ang pagpakita sa solusyon ug pagpakita sa value",
+      "discovery-call-meddpicc": "Ang imong tumong mao ang pagdiskobre sa mga pain points, pagsabut sa decision-making process, ug pag-qualify sa badyet gamit ang MEDDPICC methodology",
+      "telesales": "Ang imong tumong mao ang paghimo og epektibo nga telemarketing calls, pagpresentar sa mga produkto og tin-aw, ug pagsara og mga baligya sa layo",
+      "deal-closure": "Ang imong tumong mao ang pag-navigate sa final negotiations, pag-align sa commercial terms, ug pagkuha sa contract signature gamit ang MEDDPICC principles",
+      "grab-mex": "Ang imong tumong mao ang pagbuntog sa mga budget constraints sa merchant ug mga kabalaka sa P&L pinaagi sa pagpakita sa campaign ROI, pagtubag sa food cost funding objections, ug pag-position sa $145,000 media value proposition aron makuha ang campaign participation",
+      "manulife-product-pitch": "Ang imong tumong mao ang pagsugyot og usa ka pangduruhanon nga solusyon sa ipon nga nagaseguro sa kaugmaon sa iyang anak samtang ginatubag ang iyang kaugalingong mga panginahanglan sa pagretiro ug katatagan sa negosyo",
+      "default": "Ang imong tumong mao ang pagtukod og rapport ug pagdiskobre sa ilang mga panginahanglan"
+    }
+  }
+}

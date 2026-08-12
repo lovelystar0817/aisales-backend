@@ -1,0 +1,3694 @@
+{
+  "generatedAt": "2025-10-08T05:55:51.085Z",
+  "period": {
+    "startDate": "2025-09-08T05:54:20.245Z",
+    "endDate": "2025-10-08T05:55:51.085Z",
+    "description": "Last 30 days"
+  },
+  "summary": {
+    "totalCompanies": 4,
+    "totalActiveUsers": 95,
+    "totalSessions": 743,
+    "totalTimeHours": 64.63,
+    "durationCalculationMethod": "roleplay.duration (capped at 10 min if > 30 min), fallback to timestamp diff, default 10 sec"
+  },
+  "companies": [
+    {
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "totalUsers": 26,
+      "activeUsers": 26,
+      "totalSessions": 397,
+      "totalTimeMinutes": 2700.41,
+      "avgSessionsPerUser": 15.27,
+      "avgTimePerUserMinutes": 103.86,
+      "avgLoginDaysPerUser": 2.15,
+      "topUsers": [
+        {
+          "userId": "68db5b8668ab4031e2b429ed",
+          "userName": "Jia Xin",
+          "email": "fak.jiaxin@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 23,
+          "loginDays": 3,
+          "totalTimeMinutes": 349.55,
+          "avgSessionDurationMinutes": 15.2,
+          "firstLogin": "2025-09-30T09:36:34.432Z",
+          "lastLogin": "2025-10-05T16:06:09.164Z",
+          "sessions": [
+            {
+              "sessionId": "68dbf7a75332d70e4dc35853",
+              "startedAt": "2025-09-30T15:30:47.992Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dbf8985332d70e4dc358e3",
+              "startedAt": "2025-09-30T15:34:48.548Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dbf9e25332d70e4dc35b13",
+              "startedAt": "2025-09-30T15:40:18.304Z",
+              "endedAt": "2025-09-30T15:58:26.755Z",
+              "durationMinutes": 17.78,
+              "roleplayDuration": 1067,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dbff6f5332d70e4dc36355",
+              "startedAt": "2025-09-30T16:03:59.493Z",
+              "endedAt": "2025-09-30T16:30:29.494Z",
+              "durationMinutes": 26.37,
+              "roleplayDuration": 1582.45,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc06b45332d70e4dc36d0f",
+              "startedAt": "2025-09-30T16:35:00.463Z",
+              "endedAt": "2025-09-30T16:50:58.008Z",
+              "durationMinutes": 15.78,
+              "roleplayDuration": 946.701,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc0b925332d70e4dc374bf",
+              "startedAt": "2025-09-30T16:55:46.296Z",
+              "endedAt": "2025-09-30T17:10:09.045Z",
+              "durationMinutes": 14.3,
+              "roleplayDuration": 857.742,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc104d97e9d0ee572527d6",
+              "startedAt": "2025-09-30T17:15:57.653Z",
+              "endedAt": "2025-09-30T17:46:46.268Z",
+              "durationMinutes": 16.33,
+              "roleplayDuration": 980.001,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc18802cb3011ee7234a72",
+              "startedAt": "2025-09-30T17:50:56.286Z",
+              "endedAt": "2025-09-30T18:11:46.921Z",
+              "durationMinutes": 20.66,
+              "roleplayDuration": 1239.602,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc1e322cb3011ee7235046",
+              "startedAt": "2025-09-30T18:15:14.790Z",
+              "endedAt": "2025-09-30T18:35:55.195Z",
+              "durationMinutes": 20.59,
+              "roleplayDuration": 1235.287,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc244d2cb3011ee72355f8",
+              "startedAt": "2025-09-30T18:41:17.274Z",
+              "endedAt": "2025-09-30T19:05:05.815Z",
+              "durationMinutes": 23.73,
+              "roleplayDuration": 1424.036,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc2cbd2cb3011ee7235e56",
+              "startedAt": "2025-09-30T19:17:17.659Z",
+              "endedAt": "2025-09-30T19:36:33.166Z",
+              "durationMinutes": 19.15,
+              "roleplayDuration": 1149.269,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc343d2cb3011ee723635c",
+              "startedAt": "2025-09-30T19:49:17.597Z",
+              "endedAt": "2025-09-30T20:10:10.046Z",
+              "durationMinutes": 20.74,
+              "roleplayDuration": 1244.398,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc96932cb3011ee7238f0b",
+              "startedAt": "2025-10-01T02:48:51.384Z",
+              "endedAt": "2025-10-01T03:05:50.450Z",
+              "durationMinutes": 16.82,
+              "roleplayDuration": 1009.477,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcaf622cb3011ee723c92a",
+              "startedAt": "2025-10-01T04:34:42.123Z",
+              "endedAt": "2025-10-01T04:54:12.886Z",
+              "durationMinutes": 19.39,
+              "roleplayDuration": 1163.531,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcc3382cb3011ee72400ae",
+              "startedAt": "2025-10-01T05:59:20.696Z",
+              "endedAt": "2025-10-01T06:05:20.136Z",
+              "durationMinutes": 5.63,
+              "roleplayDuration": 337.776,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcca052cb3011ee724191b",
+              "startedAt": "2025-10-01T06:28:21.822Z",
+              "endedAt": "2025-10-01T06:59:59.838Z",
+              "durationMinutes": 11.89,
+              "roleplayDuration": 713.384,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcd1bf2cb3011ee7242b86",
+              "startedAt": "2025-10-01T07:01:19.187Z",
+              "endedAt": "2025-10-01T07:17:23.640Z",
+              "durationMinutes": 15.84,
+              "roleplayDuration": 950.293,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e2942ac7e36ff7d09ca0aa",
+              "startedAt": "2025-10-05T15:52:10.606Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68e2946bc7e36ff7d09ca0c0",
+              "startedAt": "2025-10-05T15:53:15.139Z",
+              "endedAt": "2025-10-05T16:04:27.613Z",
+              "durationMinutes": 11.09,
+              "roleplayDuration": 665.478,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e29771c7e36ff7d09ca46f",
+              "startedAt": "2025-10-05T16:06:09.164Z",
+              "endedAt": "2025-10-05T16:20:54.057Z",
+              "durationMinutes": 14.67,
+              "roleplayDuration": 880.074,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68db5be868ab4031e2b42b24",
+          "userName": "Ng Chui Yeng",
+          "email": "ng.chuiyeng@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 42,
+          "loginDays": 4,
+          "totalTimeMinutes": 324.79,
+          "avgSessionDurationMinutes": 7.73,
+          "firstLogin": "2025-09-30T06:50:35.554Z",
+          "lastLogin": "2025-10-04T11:57:44.348Z",
+          "sessions": [
+            {
+              "sessionId": "68dd21ac2cb3011ee7246aee",
+              "startedAt": "2025-10-01T12:42:20.912Z",
+              "endedAt": "2025-10-01T12:55:04.401Z",
+              "durationMinutes": 12.64,
+              "roleplayDuration": 758.136,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd251f2cb3011ee7246f19",
+              "startedAt": "2025-10-01T12:57:03.177Z",
+              "endedAt": "2025-10-01T12:57:18.051Z",
+              "durationMinutes": 0.19,
+              "roleplayDuration": 11.212,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd25332cb3011ee7246f47",
+              "startedAt": "2025-10-01T12:57:23.825Z",
+              "endedAt": "2025-10-01T13:08:14.945Z",
+              "durationMinutes": 10.79,
+              "roleplayDuration": 647.528,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd28392cb3011ee7247413",
+              "startedAt": "2025-10-01T13:10:17.158Z",
+              "endedAt": "2025-10-01T13:25:36.416Z",
+              "durationMinutes": 15.24,
+              "roleplayDuration": 914.319,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dde5e9a0b313e3c8ecb84f",
+              "startedAt": "2025-10-02T02:39:37.397Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dde5eaa0b313e3c8ecb852",
+              "startedAt": "2025-10-02T02:39:38.596Z",
+              "endedAt": "2025-10-02T03:05:54.435Z",
+              "durationMinutes": 26.15,
+              "roleplayDuration": 1568.871,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de106fa0b313e3c8ecd6c0",
+              "startedAt": "2025-10-02T05:41:03.022Z",
+              "endedAt": "2025-10-02T06:03:37.322Z",
+              "durationMinutes": 22.44,
+              "roleplayDuration": 1346.377,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de42adc379db3e9ea30d20",
+              "startedAt": "2025-10-02T09:15:25.936Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68de42b5c379db3e9ea30d28",
+              "startedAt": "2025-10-02T09:15:33.255Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68e0f582c7e36ff7d09c842c",
+              "startedAt": "2025-10-04T10:22:58.818Z",
+              "endedAt": "2025-10-04T10:49:02.370Z",
+              "durationMinutes": 25.95,
+              "roleplayDuration": 1556.884,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e0fbafc7e36ff7d09c8933",
+              "startedAt": "2025-10-04T10:49:19.327Z",
+              "endedAt": "2025-10-04T10:57:05.748Z",
+              "durationMinutes": 7.71,
+              "roleplayDuration": 462.445,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e0fda3c7e36ff7d09c8bed",
+              "startedAt": "2025-10-04T10:57:39.286Z",
+              "endedAt": "2025-10-04T11:09:35.698Z",
+              "durationMinutes": 11.87,
+              "roleplayDuration": 712.439,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e10081c7e36ff7d09c8dd8",
+              "startedAt": "2025-10-04T11:09:53.364Z",
+              "endedAt": "2025-10-04T11:26:21.185Z",
+              "durationMinutes": 16.4,
+              "roleplayDuration": 983.825,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e1046fc7e36ff7d09c9163",
+              "startedAt": "2025-10-04T11:26:39.728Z",
+              "endedAt": "2025-10-04T11:35:44.489Z",
+              "durationMinutes": 9.01,
+              "roleplayDuration": 540.578,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e106bec7e36ff7d09c93ef",
+              "startedAt": "2025-10-04T11:36:30.166Z",
+              "endedAt": "2025-10-04T11:45:52.340Z",
+              "durationMinutes": 9.3,
+              "roleplayDuration": 558.155,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e108fdc7e36ff7d09c9625",
+              "startedAt": "2025-10-04T11:46:05.966Z",
+              "endedAt": "2025-10-04T11:51:35.214Z",
+              "durationMinutes": 5.42,
+              "roleplayDuration": 324.996,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e10a51c7e36ff7d09c97a1",
+              "startedAt": "2025-10-04T11:51:45.527Z",
+              "endedAt": "2025-10-04T11:56:02.340Z",
+              "durationMinutes": 4.21,
+              "roleplayDuration": 252.487,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e10b5cc7e36ff7d09c98e4",
+              "startedAt": "2025-10-04T11:56:12.322Z",
+              "endedAt": "2025-10-04T11:57:03.077Z",
+              "durationMinutes": 0.78,
+              "roleplayDuration": 46.667,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e10bb7c7e36ff7d09c9988",
+              "startedAt": "2025-10-04T11:57:43.711Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68e10bb8c7e36ff7d09c998b",
+              "startedAt": "2025-10-04T11:57:44.348Z",
+              "endedAt": "2025-10-04T12:07:40.384Z",
+              "durationMinutes": 9.84,
+              "roleplayDuration": 590.233,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68db5b9168ab4031e2b42a17",
+          "userName": "Mingyue",
+          "email": "ouyang.mingyue@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 32,
+          "loginDays": 3,
+          "totalTimeMinutes": 227.13,
+          "avgSessionDurationMinutes": 7.1,
+          "firstLogin": "2025-09-30T07:10:04.285Z",
+          "lastLogin": "2025-10-03T06:51:15.175Z",
+          "sessions": [
+            {
+              "sessionId": "68dc8b0a2cb3011ee7236ffd",
+              "startedAt": "2025-10-01T01:59:38.799Z",
+              "endedAt": "2025-10-01T02:24:34.074Z",
+              "durationMinutes": 21.24,
+              "roleplayDuration": 1274.528,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc8b492cb3011ee723707f",
+              "startedAt": "2025-10-01T02:00:41.680Z",
+              "endedAt": "2025-10-01T02:00:52.610Z",
+              "durationMinutes": 0.01,
+              "roleplayDuration": 0.78,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc91792cb3011ee7237b8f",
+              "startedAt": "2025-10-01T02:27:05.113Z",
+              "endedAt": "2025-10-01T02:43:46.509Z",
+              "durationMinutes": 16.63,
+              "roleplayDuration": 997.869,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc9b3c2cb3011ee7239f23",
+              "startedAt": "2025-10-01T03:08:44.425Z",
+              "endedAt": "2025-10-01T03:09:14.436Z",
+              "durationMinutes": 0.44,
+              "roleplayDuration": 26.329,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc9b602cb3011ee7239f8d",
+              "startedAt": "2025-10-01T03:09:20.291Z",
+              "endedAt": "2025-10-01T03:09:46.640Z",
+              "durationMinutes": 0.38,
+              "roleplayDuration": 22.902,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc9b8d2cb3011ee7239fe3",
+              "startedAt": "2025-10-01T03:10:05.347Z",
+              "endedAt": "2025-10-01T03:26:44.648Z",
+              "durationMinutes": 16.56,
+              "roleplayDuration": 993.778,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dca0232cb3011ee723b76b",
+              "startedAt": "2025-10-01T03:29:39.853Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcc0ee2cb3011ee723f87f",
+              "startedAt": "2025-10-01T05:49:34.942Z",
+              "endedAt": "2025-10-01T05:58:33.923Z",
+              "durationMinutes": 7.13,
+              "roleplayDuration": 427.721,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcc3fd2cb3011ee724039d",
+              "startedAt": "2025-10-01T06:02:37.011Z",
+              "endedAt": "2025-10-01T06:29:12.923Z",
+              "durationMinutes": 26.52,
+              "roleplayDuration": 1591.399,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dccbbe2cb3011ee7241d1d",
+              "startedAt": "2025-10-01T06:35:42.148Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcd2062cb3011ee7242c05",
+              "startedAt": "2025-10-01T07:02:30.827Z",
+              "endedAt": "2025-10-01T07:03:11.926Z",
+              "durationMinutes": 0.55,
+              "roleplayDuration": 32.881,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcd2342cb3011ee7242c3a",
+              "startedAt": "2025-10-01T07:03:16.158Z",
+              "endedAt": "2025-10-01T07:19:41.271Z",
+              "durationMinutes": 16.36,
+              "roleplayDuration": 981.353,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcd66b2cb3011ee72437fc",
+              "startedAt": "2025-10-01T07:21:15.981Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcd8512cb3011ee7243aec",
+              "startedAt": "2025-10-01T07:29:21.642Z",
+              "endedAt": "2025-10-01T07:43:14.680Z",
+              "durationMinutes": 12.34,
+              "roleplayDuration": 740.551,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcddb62cb3011ee724484d",
+              "startedAt": "2025-10-01T07:52:22.272Z",
+              "endedAt": "2025-10-01T08:11:37.973Z",
+              "durationMinutes": 19.07,
+              "roleplayDuration": 1144.311,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df5ebec7e36ff7d09c134b",
+              "startedAt": "2025-10-03T05:27:26.467Z",
+              "endedAt": "2025-10-03T05:35:50.039Z",
+              "durationMinutes": 8.13,
+              "roleplayDuration": 487.72,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df60d1c7e36ff7d09c1470",
+              "startedAt": "2025-10-03T05:36:17.167Z",
+              "endedAt": "2025-10-03T05:51:15.379Z",
+              "durationMinutes": 14.88,
+              "roleplayDuration": 892.949,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df6493c7e36ff7d09c1760",
+              "startedAt": "2025-10-03T05:52:19.733Z",
+              "endedAt": "2025-10-03T06:04:06.703Z",
+              "durationMinutes": 11.7,
+              "roleplayDuration": 702.154,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df6e52c7e36ff7d09c770f",
+              "startedAt": "2025-10-03T06:33:54.027Z",
+              "endedAt": "2025-10-03T06:46:32.534Z",
+              "durationMinutes": 12.19,
+              "roleplayDuration": 731.169,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df7263c7e36ff7d09c7fc6",
+              "startedAt": "2025-10-03T06:51:15.175Z",
+              "endedAt": "2025-10-03T07:01:28.145Z",
+              "durationMinutes": 10.12,
+              "roleplayDuration": 607.001,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68db5ba268ab4031e2b42a7b",
+          "userName": "Wilson",
+          "email": "wilson.tn1@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 22,
+          "loginDays": 3,
+          "totalTimeMinutes": 216.29,
+          "avgSessionDurationMinutes": 9.83,
+          "firstLogin": "2025-10-01T02:17:48.158Z",
+          "lastLogin": "2025-10-05T10:26:26.734Z",
+          "sessions": [
+            {
+              "sessionId": "68dc98c82cb3011ee7239576",
+              "startedAt": "2025-10-01T02:58:16.507Z",
+              "endedAt": "2025-10-01T03:21:07.694Z",
+              "durationMinutes": 22.61,
+              "roleplayDuration": 1356.392,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc9e7e2cb3011ee723ada6",
+              "startedAt": "2025-10-01T03:22:38.324Z",
+              "endedAt": "2025-10-01T03:27:36.716Z",
+              "durationMinutes": 2.49,
+              "roleplayDuration": 149.481,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc9fb72cb3011ee723b549",
+              "startedAt": "2025-10-01T03:27:51.505Z",
+              "endedAt": "2025-10-01T03:31:45.933Z",
+              "durationMinutes": 3.83,
+              "roleplayDuration": 229.55,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcafb82cb3011ee723c9b4",
+              "startedAt": "2025-10-01T04:36:08.311Z",
+              "endedAt": "2025-10-01T04:52:48.296Z",
+              "durationMinutes": 16.55,
+              "roleplayDuration": 992.92,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcb4df2cb3011ee723d2a6",
+              "startedAt": "2025-10-01T04:58:07.110Z",
+              "endedAt": "2025-10-01T05:13:31.095Z",
+              "durationMinutes": 15.28,
+              "roleplayDuration": 916.691,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbd002cb3011ee723ec85",
+              "startedAt": "2025-10-01T05:32:48.416Z",
+              "endedAt": "2025-10-01T05:49:33.706Z",
+              "durationMinutes": 16.54,
+              "roleplayDuration": 992.541,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcc1422cb3011ee723fa0a",
+              "startedAt": "2025-10-01T05:50:58.266Z",
+              "endedAt": "2025-10-01T06:10:23.924Z",
+              "durationMinutes": 19.35,
+              "roleplayDuration": 1160.73,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dddb09a0b313e3c8ecb23a",
+              "startedAt": "2025-10-02T01:53:13.363Z",
+              "endedAt": "2025-10-02T02:04:59.653Z",
+              "durationMinutes": 11.42,
+              "roleplayDuration": 685.212,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dde5b2a0b313e3c8ecb815",
+              "startedAt": "2025-10-02T02:38:42.255Z",
+              "endedAt": "2025-10-02T02:44:04.374Z",
+              "durationMinutes": 5.23,
+              "roleplayDuration": 313.904,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dde790a0b313e3c8ecbe4f",
+              "startedAt": "2025-10-02T02:46:40.822Z",
+              "endedAt": "2025-10-02T02:53:50.226Z",
+              "durationMinutes": 7.07,
+              "roleplayDuration": 423.933,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de1351a0b313e3c8ecd900",
+              "startedAt": "2025-10-02T05:53:21.665Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68de13a7a0b313e3c8ecd954",
+              "startedAt": "2025-10-02T05:54:47.803Z",
+              "endedAt": "2025-10-02T05:56:16.497Z",
+              "durationMinutes": 1.38,
+              "roleplayDuration": 83.01,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de1424a0b313e3c8ecdb0f",
+              "startedAt": "2025-10-02T05:56:52.273Z",
+              "endedAt": "2025-10-02T05:57:36.747Z",
+              "durationMinutes": 0.44,
+              "roleplayDuration": 26.42,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de15d8a0b313e3c8ecdf88",
+              "startedAt": "2025-10-02T06:04:08.814Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68de15d9a0b313e3c8ecdf8b",
+              "startedAt": "2025-10-02T06:04:09.699Z",
+              "endedAt": "2025-10-02T06:04:47.437Z",
+              "durationMinutes": 0.34,
+              "roleplayDuration": 20.485,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de1606a0b313e3c8ece033",
+              "startedAt": "2025-10-02T06:04:54.021Z",
+              "endedAt": "2025-10-02T06:15:15.643Z",
+              "durationMinutes": 10.29,
+              "roleplayDuration": 617.695,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de1e09a0b313e3c8ecf0c2",
+              "startedAt": "2025-10-02T06:39:05.250Z",
+              "endedAt": "2025-10-02T06:51:46.968Z",
+              "durationMinutes": 12.59,
+              "roleplayDuration": 755.531,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de21b3a0b313e3c8ecf383",
+              "startedAt": "2025-10-02T06:54:43.434Z",
+              "endedAt": "2025-10-02T07:06:14.398Z",
+              "durationMinutes": 11.41,
+              "roleplayDuration": 684.446,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de24f9a0b313e3c8ecfb35",
+              "startedAt": "2025-10-02T07:08:41.162Z",
+              "endedAt": "2025-10-02T07:18:34.602Z",
+              "durationMinutes": 9.69,
+              "roleplayDuration": 581.144,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e247d2c7e36ff7d09c9c8d",
+              "startedAt": "2025-10-05T10:26:26.734Z",
+              "endedAt": "2025-10-05T10:42:36.410Z",
+              "durationMinutes": 16.03,
+              "roleplayDuration": 961.905,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68db5b7e68ab4031e2b429d7",
+          "userName": "Chit Hong ",
+          "email": "foo.chithong@uobgroup.com.sg",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 27,
+          "loginDays": 3,
+          "totalTimeMinutes": 190.4,
+          "avgSessionDurationMinutes": 7.05,
+          "firstLogin": "2025-09-30T06:22:27.630Z",
+          "lastLogin": "2025-10-02T03:06:45.485Z",
+          "sessions": [
+            {
+              "sessionId": "68db947468ab4031e2b4b23b",
+              "startedAt": "2025-09-30T08:27:32.495Z",
+              "endedAt": "2025-09-30T08:42:12.787Z",
+              "durationMinutes": 14.43,
+              "roleplayDuration": 865.66,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc8ef62cb3011ee7237544",
+              "startedAt": "2025-10-01T02:16:22.086Z",
+              "endedAt": "2025-10-01T02:31:46.258Z",
+              "durationMinutes": 15.12,
+              "roleplayDuration": 907.215,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc9bfd2cb3011ee723a19e",
+              "startedAt": "2025-10-01T03:11:57.097Z",
+              "endedAt": "2025-10-01T03:13:19.866Z",
+              "durationMinutes": 1.26,
+              "roleplayDuration": 75.804,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbe802cb3011ee723ef02",
+              "startedAt": "2025-10-01T05:39:12.671Z",
+              "endedAt": "2025-10-01T05:39:43.335Z",
+              "durationMinutes": 0.42,
+              "roleplayDuration": 25.468,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbea82cb3011ee723ef84",
+              "startedAt": "2025-10-01T05:39:52.809Z",
+              "endedAt": "2025-10-01T05:40:16.606Z",
+              "durationMinutes": 0.35,
+              "roleplayDuration": 20.717,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbefb2cb3011ee723f05a",
+              "startedAt": "2025-10-01T05:41:15.198Z",
+              "endedAt": "2025-10-01T06:05:13.986Z",
+              "durationMinutes": 23.91,
+              "roleplayDuration": 1434.617,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcca9f2cb3011ee7241bfb",
+              "startedAt": "2025-10-01T06:30:55.459Z",
+              "endedAt": "2025-10-01T06:40:32.065Z",
+              "durationMinutes": 9.51,
+              "roleplayDuration": 570.451,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dccd1a2cb3011ee7241f9b",
+              "startedAt": "2025-10-01T06:41:30.923Z",
+              "endedAt": "2025-10-01T06:41:40.935Z",
+              "durationMinutes": 0.09,
+              "roleplayDuration": 5.444,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dccd2e2cb3011ee7241ffa",
+              "startedAt": "2025-10-01T06:41:50.792Z",
+              "endedAt": "2025-10-01T06:44:49.142Z",
+              "durationMinutes": 2.85,
+              "roleplayDuration": 171.167,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dccdec2cb3011ee7242343",
+              "startedAt": "2025-10-01T06:45:00.101Z",
+              "endedAt": "2025-10-01T07:04:30.513Z",
+              "durationMinutes": 19.38,
+              "roleplayDuration": 1162.754,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcea0a2cb3011ee724526a",
+              "startedAt": "2025-10-01T08:44:58.385Z",
+              "endedAt": "2025-10-01T08:45:23.460Z",
+              "durationMinutes": 0.31,
+              "roleplayDuration": 18.39,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcea292cb3011ee72452a0",
+              "startedAt": "2025-10-01T08:45:29.423Z",
+              "endedAt": "2025-10-01T08:57:38.899Z",
+              "durationMinutes": 12.1,
+              "roleplayDuration": 726.025,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd0a502cb3011ee7245efa",
+              "startedAt": "2025-10-01T11:02:40.141Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dd0a502cb3011ee7245efd",
+              "startedAt": "2025-10-01T11:02:40.715Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dd0a522cb3011ee7245f00",
+              "startedAt": "2025-10-01T11:02:42.293Z",
+              "endedAt": "2025-10-01T11:14:00.902Z",
+              "durationMinutes": 11.22,
+              "roleplayDuration": 673.016,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd11852cb3011ee7246295",
+              "startedAt": "2025-10-01T11:33:25.681Z",
+              "endedAt": "2025-10-01T11:43:49.654Z",
+              "durationMinutes": 10.31,
+              "roleplayDuration": 618.373,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd14a22cb3011ee72464ee",
+              "startedAt": "2025-10-01T11:46:42.462Z",
+              "endedAt": "2025-10-01T12:04:37.407Z",
+              "durationMinutes": 17.86,
+              "roleplayDuration": 1071.58,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd40c92cb3011ee7248012",
+              "startedAt": "2025-10-01T14:55:05.966Z",
+              "endedAt": "2025-10-01T15:06:40.744Z",
+              "durationMinutes": 11.47,
+              "roleplayDuration": 687.967,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ddebd5a0b313e3c8ecc61e",
+              "startedAt": "2025-10-02T03:04:53.990Z",
+              "endedAt": "2025-10-02T03:05:28.642Z",
+              "durationMinutes": 0.49,
+              "roleplayDuration": 29.217,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ddec45a0b313e3c8ecc96c",
+              "startedAt": "2025-10-02T03:06:45.485Z",
+              "endedAt": "2025-10-02T03:16:58.228Z",
+              "durationMinutes": 10.13,
+              "roleplayDuration": 608.016,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68db5b9568ab4031e2b42a2d",
+          "userName": "Tammy ",
+          "email": "tammy.chan@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 27,
+          "loginDays": 4,
+          "totalTimeMinutes": 187.94,
+          "avgSessionDurationMinutes": 6.96,
+          "firstLogin": "2025-09-30T06:35:21.248Z",
+          "lastLogin": "2025-10-06T08:19:03.399Z",
+          "sessions": [
+            {
+              "sessionId": "68db8c0e68ab4031e2b4834c",
+              "startedAt": "2025-09-30T07:51:42.539Z",
+              "endedAt": "2025-09-30T08:17:49.089Z",
+              "durationMinutes": 26.02,
+              "roleplayDuration": 1561.287,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db939268ab4031e2b4ac96",
+              "startedAt": "2025-09-30T08:23:46.612Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db93b268ab4031e2b4adf4",
+              "startedAt": "2025-09-30T08:24:18.577Z",
+              "endedAt": "2025-09-30T08:24:40.146Z",
+              "durationMinutes": 0.14,
+              "roleplayDuration": 8.452,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db93d168ab4031e2b4af08",
+              "startedAt": "2025-09-30T08:24:49.469Z",
+              "endedAt": "2025-09-30T08:25:02.416Z",
+              "durationMinutes": 0.16,
+              "roleplayDuration": 9.397,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db93e568ab4031e2b4af93",
+              "startedAt": "2025-09-30T08:25:09.028Z",
+              "endedAt": "2025-09-30T08:43:10.323Z",
+              "durationMinutes": 17.95,
+              "roleplayDuration": 1077.098,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db9c665332d70e4dc311da",
+              "startedAt": "2025-09-30T09:01:26.080Z",
+              "endedAt": "2025-09-30T09:16:43.069Z",
+              "durationMinutes": 15.06,
+              "roleplayDuration": 903.3,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcd3a02cb3011ee724304d",
+              "startedAt": "2025-10-01T07:09:20.054Z",
+              "endedAt": "2025-10-01T07:10:19.877Z",
+              "durationMinutes": 0.41,
+              "roleplayDuration": 24.66,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcd53c2cb3011ee72432fb",
+              "startedAt": "2025-10-01T07:16:12.784Z",
+              "endedAt": "2025-10-01T07:19:45.688Z",
+              "durationMinutes": 3.42,
+              "roleplayDuration": 205.162,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcd6762cb3011ee7243820",
+              "startedAt": "2025-10-01T07:21:26.385Z",
+              "endedAt": "2025-10-01T07:43:24.609Z",
+              "durationMinutes": 21.85,
+              "roleplayDuration": 1310.781,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dde4a1a0b313e3c8ecb72b",
+              "startedAt": "2025-10-02T02:34:09.471Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dde4a1a0b313e3c8ecb72e",
+              "startedAt": "2025-10-02T02:34:09.935Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dde4a3a0b313e3c8ecb731",
+              "startedAt": "2025-10-02T02:34:11.122Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dde4afa0b313e3c8ecb753",
+              "startedAt": "2025-10-02T02:34:23.482Z",
+              "endedAt": "2025-10-02T02:44:45.903Z",
+              "durationMinutes": 10.28,
+              "roleplayDuration": 616.833,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dde790a0b313e3c8ecbe42",
+              "startedAt": "2025-10-02T02:46:40.555Z",
+              "endedAt": "2025-10-02T02:54:23.293Z",
+              "durationMinutes": 7.63,
+              "roleplayDuration": 458.083,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ddec18a0b313e3c8ecc836",
+              "startedAt": "2025-10-02T03:06:00.631Z",
+              "endedAt": "2025-10-02T03:12:19.862Z",
+              "durationMinutes": 6.21,
+              "roleplayDuration": 372.778,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de1445a0b313e3c8ecdb81",
+              "startedAt": "2025-10-02T05:57:25.811Z",
+              "endedAt": "2025-10-02T06:08:16.512Z",
+              "durationMinutes": 10.7,
+              "roleplayDuration": 641.829,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de171da0b313e3c8ece348",
+              "startedAt": "2025-10-02T06:09:33.459Z",
+              "endedAt": "2025-10-02T06:20:19.355Z",
+              "durationMinutes": 10.7,
+              "roleplayDuration": 641.711,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e32cccc7e36ff7d09ca998",
+              "startedAt": "2025-10-06T02:43:24.487Z",
+              "endedAt": "2025-10-06T02:44:05.469Z",
+              "durationMinutes": 0.58,
+              "roleplayDuration": 34.865,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e362c0c7e36ff7d09cae2d",
+              "startedAt": "2025-10-06T06:33:36.962Z",
+              "endedAt": "2025-10-06T06:46:11.860Z",
+              "durationMinutes": 12.48,
+              "roleplayDuration": 748.949,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e37b77c7e36ff7d09d5e7f",
+              "startedAt": "2025-10-06T08:19:03.399Z",
+              "endedAt": "2025-10-06T08:32:07.515Z",
+              "durationMinutes": 12.99,
+              "roleplayDuration": 779.689,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68db5b6b68ab4031e2b429b6",
+          "userName": "Khai Wen",
+          "email": "yong.khaiwen@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 25,
+          "loginDays": 3,
+          "totalTimeMinutes": 150.91,
+          "avgSessionDurationMinutes": 6.04,
+          "firstLogin": "2025-09-30T06:22:30.252Z",
+          "lastLogin": "2025-10-02T14:14:04.764Z",
+          "sessions": [
+            {
+              "sessionId": "68db8c4068ab4031e2b4856b",
+              "startedAt": "2025-09-30T07:52:32.450Z",
+              "endedAt": "2025-09-30T07:52:52.635Z",
+              "durationMinutes": 0.15,
+              "roleplayDuration": 9.237,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db8c6068ab4031e2b4866b",
+              "startedAt": "2025-09-30T07:53:04.812Z",
+              "endedAt": "2025-09-30T08:05:54.517Z",
+              "durationMinutes": 12.72,
+              "roleplayDuration": 763.006,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc9d782cb3011ee723a738",
+              "startedAt": "2025-10-01T03:18:16.282Z",
+              "endedAt": "2025-10-01T03:33:16.762Z",
+              "durationMinutes": 14.88,
+              "roleplayDuration": 892.883,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcb8482cb3011ee723dd21",
+              "startedAt": "2025-10-01T05:12:40.917Z",
+              "endedAt": "2025-10-01T05:12:59.652Z",
+              "durationMinutes": 0.18,
+              "roleplayDuration": 10.531,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcb8482cb3011ee723dd26",
+              "startedAt": "2025-10-01T05:12:40.928Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcb86e2cb3011ee723dda3",
+              "startedAt": "2025-10-01T05:13:18.615Z",
+              "endedAt": "2025-10-01T05:13:33.633Z",
+              "durationMinutes": 0.19,
+              "roleplayDuration": 11.667,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcb8902cb3011ee723dee3",
+              "startedAt": "2025-10-01T05:13:52.148Z",
+              "endedAt": "2025-10-01T05:14:09.314Z",
+              "durationMinutes": 0.19,
+              "roleplayDuration": 11.445,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcb8ab2cb3011ee723df88",
+              "startedAt": "2025-10-01T05:14:19.286Z",
+              "endedAt": "2025-10-01T05:25:09.249Z",
+              "durationMinutes": 10.65,
+              "roleplayDuration": 638.76,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcc99a2cb3011ee7241841",
+              "startedAt": "2025-10-01T06:26:34.596Z",
+              "endedAt": "2025-10-01T06:28:45.764Z",
+              "durationMinutes": 2.11,
+              "roleplayDuration": 126.608,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dccd342cb3011ee7242007",
+              "startedAt": "2025-10-01T06:41:56.634Z",
+              "endedAt": "2025-10-01T07:20:38.507Z",
+              "durationMinutes": 0.2,
+              "roleplayDuration": 12.263,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcd64d2cb3011ee72437b7",
+              "startedAt": "2025-10-01T07:20:45.419Z",
+              "endedAt": "2025-10-01T07:21:08.992Z",
+              "durationMinutes": 0.22,
+              "roleplayDuration": 13.276,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcd66d2cb3011ee7243809",
+              "startedAt": "2025-10-01T07:21:17.329Z",
+              "endedAt": "2025-10-01T07:33:30.909Z",
+              "durationMinutes": 12.05,
+              "roleplayDuration": 723.067,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dce8ef2cb3011ee72450d7",
+              "startedAt": "2025-10-01T08:40:15.481Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dce8f02cb3011ee72450da",
+              "startedAt": "2025-10-01T08:40:16.040Z",
+              "endedAt": "2025-10-01T08:40:45.673Z",
+              "durationMinutes": 0.29,
+              "roleplayDuration": 17.332,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dce91b2cb3011ee7245167",
+              "startedAt": "2025-10-01T08:40:59.868Z",
+              "endedAt": "2025-10-01T08:52:27.714Z",
+              "durationMinutes": 11.35,
+              "roleplayDuration": 680.984,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcec382cb3011ee72455b3",
+              "startedAt": "2025-10-01T08:54:16.660Z",
+              "endedAt": "2025-10-01T09:08:34.850Z",
+              "durationMinutes": 13.97,
+              "roleplayDuration": 838.489,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd22cd2cb3011ee7246b78",
+              "startedAt": "2025-10-01T12:47:09.506Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dd22ce2cb3011ee7246b7b",
+              "startedAt": "2025-10-01T12:47:10.879Z",
+              "endedAt": "2025-10-01T13:11:43.558Z",
+              "durationMinutes": 24.29,
+              "roleplayDuration": 1457.295,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dd2a0c2cb3011ee72476b5",
+              "startedAt": "2025-10-01T13:18:04.470Z",
+              "endedAt": "2025-10-01T13:37:35.581Z",
+              "durationMinutes": 16.14,
+              "roleplayDuration": 968.638,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de88acc379db3e9ea31478",
+              "startedAt": "2025-10-02T14:14:04.764Z",
+              "endedAt": "2025-10-02T14:27:36.215Z",
+              "durationMinutes": 12.56,
+              "roleplayDuration": 753.48,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "6893021dc05214d39bd8227d",
+          "userName": "Jaelyn",
+          "email": "jaelyn.goh@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 13,
+          "loginDays": 2,
+          "totalTimeMinutes": 119.86,
+          "avgSessionDurationMinutes": 9.22,
+          "firstLogin": "2025-09-30T06:26:35.468Z",
+          "lastLogin": "2025-10-01T03:12:51.277Z",
+          "sessions": [
+            {
+              "sessionId": "68db781b68ab4031e2b432d0",
+              "startedAt": "2025-09-30T06:26:35.468Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db7c8768ab4031e2b43e4c",
+              "startedAt": "2025-09-30T06:45:27.627Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db80f468ab4031e2b44cd9",
+              "startedAt": "2025-09-30T07:04:20.501Z",
+              "endedAt": "2025-09-30T07:07:41.815Z",
+              "durationMinutes": 3.2,
+              "roleplayDuration": 191.835,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db82f968ab4031e2b45479",
+              "startedAt": "2025-09-30T07:12:57.170Z",
+              "endedAt": "2025-09-30T07:25:37.927Z",
+              "durationMinutes": 12.52,
+              "roleplayDuration": 751.41,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db864268ab4031e2b463ca",
+              "startedAt": "2025-09-30T07:26:58.332Z",
+              "endedAt": "2025-09-30T07:45:40.272Z",
+              "durationMinutes": 18.59,
+              "roleplayDuration": 1115.369,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db8ea868ab4031e2b490bc",
+              "startedAt": "2025-09-30T08:02:48.736Z",
+              "endedAt": "2025-09-30T08:22:36.075Z",
+              "durationMinutes": 19.61,
+              "roleplayDuration": 1176.8,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db93e668ab4031e2b4afa0",
+              "startedAt": "2025-09-30T08:25:10.527Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db93fa68ab4031e2b4afec",
+              "startedAt": "2025-09-30T08:25:30.569Z",
+              "endedAt": "2025-09-30T08:40:22.101Z",
+              "durationMinutes": 14.44,
+              "roleplayDuration": 866.61,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc90422cb3011ee72377e1",
+              "startedAt": "2025-10-01T02:21:54.526Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dc90432cb3011ee72377e4",
+              "startedAt": "2025-10-01T02:21:55.448Z",
+              "endedAt": "2025-10-01T02:37:39.675Z",
+              "durationMinutes": 15.55,
+              "roleplayDuration": 933.284,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc94a52cb3011ee7238954",
+              "startedAt": "2025-10-01T02:40:37.493Z",
+              "endedAt": "2025-10-01T02:52:26.601Z",
+              "durationMinutes": 11.71,
+              "roleplayDuration": 702.342,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc993d2cb3011ee7239727",
+              "startedAt": "2025-10-01T03:00:13.216Z",
+              "endedAt": "2025-10-01T03:11:27.447Z",
+              "durationMinutes": 11.12,
+              "roleplayDuration": 667.001,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc9c332cb3011ee723a2b8",
+              "startedAt": "2025-10-01T03:12:51.277Z",
+              "endedAt": "2025-10-01T03:25:24.192Z",
+              "durationMinutes": 12.44,
+              "roleplayDuration": 746.405,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68db5bf568ab4031e2b42b43",
+          "userName": "KC",
+          "email": "chia.kokchean@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 20,
+          "loginDays": 3,
+          "totalTimeMinutes": 119.12,
+          "avgSessionDurationMinutes": 5.96,
+          "firstLogin": "2025-09-30T06:18:30.982Z",
+          "lastLogin": "2025-10-02T10:50:56.729Z",
+          "sessions": [
+            {
+              "sessionId": "68db763668ab4031e2b43063",
+              "startedAt": "2025-09-30T06:18:30.982Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db763968ab4031e2b43066",
+              "startedAt": "2025-09-30T06:18:33.151Z",
+              "endedAt": "2025-09-30T06:19:13.645Z",
+              "durationMinutes": 0.44,
+              "roleplayDuration": 26.367,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db76c468ab4031e2b430d0",
+              "startedAt": "2025-09-30T06:20:52.491Z",
+              "endedAt": "2025-09-30T06:21:12.075Z",
+              "durationMinutes": 0.28,
+              "roleplayDuration": 16.521,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db7f2068ab4031e2b4453b",
+              "startedAt": "2025-09-30T06:56:32.442Z",
+              "endedAt": "2025-09-30T07:00:11.891Z",
+              "durationMinutes": 3.6,
+              "roleplayDuration": 216.164,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db830368ab4031e2b4548e",
+              "startedAt": "2025-09-30T07:13:07.267Z",
+              "endedAt": "2025-09-30T07:13:24.085Z",
+              "durationMinutes": 0.22,
+              "roleplayDuration": 13.493,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db871568ab4031e2b4671c",
+              "startedAt": "2025-09-30T07:30:29.427Z",
+              "endedAt": "2025-09-30T07:46:21.778Z",
+              "durationMinutes": 15.81,
+              "roleplayDuration": 948.397,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db930968ab4031e2b4a8b8",
+              "startedAt": "2025-09-30T08:21:29.987Z",
+              "endedAt": "2025-09-30T08:21:55.283Z",
+              "durationMinutes": 0.33,
+              "roleplayDuration": 19.504,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db932a68ab4031e2b4a98a",
+              "startedAt": "2025-09-30T08:22:02.017Z",
+              "endedAt": "2025-09-30T08:22:25.522Z",
+              "durationMinutes": 0.29,
+              "roleplayDuration": 17.28,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db935c68ab4031e2b4ab72",
+              "startedAt": "2025-09-30T08:22:52.633Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db936568ab4031e2b4abd1",
+              "startedAt": "2025-09-30T08:23:01.039Z",
+              "endedAt": "2025-09-30T08:25:39.047Z",
+              "durationMinutes": 2.58,
+              "roleplayDuration": 155.054,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db96c568ab4031e2b4bf88",
+              "startedAt": "2025-09-30T08:37:25.106Z",
+              "endedAt": "2025-09-30T08:42:34.911Z",
+              "durationMinutes": 5.06,
+              "roleplayDuration": 303.306,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc87b92cb3011ee7236e4e",
+              "startedAt": "2025-10-01T01:45:29.345Z",
+              "endedAt": "2025-10-01T01:48:15.806Z",
+              "durationMinutes": 2.67,
+              "roleplayDuration": 160.45,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc8df32cb3011ee7237450",
+              "startedAt": "2025-10-01T02:12:03.079Z",
+              "endedAt": "2025-10-01T02:14:47.365Z",
+              "durationMinutes": 2.6,
+              "roleplayDuration": 156.179,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc8f922cb3011ee723764a",
+              "startedAt": "2025-10-01T02:18:58.318Z",
+              "endedAt": "2025-10-01T02:38:55.565Z",
+              "durationMinutes": 19.9,
+              "roleplayDuration": 1194.033,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dc95482cb3011ee7238b35",
+              "startedAt": "2025-10-01T02:43:20.487Z",
+              "endedAt": "2025-10-01T03:19:26.460Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 2162.881,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcb1fb2cb3011ee723cc38",
+              "startedAt": "2025-10-01T04:45:47.807Z",
+              "endedAt": "2025-10-01T05:20:07.264Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 2044.133,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbf5c2cb3011ee723f1c1",
+              "startedAt": "2025-10-01T05:42:52.010Z",
+              "endedAt": "2025-10-01T05:43:15.457Z",
+              "durationMinutes": 0.29,
+              "roleplayDuration": 17.104,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbfbe2cb3011ee723f2fc",
+              "startedAt": "2025-10-01T05:44:30.029Z",
+              "endedAt": "2025-10-01T05:44:56.488Z",
+              "durationMinutes": 0.39,
+              "roleplayDuration": 23.417,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbff92cb3011ee723f38f",
+              "startedAt": "2025-10-01T05:45:29.254Z",
+              "endedAt": "2025-10-01T06:03:46.121Z",
+              "durationMinutes": 18.19,
+              "roleplayDuration": 1091.277,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de5910c379db3e9ea31079",
+              "startedAt": "2025-10-02T10:50:56.729Z",
+              "endedAt": "2025-10-02T11:17:13.084Z",
+              "durationMinutes": 26.13,
+              "roleplayDuration": 1568.072,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68db5ddc68ab4031e2b42ce8",
+          "userName": "Zhou Zhou",
+          "email": "zhou.zhou@uobgroup.com",
+          "companyId": "683edc3ffc7dd8560e615750",
+          "companyName": "Prudential",
+          "totalSessions": 26,
+          "loginDays": 4,
+          "totalTimeMinutes": 108.14,
+          "avgSessionDurationMinutes": 4.16,
+          "firstLogin": "2025-09-30T06:46:05.318Z",
+          "lastLogin": "2025-10-03T06:49:00.922Z",
+          "sessions": [
+            {
+              "sessionId": "68db80af68ab4031e2b44bde",
+              "startedAt": "2025-09-30T07:03:11.222Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db80cd68ab4031e2b44c43",
+              "startedAt": "2025-09-30T07:03:41.458Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db80e068ab4031e2b44c70",
+              "startedAt": "2025-09-30T07:04:00.836Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db820768ab4031e2b45150",
+              "startedAt": "2025-09-30T07:08:55.274Z",
+              "endedAt": "2025-09-30T07:22:23.183Z",
+              "durationMinutes": 13.31,
+              "roleplayDuration": 798.899,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db86dc68ab4031e2b465fd",
+              "startedAt": "2025-09-30T07:29:32.442Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db86f968ab4031e2b466da",
+              "startedAt": "2025-09-30T07:30:01.012Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db872468ab4031e2b4675b",
+              "startedAt": "2025-09-30T07:30:44.431Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db88a668ab4031e2b46ccc",
+              "startedAt": "2025-09-30T07:37:10.860Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db8a0668ab4031e2b474bc",
+              "startedAt": "2025-09-30T07:43:02.692Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db8a5a68ab4031e2b476ce",
+              "startedAt": "2025-09-30T07:44:26.085Z",
+              "endedAt": "2025-09-30T08:04:35.846Z",
+              "durationMinutes": 20.08,
+              "roleplayDuration": 1204.583,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dbccf85332d70e4dc34dcd",
+              "startedAt": "2025-09-30T12:28:40.036Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcc2942cb3011ee723fcab",
+              "startedAt": "2025-10-01T05:56:36.867Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcc3342cb3011ee724009f",
+              "startedAt": "2025-10-01T05:59:16.065Z",
+              "endedAt": "2025-10-01T06:15:10.552Z",
+              "durationMinutes": 15.78,
+              "roleplayDuration": 947.033,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de313730f2eb6260fdb007",
+              "startedAt": "2025-10-02T08:00:55.637Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68de314b30f2eb6260fdb02b",
+              "startedAt": "2025-10-02T08:01:15.761Z",
+              "endedAt": "2025-10-02T08:11:00.791Z",
+              "durationMinutes": 9.64,
+              "roleplayDuration": 578.155,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df42a6c7e36ff7d09c0d30",
+              "startedAt": "2025-10-03T03:27:34.556Z",
+              "endedAt": "2025-10-03T03:46:56.432Z",
+              "durationMinutes": 19.23,
+              "roleplayDuration": 1153.593,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df6326c7e36ff7d09c1581",
+              "startedAt": "2025-10-03T05:46:14.437Z",
+              "endedAt": "2025-10-03T05:53:22.659Z",
+              "durationMinutes": 7.05,
+              "roleplayDuration": 423.001,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df6c8bc7e36ff7d09c7463",
+              "startedAt": "2025-10-03T06:26:19.564Z",
+              "endedAt": "2025-10-03T06:39:37.720Z",
+              "durationMinutes": 13.2,
+              "roleplayDuration": 791.742,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df7038c7e36ff7d09c7aa3",
+              "startedAt": "2025-10-03T06:42:00.922Z",
+              "endedAt": "2025-10-03T06:47:38.786Z",
+              "durationMinutes": 5.47,
+              "roleplayDuration": 327.907,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df71dcc7e36ff7d09c7f1b",
+              "startedAt": "2025-10-03T06:49:00.922Z",
+              "endedAt": "2025-10-03T06:50:24.511Z",
+              "durationMinutes": 1.28,
+              "roleplayDuration": 76.625,
+              "usedRoleplayDuration": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "totalUsers": 22,
+      "activeUsers": 22,
+      "totalSessions": 149,
+      "totalTimeMinutes": 452.41999999999996,
+      "avgSessionsPerUser": 6.77,
+      "avgTimePerUserMinutes": 20.56,
+      "avgLoginDaysPerUser": 2.05,
+      "topUsers": [
+        {
+          "userId": "68c3d8014b56577747da73a2",
+          "userName": "Jenell",
+          "email": "jenell_c_lagman@manulife.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 39,
+          "loginDays": 10,
+          "totalTimeMinutes": 130.24,
+          "avgSessionDurationMinutes": 3.34,
+          "firstLogin": "2025-09-12T08:39:18.512Z",
+          "lastLogin": "2025-09-30T04:55:59.280Z",
+          "sessions": [
+            {
+              "sessionId": "68ca8524755941a84401efe0",
+              "startedAt": "2025-09-17T09:53:40.449Z",
+              "endedAt": "2025-09-17T09:56:33.444Z",
+              "durationMinutes": 2.49,
+              "roleplayDuration": 149.15,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca85f3755941a84401f073",
+              "startedAt": "2025-09-17T09:57:07.176Z",
+              "endedAt": "2025-09-17T09:58:42.939Z",
+              "durationMinutes": 1.47,
+              "roleplayDuration": 87.967,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ccc8d73921571286a43e72",
+              "startedAt": "2025-09-19T03:07:03.691Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ccc8d93921571286a43e75",
+              "startedAt": "2025-09-19T03:07:05.194Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ccc8da3921571286a43e78",
+              "startedAt": "2025-09-19T03:07:06.770Z",
+              "endedAt": "2025-09-19T03:10:22.594Z",
+              "durationMinutes": 3.14,
+              "roleplayDuration": 188.411,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68cd0e8dc620d3f204f77c5c",
+              "startedAt": "2025-09-19T08:04:29.282Z",
+              "endedAt": "2025-09-19T08:11:39.762Z",
+              "durationMinutes": 6.97,
+              "roleplayDuration": 417.929,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68cd13c6c620d3f204f77d22",
+              "startedAt": "2025-09-19T08:26:46.415Z",
+              "endedAt": "2025-09-19T08:36:20.414Z",
+              "durationMinutes": 9.43,
+              "roleplayDuration": 565.927,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68cd17acc620d3f204f77f3f",
+              "startedAt": "2025-09-19T08:43:24.934Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68cd17aec620d3f204f77f42",
+              "startedAt": "2025-09-19T08:43:26.452Z",
+              "endedAt": "2025-09-19T08:45:41.676Z",
+              "durationMinutes": 2.12,
+              "roleplayDuration": 127.184,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d142da6f2d17da6dec5222",
+              "startedAt": "2025-09-22T12:36:42.244Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d23b726f2d17da6dec5a31",
+              "startedAt": "2025-09-23T06:17:22.078Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d23c436f2d17da6dec5a4a",
+              "startedAt": "2025-09-23T06:20:51.158Z",
+              "endedAt": "2025-09-23T06:21:11.927Z",
+              "durationMinutes": 0.14,
+              "roleplayDuration": 8.534,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d23c966f2d17da6dec5a5b",
+              "startedAt": "2025-09-23T06:22:14.779Z",
+              "endedAt": "2025-09-23T06:28:35.698Z",
+              "durationMinutes": 6.21,
+              "roleplayDuration": 372.575,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d2668b6f2d17da6dec5f34",
+              "startedAt": "2025-09-23T09:21:15.005Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d2668d6f2d17da6dec5f37",
+              "startedAt": "2025-09-23T09:21:17.062Z",
+              "endedAt": "2025-09-23T09:25:25.067Z",
+              "durationMinutes": 2.6,
+              "roleplayDuration": 155.819,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d4be2fe2e4d6904a2bb0e2",
+              "startedAt": "2025-09-25T03:59:43.622Z",
+              "endedAt": "2025-09-25T04:04:28.327Z",
+              "durationMinutes": 4.51,
+              "roleplayDuration": 270.733,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d6367ae85c606be27c0feb",
+              "startedAt": "2025-09-26T06:45:14.067Z",
+              "endedAt": "2025-09-26T06:48:11.710Z",
+              "durationMinutes": 2.78,
+              "roleplayDuration": 167.068,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db572568ab4031e2b42907",
+              "startedAt": "2025-09-30T04:05:57.047Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68db58d868ab4031e2b4294a",
+              "startedAt": "2025-09-30T04:13:12.792Z",
+              "endedAt": "2025-09-30T04:14:32.492Z",
+              "durationMinutes": 1.2,
+              "roleplayDuration": 71.969,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68db62df68ab4031e2b42cfe",
+              "startedAt": "2025-09-30T04:55:59.280Z",
+              "endedAt": "2025-09-30T05:02:55.214Z",
+              "durationMinutes": 6.85,
+              "roleplayDuration": 411.04,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68c3d6f14b56577747da72d1",
+          "userName": "jf",
+          "email": "jf_salazar@manulife.com.ph",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 18,
+          "loginDays": 5,
+          "totalTimeMinutes": 53.37,
+          "avgSessionDurationMinutes": 2.97,
+          "firstLogin": "2025-09-15T01:15:29.348Z",
+          "lastLogin": "2025-09-25T09:11:08.527Z",
+          "sessions": [
+            {
+              "sessionId": "68c768b18a89f08ce117dad6",
+              "startedAt": "2025-09-15T01:15:29.348Z",
+              "endedAt": "2025-09-15T01:16:09.872Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1757898969.119,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c76feb8a89f08ce117db1c",
+              "startedAt": "2025-09-15T01:46:19.709Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c7d94a28326d1a27b93c76",
+              "startedAt": "2025-09-15T09:15:54.169Z",
+              "endedAt": "2025-09-15T09:21:00.186Z",
+              "durationMinutes": 4.93,
+              "roleplayDuration": 295.892,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c7db4128326d1a27b93d00",
+              "startedAt": "2025-09-15T09:24:17.619Z",
+              "endedAt": "2025-09-15T09:29:06.803Z",
+              "durationMinutes": 4.62,
+              "roleplayDuration": 277.05,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c7e03428326d1a27b93dc0",
+              "startedAt": "2025-09-15T09:45:24.504Z",
+              "endedAt": "2025-09-15T10:12:02.243Z",
+              "durationMinutes": 2.68,
+              "roleplayDuration": 160.741,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c7e6dd28326d1a27b93ed5",
+              "startedAt": "2025-09-15T10:13:49.592Z",
+              "endedAt": "2025-09-15T10:15:37.254Z",
+              "durationMinutes": 1.72,
+              "roleplayDuration": 103.118,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c8bc7108e9a18116d85c14",
+              "startedAt": "2025-09-16T01:25:05.670Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c8d73008e9a18116d85c96",
+              "startedAt": "2025-09-16T03:19:12.398Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c8d73908e9a18116d85c9e",
+              "startedAt": "2025-09-16T03:19:21.702Z",
+              "endedAt": "2025-09-16T03:56:04.686Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 2196.484,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c8e31708e9a18116d85f1b",
+              "startedAt": "2025-09-16T04:09:59.436Z",
+              "endedAt": "2025-09-16T04:10:12.858Z",
+              "durationMinutes": 0.08,
+              "roleplayDuration": 5.013,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c8f3ce08e9a18116d8607e",
+              "startedAt": "2025-09-16T05:21:18.685Z",
+              "endedAt": "2025-09-16T05:34:52.129Z",
+              "durationMinutes": 13.44,
+              "roleplayDuration": 806.449,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca526a755941a84401d89d",
+              "startedAt": "2025-09-17T06:17:14.315Z",
+              "endedAt": "2025-09-17T06:18:31.957Z",
+              "durationMinutes": 1.01,
+              "roleplayDuration": 60.835,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca6212755941a84401da95",
+              "startedAt": "2025-09-17T07:24:02.774Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d35224cb9f39a43291aaf2",
+              "startedAt": "2025-09-24T02:06:28.847Z",
+              "endedAt": "2025-09-24T02:07:21.477Z",
+              "durationMinutes": 0.71,
+              "roleplayDuration": 42.542,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d3a91ecb9f39a43291ae7a",
+              "startedAt": "2025-09-24T08:17:34.504Z",
+              "endedAt": "2025-09-24T08:18:47.470Z",
+              "durationMinutes": 1.01,
+              "roleplayDuration": 60.469,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d3aa57cb9f39a43291aea5",
+              "startedAt": "2025-09-24T08:22:47.777Z",
+              "endedAt": "2025-09-24T08:23:32.728Z",
+              "durationMinutes": 0.67,
+              "roleplayDuration": 40.231,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d3aa90cb9f39a43291aee0",
+              "startedAt": "2025-09-24T08:23:44.774Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d5072cf16d89d16261b932",
+              "startedAt": "2025-09-25T09:11:08.527Z",
+              "endedAt": "2025-09-25T09:12:57.334Z",
+              "durationMinutes": 1.65,
+              "roleplayDuration": 99.207,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68c3d9514b56577747da73f3",
+          "userName": "Ella",
+          "email": "estrella_alag@manulife.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 7,
+          "loginDays": 2,
+          "totalTimeMinutes": 38.99,
+          "avgSessionDurationMinutes": 5.57,
+          "firstLogin": "2025-09-16T04:42:32.162Z",
+          "lastLogin": "2025-09-17T03:23:43.854Z",
+          "sessions": [
+            {
+              "sessionId": "68c8eab808e9a18116d85f6a",
+              "startedAt": "2025-09-16T04:42:32.162Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c8eaba08e9a18116d85f6d",
+              "startedAt": "2025-09-16T04:42:34.846Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c8ebbf08e9a18116d85f86",
+              "startedAt": "2025-09-16T04:46:55.849Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca04d708e9a18116d87012",
+              "startedAt": "2025-09-17T00:46:15.878Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca0a0608e9a18116d87216",
+              "startedAt": "2025-09-17T01:08:22.804Z",
+              "endedAt": "2025-09-17T02:03:12.971Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 3267.135,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca1b3108e9a18116d87698",
+              "startedAt": "2025-09-17T02:21:37.163Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca29bf08e9a18116d87a10",
+              "startedAt": "2025-09-17T03:23:43.854Z",
+              "endedAt": "2025-09-17T03:52:01.926Z",
+              "durationMinutes": 28.14,
+              "roleplayDuration": 1688.533,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68c3d70e4b56577747da730a",
+          "userName": "Honie",
+          "email": "honifei_dg_rivero@manulife.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 6,
+          "loginDays": 1,
+          "totalTimeMinutes": 36.09,
+          "avgSessionDurationMinutes": 6.02,
+          "firstLogin": "2025-09-17T08:53:50.082Z",
+          "lastLogin": "2025-09-17T09:25:31.744Z",
+          "sessions": [
+            {
+              "sessionId": "68ca771e755941a84401e681",
+              "startedAt": "2025-09-17T08:53:50.082Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca771e755941a84401e684",
+              "startedAt": "2025-09-17T08:53:50.557Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca771f755941a84401e687",
+              "startedAt": "2025-09-17T08:53:51.806Z",
+              "endedAt": "2025-09-17T09:07:58.925Z",
+              "durationMinutes": 9.54,
+              "roleplayDuration": 572.343,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca7786755941a84401e6dc",
+              "startedAt": "2025-09-17T08:55:34.231Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca7788755941a84401e6df",
+              "startedAt": "2025-09-17T08:55:36.172Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca7e8b755941a84401eb1f",
+              "startedAt": "2025-09-17T09:25:31.744Z",
+              "endedAt": "2025-09-17T09:51:35.541Z",
+              "durationMinutes": 25.87,
+              "roleplayDuration": 1552.431,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68c8c5a808e9a18116d85c3f",
+          "userName": "Atet",
+          "email": "maritess_esparaguera@manulife.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 8,
+          "loginDays": 1,
+          "totalTimeMinutes": 35.95,
+          "avgSessionDurationMinutes": 4.49,
+          "firstLogin": "2025-09-17T06:32:17.514Z",
+          "lastLogin": "2025-09-17T09:11:38.543Z",
+          "sessions": [
+            {
+              "sessionId": "68ca55f1755941a84401d909",
+              "startedAt": "2025-09-17T06:32:17.514Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca5e9b755941a84401d9b8",
+              "startedAt": "2025-09-17T07:09:15.113Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca6a9d755941a84401dea8",
+              "startedAt": "2025-09-17T08:00:29.034Z",
+              "endedAt": "2025-09-17T08:13:25.368Z",
+              "durationMinutes": 12.82,
+              "roleplayDuration": 769.018,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca6e8f755941a84401e2ad",
+              "startedAt": "2025-09-17T08:17:19.301Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca6ecc755941a84401e2db",
+              "startedAt": "2025-09-17T08:18:20.358Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca6ffd755941a84401e304",
+              "startedAt": "2025-09-17T08:23:25.954Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca75c4755941a84401e5e6",
+              "startedAt": "2025-09-17T08:48:04.753Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca7b4a755941a84401eab4",
+              "startedAt": "2025-09-17T09:11:38.543Z",
+              "endedAt": "2025-09-17T09:33:49.293Z",
+              "durationMinutes": 22.11,
+              "roleplayDuration": 1326.8,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68c3d6e04b56577747da72bd",
+          "userName": "Steph",
+          "email": "stephanie_p_villoria@manulife.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 7,
+          "loginDays": 2,
+          "totalTimeMinutes": 33.17,
+          "avgSessionDurationMinutes": 4.74,
+          "firstLogin": "2025-09-17T00:41:45.010Z",
+          "lastLogin": "2025-09-18T02:01:47.563Z",
+          "sessions": [
+            {
+              "sessionId": "68ca03c908e9a18116d86fe2",
+              "startedAt": "2025-09-17T00:41:45.010Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca046908e9a18116d86ff9",
+              "startedAt": "2025-09-17T00:44:25.174Z",
+              "endedAt": "2025-09-17T00:52:03.901Z",
+              "durationMinutes": 6.53,
+              "roleplayDuration": 391.622,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca069008e9a18116d8707a",
+              "startedAt": "2025-09-17T00:53:36.739Z",
+              "endedAt": "2025-09-17T01:05:32.922Z",
+              "durationMinutes": 11.83,
+              "roleplayDuration": 709.718,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca0f0308e9a18116d872dd",
+              "startedAt": "2025-09-17T01:29:39.401Z",
+              "endedAt": "2025-09-17T01:33:51.156Z",
+              "durationMinutes": 4.05,
+              "roleplayDuration": 243.166,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca103a08e9a18116d87388",
+              "startedAt": "2025-09-17T01:34:50.246Z",
+              "endedAt": "2025-09-17T01:45:11.033Z",
+              "durationMinutes": 10.25,
+              "roleplayDuration": 614.946,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68cb680908c14bde4b2490de",
+              "startedAt": "2025-09-18T02:01:45.784Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68cb680b08c14bde4b2490e1",
+              "startedAt": "2025-09-18T02:01:47.563Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            }
+          ]
+        },
+        {
+          "userId": "68c3d7364b56577747da7344",
+          "userName": "Ralph",
+          "email": "ralph_emmanuelle_estrellado@manulife.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 2,
+          "loginDays": 1,
+          "totalTimeMinutes": 28.76,
+          "avgSessionDurationMinutes": 14.38,
+          "firstLogin": "2025-09-16T06:20:42.394Z",
+          "lastLogin": "2025-09-16T06:24:25.498Z",
+          "sessions": [
+            {
+              "sessionId": "68c901ba08e9a18116d864b0",
+              "startedAt": "2025-09-16T06:20:42.394Z",
+              "endedAt": "2025-09-16T06:21:49.086Z",
+              "durationMinutes": 0.52,
+              "roleplayDuration": 31.038,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c9029908e9a18116d8658f",
+              "startedAt": "2025-09-16T06:24:25.498Z",
+              "endedAt": "2025-09-16T06:53:02.127Z",
+              "durationMinutes": 28.24,
+              "roleplayDuration": 1694.104,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68d3b211cb9f39a43291b00e",
+          "userName": "Mariel",
+          "email": "marielctablan@gmail.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 2,
+          "loginDays": 2,
+          "totalTimeMinutes": 20.93,
+          "avgSessionDurationMinutes": 10.47,
+          "firstLogin": "2025-09-24T08:56:26.513Z",
+          "lastLogin": "2025-10-06T02:47:24.701Z",
+          "sessions": [
+            {
+              "sessionId": "68d3b23acb9f39a43291b017",
+              "startedAt": "2025-09-24T08:56:26.513Z",
+              "endedAt": "2025-09-24T09:17:28.217Z",
+              "durationMinutes": 20.76,
+              "roleplayDuration": 1245.505,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e32dbcc7e36ff7d09caa1d",
+              "startedAt": "2025-10-06T02:47:24.701Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            }
+          ]
+        },
+        {
+          "userId": "68c78a798a89f08ce117dd9d",
+          "userName": "JF",
+          "email": "jf_salazar@manulife.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 16,
+          "loginDays": 4,
+          "totalTimeMinutes": 14.89,
+          "avgSessionDurationMinutes": 0.93,
+          "firstLogin": "2025-09-15T03:49:43.872Z",
+          "lastLogin": "2025-09-25T00:38:01.479Z",
+          "sessions": [
+            {
+              "sessionId": "68c78cd78a89f08ce117df05",
+              "startedAt": "2025-09-15T03:49:43.872Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c78e128a89f08ce117dfcd",
+              "startedAt": "2025-09-15T03:54:58.346Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c7a5ac8a89f08ce117e61a",
+              "startedAt": "2025-09-15T05:35:40.967Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c7ac7b8a89f08ce117e795",
+              "startedAt": "2025-09-15T06:04:43.306Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c7b8188a89f08ce117e804",
+              "startedAt": "2025-09-15T06:54:16.454Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c7b8528a89f08ce117e813",
+              "startedAt": "2025-09-15T06:55:14.512Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c7b8b18a89f08ce117e828",
+              "startedAt": "2025-09-15T06:56:49.649Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c7c18b8a89f08ce117e949",
+              "startedAt": "2025-09-15T07:34:35.321Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d237376f2d17da6dec5a0d",
+              "startedAt": "2025-09-23T05:59:19.198Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d237aa6f2d17da6dec5a21",
+              "startedAt": "2025-09-23T06:01:14.283Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d2483c6f2d17da6dec5c5e",
+              "startedAt": "2025-09-23T07:11:56.140Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d255976f2d17da6dec5c74",
+              "startedAt": "2025-09-23T08:08:55.857Z",
+              "endedAt": "2025-09-23T08:22:35.092Z",
+              "durationMinutes": 12.34,
+              "roleplayDuration": 740.634,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d34f60cb9f39a43291aa51",
+              "startedAt": "2025-09-24T01:54:40.401Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d3526bcb9f39a43291ab35",
+              "startedAt": "2025-09-24T02:07:39.529Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d36207cb9f39a43291abb3",
+              "startedAt": "2025-09-24T03:14:15.134Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d48ee9e2e4d6904a2baeb2",
+              "startedAt": "2025-09-25T00:38:01.479Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            }
+          ]
+        },
+        {
+          "userId": "68c3d7344b56577747da733d",
+          "userName": "Margot",
+          "email": "margaret_caimen1@manulife.com",
+          "companyId": "68accc7c35a46d74e550b719",
+          "companyName": "Manulife",
+          "totalSessions": 5,
+          "loginDays": 1,
+          "totalTimeMinutes": 14.7,
+          "avgSessionDurationMinutes": 2.94,
+          "firstLogin": "2025-09-17T07:11:59.144Z",
+          "lastLogin": "2025-09-17T07:33:41.817Z",
+          "sessions": [
+            {
+              "sessionId": "68ca5f3f755941a84401da35",
+              "startedAt": "2025-09-17T07:11:59.144Z",
+              "endedAt": "2025-09-17T07:15:23.984Z",
+              "durationMinutes": 2.24,
+              "roleplayDuration": 134.374,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca61c7755941a84401da7b",
+              "startedAt": "2025-09-17T07:22:47.174Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68ca625b755941a84401daab",
+              "startedAt": "2025-09-17T07:25:15.203Z",
+              "endedAt": "2025-09-17T07:27:21.621Z",
+              "durationMinutes": 1.97,
+              "roleplayDuration": 118.244,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca6430755941a84401dc46",
+              "startedAt": "2025-09-17T07:33:04.028Z",
+              "endedAt": "2025-09-17T07:33:30.191Z",
+              "durationMinutes": 0.32,
+              "roleplayDuration": 19.432,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca6455755941a84401dc65",
+              "startedAt": "2025-09-17T07:33:41.817Z",
+              "endedAt": "2025-09-17T08:04:33.044Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1844.9,
+              "usedRoleplayDuration": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "totalUsers": 40,
+      "activeUsers": 40,
+      "totalSessions": 143,
+      "totalTimeMinutes": 523.17,
+      "avgSessionsPerUser": 3.58,
+      "avgTimePerUserMinutes": 13.08,
+      "avgLoginDaysPerUser": 1.5,
+      "topUsers": [
+        {
+          "userId": "68db8ba568ab4031e2b480f7",
+          "userName": "Zhedrik",
+          "email": "zhedrik.chua@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 9,
+          "loginDays": 1,
+          "totalTimeMinutes": 84.09,
+          "avgSessionDurationMinutes": 9.34,
+          "firstLogin": "2025-10-01T03:30:54.307Z",
+          "lastLogin": "2025-10-01T07:39:21.906Z",
+          "sessions": [
+            {
+              "sessionId": "68dca06e2cb3011ee723b81c",
+              "startedAt": "2025-10-01T03:30:54.307Z",
+              "endedAt": "2025-10-01T03:46:00.284Z",
+              "durationMinutes": 14.86,
+              "roleplayDuration": 891.46,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dca6262cb3011ee723c3ae",
+              "startedAt": "2025-10-01T03:55:18.993Z",
+              "endedAt": "2025-10-01T04:00:56.071Z",
+              "durationMinutes": 0.69,
+              "roleplayDuration": 41.591,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dca9392cb3011ee723c5b7",
+              "startedAt": "2025-10-01T04:08:25.905Z",
+              "endedAt": "2025-10-01T04:22:21.477Z",
+              "durationMinutes": 13.85,
+              "roleplayDuration": 831.094,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbab32cb3011ee723e59e",
+              "startedAt": "2025-10-01T05:22:59.454Z",
+              "endedAt": "2025-10-01T05:29:20.274Z",
+              "durationMinutes": 1.34,
+              "roleplayDuration": 80.184,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcbcff2cb3011ee723ec78",
+              "startedAt": "2025-10-01T05:32:47.662Z",
+              "endedAt": "2025-10-01T05:58:26.196Z",
+              "durationMinutes": 25.57,
+              "roleplayDuration": 1534.431,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68dcc52c2cb3011ee7240acd",
+              "startedAt": "2025-10-01T06:07:40.568Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcd9ab2cb3011ee7243f9a",
+              "startedAt": "2025-10-01T07:35:07.550Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcda222cb3011ee7244049",
+              "startedAt": "2025-10-01T07:37:06.326Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68dcdaa92cb3011ee724418b",
+              "startedAt": "2025-10-01T07:39:21.906Z",
+              "endedAt": "2025-10-01T08:07:20.257Z",
+              "durationMinutes": 27.27,
+              "roleplayDuration": 1635.931,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "689acfa7353ea8c13c3f7405",
+          "userName": "Debbie",
+          "email": "debbie.oh@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 18,
+          "loginDays": 5,
+          "totalTimeMinutes": 64.86,
+          "avgSessionDurationMinutes": 3.6,
+          "firstLogin": "2025-09-12T04:50:06.628Z",
+          "lastLogin": "2025-09-29T03:23:50.585Z",
+          "sessions": [
+            {
+              "sessionId": "68c3a67e4b56577747da686b",
+              "startedAt": "2025-09-12T04:50:06.628Z",
+              "endedAt": "2025-09-12T04:50:54.494Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1757652654.353,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c3a6b54b56577747da687c",
+              "startedAt": "2025-09-12T04:51:01.764Z",
+              "endedAt": "2025-09-12T04:51:50.890Z",
+              "durationMinutes": 0.76,
+              "roleplayDuration": 45.504,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c3d9f1561e4ad25c86af26",
+              "startedAt": "2025-09-12T08:29:37.776Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c8c8ac561e4ad25c86b173",
+              "startedAt": "2025-09-16T02:17:16.582Z",
+              "endedAt": "2025-09-16T02:33:43.889Z",
+              "durationMinutes": 11.46,
+              "roleplayDuration": 687.512,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c8cdc8561e4ad25c86b21a",
+              "startedAt": "2025-09-16T02:39:04.656Z",
+              "endedAt": "2025-09-16T02:47:52.558Z",
+              "durationMinutes": 8.73,
+              "roleplayDuration": 524.071,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c8d176561e4ad25c86b293",
+              "startedAt": "2025-09-16T02:54:46.399Z",
+              "endedAt": "2025-09-16T02:57:26.856Z",
+              "durationMinutes": 2.6,
+              "roleplayDuration": 155.953,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c9088f561e4ad25c86b41b",
+              "startedAt": "2025-09-16T06:49:51.677Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d22b14fe664b251d1b9a2f",
+              "startedAt": "2025-09-23T05:07:32.956Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d22babfe664b251d1b9a37",
+              "startedAt": "2025-09-23T05:10:03.198Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d22e34fe664b251d1b9a40",
+              "startedAt": "2025-09-23T05:20:52.534Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d2455ffe664b251d1b9a4f",
+              "startedAt": "2025-09-23T06:59:43.041Z",
+              "endedAt": "2025-09-23T07:12:56.711Z",
+              "durationMinutes": 13.17,
+              "roleplayDuration": 790.03,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d24920fe664b251d1b9aeb",
+              "startedAt": "2025-09-23T07:15:44.445Z",
+              "endedAt": "2025-09-23T07:31:33.051Z",
+              "durationMinutes": 15.75,
+              "roleplayDuration": 945.21,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d24ecafe664b251d1b9ba2",
+              "startedAt": "2025-09-23T07:39:54.894Z",
+              "endedAt": "2025-09-23T07:40:51.203Z",
+              "durationMinutes": 0.79,
+              "roleplayDuration": 47.204,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d4d813fd996e263f7f90a0",
+              "startedAt": "2025-09-25T05:50:11.505Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d4d844fd996e263f7f90ab",
+              "startedAt": "2025-09-25T05:51:00.290Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d5047cfd996e263f7f90dc",
+              "startedAt": "2025-09-25T08:59:40.787Z",
+              "endedAt": "2025-09-25T08:59:50.338Z",
+              "durationMinutes": 0.07,
+              "roleplayDuration": 4.216,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d5048cfd996e263f7f90ed",
+              "startedAt": "2025-09-25T08:59:56.266Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d9fbc6fd996e263f7f9741",
+              "startedAt": "2025-09-29T03:23:50.585Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            }
+          ]
+        },
+        {
+          "userId": "68c26a793ba842de98a1ab3b",
+          "userName": "Felicia",
+          "email": "felicia.adriane@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 4,
+          "loginDays": 1,
+          "totalTimeMinutes": 32.9,
+          "avgSessionDurationMinutes": 8.23,
+          "firstLogin": "2025-09-11T06:26:51.221Z",
+          "lastLogin": "2025-09-11T06:42:30.936Z",
+          "sessions": [
+            {
+              "sessionId": "68c26bab3ba842de98a1abb0",
+              "startedAt": "2025-09-11T06:26:51.221Z",
+              "endedAt": "2025-09-11T06:27:10.494Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1757572029.705,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c26e193ba842de98a1ace8",
+              "startedAt": "2025-09-11T06:37:13.141Z",
+              "endedAt": "2025-09-11T06:40:10.546Z",
+              "durationMinutes": 0.27,
+              "roleplayDuration": 15.947,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c26efc3ba842de98a1ad3f",
+              "startedAt": "2025-09-11T06:41:00.144Z",
+              "endedAt": "2025-09-11T06:42:14.059Z",
+              "durationMinutes": 0.85,
+              "roleplayDuration": 50.893,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c26f563ba842de98a1ae42",
+              "startedAt": "2025-09-11T06:42:30.936Z",
+              "endedAt": "2025-09-11T07:04:23.641Z",
+              "durationMinutes": 21.78,
+              "roleplayDuration": 1306.969,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68c26a7e3ba842de98a1ab40",
+          "userName": "Difa",
+          "email": "ftt.azzahra.isnadifa@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 3,
+          "loginDays": 1,
+          "totalTimeMinutes": 31.4,
+          "avgSessionDurationMinutes": 10.47,
+          "firstLogin": "2025-09-11T06:26:39.183Z",
+          "lastLogin": "2025-09-11T06:43:03.347Z",
+          "sessions": [
+            {
+              "sessionId": "68c26b9f3ba842de98a1aba1",
+              "startedAt": "2025-09-11T06:26:39.183Z",
+              "endedAt": "2025-09-11T06:36:08.077Z",
+              "durationMinutes": 9.14,
+              "roleplayDuration": 548.591,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c26e953ba842de98a1ad00",
+              "startedAt": "2025-09-11T06:39:17.881Z",
+              "endedAt": "2025-09-11T06:42:52.388Z",
+              "durationMinutes": 2.75,
+              "roleplayDuration": 165.039,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c26f773ba842de98a1ae90",
+              "startedAt": "2025-09-11T06:43:03.347Z",
+              "endedAt": "2025-09-11T07:02:49.159Z",
+              "durationMinutes": 19.51,
+              "roleplayDuration": 1170.767,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68d50c22fd996e263f7f90fc",
+          "userName": "Jolie",
+          "email": "jolie.lim@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 5,
+          "loginDays": 1,
+          "totalTimeMinutes": 24.72,
+          "avgSessionDurationMinutes": 4.94,
+          "firstLogin": "2025-09-25T09:34:29.342Z",
+          "lastLogin": "2025-09-25T10:02:37.868Z",
+          "sessions": [
+            {
+              "sessionId": "68d50ca5fd996e263f7f910a",
+              "startedAt": "2025-09-25T09:34:29.342Z",
+              "endedAt": "2025-09-25T09:44:10.029Z",
+              "durationMinutes": 9.21,
+              "roleplayDuration": 552.851,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d50f4cfd996e263f7f91cc",
+              "startedAt": "2025-09-25T09:45:48.679Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d51041fd996e263f7f91e9",
+              "startedAt": "2025-09-25T09:49:53.514Z",
+              "endedAt": "2025-09-25T09:58:33.469Z",
+              "durationMinutes": 6.77,
+              "roleplayDuration": 406.49,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d51326fd996e263f7f9279",
+              "startedAt": "2025-09-25T10:02:14.738Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d5133dfd996e263f7f9290",
+              "startedAt": "2025-09-25T10:02:37.868Z",
+              "endedAt": "2025-09-25T10:11:08.837Z",
+              "durationMinutes": 8.4,
+              "roleplayDuration": 503.836,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "689acc59353ea8c13c3f73ed",
+          "userName": "Trang Nguyen",
+          "email": "thuytrang.nguyenngoc@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 17,
+          "loginDays": 7,
+          "totalTimeMinutes": 23.97,
+          "avgSessionDurationMinutes": 1.41,
+          "firstLogin": "2025-09-22T07:21:07.879Z",
+          "lastLogin": "2025-10-03T04:55:05.267Z",
+          "sessions": [
+            {
+              "sessionId": "68d0f8e36f2d17da6dec4ca0",
+              "startedAt": "2025-09-22T07:21:07.879Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d268abfe664b251d1b9d28",
+              "startedAt": "2025-09-23T09:30:19.983Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d268adfe664b251d1b9d2b",
+              "startedAt": "2025-09-23T09:30:21.454Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d2692efe664b251d1b9d3a",
+              "startedAt": "2025-09-23T09:32:30.161Z",
+              "endedAt": "2025-09-23T09:49:22.850Z",
+              "durationMinutes": 16.15,
+              "roleplayDuration": 969.157,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d36f48fe664b251d1b9e48",
+              "startedAt": "2025-09-24T04:10:48.756Z",
+              "endedAt": "2025-09-24T04:14:00.935Z",
+              "durationMinutes": 1.8,
+              "roleplayDuration": 107.992,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d3dcb8fe664b251d1ba816",
+              "startedAt": "2025-09-24T11:57:44.928Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d3dcd3fe664b251d1ba81f",
+              "startedAt": "2025-09-24T11:58:11.703Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d5004efd996e263f7f90d2",
+              "startedAt": "2025-09-25T08:41:50.203Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d60f32fd996e263f7f934b",
+              "startedAt": "2025-09-26T03:57:38.166Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d60f34fd996e263f7f934e",
+              "startedAt": "2025-09-26T03:57:40.314Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d631e0fd996e263f7f9461",
+              "startedAt": "2025-09-26T06:25:36.546Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d631e2fd996e263f7f9464",
+              "startedAt": "2025-09-26T06:25:38.582Z",
+              "endedAt": "2025-09-26T06:26:00.503Z",
+              "durationMinutes": 0.24,
+              "roleplayDuration": 14.306,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d631fdfd996e263f7f9475",
+              "startedAt": "2025-09-26T06:26:05.830Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d6321cfd996e263f7f947f",
+              "startedAt": "2025-09-26T06:26:36.639Z",
+              "endedAt": "2025-09-26T06:30:15.730Z",
+              "durationMinutes": 3.57,
+              "roleplayDuration": 214.374,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de071248fe31cb40143426",
+              "startedAt": "2025-10-02T05:01:06.807Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68de071548fe31cb40143429",
+              "startedAt": "2025-10-02T05:01:09.579Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68df572948fe31cb4014357b",
+              "startedAt": "2025-10-03T04:55:05.267Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            }
+          ]
+        },
+        {
+          "userId": "68c26a823ba842de98a1ab48",
+          "userName": "Eka Fitri PS ",
+          "email": "eka.puspitasari@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 2,
+          "loginDays": 1,
+          "totalTimeMinutes": 22.67,
+          "avgSessionDurationMinutes": 11.34,
+          "firstLogin": "2025-09-11T06:27:50.881Z",
+          "lastLogin": "2025-09-11T06:44:07.685Z",
+          "sessions": [
+            {
+              "sessionId": "68c26be63ba842de98a1abd2",
+              "startedAt": "2025-09-11T06:27:50.881Z",
+              "endedAt": "2025-09-11T06:41:21.462Z",
+              "durationMinutes": 12.67,
+              "roleplayDuration": 760.241,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c26fb73ba842de98a1aeb6",
+              "startedAt": "2025-09-11T06:44:07.685Z",
+              "endedAt": "2025-09-11T07:14:36.666Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1821.57,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68b7b25e58441eb165ee584d",
+          "userName": "Ashlyn",
+          "email": "uyen.trannguyenmy@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 2,
+          "loginDays": 1,
+          "totalTimeMinutes": 22.2,
+          "avgSessionDurationMinutes": 11.1,
+          "firstLogin": "2025-09-10T17:12:19.660Z",
+          "lastLogin": "2025-09-10T17:12:22.027Z",
+          "sessions": [
+            {
+              "sessionId": "68c1b1733ba842de98a1a52b",
+              "startedAt": "2025-09-10T17:12:19.660Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c1b1763ba842de98a1a52e",
+              "startedAt": "2025-09-10T17:12:22.027Z",
+              "endedAt": "2025-09-10T17:34:33.605Z",
+              "durationMinutes": 22.03,
+              "roleplayDuration": 1321.95,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68c26ab43ba842de98a1ab5a",
+          "userName": "Raraa",
+          "email": "ftt.raihanah.putri@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 3,
+          "loginDays": 1,
+          "totalTimeMinutes": 17.46,
+          "avgSessionDurationMinutes": 5.82,
+          "firstLogin": "2025-09-11T06:26:39.089Z",
+          "lastLogin": "2025-09-11T06:43:04.081Z",
+          "sessions": [
+            {
+              "sessionId": "68c26b9f3ba842de98a1ab9e",
+              "startedAt": "2025-09-11T06:26:39.089Z",
+              "endedAt": "2025-09-11T06:28:08.267Z",
+              "durationMinutes": 1.24,
+              "roleplayDuration": 74.178,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c26e993ba842de98a1ad0a",
+              "startedAt": "2025-09-11T06:39:21.294Z",
+              "endedAt": "2025-09-11T06:42:55.405Z",
+              "durationMinutes": 2.06,
+              "roleplayDuration": 123.757,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c26f783ba842de98a1ae93",
+              "startedAt": "2025-09-11T06:43:04.081Z",
+              "endedAt": "2025-09-11T06:57:26.825Z",
+              "durationMinutes": 14.16,
+              "roleplayDuration": 849.617,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68d4d20581f3f029e9ef50d9",
+          "userName": "Xavier",
+          "email": "xavier.capmarti@grabtaxi.com",
+          "companyId": "67f76dea5410cedbd5ae768c",
+          "companyName": "Grab",
+          "totalSessions": 3,
+          "loginDays": 2,
+          "totalTimeMinutes": 17.46,
+          "avgSessionDurationMinutes": 5.82,
+          "firstLogin": "2025-09-26T06:42:55.653Z",
+          "lastLogin": "2025-10-02T06:35:35.085Z",
+          "sessions": [
+            {
+              "sessionId": "68d635effd996e263f7f94fc",
+              "startedAt": "2025-09-26T06:42:55.653Z",
+              "endedAt": "2025-09-26T06:48:01.160Z",
+              "durationMinutes": 4.89,
+              "roleplayDuration": 293.449,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d6379cfd996e263f7f95b4",
+              "startedAt": "2025-09-26T06:50:04.182Z",
+              "endedAt": "2025-09-26T07:01:58.987Z",
+              "durationMinutes": 11.86,
+              "roleplayDuration": 711.41,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de1d3748fe31cb40143502",
+              "startedAt": "2025-10-02T06:35:35.085Z",
+              "endedAt": "2025-10-02T06:36:23.669Z",
+              "durationMinutes": 0.71,
+              "roleplayDuration": 42.605,
+              "usedRoleplayDuration": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "totalUsers": 7,
+      "activeUsers": 7,
+      "totalSessions": 54,
+      "totalTimeMinutes": 201.70000000000002,
+      "avgSessionsPerUser": 7.71,
+      "avgTimePerUserMinutes": 28.81,
+      "avgLoginDaysPerUser": 2.43,
+      "topUsers": [
+        {
+          "userId": "68c654f04b56577747da77cf",
+          "userName": "ดาว",
+          "email": "daoohdao@gmail.com",
+          "companyId": "68c2a5193ba842de98a1b32c",
+          "companyName": "PLT",
+          "totalSessions": 24,
+          "loginDays": 4,
+          "totalTimeMinutes": 82.19,
+          "avgSessionDurationMinutes": 3.42,
+          "firstLogin": "2025-09-14T06:18:17.244Z",
+          "lastLogin": "2025-10-02T05:58:38.495Z",
+          "sessions": [
+            {
+              "sessionId": "68c69e1d8a89f08ce117d651",
+              "startedAt": "2025-09-14T10:51:09.054Z",
+              "endedAt": "2025-09-14T10:55:08.453Z",
+              "durationMinutes": 0.26,
+              "roleplayDuration": 15.847,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c6a2b58a89f08ce117d6b3",
+              "startedAt": "2025-09-14T11:10:45.951Z",
+              "endedAt": "2025-09-14T11:15:42.747Z",
+              "durationMinutes": 4.4,
+              "roleplayDuration": 263.851,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c6a5988a89f08ce117d7c0",
+              "startedAt": "2025-09-14T11:23:04.877Z",
+              "endedAt": "2025-09-14T11:28:05.602Z",
+              "durationMinutes": 4.06,
+              "roleplayDuration": 243.515,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c6a8228a89f08ce117d889",
+              "startedAt": "2025-09-14T11:33:54.553Z",
+              "endedAt": "2025-09-14T11:40:30.692Z",
+              "durationMinutes": 6.09,
+              "roleplayDuration": 365.462,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c6ac3e8a89f08ce117d979",
+              "startedAt": "2025-09-14T11:51:26.463Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68c6ac678a89f08ce117d986",
+              "startedAt": "2025-09-14T11:52:07.226Z",
+              "endedAt": "2025-09-14T11:58:14.040Z",
+              "durationMinutes": 5.7,
+              "roleplayDuration": 342.211,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c8f7a208e9a18116d8616a",
+              "startedAt": "2025-09-16T05:37:38.879Z",
+              "endedAt": "2025-09-16T05:39:00.214Z",
+              "durationMinutes": 0.52,
+              "roleplayDuration": 31.443,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c8f88408e9a18116d861a4",
+              "startedAt": "2025-09-16T05:41:24.231Z",
+              "endedAt": "2025-09-16T05:46:09.632Z",
+              "durationMinutes": 4.65,
+              "roleplayDuration": 278.759,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c9268508e9a18116d86af3",
+              "startedAt": "2025-09-16T08:57:41.580Z",
+              "endedAt": "2025-09-16T09:01:41.416Z",
+              "durationMinutes": 3.79,
+              "roleplayDuration": 227.568,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68c92a3b08e9a18116d86c07",
+              "startedAt": "2025-09-16T09:13:31.255Z",
+              "endedAt": "2025-09-16T09:19:33.126Z",
+              "durationMinutes": 5.89,
+              "roleplayDuration": 353.675,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca744f755941a84401e4e3",
+              "startedAt": "2025-09-17T08:41:51.178Z",
+              "endedAt": "2025-09-17T08:45:24.324Z",
+              "durationMinutes": 3.39,
+              "roleplayDuration": 203.368,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca7607755941a84401e5fa",
+              "startedAt": "2025-09-17T08:49:11.014Z",
+              "endedAt": "2025-09-17T08:53:40.051Z",
+              "durationMinutes": 4.36,
+              "roleplayDuration": 261.561,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ca77c6755941a84401e700",
+              "startedAt": "2025-09-17T08:56:38.534Z",
+              "endedAt": "2025-09-17T09:01:10.389Z",
+              "durationMinutes": 4.38,
+              "roleplayDuration": 262.838,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ddce38a105800bfbe1724b",
+              "startedAt": "2025-10-02T00:58:32.843Z",
+              "endedAt": "2025-10-02T01:00:13.624Z",
+              "durationMinutes": 1.51,
+              "roleplayDuration": 90.578,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68ddcecda105800bfbe172e9",
+              "startedAt": "2025-10-02T01:01:01.874Z",
+              "endedAt": "2025-10-02T01:01:12.385Z",
+              "durationMinutes": 0.12,
+              "roleplayDuration": 7.014,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de01e8a105800bfbe1734d",
+              "startedAt": "2025-10-02T04:39:04.483Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68de01e9a105800bfbe17350",
+              "startedAt": "2025-10-02T04:39:05.988Z",
+              "endedAt": "2025-10-02T04:44:42.903Z",
+              "durationMinutes": 5.42,
+              "roleplayDuration": 325.26,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de1072a105800bfbe18c04",
+              "startedAt": "2025-10-02T05:41:06.958Z",
+              "endedAt": "2025-10-02T05:45:10.350Z",
+              "durationMinutes": 3.86,
+              "roleplayDuration": 231.84,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de1281a105800bfbe1a9d1",
+              "startedAt": "2025-10-02T05:49:53.678Z",
+              "endedAt": "2025-10-02T05:53:57.053Z",
+              "durationMinutes": 3.96,
+              "roleplayDuration": 237.782,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68de148ea105800bfbe1c098",
+              "startedAt": "2025-10-02T05:58:38.495Z",
+              "endedAt": "2025-10-02T06:04:01.202Z",
+              "durationMinutes": 5.3,
+              "roleplayDuration": 318.188,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68d10f3e6f2d17da6dec4d9a",
+          "userName": "Ryu",
+          "email": "anuparp.sirithammasakda@prudential.co.th",
+          "companyId": "68c2a5193ba842de98a1b32c",
+          "companyName": "PLT",
+          "totalSessions": 5,
+          "loginDays": 4,
+          "totalTimeMinutes": 37.46,
+          "avgSessionDurationMinutes": 7.49,
+          "firstLogin": "2025-09-22T08:57:28.850Z",
+          "lastLogin": "2025-10-06T08:46:46.176Z",
+          "sessions": [
+            {
+              "sessionId": "68d10f786f2d17da6dec4dbe",
+              "startedAt": "2025-09-22T08:57:28.850Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d2244e6f2d17da6dec5966",
+              "startedAt": "2025-09-23T04:38:38.762Z",
+              "endedAt": "2025-09-23T04:39:07.012Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1758602346.388,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df2f7bc7e36ff7d09bf67b",
+              "startedAt": "2025-10-03T02:05:47.858Z",
+              "endedAt": "2025-10-03T02:15:40.646Z",
+              "durationMinutes": 9.69,
+              "roleplayDuration": 581.198,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e37ecfc7e36ff7d09d6350",
+              "startedAt": "2025-10-06T08:33:19.259Z",
+              "endedAt": "2025-10-06T08:43:10.881Z",
+              "durationMinutes": 9.71,
+              "roleplayDuration": 582.821,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e381f6c7e36ff7d09dc4a6",
+              "startedAt": "2025-10-06T08:46:46.176Z",
+              "endedAt": "2025-10-06T08:54:54.261Z",
+              "durationMinutes": 7.89,
+              "roleplayDuration": 473.668,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68ca98c0755941a84401f2d3",
+          "userName": "ทดสอบ",
+          "email": "apisara.aungsutarn@prudential.co.th",
+          "companyId": "68c2a5193ba842de98a1b32c",
+          "companyName": "PLT",
+          "totalSessions": 12,
+          "loginDays": 2,
+          "totalTimeMinutes": 22.65,
+          "avgSessionDurationMinutes": 1.89,
+          "firstLogin": "2025-09-22T08:39:05.310Z",
+          "lastLogin": "2025-10-03T05:58:12.229Z",
+          "sessions": [
+            {
+              "sessionId": "68d10b296f2d17da6dec4cef",
+              "startedAt": "2025-09-22T08:39:05.310Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d10e996f2d17da6dec4d5d",
+              "startedAt": "2025-09-22T08:53:45.436Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d10ede6f2d17da6dec4d6c",
+              "startedAt": "2025-09-22T08:54:54.336Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d10efd6f2d17da6dec4d82",
+              "startedAt": "2025-09-22T08:55:25.661Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d10f806f2d17da6dec4dce",
+              "startedAt": "2025-09-22T08:57:36.798Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d1100a6f2d17da6dec4ddc",
+              "startedAt": "2025-09-22T08:59:54.629Z",
+              "endedAt": "2025-09-22T09:03:48.588Z",
+              "durationMinutes": 3.78,
+              "roleplayDuration": 226.827,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d111f56f2d17da6dec4ec3",
+              "startedAt": "2025-09-22T09:08:05.165Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d12a456f2d17da6dec4f0e",
+              "startedAt": "2025-09-22T10:51:49.367Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d12b036f2d17da6dec4f2c",
+              "startedAt": "2025-09-22T10:54:59.711Z",
+              "endedAt": "2025-09-22T10:59:41.638Z",
+              "durationMinutes": 3.62,
+              "roleplayDuration": 217.222,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d12ea16f2d17da6dec505f",
+              "startedAt": "2025-09-22T11:10:25.470Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68d130336f2d17da6dec50a5",
+              "startedAt": "2025-09-22T11:17:07.534Z",
+              "endedAt": "2025-09-22T11:25:43.304Z",
+              "durationMinutes": 8.51,
+              "roleplayDuration": 510.437,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68df65f4c7e36ff7d09c18c1",
+              "startedAt": "2025-10-03T05:58:12.229Z",
+              "endedAt": "2025-10-03T06:04:24.380Z",
+              "durationMinutes": 5.38,
+              "roleplayDuration": 322.635,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68e37313c7e36ff7d09d5dc4",
+          "userName": "Rachaya Anuntananon",
+          "email": "rachaya.anuntananon@prudential.co.th",
+          "companyId": "68c2a5193ba842de98a1b32c",
+          "companyName": "PLT",
+          "totalSessions": 2,
+          "loginDays": 1,
+          "totalTimeMinutes": 20,
+          "avgSessionDurationMinutes": 10,
+          "firstLogin": "2025-10-06T08:10:50.091Z",
+          "lastLogin": "2025-10-06T08:13:48.313Z",
+          "sessions": [
+            {
+              "sessionId": "68e3798ac7e36ff7d09d5e14",
+              "startedAt": "2025-10-06T08:10:50.091Z",
+              "endedAt": "2025-10-06T08:13:35.262Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1759738413.804,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e37a3cc7e36ff7d09d5e51",
+              "startedAt": "2025-10-06T08:13:48.313Z",
+              "endedAt": "2025-10-06T08:14:19.440Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1759738457.987,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68d4bc09e2e4d6904a2bb07f",
+          "userName": "Kent",
+          "email": "cheanyun.foo@prudential.co.th",
+          "companyId": "68c2a5193ba842de98a1b32c",
+          "companyName": "PLT",
+          "totalSessions": 5,
+          "loginDays": 3,
+          "totalTimeMinutes": 16.32,
+          "avgSessionDurationMinutes": 3.26,
+          "firstLogin": "2025-09-25T03:50:55.518Z",
+          "lastLogin": "2025-10-06T09:48:59.067Z",
+          "sessions": [
+            {
+              "sessionId": "68d4bc1fe2e4d6904a2bb08e",
+              "startedAt": "2025-09-25T03:50:55.518Z",
+              "endedAt": "2025-09-25T03:51:26.607Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1758772286.503,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68d4c227e2e4d6904a2bb1b3",
+              "startedAt": "2025-09-25T04:16:39.073Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68da346dd6f72bddb3bd8c8a",
+              "startedAt": "2025-09-29T07:25:33.989Z",
+              "endedAt": "2025-09-29T07:31:36.416Z",
+              "durationMinutes": 5.81,
+              "roleplayDuration": 348.371,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68da4dfbd6f72bddb3bd8e86",
+              "startedAt": "2025-09-29T09:14:35.061Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68e3908bc7e36ff7d09e1397",
+              "startedAt": "2025-10-06T09:48:59.067Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            }
+          ]
+        },
+        {
+          "userId": "68df70d3c7e36ff7d09c7b81",
+          "userName": "Bank",
+          "email": "thanayot.thiamsawat@gmail.com",
+          "companyId": "68c2a5193ba842de98a1b32c",
+          "companyName": "PLT",
+          "totalSessions": 5,
+          "loginDays": 2,
+          "totalTimeMinutes": 13.08,
+          "avgSessionDurationMinutes": 2.62,
+          "firstLogin": "2025-10-03T06:45:07.070Z",
+          "lastLogin": "2025-10-06T06:59:59.752Z",
+          "sessions": [
+            {
+              "sessionId": "68df70f3c7e36ff7d09c7bb9",
+              "startedAt": "2025-10-03T06:45:07.070Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68df71c0c7e36ff7d09c7f04",
+              "startedAt": "2025-10-03T06:48:32.189Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68e36718c7e36ff7d09cb1a9",
+              "startedAt": "2025-10-06T06:52:08.504Z",
+              "endedAt": "2025-10-06T06:57:55.033Z",
+              "durationMinutes": 5.65,
+              "roleplayDuration": 339.23,
+              "usedRoleplayDuration": true
+            },
+            {
+              "sessionId": "68e368d0c7e36ff7d09d0a17",
+              "startedAt": "2025-10-06T06:59:28.263Z",
+              "endedAt": null,
+              "durationMinutes": 0.17,
+              "usedRoleplayDuration": false
+            },
+            {
+              "sessionId": "68e368efc7e36ff7d09d0a2b",
+              "startedAt": "2025-10-06T06:59:59.752Z",
+              "endedAt": "2025-10-06T07:07:00.182Z",
+              "durationMinutes": 6.92,
+              "roleplayDuration": 415.02,
+              "usedRoleplayDuration": true
+            }
+          ]
+        },
+        {
+          "userId": "68d2247f6f2d17da6dec5976",
+          "userName": "Bell",
+          "email": "kunthalee.srisakhirun@prudential.co.th",
+          "companyId": "68c2a5193ba842de98a1b32c",
+          "companyName": "PLT",
+          "totalSessions": 1,
+          "loginDays": 1,
+          "totalTimeMinutes": 10,
+          "avgSessionDurationMinutes": 10,
+          "firstLogin": "2025-09-23T05:11:16.499Z",
+          "lastLogin": "2025-09-23T05:11:16.499Z",
+          "sessions": [
+            {
+              "sessionId": "68d22bf46f2d17da6dec59ef",
+              "startedAt": "2025-09-23T05:11:16.499Z",
+              "endedAt": "2025-09-23T05:11:50.683Z",
+              "durationMinutes": 10,
+              "roleplayDuration": 1758604310.379,
+              "usedRoleplayDuration": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "_id": {
+    "$oid": "699c1c3c593388406d9b749e"
+  },
+  "name": "Andy",
+  "email": "andy+hupouser@hupo.co",
+  "auth0Id": "auth0|699c1c3822aae478ce74001e",
+  "company": {
+    "$oid": "6823409eb0be386b8c7c86ad"
+  },
+  "isGuest": false,
+  "isTester": false,
+  "isDeleted": false,
+  "emailVerified": true,
+  "hasChangedPassword": false,
+  "teams": [],
+  "role": "user",
+  "status": "active",
+  "createdAt": {
+    "$date": "2026-02-23T09:22:04.409Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-23T09:22:07.960Z"
+  },
+  "__v": 0
+}

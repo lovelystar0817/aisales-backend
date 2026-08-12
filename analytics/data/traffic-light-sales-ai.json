@@ -1,0 +1,5413 @@
+{
+  "generatedAt": "2025-10-15T09:28:13.559Z",
+  "product": "Sales AI",
+  "analysisWindowDays": 30,
+  "thresholds": {
+    "minSessions": 12,
+    "minTotalMinutes": 120,
+    "minLoginDays": 3,
+    "minAvgDurationMinutes": 6
+  },
+  "totals": {
+    "reps": 201,
+    "green": 8,
+    "yellow": 15,
+    "red": 178
+  },
+  "companies": [
+    {
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "repCount": 57,
+      "bandCounts": {
+        "green": 8,
+        "yellow": 6,
+        "red": 43
+      },
+      "scoreHistogram": {
+        "0": 38,
+        "1": 5,
+        "2": 6,
+        "3": 1,
+        "4": 7
+      },
+      "totals": {
+        "sessions": 418,
+        "timeMinutes": 2843.23,
+        "loginDays": 62
+      },
+      "averages": {
+        "sessionsPerRep": 7.33,
+        "minutesPerRep": 49.88
+      },
+      "exemplars": {
+        "green": [
+          "68db5be868ab4031e2b42b24",
+          "68db5b9168ab4031e2b42a17",
+          "68db5b7e68ab4031e2b429d7",
+          "68db5b9568ab4031e2b42a2d",
+          "68db5b6b68ab4031e2b429b6"
+        ],
+        "yellow": [
+          "68db5ddc68ab4031e2b42ce8",
+          "684397fc235f39ddcf199be7",
+          "68db5bcc68ab4031e2b42ae1",
+          "68db5bf568ab4031e2b42b43",
+          "6893021dc05214d39bd8227d"
+        ],
+        "red": [
+          "68db5c4d68ab4031e2b42bb9",
+          "689163897f2cf59fe13418b3",
+          "68db5bdf68ab4031e2b42b0f",
+          "68db5c3568ab4031e2b42b91",
+          "68db5b8868ab4031e2b429ff"
+        ]
+      }
+    },
+    {
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "repCount": 92,
+      "bandCounts": {
+        "green": 0,
+        "yellow": 3,
+        "red": 89
+      },
+      "scoreHistogram": {
+        "0": 87,
+        "1": 2,
+        "2": 3
+      },
+      "totals": {
+        "sessions": 124,
+        "timeMinutes": 348.85,
+        "loginDays": 50
+      },
+      "averages": {
+        "sessionsPerRep": 1.35,
+        "minutesPerRep": 3.79
+      },
+      "exemplars": {
+        "green": [],
+        "yellow": [
+          "689acc59353ea8c13c3f73ed",
+          "689acfa7353ea8c13c3f7405",
+          "688ad25dd078455beb0efbac"
+        ],
+        "red": [
+          "68db8ba568ab4031e2b480f7",
+          "68e39c61cc66744210383328",
+          "68d50c22fd996e263f7f90fc",
+          "6865f5c07823a296bd8aae44",
+          "6879f3000efa461b8beb0007"
+        ]
+      }
+    },
+    {
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "repCount": 38,
+      "bandCounts": {
+        "green": 0,
+        "yellow": 2,
+        "red": 36
+      },
+      "scoreHistogram": {
+        "0": 32,
+        "1": 4,
+        "2": 2
+      },
+      "totals": {
+        "sessions": 131,
+        "timeMinutes": 363.73,
+        "loginDays": 45
+      },
+      "averages": {
+        "sessionsPerRep": 3.45,
+        "minutesPerRep": 9.57
+      },
+      "exemplars": {
+        "green": [],
+        "yellow": [
+          "68c3d8014b56577747da73a2",
+          "68c3d6f14b56577747da72d1"
+        ],
+        "red": [
+          "68c78a798a89f08ce117dd9d",
+          "68c3d6ee4b56577747da72ca",
+          "68c8c5a808e9a18116d85c3f",
+          "68c3d6e04b56577747da72bd",
+          "68c3d9514b56577747da73f3"
+        ]
+      }
+    },
+    {
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "repCount": 14,
+      "bandCounts": {
+        "green": 0,
+        "yellow": 4,
+        "red": 10
+      },
+      "scoreHistogram": {
+        "0": 7,
+        "1": 3,
+        "2": 4
+      },
+      "totals": {
+        "sessions": 76,
+        "timeMinutes": 261.02,
+        "loginDays": 26
+      },
+      "averages": {
+        "sessionsPerRep": 5.43,
+        "minutesPerRep": 18.64
+      },
+      "exemplars": {
+        "green": [],
+        "yellow": [
+          "68ca98c0755941a84401f2d3",
+          "68c654f04b56577747da77cf",
+          "68d4bc09e2e4d6904a2bb07f",
+          "68d10f3e6f2d17da6dec4d9a"
+        ],
+        "red": [
+          "68e37313c7e36ff7d09d5dc4",
+          "68df70d3c7e36ff7d09c7b81",
+          "68e8b04d1ac773249cac0a27",
+          "68d2247f6f2d17da6dec5976",
+          "68ecd904b5a5c123e9b73bca"
+        ]
+      }
+    }
+  ],
+  "reps": [
+    {
+      "userId": "68415485a04f81761548562c",
+      "name": "Mira",
+      "email": "mira@hupo.co",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6842ac41235f39ddcf199a1d",
+      "name": "Tan Sue Anne",
+      "email": "tan.sueanne@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 8.68,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 4.34,
+        "firstSessionAt": "2025-10-07T07:16:00.354Z",
+        "lastSessionAt": "2025-10-07T07:16:02.730Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "684397fc235f39ddcf199be7",
+      "name": "BENJI",
+      "email": "benji.kok@prudential.com.sg",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 22,
+        "totalTimeMinutes": 46.17,
+        "loginDays": 5,
+        "avgSessionDurationMinutes": 2.1,
+        "firstSessionAt": "2025-09-25T01:46:59.591Z",
+        "lastSessionAt": "2025-10-02T04:04:25.229Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6846306f235f39ddcf199c07",
+      "name": "Hairin",
+      "email": "hairin@hupo.co",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68464801235f39ddcf199cfd",
+      "name": "Shreya M Venkatesh",
+      "email": "shreya@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6848fdbe235f39ddcf19a337",
+      "name": "Jas",
+      "email": "jas.phin@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "684955b3235f39ddcf19a680",
+      "name": "Edwin",
+      "email": "edwin.lee@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "684a3f94bd3c0ebfec19cce2",
+      "name": "3L",
+      "email": "lee.li.lian@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68537a5291ad6685d8b09cda",
+      "name": "Guan Kiat",
+      "email": "guan.kiat.lim@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6854fa0cfe4e963e18711765",
+      "name": "Siang Ling ",
+      "email": "loh.siang.ling@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "685b724f18db250cf379ccc0",
+      "name": "Angeline",
+      "email": "sumeiangeline.goh@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68633cc432a8f4ed83da1d91",
+      "name": "Janice",
+      "email": "janice.tan@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-10-12T10:05:21.040Z",
+        "lastSessionAt": "2025-10-12T10:05:21.040Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "686348e732a8f4ed83da1ed7",
+      "name": "Paolo",
+      "email": "paolo.rosete@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6863dbb07823a296bd8aa884",
+      "name": "Brendan",
+      "email": "brendan.chai@grab.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6865f5c07823a296bd8aae44",
+      "name": "Rene Hefner",
+      "email": "rene.hefner@grab.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 4,
+        "totalTimeMinutes": 6.07,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 1.52,
+        "firstSessionAt": "2025-09-18T23:18:50.166Z",
+        "lastSessionAt": "2025-09-22T02:58:45.646Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6865f5c27823a296bd8aae49",
+      "name": "Jules",
+      "email": "ext.jules.galang@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6867c156303b06d5c8c3c5f4",
+      "name": "Fiona",
+      "email": "fiona.leong@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6870bce6f444510bcab0f744",
+      "name": "Aimal",
+      "email": "khuzairy.bakar@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 10.17,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 5.09,
+        "firstSessionAt": "2025-09-24T08:35:40.084Z",
+        "lastSessionAt": "2025-10-14T07:46:02.812Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68784d2bd7b11ddfea1943c1",
+      "name": "Lydia",
+      "email": "wan.lydia.masturina@prudential.com.sg",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 7,
+        "totalTimeMinutes": 14.7,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 2.1,
+        "firstSessionAt": "2025-10-08T01:28:33.309Z",
+        "lastSessionAt": "2025-10-08T03:43:28.065Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6879f3000efa461b8beb0007",
+      "name": "Amy",
+      "email": "afiqah.said@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 4,
+        "totalTimeMinutes": 11.51,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 2.88,
+        "firstSessionAt": "2025-09-24T09:33:37.324Z",
+        "lastSessionAt": "2025-09-24T09:37:41.802Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "687ef9af7bb18c90d7cf2e01",
+      "name": "Eugene",
+      "email": "eugene.yeong@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68885a47d751af23dac6509b",
+      "name": "Maudi Sabila",
+      "email": "maudi.putri@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 2.18,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 2.18,
+        "firstSessionAt": "2025-09-23T08:10:13.220Z",
+        "lastSessionAt": "2025-09-23T08:10:13.220Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "688886b6d751af23dac65f0e",
+      "name": "Sarah",
+      "email": "sarah.hs.yeo@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "688ad25dd078455beb0efbac",
+      "name": "Claire",
+      "email": "claire.lizarda@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 14,
+        "totalTimeMinutes": 11.65,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 0.83,
+        "firstSessionAt": "2025-09-16T03:19:41.054Z",
+        "lastSessionAt": "2025-10-14T06:44:12.232Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "688c248e46dc242089e79875",
+      "name": "Donald",
+      "email": "donald.tjandra@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "688c24be46dc242089e7987d",
+      "name": "Weetang",
+      "email": "weetang.yee@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "688c8c4146dc242089e79fe9",
+      "name": "Tan",
+      "email": "tan.than@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6890336541de8d0e95153c5e",
+      "name": "Noom",
+      "email": "warinpong.ji@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-09-19T07:34:18.747Z",
+        "lastSessionAt": "2025-09-19T07:34:18.747Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6891636b7f2cf59fe1341880",
+      "name": "Yuki",
+      "email": "nabelia.yukita@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6891636b7f2cf59fe1341885",
+      "name": "Ree",
+      "email": "chiew.rexuan@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689163717f2cf59fe134188f",
+      "name": "Zayne",
+      "email": "zayne.tan@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689163847f2cf59fe13418a6",
+      "name": "Dylan",
+      "email": "ng.xianhui@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689163897f2cf59fe13418b3",
+      "name": "Elton",
+      "email": "elton.pang@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 11,
+        "totalTimeMinutes": 64.52,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 5.87,
+        "firstSessionAt": "2025-09-30T06:45:48.117Z",
+        "lastSessionAt": "2025-09-30T19:09:11.508Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689163967f2cf59fe13418c4",
+      "name": "Melvin",
+      "email": "yeo.melvin@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689163aa7f2cf59fe13418cf",
+      "name": "Mac",
+      "email": "macarius.peh@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689164357f2cf59fe13418df",
+      "name": "Cathrine Peh",
+      "email": "cathrine.peh@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6891649f7f2cf59fe1341924",
+      "name": "Michael Chang",
+      "email": "michael.chang@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6891742a7f2cf59fe1342683",
+      "name": "Syafiqah",
+      "email": "syafiqah.halim@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6891846f7f2cf59fe1343d74",
+      "name": "Thu",
+      "email": "oanhthu.nguyen@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6891d4cae3a8fc369a575f9c",
+      "name": "Zap",
+      "email": "ftt.zapsie.cam@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6892ab1be3a8fc369a576489",
+      "name": "Maria",
+      "email": "ext.maria.jomoc@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6892d0bde3a8fc369a57655f",
+      "name": "Kimi",
+      "email": "ftt.kimberly.camacho@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6892d67de3a8fc369a57672b",
+      "name": "Angel",
+      "email": "ext.angelica.bernal@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6892dd54e3a8fc369a5767e9",
+      "name": "Charlie",
+      "email": "ftt.c.agas@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6892de45e3a8fc369a5767f6",
+      "name": "Marie",
+      "email": "ftt.m.alfonso@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6892eedec05214d39bd820da",
+      "name": "Rain",
+      "email": "ftt.rainier.gonzales@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6892f82bc05214d39bd821f5",
+      "name": "Helen",
+      "email": "ftt.helen.lorenzo@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689300f8c05214d39bd82255",
+      "name": "Daphne",
+      "email": "ftt.d.delosreyes@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6893021dc05214d39bd8227d",
+      "name": "Jaelyn",
+      "email": "jaelyn.goh@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 13,
+        "totalTimeMinutes": 119.86,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 9.22,
+        "firstSessionAt": "2025-09-30T06:26:35.468Z",
+        "lastSessionAt": "2025-10-01T03:12:51.277Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "6893090ec05214d39bd82347",
+      "name": "Dan",
+      "email": "ftt.dan.patricio@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689553be353ea8c13c3f4e78",
+      "name": "HM",
+      "email": "hmboon86@gmail.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6895694a353ea8c13c3f5295",
+      "name": "Divina",
+      "email": "ftt.divina.endeken@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68958608353ea8c13c3f58ec",
+      "name": "Abi",
+      "email": "ext.abigael.tallara@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "6898038d353ea8c13c3f61c1",
+      "name": "Daisy",
+      "email": "ext.daisy.cuison@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68995ce7353ea8c13c3f6c11",
+      "name": "Azlan Amin",
+      "email": "azlan.amin@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68995cfd353ea8c13c3f6c1b",
+      "name": "Rizaldy",
+      "email": "rizaldy.oktaviandra@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68996ad4353ea8c13c3f6ca7",
+      "name": "Sin Ling",
+      "email": "sinling.chau@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689999ee353ea8c13c3f6d83",
+      "name": "Jovi",
+      "email": "jovi.joened@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689acc59353ea8c13c3f73ed",
+      "name": "Trang Nguyen",
+      "email": "thuytrang.nguyenngoc@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 17,
+        "totalTimeMinutes": 23.97,
+        "loginDays": 7,
+        "avgSessionDurationMinutes": 1.41,
+        "firstSessionAt": "2025-09-22T07:21:07.879Z",
+        "lastSessionAt": "2025-10-03T04:55:05.267Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689acfa7353ea8c13c3f7405",
+      "name": "Debbie",
+      "email": "debbie.oh@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 15,
+        "totalTimeMinutes": 53.93,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 3.6,
+        "firstSessionAt": "2025-09-16T02:17:16.582Z",
+        "lastSessionAt": "2025-09-29T03:23:50.585Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689b297b1a70f2615fb08988",
+      "name": "Linh Dao",
+      "email": "linh.dao@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689b2b141a70f2615fb08997",
+      "name": "Kristy",
+      "email": "ftt.my.phung@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689b4c421a70f2615fb08cb9",
+      "name": "Maddy",
+      "email": "ngochongdiem.nguyen@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689b4d031a70f2615fb08cc7",
+      "name": "Thuong",
+      "email": "ftt.hoaithuong.nt@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689b4e871a70f2615fb08cd9",
+      "name": "Lien",
+      "email": "lien.dam@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689b51411a70f2615fb08d28",
+      "name": "Tiến",
+      "email": "ftt.tien.phamquang@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689b543d1a70f2615fb08eb9",
+      "name": "Tien",
+      "email": "ftt.mytien.le@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689b639d1a70f2615fb09afe",
+      "name": "Hoangphuc.nguyen",
+      "email": "hoangphuc.nguyen@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689bff751a70f2615fb0ab4f",
+      "name": "Kimuel",
+      "email": "kimuel.dellosa@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689c03a31a70f2615fb0af54",
+      "name": "Ha",
+      "email": "thuha.nt@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689c06ee1a70f2615fb0b179",
+      "name": "Sy Tran",
+      "email": "quocsy.tran@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689c07ca1a70f2615fb0b1c1",
+      "name": "Hao",
+      "email": "nhathao.phan@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689c16ae1a70f2615fb0b741",
+      "name": "Nhiem Phan",
+      "email": "ftt.nhiem.phan@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689c5390ffd5502f60fe304e",
+      "name": "Dee",
+      "email": "ftt.nurdieana.iswadi@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689c63f9ffd5502f60fe3574",
+      "name": "Jannica",
+      "email": "ext.jannica.margallo@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "689ca357295859d344028506",
+      "name": "Tùng",
+      "email": "ftt.tung.huynh@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68a6d0ec39797e07fb07b164",
+      "name": "Sai",
+      "email": "sai.dsouza@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 12.36,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 6.18,
+        "firstSessionAt": "2025-10-02T02:02:11.594Z",
+        "lastSessionAt": "2025-10-02T02:16:40.370Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68b5417e088df6ff9af8893b",
+      "name": "Samantha",
+      "email": "annette.sinaga@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68b5418a088df6ff9af88940",
+      "name": "Elvia",
+      "email": "elvia@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68b54191088df6ff9af88952",
+      "name": "Jeffrey",
+      "email": "yap.chinhong@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68b541d7088df6ff9af88997",
+      "name": "Howie",
+      "email": "yuen.boonhowe@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68b541ed088df6ff9af889a9",
+      "name": "Dennis",
+      "email": "dennis.tee@uobgroup.com",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68b56b1d088df6ff9af89e58",
+      "name": "Ananthi",
+      "email": "ananthi.gunasekaran@prudential.com.sg",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 12,
+        "totalTimeMinutes": 49.19,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 4.1,
+        "firstSessionAt": "2025-10-05T13:04:17.787Z",
+        "lastSessionAt": "2025-10-14T07:54:23.438Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68b56b1e088df6ff9af89e5d",
+      "name": "Ben",
+      "email": "benjamin.wj.chua@prudential.com.sg",
+      "status": "unknown",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68b7b25e58441eb165ee584d",
+      "name": "Ashlyn",
+      "email": "uyen.trannguyenmy@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68b808829e0952cc8c63e0a9",
+      "name": "Regi",
+      "email": "regi.ying@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68bac2113ba842de98a19cfe",
+      "name": "Max",
+      "email": "wisit.en@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68bfe98d3ba842de98a1a1e6",
+      "name": "Megan",
+      "email": "megan.ren@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 0.34,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-09-18T04:53:49.805Z",
+        "lastSessionAt": "2025-09-18T04:53:51.749Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68bffa833ba842de98a1a1f7",
+      "name": "Jacyntha ",
+      "email": "jacyntha.foo@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 6.4,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 2.13,
+        "firstSessionAt": "2025-09-18T03:03:55.702Z",
+        "lastSessionAt": "2025-09-18T03:16:51.914Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c26a793ba842de98a1ab3b",
+      "name": "Felicia",
+      "email": "felicia.adriane@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c26a7e3ba842de98a1ab40",
+      "name": "Difa",
+      "email": "ftt.azzahra.isnadifa@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c26a823ba842de98a1ab48",
+      "name": "Eka Fitri PS ",
+      "email": "eka.puspitasari@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c26aa83ba842de98a1ab55",
+      "name": "Fachrozi Anasril",
+      "email": "fachrozi.anasril@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c26ab43ba842de98a1ab5a",
+      "name": "Raraa",
+      "email": "ftt.raihanah.putri@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c26ae43ba842de98a1ab69",
+      "name": "Rumi",
+      "email": "rumiyatun.r@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c26b4e3ba842de98a1ab90",
+      "name": "Fidelis Hosana Setiyanto",
+      "email": "ftt.fidelis.s@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c272563ba842de98a1afb8",
+      "name": "Rian",
+      "email": "ftt.yusrian.yordan@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6dd4b56577747da72b2",
+      "name": "Karl",
+      "email": "karl_joseph_tambanillo@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-09-19T07:56:54.755Z",
+        "lastSessionAt": "2025-09-19T07:56:54.755Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6e04b56577747da72b8",
+      "name": "Arvieness",
+      "email": "ronnel_victor_tahil@manulife.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-10-14T13:47:40.756Z",
+        "lastSessionAt": "2025-10-14T13:47:40.756Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6e04b56577747da72bd",
+      "name": "Steph",
+      "email": "stephanie_p_villoria@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 7,
+        "totalTimeMinutes": 33.17,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 4.74,
+        "firstSessionAt": "2025-09-17T00:41:45.010Z",
+        "lastSessionAt": "2025-09-18T02:01:47.563Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6ee4b56577747da72ca",
+      "name": "Kysha",
+      "email": "kryshyl_monica_remedios@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 8,
+        "totalTimeMinutes": 12.89,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 1.61,
+        "firstSessionAt": "2025-09-17T03:57:59.529Z",
+        "lastSessionAt": "2025-09-17T05:46:34.718Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6f14b56577747da72d1",
+      "name": "jf",
+      "email": "jf_salazar@manulife.com.ph",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 19,
+        "totalTimeMinutes": 36.05,
+        "loginDays": 7,
+        "avgSessionDurationMinutes": 1.9,
+        "firstSessionAt": "2025-09-15T09:45:24.504Z",
+        "lastSessionAt": "2025-10-13T09:35:22.416Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6f34b56577747da72d9",
+      "name": "Faith",
+      "email": "myra_faith_viloria@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 10.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 5.09,
+        "firstSessionAt": "2025-09-17T02:46:54.853Z",
+        "lastSessionAt": "2025-09-17T02:49:09.569Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6f84b56577747da72e2",
+      "name": "G",
+      "email": "ghie_molina@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6f94b56577747da72e9",
+      "name": "Nino",
+      "email": "nino_henry_segovia@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d6fa4b56577747da72ee",
+      "name": "Ava",
+      "email": "ava_zena_grande@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d7054b56577747da72fe",
+      "name": "Dave",
+      "email": "daveson_ababa@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d70e4b56577747da730a",
+      "name": "Honie",
+      "email": "honifei_dg_rivero@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 6,
+        "totalTimeMinutes": 36.09,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 6.02,
+        "firstSessionAt": "2025-09-17T08:53:50.082Z",
+        "lastSessionAt": "2025-09-17T09:25:31.744Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68c3d7104b56577747da730f",
+      "name": "j.anne",
+      "email": "mariajacqueline_p_janolo@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d7134b56577747da7315",
+      "name": "PJ",
+      "email": "peterjohn_david@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 6,
+        "totalTimeMinutes": 2.65,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.44,
+        "firstSessionAt": "2025-09-18T02:41:03.834Z",
+        "lastSessionAt": "2025-09-18T02:43:42.052Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d71d4b56577747da7328",
+      "name": "Ley",
+      "email": "ashley_sultan@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d72a4b56577747da7336",
+      "name": "EC",
+      "email": "eric_v_cahatol@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 6,
+        "totalTimeMinutes": 13.63,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 2.27,
+        "firstSessionAt": "2025-09-20T11:13:38.476Z",
+        "lastSessionAt": "2025-09-21T02:37:12.197Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d7344b56577747da733d",
+      "name": "Margot",
+      "email": "margaret_caimen1@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 5,
+        "totalTimeMinutes": 14.7,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 2.94,
+        "firstSessionAt": "2025-09-17T07:11:59.144Z",
+        "lastSessionAt": "2025-09-17T07:33:41.817Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d7364b56577747da7344",
+      "name": "Ralph",
+      "email": "ralph_emmanuelle_estrellado@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 28.76,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 14.38,
+        "firstSessionAt": "2025-09-16T06:20:42.394Z",
+        "lastSessionAt": "2025-09-16T06:24:25.498Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68c3d7564b56577747da7357",
+      "name": "Naffy",
+      "email": "naffy_misoles_alinsub@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d7624b56577747da7360",
+      "name": "MJ",
+      "email": "mcjohnson_canonigo@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 0.34,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-09-16T05:38:45.127Z",
+        "lastSessionAt": "2025-09-18T08:31:11.021Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d7684b56577747da7367",
+      "name": "Gilbert",
+      "email": "gilbert_garcia1@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d76e4b56577747da736d",
+      "name": "Rai",
+      "email": "raiza_santos@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d79b4b56577747da7384",
+      "name": "Toto",
+      "email": "lester_raymond_laluces@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 0.82,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 0.27,
+        "firstSessionAt": "2025-09-16T14:10:41.906Z",
+        "lastSessionAt": "2025-09-17T00:25:57.985Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d8014b56577747da73a2",
+      "name": "Jenell",
+      "email": "jenell_c_lagman@manulife.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 25,
+        "totalTimeMinutes": 56.03,
+        "loginDays": 8,
+        "avgSessionDurationMinutes": 2.24,
+        "firstSessionAt": "2025-09-16T05:05:26.956Z",
+        "lastSessionAt": "2025-09-30T04:55:59.280Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c3d9514b56577747da73f3",
+      "name": "Ella",
+      "email": "estrella_alag@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 7,
+        "totalTimeMinutes": 38.99,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 5.57,
+        "firstSessionAt": "2025-09-16T04:42:32.162Z",
+        "lastSessionAt": "2025-09-17T03:23:43.854Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c654f04b56577747da77cf",
+      "name": "ดาว",
+      "email": "daoohdao@gmail.com",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 14,
+        "totalTimeMinutes": 47.32,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 3.38,
+        "firstSessionAt": "2025-09-16T05:37:38.879Z",
+        "lastSessionAt": "2025-10-02T05:58:38.495Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c78a798a89f08ce117dd9d",
+      "name": "JF",
+      "email": "jf_salazar@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 10,
+        "totalTimeMinutes": 13.87,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 1.39,
+        "firstSessionAt": "2025-09-23T05:59:19.198Z",
+        "lastSessionAt": "2025-10-14T07:07:12.057Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c81ed228326d1a27b93f7b",
+      "name": "Louwell",
+      "email": "louwell_narvacan@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c8c5a808e9a18116d85c3f",
+      "name": "Atet",
+      "email": "maritess_esparaguera@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 8,
+        "totalTimeMinutes": 35.95,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 4.49,
+        "firstSessionAt": "2025-09-17T06:32:17.514Z",
+        "lastSessionAt": "2025-09-17T09:11:38.543Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c8d1b408e9a18116d85c60",
+      "name": "Erik",
+      "email": "erik.e@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c8d2b708e9a18116d85c80",
+      "name": "Aldo",
+      "email": "laurentius.putra@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-09-16T04:55:33.787Z",
+        "lastSessionAt": "2025-09-16T04:55:33.787Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68c8f2e208e9a18116d86071",
+      "name": "Nathan",
+      "email": "jonathan_sampang@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68ca37eb08e9a18116d885f3",
+      "name": "Wilhelm",
+      "email": "wilhelm_conrad_moreno@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 0.34,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-09-17T05:31:21.071Z",
+        "lastSessionAt": "2025-09-17T05:33:15.104Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68ca4b6f755941a84401d757",
+      "name": "Ed",
+      "email": "ed_piamonte@manulife.com",
+      "status": "unknown",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68ca98c0755941a84401f2d3",
+      "name": "ทดสอบ",
+      "email": "apisara.aungsutarn@prudential.co.th",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 20,
+        "totalTimeMinutes": 35.35,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 1.77,
+        "firstSessionAt": "2025-09-22T08:39:05.310Z",
+        "lastSessionAt": "2025-10-10T07:36:38.219Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d0bb6b59365bf2898305a9",
+      "name": "Big",
+      "email": "yuktapume.pungperaporn@prudential.co.th",
+      "status": "unknown",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d10f3e6f2d17da6dec4d9a",
+      "name": "Ryu",
+      "email": "anuparp.sirithammasakda@prudential.co.th",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 5,
+        "totalTimeMinutes": 37.46,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 7.49,
+        "firstSessionAt": "2025-09-22T08:57:28.850Z",
+        "lastSessionAt": "2025-10-06T08:46:46.176Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68d2247f6f2d17da6dec5976",
+      "name": "Bell",
+      "email": "kunthalee.srisakhirun@prudential.co.th",
+      "status": "unknown",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 10,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 10,
+        "firstSessionAt": "2025-09-23T05:11:16.499Z",
+        "lastSessionAt": "2025-09-23T05:11:16.499Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68d225036f2d17da6dec5996",
+      "name": "Tanin",
+      "email": "tanin.asirapornpong@prudential.co.th",
+      "status": "unknown",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d2250f6f2d17da6dec59a4",
+      "name": "Sisira",
+      "email": "sisira.sripongpankul@prudential.co.th",
+      "status": "unknown",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d225836f2d17da6dec59ad",
+      "name": "Pete",
+      "email": "pavariss.lintha@prudential.co.th",
+      "status": "unknown",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d26287fe664b251d1b9bea",
+      "name": "Chau",
+      "email": "tranbaochau.vo@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 9.05,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 3.02,
+        "firstSessionAt": "2025-09-23T09:04:32.466Z",
+        "lastSessionAt": "2025-09-24T07:41:14.434Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d395ebfe664b251d1b9edf",
+      "name": "Anh. Dinh",
+      "email": "nguyenquynhanh.dinh@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 7.89,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 2.63,
+        "firstSessionAt": "2025-09-24T09:02:16.810Z",
+        "lastSessionAt": "2025-09-24T10:01:28.215Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d39618fe664b251d1b9ef1",
+      "name": "Trinh",
+      "email": "trinh.nguyenthuy@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 9.24,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 3.08,
+        "firstSessionAt": "2025-09-24T09:16:42.980Z",
+        "lastSessionAt": "2025-10-13T05:14:57.950Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d396b8fe664b251d1b9f07",
+      "name": "Syifaa",
+      "email": "syifaa.sainel@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 3.86,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 1.29,
+        "firstSessionAt": "2025-09-24T08:06:43.696Z",
+        "lastSessionAt": "2025-09-24T08:24:21.644Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d3988cfe664b251d1b9f21",
+      "name": "Ana Melizza",
+      "email": "anamelizza.lee@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 1.03,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 1.03,
+        "firstSessionAt": "2025-09-24T07:08:01.310Z",
+        "lastSessionAt": "2025-09-24T07:08:01.310Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d3b01dcb9f39a43291afc5",
+      "name": "Mariel",
+      "email": "mariel_c_tablan@manuilfe.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-09-24T08:49:53.121Z",
+        "lastSessionAt": "2025-09-24T08:49:53.121Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d3b211cb9f39a43291b00e",
+      "name": "Mariel",
+      "email": "marielctablan@gmail.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 20.93,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 10.47,
+        "firstSessionAt": "2025-09-24T08:56:26.513Z",
+        "lastSessionAt": "2025-10-06T02:47:24.701Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68d3b430fe664b251d1ba110",
+      "name": "Jonajinn",
+      "email": "jona.redondo@grabtaxi.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 4,
+        "totalTimeMinutes": 8.96,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 2.24,
+        "firstSessionAt": "2025-09-24T09:09:21.236Z",
+        "lastSessionAt": "2025-09-24T09:24:30.664Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d3b994fe664b251d1ba36d",
+      "name": "Stefano",
+      "email": "ftt.aero.tobing@grab.com",
+      "status": "unknown",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 10.03,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 5.01,
+        "firstSessionAt": "2025-09-24T10:36:02.332Z",
+        "lastSessionAt": "2025-09-24T10:46:15.263Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d4bc09e2e4d6904a2bb07f",
+      "name": "Kent",
+      "email": "cheanyun.foo@prudential.co.th",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 14,
+        "totalTimeMinutes": 73.67,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 5.26,
+        "firstSessionAt": "2025-09-25T03:50:55.518Z",
+        "lastSessionAt": "2025-10-10T07:37:20.451Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d4d20581f3f029e9ef50d9",
+      "name": "Xavier",
+      "email": "xavier.capmarti@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 17.46,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 5.82,
+        "firstSessionAt": "2025-09-26T06:42:55.653Z",
+        "lastSessionAt": "2025-10-02T06:35:35.085Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d4e673e2e4d6904a2bb71d",
+      "name": "Paula",
+      "email": "paula_isabel_manalese@manulife.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 0.51,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-09-26T23:46:48.569Z",
+        "lastSessionAt": "2025-09-26T23:53:01.796Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d50c22fd996e263f7f90fc",
+      "name": "Jolie",
+      "email": "jolie.lim@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 5,
+        "totalTimeMinutes": 24.72,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 4.94,
+        "firstSessionAt": "2025-09-25T09:34:29.342Z",
+        "lastSessionAt": "2025-09-25T10:02:37.868Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d611e9e85c606be27c0d39",
+      "name": "Hannah",
+      "email": "hannah.co@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d62952fd996e263f7f9365",
+      "name": "nicolette",
+      "email": "nicolette.toy@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 12.68,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 4.23,
+        "firstSessionAt": "2025-09-26T05:49:33.742Z",
+        "lastSessionAt": "2025-09-26T05:52:10.116Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68d633bbe85c606be27c0fcc",
+      "name": "Hieu",
+      "email": "trunghieu.luong@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68db5b5168ab4031e2b429a1",
+      "name": "YJ",
+      "email": "chow.yongjin@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 6,
+        "totalTimeMinutes": 50.11,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 8.35,
+        "firstSessionAt": "2025-09-30T04:24:57.450Z",
+        "lastSessionAt": "2025-09-30T08:26:04.862Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5b6b68ab4031e2b429b6",
+      "name": "Khai Wen",
+      "email": "yong.khaiwen@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 25,
+        "totalTimeMinutes": 150.91,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 6.04,
+        "firstSessionAt": "2025-09-30T06:22:30.252Z",
+        "lastSessionAt": "2025-10-02T14:14:04.764Z"
+      },
+      "classification": {
+        "band": "green",
+        "score": 4,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": true,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5b7e68ab4031e2b429d7",
+      "name": "Chit Hong ",
+      "email": "foo.chithong@uobgroup.com.sg",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 27,
+        "totalTimeMinutes": 190.4,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 7.05,
+        "firstSessionAt": "2025-09-30T06:22:27.630Z",
+        "lastSessionAt": "2025-10-02T03:06:45.485Z"
+      },
+      "classification": {
+        "band": "green",
+        "score": 4,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": true,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5b8668ab4031e2b429ed",
+      "name": "Jia Xin",
+      "email": "fak.jiaxin@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 23,
+        "totalTimeMinutes": 349.55,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 15.2,
+        "firstSessionAt": "2025-09-30T09:36:34.432Z",
+        "lastSessionAt": "2025-10-05T16:06:09.164Z"
+      },
+      "classification": {
+        "band": "green",
+        "score": 4,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": true,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5b8868ab4031e2b429ff",
+      "name": "china",
+      "email": "china.wu@uobgroup.sg",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 8,
+        "totalTimeMinutes": 45.08,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 5.63,
+        "firstSessionAt": "2025-09-30T06:38:35.139Z",
+        "lastSessionAt": "2025-09-30T09:16:02.135Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68db5b9168ab4031e2b42a17",
+      "name": "Mingyue",
+      "email": "ouyang.mingyue@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 32,
+        "totalTimeMinutes": 227.13,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 7.1,
+        "firstSessionAt": "2025-09-30T07:10:04.285Z",
+        "lastSessionAt": "2025-10-03T06:51:15.175Z"
+      },
+      "classification": {
+        "band": "green",
+        "score": 4,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": true,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5b9568ab4031e2b42a2d",
+      "name": "Tammy ",
+      "email": "tammy.chan@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 27,
+        "totalTimeMinutes": 187.94,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 6.96,
+        "firstSessionAt": "2025-09-30T06:35:21.248Z",
+        "lastSessionAt": "2025-10-06T08:19:03.399Z"
+      },
+      "classification": {
+        "band": "green",
+        "score": 4,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": true,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5b9868ab4031e2b42a37",
+      "name": "Emma",
+      "email": "tan.fengzhiemma@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 10,
+        "totalTimeMinutes": 120.15,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 12.02,
+        "firstSessionAt": "2025-09-30T06:32:43.631Z",
+        "lastSessionAt": "2025-10-09T02:10:06.468Z"
+      },
+      "classification": {
+        "band": "green",
+        "score": 3,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": true,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5ba268ab4031e2b42a7b",
+      "name": "Wilson",
+      "email": "wilson.tn1@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 22,
+        "totalTimeMinutes": 216.29,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 9.83,
+        "firstSessionAt": "2025-10-01T02:17:48.158Z",
+        "lastSessionAt": "2025-10-05T10:26:26.734Z"
+      },
+      "classification": {
+        "band": "green",
+        "score": 4,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": true,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5bc368ab4031e2b42aca",
+      "name": "Arun",
+      "email": "arun.soprabhakarvcleetus@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 3,
+        "totalTimeMinutes": 57.72,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 19.24,
+        "firstSessionAt": "2025-09-30T07:41:13.612Z",
+        "lastSessionAt": "2025-09-30T08:42:46.351Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5bcc68ab4031e2b42ae1",
+      "name": "Qijun",
+      "email": "qi.junbian@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 20,
+        "totalTimeMinutes": 104.4,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 5.22,
+        "firstSessionAt": "2025-09-30T08:32:06.795Z",
+        "lastSessionAt": "2025-10-02T06:17:05.607Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68db5bdf68ab4031e2b42b0f",
+      "name": "Em",
+      "email": "emily.lau@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 11,
+        "totalTimeMinutes": 62.98,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 5.73,
+        "firstSessionAt": "2025-09-30T07:28:50.729Z",
+        "lastSessionAt": "2025-10-01T07:30:59.276Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68db5be868ab4031e2b42b24",
+      "name": "Ng Chui Yeng",
+      "email": "ng.chuiyeng@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 42,
+        "totalTimeMinutes": 324.79,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 7.73,
+        "firstSessionAt": "2025-09-30T06:50:35.554Z",
+        "lastSessionAt": "2025-10-04T11:57:44.348Z"
+      },
+      "classification": {
+        "band": "green",
+        "score": 4,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": true,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5bf568ab4031e2b42b43",
+      "name": "KC",
+      "email": "chia.kokchean@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 20,
+        "totalTimeMinutes": 119.12,
+        "loginDays": 3,
+        "avgSessionDurationMinutes": 5.96,
+        "firstSessionAt": "2025-09-30T06:18:30.982Z",
+        "lastSessionAt": "2025-10-02T10:50:56.729Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68db5c3568ab4031e2b42b91",
+      "name": "Sheldon",
+      "email": "lim.choonkit@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 10,
+        "totalTimeMinutes": 69.19,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 6.92,
+        "firstSessionAt": "2025-09-30T06:33:58.589Z",
+        "lastSessionAt": "2025-09-30T09:07:18.962Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db5c4d68ab4031e2b42bb9",
+      "name": "Nick Lim",
+      "email": "lim.chinlieng@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 15,
+        "totalTimeMinutes": 63.84,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 4.26,
+        "firstSessionAt": "2025-09-30T07:31:44.745Z",
+        "lastSessionAt": "2025-10-14T07:45:48.037Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68db5cdd68ab4031e2b42c9f",
+      "name": "Lawrence ",
+      "email": "lawrence.angwancong@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68db5ddc68ab4031e2b42ce8",
+      "name": "Zhou Zhou",
+      "email": "zhou.zhou@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 26,
+        "totalTimeMinutes": 108.14,
+        "loginDays": 4,
+        "avgSessionDurationMinutes": 4.16,
+        "firstSessionAt": "2025-09-30T06:46:05.318Z",
+        "lastSessionAt": "2025-10-03T06:49:00.922Z"
+      },
+      "classification": {
+        "band": "yellow",
+        "score": 2,
+        "metThresholds": {
+          "minSessions": true,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68db6ca468ab4031e2b42e89",
+      "name": "Jackson Yew",
+      "email": "jackson.yew@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 4,
+        "totalTimeMinutes": 36.34,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 9.09,
+        "firstSessionAt": "2025-09-30T05:45:55.043Z",
+        "lastSessionAt": "2025-09-30T08:10:21.663Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68db8ba568ab4031e2b480f7",
+      "name": "Zhedrik",
+      "email": "zhedrik.chua@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 9,
+        "totalTimeMinutes": 84.09,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 9.34,
+        "firstSessionAt": "2025-10-01T03:30:54.307Z",
+        "lastSessionAt": "2025-10-01T07:39:21.906Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    },
+    {
+      "userId": "68dc7c512cb3011ee7236b01",
+      "name": "Jia Xin",
+      "email": "junevi0727@gmail.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68dc7d452cb3011ee7236b16",
+      "name": "Jia Xin",
+      "email": "jiaxin9160@gmail.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68dca4e32cb3011ee723c228",
+      "name": "Ganda",
+      "email": "lizalorainelopez@ymail.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 2.96,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 2.96,
+        "firstSessionAt": "2025-10-01T03:50:57.807Z",
+        "lastSessionAt": "2025-10-01T03:50:57.807Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68ddf9eda0b313e3c8ecd2e8",
+      "name": "Eva",
+      "email": "eva@hupo.co",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68de152e48fe31cb401434db",
+      "name": "Tim",
+      "email": "bhuree.ac@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68de205a48fe31cb4014353c",
+      "name": "Nam",
+      "email": "dung.luu@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-10-02T06:49:29.008Z",
+        "lastSessionAt": "2025-10-02T06:49:29.008Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68df55a1c6f903ca18865dde",
+      "name": "Kadir",
+      "email": "kadir.bahajjaj@prudential.com.sg",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 7,
+        "totalTimeMinutes": 13.04,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 1.86,
+        "firstSessionAt": "2025-10-03T04:52:36.308Z",
+        "lastSessionAt": "2025-10-03T05:31:28.310Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68df564c48fe31cb4014355b",
+      "name": "Hong",
+      "email": "hong.le@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-10-03T04:53:41.465Z",
+        "lastSessionAt": "2025-10-03T04:53:41.465Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68df70d3c7e36ff7d09c7b81",
+      "name": "Bank",
+      "email": "thanayot.thiamsawat@gmail.com",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 5,
+        "totalTimeMinutes": 13.08,
+        "loginDays": 2,
+        "avgSessionDurationMinutes": 2.62,
+        "firstSessionAt": "2025-10-03T06:45:07.070Z",
+        "lastSessionAt": "2025-10-06T06:59:59.752Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68df7448cc667442103830c5",
+      "name": "Binh",
+      "email": "binh.doduc@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-10-03T07:00:26.970Z",
+        "lastSessionAt": "2025-10-03T07:00:26.970Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68df8162cc66744210383109",
+      "name": "quy.to",
+      "email": "quy.to@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e35dffcc66744210383150",
+      "name": "Laza",
+      "email": "puttama.la@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 1.05,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 1.05,
+        "firstSessionAt": "2025-10-06T06:14:11.223Z",
+        "lastSessionAt": "2025-10-06T06:14:11.223Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e36e31cc66744210383259",
+      "name": "Tina",
+      "email": "tina.ma@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 0.64,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.32,
+        "firstSessionAt": "2025-10-06T07:23:16.852Z",
+        "lastSessionAt": "2025-10-06T07:24:28.145Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e37313c7e36ff7d09d5dc4",
+      "name": "Rachaya Anuntananon",
+      "email": "rachaya.anuntananon@prudential.co.th",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 10,
+        "totalTimeMinutes": 30.52,
+        "loginDays": 5,
+        "avgSessionDurationMinutes": 3.05,
+        "firstSessionAt": "2025-10-06T08:10:50.091Z",
+        "lastSessionAt": "2025-10-14T14:23:45.503Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": true,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e39122cc6674421038329c",
+      "name": "Jen",
+      "email": "jeenada.lu@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 2,
+        "totalTimeMinutes": 1,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.5,
+        "firstSessionAt": "2025-10-06T09:54:54.380Z",
+        "lastSessionAt": "2025-10-06T09:57:12.688Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e39c61cc66744210383328",
+      "name": "Kiara",
+      "email": "kiara.akiate@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 8,
+        "totalTimeMinutes": 13.73,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 1.72,
+        "firstSessionAt": "2025-10-06T10:41:50.052Z",
+        "lastSessionAt": "2025-10-06T11:12:03.122Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e3a737cc667442103835b6",
+      "name": "KK",
+      "email": "natthida.sa@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e3a742cc667442103835bf",
+      "name": "Pannita.po",
+      "email": "pannita.po@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 3.65,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 3.65,
+        "firstSessionAt": "2025-10-06T11:26:50.877Z",
+        "lastSessionAt": "2025-10-06T11:26:50.877Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e4c8e33a40dae2199fcb18",
+      "name": "Yin",
+      "email": "chengsheng.yin@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 6,
+        "totalTimeMinutes": 9.81,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 1.63,
+        "firstSessionAt": "2025-10-07T13:45:02.578Z",
+        "lastSessionAt": "2025-10-07T14:18:08.798Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e4d52acc6674421038367c",
+      "name": "RachelG",
+      "email": "rachel.goh@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 0.17,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-10-14T08:46:51.441Z",
+        "lastSessionAt": "2025-10-14T08:46:51.441Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e7677a2f1f810d96765c9a",
+      "name": "June",
+      "email": "june_santiago@manulife.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 4,
+        "totalTimeMinutes": 4.37,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 1.09,
+        "firstSessionAt": "2025-10-09T07:43:29.770Z",
+        "lastSessionAt": "2025-10-09T07:51:05.543Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e787ed2f1f810d9676621e",
+      "name": "Macoy",
+      "email": "marc_bryan_palacios@manulife.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e789002f1f810d96766234",
+      "name": "Arcie",
+      "email": "arcie_chua@manulife.com",
+      "status": "active",
+      "companyId": "68accc7c35a46d74e550b719",
+      "companyName": "Manulife",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68e8b04d1ac773249cac0a27",
+      "name": "Rachaya",
+      "email": "rachaya.anuntannon@prudential.co.th",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 5,
+        "totalTimeMinutes": 0.85,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 0.17,
+        "firstSessionAt": "2025-10-10T07:06:04.045Z",
+        "lastSessionAt": "2025-10-10T07:30:38.018Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68ec7778b5a5c123e9b73056",
+      "name": "Adelyn",
+      "email": "chuah.shiewin@uobgroup.com",
+      "status": "active",
+      "companyId": "683edc3ffc7dd8560e615750",
+      "companyName": "Prudential",
+      "metrics": {
+        "totalSessions": 7,
+        "totalTimeMinutes": 33.18,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 4.74,
+        "firstSessionAt": "2025-10-13T05:26:57.189Z",
+        "lastSessionAt": "2025-10-13T06:33:16.078Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68ecd904b5a5c123e9b73bca",
+      "name": "Ton",
+      "email": "baramee.kunnika@prudential.co.th",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 3.03,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 3.03,
+        "firstSessionAt": "2025-10-13T10:49:26.724Z",
+        "lastSessionAt": "2025-10-13T10:49:26.724Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68ef04b67f64c85844d63e59",
+      "name": "Ryan",
+      "email": "ryan.wong@grabtaxi.com",
+      "status": "active",
+      "companyId": "67f76dea5410cedbd5ae768c",
+      "companyName": "Grab",
+      "metrics": {
+        "totalSessions": 0,
+        "totalTimeMinutes": 0,
+        "loginDays": 0,
+        "avgSessionDurationMinutes": 0,
+        "firstSessionAt": null,
+        "lastSessionAt": null
+      },
+      "classification": {
+        "band": "red",
+        "score": 0,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": false
+        }
+      }
+    },
+    {
+      "userId": "68ef58f2b5a5c123e9b78d25",
+      "name": "Golf",
+      "email": "natphasut.pongthipan@prudential.co.th",
+      "status": "active",
+      "companyId": "68c2a5193ba842de98a1b32c",
+      "companyName": "PLT",
+      "metrics": {
+        "totalSessions": 1,
+        "totalTimeMinutes": 9.74,
+        "loginDays": 1,
+        "avgSessionDurationMinutes": 9.74,
+        "firstSessionAt": "2025-10-15T08:21:19.032Z",
+        "lastSessionAt": "2025-10-15T08:21:19.032Z"
+      },
+      "classification": {
+        "band": "red",
+        "score": 1,
+        "metThresholds": {
+          "minSessions": false,
+          "minTotalMinutes": false,
+          "minLoginDays": false,
+          "minAvgDurationMinutes": true
+        }
+      }
+    }
+  ]
+}

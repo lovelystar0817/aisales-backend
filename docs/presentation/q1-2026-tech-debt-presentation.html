@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q1 Engineering: Building a Reliable Foundation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --bg-card: #12121a;
+    --bg-card-hover: #1a1a28;
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #55556a;
+    --accent: #6366f1;
+    --accent-glow: rgba(99, 102, 241, 0.15);
+    --red: #ef4444;
+    --red-dim: rgba(239, 68, 68, 0.15);
+    --orange: #f59e0b;
+    --orange-dim: rgba(245, 158, 11, 0.15);
+    --green: #10b981;
+    --green-dim: rgba(16, 185, 129, 0.15);
+    --blue: #3b82f6;
+    --blue-dim: rgba(59, 130, 246, 0.15);
+    --border: #1e1e30;
+    --radius: 12px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .slide {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding: 60px 80px;
+    position: absolute;
+    top: 0; left: 0;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .slide.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  .slide.slide-top {
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    color: var(--text-dim);
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 700px;
+  }
+
+  .label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--text-dim);
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+    margin: 20px 0;
+    max-width: 600px;
+  }
+
+  /* Accent colors for headings */
+  .text-red { color: var(--red); }
+  .text-orange { color: var(--orange); }
+  .text-green { color: var(--green); }
+  .text-blue { color: var(--blue); }
+  .text-accent { color: var(--accent); }
+  .text-dim { color: var(--text-dim); }
+  .text-muted { color: var(--text-muted); }
+
+  /* Grid layouts */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 24px;
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  /* Cards */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+  }
+
+  .card h3 {
+    margin-bottom: 12px;
+  }
+
+  .card p, .card li {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .card ul li {
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text-muted);
+  }
+
+  .card-red { border-color: rgba(239, 68, 68, 0.3); }
+  .card-orange { border-color: rgba(245, 158, 11, 0.3); }
+  .card-green { border-color: rgba(16, 185, 129, 0.3); }
+  .card-blue { border-color: rgba(59, 130, 246, 0.3); }
+  .card-accent { border-color: rgba(99, 102, 241, 0.3); }
+
+  /* Stat blocks */
+  .stat {
+    text-align: center;
+    padding: 32px 20px;
+  }
+
+  .stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    font-weight: 400;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 0.95rem;
+  }
+
+  th {
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+  }
+
+  td {
+    padding: 12px 16px;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
+    line-height: 1.5;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Pill / badge */
+  .pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .pill-red { background: var(--red-dim); color: var(--red); }
+  .pill-orange { background: var(--orange-dim); color: var(--orange); }
+  .pill-green { background: var(--green-dim); color: var(--green); }
+  .pill-blue { background: var(--blue-dim); color: var(--blue); }
+  .pill-accent { background: var(--accent-glow); color: var(--accent); }
+
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding-left: 32px;
+    margin-top: 20px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--border);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+  }
+
+  .timeline-item.red::before { background: var(--red); }
+  .timeline-item.orange::before { background: var(--orange); }
+  .timeline-item.green::before { background: var(--green); }
+
+  .timeline-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .timeline-text {
+    font-size: 1rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* Code/mono */
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+    background: rgba(99, 102, 241, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: var(--accent);
+  }
+
+  /* Divider */
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin: 20px 0;
+  }
+
+  /* Big list */
+  .big-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  .big-list li {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .big-list li:last-child { border-bottom: none; }
+
+  .big-list .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    min-width: 24px;
+  }
+
+  .big-list .item-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text);
+  }
+
+  .big-list .item-desc {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+
+  /* Flow / arrow chain */
+  .flow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .flow-step {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .flow-arrow {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+  }
+
+  /* Progress bar */
+  .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 8px 0;
+  }
+
+  .progress-label {
+    min-width: 140px;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+  }
+
+  .progress-bar {
+    flex: 1;
+    height: 8px;
+    background: var(--bg-card);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.6s ease;
+  }
+
+  .progress-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    min-width: 40px;
+    text-align: right;
+  }
+
+  /* Controls */
+  .controls {
+    position: fixed;
+    bottom: 24px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 100;
+  }
+
+  .page-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .progress-dots {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 100;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    opacity: 0.3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    opacity: 1;
+    background: var(--accent);
+    width: 20px;
+    border-radius: 3px;
+  }
+
+  /* Section indicator */
+  .section-tag {
+    position: fixed;
+    top: 28px;
+    right: 36px;
+    z-index: 100;
+  }
+
+  /* Special layouts */
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .center-content .subtitle {
+    max-width: 650px;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 48px;
+    align-items: start;
+    margin-top: 24px;
+  }
+
+  .two-col-equal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+    margin-top: 24px;
+  }
+
+  .spacer { height: 24px; }
+  .spacer-sm { height: 12px; }
+
+  /* Sequence diagram style */
+  .sequence {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 32px;
+    position: relative;
+  }
+
+  .seq-col {
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  .seq-header {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 16px;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 16px;
+  }
+
+  .seq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    text-align: left;
+  }
+
+  /* Highlight box */
+  .highlight-box {
+    background: var(--accent-glow);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-top: 20px;
+  }
+
+  .highlight-box p {
+    font-size: 1rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+
+  .highlight-box strong {
+    color: var(--text);
+  }
+
+  /* Impact line */
+  .impact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+
+  .impact-icon {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .compact-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .compact-list li {
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  .compact-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text-muted);
+  }
+
+  .compact-list li strong {
+    color: var(--text);
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== SLIDE 1: Title ==================== -->
+<div class="slide center-content" data-section="">
+  <div class="label">Q1 2026 Engineering</div>
+  <h1>Building a<br>Reliable Foundation</h1>
+  <div class="spacer-sm"></div>
+  <p class="subtitle">Defense & Offense: how we protect what we have and set up to scale.</p>
+</div>
+
+<!-- ==================== SLIDE 2: The Wake-Up Call ==================== -->
+<div class="slide slide-top" data-section="Context">
+  <div class="label">February 3, 2026</div>
+  <h2>The Wake-Up Call</h2>
+  <p class="subtitle">SEV-1 Database Outage During a Live Client Call</p>
+
+  <div class="two-col">
+    <div>
+      <div class="timeline">
+        <div class="timeline-item orange">
+          <div class="timeline-time">Jan 28 - Feb 3</div>
+          <div class="timeline-text">DB CPU climbed from 50% to 100% over 6 days. <strong style="color:var(--red)">Zero alerts fired.</strong></div>
+        </div>
+        <div class="timeline-item red">
+          <div class="timeline-time">Feb 3 &mdash; 1:23 PM</div>
+          <div class="timeline-text">DB CPU hits 100%. App starts failing. Prudential live call interrupted mid-session.</div>
+        </div>
+        <div class="timeline-item red">
+          <div class="timeline-time">Feb 3 &mdash; 2:33 PM</div>
+          <div class="timeline-text">Root cause identified: DB CPU saturation. No monitoring was configured on DB tier.</div>
+        </div>
+        <div class="timeline-item green">
+          <div class="timeline-time">Feb 3 &mdash; 4:50 PM</div>
+          <div class="timeline-text">Resolved. Capacity doubled. Alerts added retroactively.</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-red" style="margin-top: 16px;">
+        <h3 class="text-red">Root Causes</h3>
+        <ul class="compact-list">
+          <li><strong>No monitoring on the database tier</strong> &mdash; we only monitored the app</li>
+          <li><strong>All environments shared resources</strong> &mdash; prod, staging, other services on same infra</li>
+          <li><strong>No escalation process</strong> &mdash; capacity increase deferred instead of immediate</li>
+        </ul>
+      </div>
+      <div class="spacer-sm"></div>
+      <div class="highlight-box">
+        <p><strong>40+ minutes of downtime. A client call interrupted. No alerts until we looked manually.</strong> This talk is about making sure this doesn't happen again &mdash; and setting us up to scale.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 3: Framework ==================== -->
+<div class="slide center-content" data-section="Framework">
+  <h2>Defense vs. Offense</h2>
+  <div class="spacer"></div>
+  <div class="grid-2" style="max-width: 900px; width: 100%;">
+    <div class="card card-blue" style="text-align: center;">
+      <div style="font-size: 2.4rem; margin-bottom: 12px;">&#x1F6E1;</div>
+      <h3 class="text-blue">Defense</h3>
+      <p style="font-size: 1.1rem; margin-bottom: 16px;">Can we sleep at night?</p>
+      <ul class="compact-list" style="text-align: left;">
+        <li>Reliability & monitoring</li>
+        <li>Testing & correctness</li>
+        <li>Security</li>
+        <li>Infrastructure isolation</li>
+      </ul>
+      <div class="spacer-sm"></div>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">Protect current revenue</p>
+    </div>
+    <div class="card card-green" style="text-align: center;">
+      <div style="font-size: 2.4rem; margin-bottom: 12px;">&#x2694;</div>
+      <h3 class="text-green">Offense</h3>
+      <p style="font-size: 1.1rem; margin-bottom: 16px;">Can we move faster?</p>
+      <ul class="compact-list" style="text-align: left;">
+        <li>Deployment improvements</li>
+        <li>Containerization</li>
+        <li>Multi-region</li>
+        <li>Code defragmentation</li>
+      </ul>
+      <div class="spacer-sm"></div>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">Enable future growth</p>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="highlight-box" style="max-width: 600px;">
+    <p style="text-align: center;"><strong>Defense funds Offense.</strong><br>Every outage or bug we prevent is time we get back for building.</p>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 4: Defense Section Title ==================== -->
+<div class="slide center-content" data-section="Defense">
+  <div class="pill pill-blue" style="font-size: 0.85rem; margin-bottom: 20px;">DEFENSE</div>
+  <h1>Protect What We Have</h1>
+  <p class="subtitle">Observability, testing, isolation, and security.</p>
+</div>
+
+<!-- ==================== SLIDE 5: Observability ==================== -->
+<div class="slide slide-top" data-section="Defense">
+  <div class="label">Defense #1</div>
+  <h2>Observability & Alerting</h2>
+  <p class="quote">You can't fix what you can't see.</p>
+
+  <div class="two-col">
+    <div>
+      <h3 style="margin-top: 8px;">What we have</h3>
+      <ul class="compact-list">
+        <li><strong>Sentry</strong> for error tracking &mdash; but errors are largely ignored, need to keep it clean and actionable</li>
+        <li><strong>Logging</strong> &mdash; console output to PM2 rotated files, not searchable or queryable</li>
+        <li><strong>PostHog</strong> for product analytics</li>
+        <li><strong>Heartbeat</strong> at <code>/monitoring/heartbeat</code> &mdash; checks app server is alive</li>
+      </ul>
+      <div class="spacer-sm"></div>
+      <div class="card card-red" style="padding: 16px 20px;">
+        <p style="font-size: 0.9rem;"><strong class="text-red">Gaps:</strong> No DB connectivity health check. Logs not searchable (need cloud logging). Sentry errors ignored &mdash; no triage, no on-call routing.</p>
+      </div>
+    </div>
+    <div>
+      <h3>What we need</h3>
+      <div class="grid-2" style="margin-top: 8px; gap: 12px;">
+        <div class="card" style="padding: 16px;">
+          <h3 style="font-size: 0.9rem; color: var(--blue);">Infra Level</h3>
+          <p style="font-size: 0.85rem;">CPU/memory alerts on all servers AND databases. Thresholds at 70-80%.</p>
+        </div>
+        <div class="card" style="padding: 16px;">
+          <h3 style="font-size: 0.9rem; color: var(--blue);">App Level</h3>
+          <p style="font-size: 0.85rem;">DB connectivity heartbeat, request latency, cloud logging (searchable, queryable).</p>
+        </div>
+        <div class="card" style="padding: 16px;">
+          <h3 style="font-size: 0.9rem; color: var(--blue);">Voice Specific</h3>
+          <p style="font-size: 0.85rem;">LLM delay, STT/TTS latency, end-to-end response time per language.</p>
+        </div>
+        <div class="card" style="padding: 16px;">
+          <h3 style="font-size: 0.9rem; color: var(--blue);">On-Call & Triage</h3>
+          <p style="font-size: 0.85rem;">Clean up Sentry noise. Route real alerts to on-call. Make errors actionable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 6: Voice Instrumentation ==================== -->
+<div class="slide slide-top" data-section="Defense">
+  <div class="label">Defense #1b</div>
+  <h2>Voice Instrumentation</h2>
+  <p class="subtitle" style="max-width: 800px;">Real-time voice is our core experience. We need to measure every millisecond of the pipeline.</p>
+
+  <div class="spacer"></div>
+
+  <div class="flow" style="justify-content: center;">
+    <div class="flow-step" style="border-color: rgba(99, 102, 241, 0.4);">User speaks</div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step" style="border-color: rgba(245, 158, 11, 0.4);">STT</div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step" style="border-color: rgba(239, 68, 68, 0.4);">LLM</div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step" style="border-color: rgba(245, 158, 11, 0.4);">TTS</div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step" style="border-color: rgba(99, 102, 241, 0.4);">AI responds</div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="grid-3">
+    <div class="card card-accent">
+      <h3>Measure</h3>
+      <ul class="compact-list">
+        <li>STT transcription delay</li>
+        <li>LLM inference time</li>
+        <li>TTS synthesis delay</li>
+        <li>Total round-trip per language</li>
+      </ul>
+    </div>
+    <div class="card card-accent">
+      <h3>Track</h3>
+      <ul class="compact-list">
+        <li>Provider performance (ElevenLabs, OpenAI, etc.)</li>
+        <li>Language-specific latency</li>
+        <li>Degradation over time</li>
+      </ul>
+    </div>
+    <div class="card card-accent">
+      <h3>Single Source of Truth</h3>
+      <ul class="compact-list">
+        <li>Which provider per language</li>
+        <li>Which voice ID per persona</li>
+        <li>Optimal config per use case</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 7: Testing ==================== -->
+<div class="slide slide-top" data-section="Defense">
+  <div class="label">Defense #2</div>
+  <h2>Testing & Correctness</h2>
+
+  <div class="grid-4" style="margin-bottom: 28px;">
+    <div class="card stat">
+      <div class="stat-number text-red">16</div>
+      <div class="stat-label">test files</div>
+    </div>
+    <div class="card stat">
+      <div class="stat-number text-red">151K</div>
+      <div class="stat-label">lines of code</div>
+    </div>
+    <div class="card stat">
+      <div class="stat-number text-red">0</div>
+      <div class="stat-label">E2E tests</div>
+    </div>
+    <div class="card stat">
+      <div class="stat-number text-red">0</div>
+      <div class="stat-label">LLM evals</div>
+    </div>
+  </div>
+
+  <h3>Three levels, in priority order</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Level</th>
+        <th>What</th>
+        <th>Tool</th>
+        <th>Why it matters</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="pill pill-red">P0</span></td>
+        <td><strong style="color: var(--text);">Unit tests</strong><br>Assessment scoring, feedback parsing</td>
+        <td>Vitest</td>
+        <td>SCORM popup bug: 27 flags existed, only 20 checked. Tests would catch this.</td>
+      </tr>
+      <tr>
+        <td><span class="pill pill-orange">P1</span></td>
+        <td><strong style="color: var(--text);">E2E tests</strong><br>Login &rarr; session &rarr; complete &rarr; results</td>
+        <td>Checkly</td>
+        <td>Catch integration failures across frontend + backend.</td>
+      </tr>
+      <tr>
+        <td><span class="pill pill-orange">P1</span></td>
+        <td><strong style="color: var(--text);">LLM evals</strong><br>Assessment quality, chat consistency</td>
+        <td>Custom</td>
+        <td>Ensure prompt changes don't silently degrade output quality.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== SLIDE 8: Infrastructure Isolation ==================== -->
+<div class="slide slide-top" data-section="Defense">
+  <div class="label">Defense #3</div>
+  <h2>Infrastructure Isolation</h2>
+  <p class="quote">One noisy neighbor took down production.</p>
+
+  <div class="two-col">
+    <div>
+      <h3>Current state</h3>
+      <p style="color: var(--text-dim); line-height: 1.6; margin-bottom: 20px;">
+        Production backend, staging backend, People AI, and other services all share the same DigitalOcean infrastructure. One overloaded service affects everything.
+      </p>
+      <div class="card card-red" style="padding: 16px 20px;">
+        <p style="font-size: 0.9rem;"><strong class="text-red">This is what caused the SEV-1.</strong> Staging + prod on the same DB. Other apps competing for CPU.</p>
+      </div>
+    </div>
+    <div>
+      <h3>Isolation plan (ordered by risk)</h3>
+      <table>
+        <thead>
+          <tr><th>Step</th><th>What</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill pill-red">1</span></td>
+            <td><strong style="color: var(--text);">Isolate AI Sales DB</strong></td>
+            <td>DB contention caused the SEV-1</td>
+          </tr>
+          <tr>
+            <td><span class="pill pill-orange">2</span></td>
+            <td><strong style="color: var(--text);">Isolate AI Sales compute</strong></td>
+            <td>Separate server for the backend</td>
+          </tr>
+          <tr>
+            <td><span class="pill pill-orange">3</span></td>
+            <td><strong style="color: var(--text);">Isolate People AI App</strong></td>
+            <td>Different usage patterns</td>
+          </tr>
+          <tr>
+            <td><span class="pill pill-blue">4</span></td>
+            <td><strong style="color: var(--text);">Proper staging env</strong></td>
+            <td>Staging currently uses prod LiveKit &mdash; should be fully isolated</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 9: Security ==================== -->
+<div class="slide slide-top" data-section="Defense">
+  <div class="label">Defense #4</div>
+  <h2>Security</h2>
+  <p class="quote">We don't know what we don't know.</p>
+
+  <div class="two-col-equal">
+    <div>
+      <h3>Known gaps <span class="pill pill-red" style="margin-left: 8px;">Fix first</span></h3>
+      <ul class="compact-list">
+        <li><strong>No dependency scanning</strong> &mdash; <code>npm audit</code> is not in our CI/CD pipeline</li>
+        <li><strong>Admin panel auth</strong> &mdash; plaintext password from env vars, no audit trail</li>
+        <li><strong>Outdated runtime versions</strong> &mdash; need to keep Node.js, Ubuntu, and libraries on latest stable versions</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Then <span class="pill pill-orange" style="margin-left: 8px;">Systematic</span></h3>
+      <ul class="compact-list">
+        <li><strong>Claude Code Security tool</strong> &mdash; automated vulnerability scanning, run regularly on codebase</li>
+        <li><strong>Automated scanning in CI</strong> &mdash; npm audit on every PR, block merges on critical vulns</li>
+        <li><strong>Regular penetration testing</strong> &mdash; scheduled quarterly</li>
+        <li><strong>Security alerting</strong> &mdash; route findings to on-call, assign owners for remediation</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 10: Offense Section Title ==================== -->
+<div class="slide center-content" data-section="Offense">
+  <div class="pill pill-green" style="font-size: 0.85rem; margin-bottom: 20px;">OFFENSE</div>
+  <h1>Move Faster, Scale Further</h1>
+  <p class="subtitle">Deployments, containerization, multi-region, and defragmentation.</p>
+</div>
+
+<!-- ==================== SLIDE 11: CI/CD ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #1</div>
+  <h2>CI/CD Improvements</h2>
+  <p class="quote">Deploying shouldn't require two people coordinating in Slack.</p>
+
+  <div class="two-col-equal">
+    <div>
+      <h3>Current flow</h3>
+      <div class="card card-red" style="margin-top: 8px;">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">CI (Integration)</p>
+        <ul class="compact-list">
+          <li>Push code to <strong>feature branch</strong></li>
+          <li>Feature-specific staging is deployed</li>
+          <li>Manually tested on staging</li>
+          <li>Manually merge to <code>main</code></li>
+        </ul>
+        <div style="border-top: 1px solid var(--border); margin: 12px 0;"></div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">CD (Delivery)</p>
+        <ul class="compact-list">
+          <li>Backend: run manual deploy script</li>
+          <li>Frontend: auto-deploys on push to <code>main</code></li>
+          <li><strong>Manually time both</strong> so changes go hand-in-hand</li>
+          <li>PM2 restart causes brief downtime</li>
+          <li>No automated rollback on failure</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Target state</h3>
+      <div class="card card-green" style="margin-top: 8px;">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">CI (Integration)</p>
+        <ul class="compact-list">
+          <li><strong>Automated checks on PR:</strong> lint, test, security scan, build</li>
+          <li><strong>Preview environments</strong> per PR (automated staging)</li>
+          <li>Merge only after CI passes</li>
+        </ul>
+        <div style="border-top: 1px solid var(--border); margin: 12px 0;"></div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">CD (Delivery)</p>
+        <ul class="compact-list">
+          <li><strong>Unified pipeline:</strong> one trigger deploys frontend + backend together</li>
+          <li><strong>Zero-downtime:</strong> rolling restarts or blue-green deploys</li>
+          <li><strong>Auto-rollback:</strong> revert on health check failure</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 12: Containerization ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #2</div>
+  <h2>Containerization</h2>
+  <p class="subtitle">The prerequisite for everything else.</p>
+
+  <div class="spacer"></div>
+
+  <div class="two-col">
+    <div>
+      <h3>Current state</h3>
+      <table style="margin-top: 8px;">
+        <tbody>
+          <tr>
+            <td><strong style="color: var(--text);">Backend</strong></td>
+            <td><span class="pill pill-red">Bare Node.js + PM2</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--text);">LiveKit Agent</strong></td>
+            <td><span class="pill pill-green">Dockerized</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--text);">Qdrant</strong></td>
+            <td><span class="pill pill-green">Dockerized</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--text);">MongoDB</strong></td>
+            <td><span class="pill pill-orange">Managed (DO)</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="spacer"></div>
+      <h3>Why it's foundational</h3>
+      <ul class="compact-list">
+        <li><strong>Isolation</strong> requires containers to separate services cleanly</li>
+        <li><strong>Multi-region</strong> requires containers for AWS ECS / GCP Cloud Run</li>
+        <li><strong>Zero-downtime</strong> deploys are trivial with containers</li>
+        <li><strong>Local dev</strong> parity with production</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Scope</h3>
+      <div class="card card-accent" style="margin-top: 8px;">
+        <ol style="list-style: none; padding: 0; counter-reset: step;">
+          <li style="padding: 8px 0; border-bottom: 1px solid var(--border); color: var(--text-dim); display: flex; gap: 12px;">
+            <span style="color: var(--accent); font-weight: 700; font-family: 'JetBrains Mono', monospace;">01</span>
+            <span>Create Dockerfile for the backend (multi-stage build)</span>
+          </li>
+          <li style="padding: 8px 0; border-bottom: 1px solid var(--border); color: var(--text-dim); display: flex; gap: 12px;">
+            <span style="color: var(--accent); font-weight: 700; font-family: 'JetBrains Mono', monospace;">02</span>
+            <span>docker-compose for local dev (backend + MongoDB)</span>
+          </li>
+          <li style="padding: 8px 0; border-bottom: 1px solid var(--border); color: var(--text-dim); display: flex; gap: 12px;">
+            <span style="color: var(--accent); font-weight: 700; font-family: 'JetBrains Mono', monospace;">03</span>
+            <span>CI/CD pipeline builds and pushes images</span>
+          </li>
+          <li style="padding: 8px 0; color: var(--text-dim); display: flex; gap: 12px;">
+            <span style="color: var(--accent); font-weight: 700; font-family: 'JetBrains Mono', monospace;">04</span>
+            <span>Validate with staging before production cutover</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 13: Multi-Region ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #3</div>
+  <h2>Multi-Region Deployment</h2>
+  <p class="quote">Latency matters for real-time voice.</p>
+
+  <div class="two-col">
+    <div>
+      <h3>Current: DigitalOcean Singapore (single region)</h3>
+      <div class="spacer-sm"></div>
+      <p style="color: var(--text-dim); line-height: 1.6;">All clients worldwide connect to SGP1. For voice sessions, every extra 50ms of latency degrades the experience.</p>
+
+      <div class="spacer"></div>
+
+      <h3>Plans already documented</h3>
+      <table style="margin-top: 8px;">
+        <thead><tr><th>Region</th><th>Provider</th><th>Est. Cost/mo</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong style="color:var(--text)">Hong Kong</strong></td>
+            <td>AWS (ECS Fargate)</td>
+            <td>$750-1,000</td>
+            <td>12-17 days</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--text)">Japan / UK</strong></td>
+            <td>GCP (Cloud Run)</td>
+            <td>$560-860</td>
+            <td>10-15 days</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h3>Dependency chain</h3>
+      <div class="card card-orange" style="margin-top: 8px; padding: 20px;">
+        <div class="flow" style="flex-direction: column; align-items: flex-start; gap: 8px;">
+          <div class="flow-step" style="width: 100%; text-align: center; border-color: rgba(99,102,241,0.4);">Containerization (Offense #2)</div>
+          <div class="flow-arrow" style="align-self: center;">&darr;</div>
+          <div class="flow-step" style="width: 100%; text-align: center; border-color: rgba(245,158,11,0.4);">AWS HK Deployment</div>
+          <div class="flow-arrow" style="align-self: center;">&darr;</div>
+          <div class="flow-step" style="width: 100%; text-align: center; border-color: rgba(16,185,129,0.4);">GCP JP / UK (repeat pattern)</div>
+        </div>
+      </div>
+      <div class="spacer-sm"></div>
+      <div class="highlight-box">
+        <p><strong>Start with AWS Hong Kong.</strong> Validate the multi-region pattern once, then replicate to other regions with lower effort.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 14: Regional LLM/Voice ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #4</div>
+  <h2>Regional LLM & Voice Hosting</h2>
+  <p class="subtitle">Different regions have different compliance requirements for AI providers.</p>
+
+  <div class="spacer"></div>
+
+  <div class="two-col-equal">
+    <div>
+      <h3 class="text-orange">The challenge</h3>
+      <div class="card card-orange" style="margin-top: 8px;">
+        <ul class="compact-list">
+          <li>A Saudi client may <strong>not allow American OpenAI</strong> &mdash; needs LLM hosted in-region (e.g., OpenAI via Azure Middle East)</li>
+          <li>Voice providers may have <strong>regional latency differences</strong></li>
+          <li>Data residency requirements vary by country</li>
+          <li>Currently hardcoded to specific providers &mdash; no easy way to swap per region</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-green">What we need</h3>
+      <div class="card card-green" style="margin-top: 8px;">
+        <ul class="compact-list">
+          <li><strong>Provider abstraction layer</strong> &mdash; swap LLM/STT/TTS provider per region or per client without code changes</li>
+          <li><strong>Region-aware config</strong> &mdash; map regions to allowed providers (e.g., Middle East &rarr; Azure OpenAI, APAC &rarr; direct OpenAI/Anthropic)</li>
+          <li><strong>Voice provider flexibility</strong> &mdash; different TTS providers per language/region</li>
+          <li>Ties directly into multi-region deployment architecture</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 15: Assessment Defrag ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #5</div>
+  <h2>Assessment Defragmentation</h2>
+  <p class="quote">Every new client costs us 3-5 weeks because of copy-paste architecture.</p>
+
+  <div class="grid-4" style="margin-bottom: 24px;">
+    <div class="card stat" style="padding: 20px 12px;">
+      <div class="stat-number text-orange" style="font-size: 2.8rem;">15</div>
+      <div class="stat-label">assessment handler files<br>(copy-pasted per company)</div>
+    </div>
+    <div class="card stat" style="padding: 20px 12px;">
+      <div class="stat-number text-orange" style="font-size: 2.8rem;">27</div>
+      <div class="stat-label">hardcoded boolean flags<br>on SalesSession model</div>
+    </div>
+    <div class="card stat" style="padding: 20px 12px;">
+      <div class="stat-number text-orange" style="font-size: 2.8rem;">30+</div>
+      <div class="stat-label">Agenda job type<br>constants</div>
+    </div>
+    <div class="card stat" style="padding: 20px 12px;">
+      <div class="stat-number text-orange" style="font-size: 2.8rem;">8+</div>
+      <div class="stat-label">files modified<br>per new client</div>
+    </div>
+  </div>
+
+  <div class="two-col-equal">
+    <div>
+      <h3 class="text-red">Real impact</h3>
+      <ul class="compact-list">
+        <li><strong>SCORM popup bug (Feb 2026):</strong> 27 flags existed, only 20 checked in completion logic</li>
+        <li><strong>Bug fixes don't propagate:</strong> fixing one company's card doesn't fix the same bug in 18 others</li>
+        <li><strong>Onboarding cost:</strong> new engineers struggle to understand which pattern to follow</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-green">Strategy: "Stop the bleeding"</h3>
+      <ul class="compact-list">
+        <li><strong>Build unified model</strong> &mdash; dynamic <code>sections[]</code> array replaces named flags</li>
+        <li><strong>New clients use shared</strong> &mdash; from day one</li>
+        <li><strong>Migrate existing clients</strong> &mdash; gradually, no breaking changes</li>
+        <li>Detailed plan exists: <code>docs/plans/assessment-defragmentation.md</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 15: Prompt Defrag ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #6</div>
+  <h2>Prompt Defragmentation</h2>
+
+  <div class="grid-2" style="margin-bottom: 24px;">
+    <div class="card stat" style="padding: 24px;">
+      <div class="stat-number text-orange" style="font-size: 2.8rem;">5,647</div>
+      <div class="stat-label">lines in sales-voice.ts (single file)</div>
+    </div>
+    <div class="card stat" style="padding: 24px;">
+      <div class="stat-number text-orange" style="font-size: 2.8rem;">50+</div>
+      <div class="stat-label">prompt files across src/prompts/</div>
+    </div>
+  </div>
+
+  <div class="two-col-equal">
+    <div>
+      <h3>The problem</h3>
+      <ul class="compact-list">
+        <li><code>sales-voice.ts</code> has <strong>10+ routing paths</strong> (one per company/scenario)</li>
+        <li><strong>3 identical</strong> recruitment flows (Manulife, AXA-PH, KT-AXA)</li>
+        <li><strong>3 identical</strong> cold call flows (Prudential, generic, MSIG)</li>
+        <li>Merge conflicts are frequent &mdash; everyone touches the same file</li>
+        <li>Impossible to test prompt changes in isolation</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Strategy</h3>
+      <ul class="compact-list">
+        <li><strong>Extract shared building blocks</strong> &mdash; personality, conversation dynamics, engagement triggers (some exist but aren't consistently used)</li>
+        <li><strong>Compose</strong> company-specific prompts from shared blocks</li>
+        <li><strong>Enable per-company testing</strong> &mdash; change one client without risking others</li>
+        <li>Detailed plan exists: <code>docs/plans/prompt-defragmentation.md</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 16: Job Reliability ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #7</div>
+  <h2>Background Job Reliability</h2>
+  <p class="subtitle">30+ job types with no safety net.</p>
+
+  <div class="spacer"></div>
+
+  <div class="two-col-equal">
+    <div>
+      <h3 class="text-red">Current risks</h3>
+      <div class="card card-red" style="margin-top: 8px;">
+        <ul class="compact-list">
+          <li><strong>No retry policy</strong> &mdash; if an assessment generation job fails, it fails silently</li>
+          <li><strong>No dead-letter queue</strong> &mdash; failed jobs disappear, no way to replay them</li>
+          <li><strong>No frontend visibility</strong> &mdash; users don't see "processing..." or "failed" states</li>
+          <li><strong>Silent failures</strong> &mdash; user never gets their feedback, never knows why</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-green">What we need</h3>
+      <div class="card card-green" style="margin-top: 8px;">
+        <ul class="compact-list">
+          <li><strong>Retry with backoff</strong> &mdash; transient LLM failures shouldn't lose results</li>
+          <li><strong>Failure alerting</strong> &mdash; know when jobs fail, route to eng team</li>
+          <li><strong>Job status in UI</strong> &mdash; users see progress and can report stuck jobs</li>
+          <li><strong>Dead-letter processing</strong> &mdash; replay or investigate failed jobs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 17: Product Accuracy ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #8</div>
+  <h2>Product Reference Accuracy</h2>
+  <p class="subtitle">Improve how AI uses product knowledge during sessions.</p>
+
+  <div class="spacer"></div>
+
+  <div class="two-col-equal">
+    <div>
+      <h3>Current: Static product files</h3>
+      <div class="card" style="margin-top: 8px;">
+        <ul class="compact-list">
+          <li>16 static product list files in codebase</li>
+          <li>Product info hardcoded in prompts</li>
+          <li><strong>Assessment uses summarized product info</strong> &mdash; lossy compression means AI evaluates against incomplete data</li>
+          <li>Updates require code changes + deploy</li>
+          <li>No way to verify accuracy at scale</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Target: RAG + continuous evaluation</h3>
+      <div class="card card-green" style="margin-top: 8px;">
+        <ul class="compact-list">
+          <li><strong>RAG for product reference</strong> &mdash; dynamic retrieval instead of static files</li>
+          <li><strong>Gold-standard evaluation</strong> &mdash; sampled human evaluations as benchmark</li>
+          <li><strong>Continuous accuracy tracking</strong> &mdash; auto-evaluate against gold standard</li>
+          <li><strong>Client-managed updates</strong> &mdash; product info changes without deploys</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 18: Internal Tooling ==================== -->
+<div class="slide slide-top" data-section="Offense">
+  <div class="label">Offense #9</div>
+  <h2>Internal Tooling</h2>
+  <p class="subtitle">We don't have a backoffice yet. Many recurring tasks require engineer intervention.</p>
+
+  <div class="spacer"></div>
+
+  <div class="grid-2">
+    <div class="card card-accent">
+      <h3>Build a Backoffice</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Currently no internal tool beyond AdminJS (eng-only). Need a proper backoffice for recurring ops tasks:</p>
+      <ul class="compact-list">
+        <li><strong>Whitelist emails for client admin app</strong> &mdash; currently requires engineer on-call</li>
+        <li><strong>Other frequent on-call requests</strong> &mdash; automate the most common support tasks that pull engineers away from building</li>
+      </ul>
+    </div>
+    <div class="card card-accent">
+      <h3>Automation & Tools</h3>
+      <ul class="compact-list">
+        <li><strong>SCORM file generation</strong> &mdash; currently manual process</li>
+        <li><strong>Demo builder</strong> &mdash; auto-create demos for sales team</li>
+        <li><strong>Voice testing playground</strong> &mdash; pick STT provider, LLM, TTS, and voice ID from dropdowns, then run a mini-roleplay to test the setup across languages</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 19: Sequencing ==================== -->
+<div class="slide slide-top" data-section="Plan">
+  <div class="label">Sequencing</div>
+  <h2>Suggested Roadmap</h2>
+
+  <div class="sequence">
+    <div class="seq-col">
+      <div class="seq-header text-red">Q1 <span class="text-dim" style="font-weight:400; font-size: 0.9rem;">(Now)</span></div>
+      <div class="seq-item" style="border-color: rgba(239,68,68,0.3);">
+        <strong style="color:var(--text);">Observability & Alerting</strong><br>
+        <span style="font-size:0.8rem;">DB monitoring, cloud logging, on-call routing</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(239,68,68,0.3);">
+        <strong style="color:var(--text);">DB Isolation</strong><br>
+        <span style="font-size:0.8rem;">Separate AI Sales DB from shared infra</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(245,158,11,0.3);">
+        <strong style="color:var(--text);">Containerization</strong><br>
+        <span style="font-size:0.8rem;">Dockerfile, docker-compose, CI/CD images</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(245,158,11,0.3);">
+        <strong style="color:var(--text);">RAG for product reference</strong><br>
+        <span style="font-size:0.8rem;">Dynamic retrieval, fix lossy summarization</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(59,130,246,0.3);">
+        <strong style="color:var(--text);">Unit tests + CI security</strong><br>
+        <span style="font-size:0.8rem;">Assessment tests, npm audit in pipeline</span>
+      </div>
+    </div>
+
+    <div class="seq-col">
+      <div class="seq-header text-orange">Q2</div>
+      <div class="seq-item" style="border-color: rgba(239,68,68,0.3);">
+        <strong style="color:var(--text);">Multi-region: AWS HK</strong><br>
+        <span style="font-size:0.8rem;">ECS Fargate + MongoDB Atlas (early Q2)</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(245,158,11,0.3);">
+        <strong style="color:var(--text);">Assessment defragmentation</strong><br>
+        <span style="font-size:0.8rem;">Unified model, stop the bleeding</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(245,158,11,0.3);">
+        <strong style="color:var(--text);">LLM evaluation framework</strong><br>
+        <span style="font-size:0.8rem;">Automated prompt quality checks</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(245,158,11,0.3);">
+        <strong style="color:var(--text);">E2E tests (Checkly)</strong><br>
+        <span style="font-size:0.8rem;">Critical user flows monitored</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(59,130,246,0.3);">
+        <strong style="color:var(--text);">CI/CD improvements</strong><br>
+        <span style="font-size:0.8rem;">Unified deploys, zero-downtime, auto-rollback</span>
+      </div>
+    </div>
+
+    <div class="seq-col">
+      <div class="seq-header text-green">Q3</div>
+      <div class="seq-item" style="border-color: rgba(16,185,129,0.3);">
+        <strong style="color:var(--text);">Prompt defragmentation</strong><br>
+        <span style="font-size:0.8rem;">Shared blocks, composable prompts</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(16,185,129,0.3);">
+        <strong style="color:var(--text);">Regional LLM/Voice hosting</strong><br>
+        <span style="font-size:0.8rem;">Provider abstraction, per-region config</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(16,185,129,0.3);">
+        <strong style="color:var(--text);">Penetration testing</strong><br>
+        <span style="font-size:0.8rem;">First scheduled pentest</span>
+      </div>
+      <div class="seq-item" style="border-color: rgba(16,185,129,0.3);">
+        <strong style="color:var(--text);">Internal tooling</strong><br>
+        <span style="font-size:0.8rem;">Backoffice, voice playground, SCORM gen</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box" style="margin-top: 20px;">
+    <p><strong>Key dependency chain:</strong> Containerization (Q1) &rarr; Multi-region (early Q2) &rarr; Regional providers (Q3) &nbsp;|&nbsp; Assessment defrag (Q2) &rarr; Prompt defrag (Q3) &nbsp;|&nbsp; Observability (Q1) &rarr; Everything else</p>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 20: Summary ==================== -->
+<div class="slide center-content" data-section="">
+  <h2>Summary</h2>
+  <div class="spacer"></div>
+
+  <div class="grid-3" style="max-width: 1000px; width: 100%;">
+    <div class="card card-red" style="text-align:center; padding: 28px 20px;">
+      <h3 style="font-size: 1rem; color: var(--red); margin-bottom: 16px;">Stop the fires</h3>
+      <ul class="compact-list" style="text-align: left; font-size: 0.9rem;">
+        <li>Monitor everything (not just the app)</li>
+        <li>Isolate environments</li>
+        <li>Test critical paths</li>
+        <li>Fix known security gaps</li>
+      </ul>
+    </div>
+    <div class="card card-orange" style="text-align:center; padding: 28px 20px;">
+      <h3 style="font-size: 1rem; color: var(--orange); margin-bottom: 16px;">Stop the bleeding</h3>
+      <ul class="compact-list" style="text-align: left; font-size: 0.9rem;">
+        <li>Defragment assessments</li>
+        <li>Defragment prompts</li>
+        <li>Containerize the backend</li>
+        <li>Fix deployment pipeline</li>
+      </ul>
+    </div>
+    <div class="card card-green" style="text-align:center; padding: 28px 20px;">
+      <h3 style="font-size: 1rem; color: var(--green); margin-bottom: 16px;">Scale up</h3>
+      <ul class="compact-list" style="text-align: left; font-size: 0.9rem;">
+        <li>Multi-region deployment</li>
+        <li>Regional LLM/Voice providers</li>
+        <li>RAG for product knowledge</li>
+        <li>Internal tooling & automation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+  <p style="color: var(--text-dim); font-size: 1.2rem; font-weight: 500;">Defense funds Offense. Let's build the foundation right.</p>
+</div>
+
+<!-- ==================== SLIDE 21: End ==================== -->
+<div class="slide center-content" data-section="">
+  <h1>Discussion</h1>
+  <p class="subtitle">What questions do you have?<br>What should we prioritize differently?</p>
+</div>
+
+<!-- ==================== NAV ==================== -->
+<div class="controls">
+  <span class="page-num" id="pageNum">1 / 22</span>
+</div>
+
+<div class="section-tag">
+  <span class="pill pill-accent" id="sectionTag" style="display: none;"></span>
+</div>
+
+<div class="progress-dots" id="dots"></div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  // Build dots
+  const dotsContainer = document.getElementById('dots');
+  slides.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    if (index < 0 || index >= slides.length) return;
+    slides[current].classList.remove('active');
+    dotsContainer.children[current].classList.remove('active');
+    current = index;
+    slides[current].classList.add('active');
+    dotsContainer.children[current].classList.add('active');
+    document.getElementById('pageNum').textContent = `${current + 1} / ${slides.length}`;
+
+    const section = slides[current].dataset.section;
+    const tag = document.getElementById('sectionTag');
+    if (section) {
+      tag.textContent = section;
+      tag.style.display = 'inline-block';
+    } else {
+      tag.style.display = 'none';
+    }
+  }
+
+  // Keyboard nav
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      goTo(current + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
+      e.preventDefault();
+      goTo(current - 1);
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      goTo(0);
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      goTo(slides.length - 1);
+    }
+  });
+
+  // Touch/swipe support
+  let touchStartX = 0;
+  document.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+  });
+  document.addEventListener('touchend', (e) => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) goTo(current + 1);
+      else goTo(current - 1);
+    }
+  });
+
+  // Init
+  slides[0].classList.add('active');
+</script>
+
+</body>
+</html>

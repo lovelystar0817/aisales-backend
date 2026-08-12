@@ -1,0 +1,141 @@
+import { LegacySalesProduct, ProductType } from '../models/SalesProduct.js';
+
+/**
+ * MSIG sales products for telesales modules
+ */
+export const MSIG_SALES_PRODUCTS: LegacySalesProduct[] = [
+  {
+    _id: '671a60000000000000000000',
+    friendlyId: 'parecovery-plus',
+    name: 'PARecovery Plus',
+    knowledgePrompt:
+      'You are an AI sales assistant helping with PARecovery Plus personal accident insurance sales for MSIG. This comprehensive accident protection plan offers three tiers (Silver, Gold, Platinum) with essential accident benefits, recovery support, and lifestyle protection.',
+    productType: ProductType.OWN,
+    modules: ['telesales'], // Specifically for telesales module
+    keyFeatures: [
+      'Comprehensive personal accident protection for all life stages',
+      'Three coverage tiers: Silver, Gold, and Platinum plans',
+      'Essential benefits: Death, Disability, Burns, Fractures, Medical expenses',
+      'Recovery support: Transport, Home nursing, Modification assistance',
+      'Lifestyle benefits: Cosmetic procedures, Pet care, Entertainment coverage',
+      'Child and Senior specific coverage options available',
+      'No medical check-up required for application',
+      'Special daily hospitalization for Dengue/Food poisoning/HFMD',
+      'Auto-renewal with 14-day free look period',
+    ],
+    featureHighlight: {
+      title: 'Complete Accident Protection Across All Life Stages',
+      description:
+        'PARecovery Plus provides comprehensive personal accident insurance designed for every stage of life. From essential medical coverage to recovery support and lifestyle benefits, our three-tier plans (Silver, Gold, Platinum) ensure you and your family are protected against unexpected accidents with no medical check-up required.',
+    },
+    evaluationFocus: [
+      'Coverage tier selection based on occupation and lifestyle needs',
+      'Essential accident benefits including death and disability coverage',
+      'Recovery support benefits for rehabilitation and care assistance',
+      'Lifestyle protection features including pet care and entertainment',
+      'Child and senior coverage options for family protection',
+      'Premium affordability across Silver, Gold, and Platinum tiers',
+      'Occupational eligibility requirements (Group A vs Group B)',
+      'Policy terms including auto-renewal and free look period',
+    ],
+    salesTarget: 'individual',
+  },
+  {
+    _id: '671b60000000000000000000',
+    friendlyId: 'dentiplus',
+    name: 'DentiPlus',
+    knowledgePrompt:
+      'You are an AI sales assistant helping with MSIG DentiPlus dental insurance sales. DentiPlus offers two plan tiers (Classic and Platinum) with annual overall limits, in-network vs out-of-network coverage, and benefits across preventive, radiology, fillings, extractions and endodontic treatments. Benefits are available immediately upon policy issuance with no waiting period, a 14-business-day free-look, and automatic yearly renewal. For non-emergency treatments, customers should schedule with contracted providers to enjoy direct billing; out-of-network is reimbursed by receipt.\n\n[NEW PRODUCT INFO]\n- All policyholders are eligible for up to 20% discount on dental treatments provided:\n  • The appointment is made through Inova Care, and\n  • The treatment is done within the Inova Care panel of clinics.\n  • Discount eligibility starts immediately upon policy issuance.\n- Emergency dental service is covered worldwide for palliative care (to relieve pain, swelling, bleeding) on a reimbursement basis.\n\n[CLARIFICATIONS TO AVOID FALSE FLAGS]\n- Premium examples like $40.28/month can be correct depending on age group and plan tier. Do not flag as incorrect when tier/age are not specified.\n- Coverage percentages are from fixed benefit tables and apply within the annual overall limit (Classic S$1,000; Platinum S$1,500). Do not claim that coverage is not fixed if the annual limit is mentioned.\n- Treat statements like "worldwide 100% emergency coverage" as shorthand for "emergency dental is covered worldwide" (palliative care via reimbursement). Do not flag this phrasing.\n- The 20% savings via Inova Care panel is available immediately upon policy issuance.\n- It is acceptable to describe DentiPlus as a "long‑term plan" (renewable up to expiry age 70).\n- Various ways to describe the 20% discount requirement are acceptable: "appointment through Inova Care + panel clinics", "Inova Care panel clinics", "panel of clinics" all convey the same correct information.',
+    productType: ProductType.OWN,
+    modules: ['product-positioning', 'telesales'],
+    keyFeatures: [
+      'Two tiers: Classic and Platinum plans',
+      'Overall annual limit: Classic up to S$1,000; Platinum up to S$1,500',
+      'Network advantage: higher coverage at Contracted Providers with direct billing',
+      'Preventive dental: check-up, cleaning, fluoride (one visit per Policy Year)',
+      'Dental radiology: bitewing, skull/facial survey, or panoramic x-ray (limits per Policy Year)',
+      'Conservative treatments: permanent amalgam/composite and glass ionomer fillings',
+      'Extractions (non-surgical): simple and complicated extractions',
+      'Endodontics: root canal and therapeutic pulpotomy (excluding final restoration)',
+      'Emergency dental: covered worldwide for pain/swelling/bleeding on reimbursement basis',
+      'No waiting period - benefits available immediately upon policy issuance (pre-existing conditions excluded)',
+      '14-business-day free look; auto-renewal with monthly or annual premium options',
+      'Up to 20% discount on dental treatments via Inova Care panel clinics (appointment made via Inova Care; available upon policy issuance)',
+    ],
+    featureHighlight: {
+      title: 'Flexible Dental Coverage With Network Benefits',
+      description:
+        'DentiPlus provides practical dental coverage across essential categories with two affordable tiers. Enjoy higher coverage and direct billing with Contracted Providers, annual overall limits up to S$1,500, and a straightforward claims process for out-of-network care.',
+    },
+    evaluationFocus: [
+      'Tier selection (Classic vs Platinum) based on expected dental usage',
+      'In-network (Contracted Providers) vs out-of-network coverage differences (only assess if customer asks about provider choices or claims process)',
+      'Annual overall limit and per-policy-year visit/x-ray limits',
+      'No waiting period - immediate coverage after policy issuance and emergency dental treatment handling',
+      'Eligibility (ages 18 to below 60 at start) and termination conditions',
+      'Key exclusions including cosmetic/aesthetic treatments and pre-existing conditions',
+      'Claims flow: pre-authorization/notification and receipts for out-of-network reimbursement (only assess if customer asks about claims process)',
+      'Renewal, free look, and premium payment frequency (monthly vs annual)',
+      '[Do not flag] Monthly premium examples like $40.28 can be correct depending on age/tier',
+      '[Do not flag] Coverage percentages are fixed tables within the annual limit when stated',
+      '[Do not flag] Emergency dental is covered worldwide; treat “100%” phrasing as acceptable shorthand',
+      '[Do not flag] 20% Inova Care panel savings are available immediately after policy issuance',
+      '[Do not penalize] Calling it a long‑term plan is acceptable (renewable up to age 70)',
+      '[Presentation guidance] Unless the prospect asks, no need to present panel vs non‑panel differences',
+      '[Do not flag] Do not penalize for not mentioning both plans at once - user will lead with Platinum plan first; Classic plan is only mentioned if prospect has price objections',
+      '[Do not flag] Mentioning only one plan (Platinum or Classic) at a time is not an incorrect sales approach',
+      '[Do not flag] 20% discount wording variations: "appointment through Inova Care + panel clinics", "Inova Care panel", "panel of clinics" are all acceptable ways to describe the same requirement',
+      '[Do not over-expand] When correcting, focus only on the actual mistake - avoid adding unrelated information about waiting periods or other benefits',
+      '[Assessment guidance] Do not flag missing claims process details (in-network vs out-of-network procedures, pre-notification) unless customer specifically asks about claims',
+      '[Realtime feedback guidance] Simple product introductions are appropriate - do not flag for lacking comprehensive details unless customer specifically requests more information',
+    ],
+    salesTarget: 'individual',
+  },
+  {
+    _id: '671c60000000000000000000',
+    friendlyId: 'travel-easy',
+    name: 'TravelEasy',
+    knowledgePrompt:
+      'You are an AI sales assistant helping with MSIG TravelEasy travel insurance sales for customers who recently booked flights. TravelEasy offers comprehensive travel insurance with over 50 benefits including COVID-19 coverage up to $750,000, travel inconvenience benefits up to $12,500, and three plan tiers (Standard, Elite, Premier) across three coverage areas (Area A: ASEAN, Area B: Asia-Pacific, Area C: Worldwide). Available as Single Return Trip or Annual Plan for individuals, groups, or families.',
+    productType: ProductType.OWN,
+    modules: ['agency-sales'], // Specifically for agency sales module
+    keyFeatures: [
+      'Over 50 benefits including comprehensive COVID-19 coverage',
+      'Three plan tiers: Standard, Elite, and Premier',
+      'Three coverage areas: Area A (ASEAN), Area B (Asia-Pacific), Area C (Worldwide)',
+      'COVID-19 medical cover up to $750,000',
+      'Travel inconvenience benefits up to $12,500',
+      'Personal accident cover: Death and Permanent Total Disability up to $500,000',
+      'Overseas medical expenses up to $1,000,000',
+      'Emergency medical evacuation and repatriation up to $1,000,000',
+      'Travel cancellation and postponement coverage',
+      'Baggage, delayed baggage, and personal money protection',
+      'Personal liability coverage up to $1,000,000',
+      'Adventurous activities cover (Elite and Premier plans)',
+      'Single Return Trip (up to 182 days) or Annual Plan options',
+      'Individual, Group, Family, or Adult & Children cover types',
+      'No medical check-up required for standard applicants',
+    ],
+    featureHighlight: {
+      title: 'Comprehensive Travel Protection for Every Journey',
+      description:
+        'TravelEasy provides comprehensive travel insurance with over 50 benefits designed for every type of traveler. From extensive COVID-19 coverage to travel inconvenience protection, our three-tier plans (Standard, Elite, Premier) ensure you and your family are protected across ASEAN, Asia-Pacific, or worldwide destinations with flexible single trip or annual coverage options.',
+    },
+    evaluationFocus: [
+      'Understanding customer travel plans and destination (Area A/B/C)',
+      'Plan tier selection (Standard, Elite, Premier) based on traveler needs',
+      'Cover type selection (Individual, Family, Group, Adult & Children)',
+      'Trip duration and frequency (Single Return Trip vs Annual Plan)',
+      'COVID-19 coverage benefits and eligibility requirements',
+      'Medical benefits including overseas medical expenses and emergency evacuation',
+      'Travel inconvenience benefits: cancellation, postponement, delays, baggage',
+      'Personal accident and liability coverage explanation',
+      'Premium calculation based on destination area, plan tier, and trip duration',
+      'Eligibility requirements (age restrictions, residency requirements)',
+      'Key exclusions: pre-existing conditions, travel advisories',
+      'Policy terms: coverage period, free look period, renewal process',
+      'Common objections: existing coverage (credit card, health insurance), cost, coverage comparison',
+    ],
+    salesTarget: 'individual',
+  },
+];

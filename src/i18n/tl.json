@@ -1,0 +1,528 @@
+{
+  "modules": {
+    "groups": {
+      "prospecting": "Paghahanap at Pagtuklas",
+      "relationship": "Pagbuo ng Relasyon",
+      "closing": "Pagkumpleto at Pakikipag-usap",
+      "retention": "Pagpapanatili at Pag-upsell"
+    },
+    "items": {
+      "cold-call": {
+        "title": "Malamig na Tawag",
+        "description": "Makipag-ugnayan sa bagong lead upang makakuha ng unang meeting.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng cold calling. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Makakuha ng atensyon at magtatag ng kredibilidad sa prospect",
+          "Bumuo ng rapport at mangalap ng konteksto tungkol sa kanilang kasalukuyang sitwasyon",
+          "Tukuyin ang mga potensyal na hamon o panganib na kanilang hinaharap",
+          "Makakuha ng kasunduan para sa follow-up meeting o susunod na pag-uusap"
+        ]
+      },
+      "discovery": {
+        "title": "Pagtuklas",
+        "description": "Siyasatin ang sitwasyon ng kliyente upang tuklasin ang mga pangangailangan at katotohanan.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng discovery conversations. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Maintindihan ang kasalukuyang pinansiyal na sitwasyon at mga layunin ng kliyente",
+          "Tuklasin ang mga pangangailangan at pain points sa pamamagitan ng mga tanong na pagtatanong",
+          "Tukuyin ang mga pamantayan sa pagdedesisyon at timeline",
+          "Mangalap ng mga faktong kailangan upang magmungkahi ng angkop na mga solusyon"
+        ]
+      },
+      "competitive-proposal": {
+        "title": "Kompetitibong Proposal",
+        "description": "Ipresenta ang inyong solusyon at maging higit pa sa mga kalaban na produkto na tinitimbang ng kliyente.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng competitive proposals. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Ipresenta ang inyong solusyon na may malinaw na value propositions",
+          "Paghiwalayin ang inyong alok mula sa mga alternatibong kalaban",
+          "Tugunan ang mga alalahanin ng kliyente tungkol sa mga produktong kalaban",
+          "Makakuha ng commitment upang magpatuloy sa inyong proposal"
+        ]
+      },
+      "objection-handling": {
+        "title": "Pagsasanay sa Pagtugon sa Tutol",
+        "description": "Mabilis na pagtugon sa mga reklamo tungkol sa presyo, pangangailangan, o timing at panatilihin ang value na naka-anchor.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng objection handling. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Makinig nang aktibo upang maintindihan ang ugat ng dahilan ng objection",
+          "Tumugon gamit ang mga relevant na value propositions at benepisyo",
+          "Malampasan ang mga alalahanin tungkol sa presyo, timing, at pangangailangan",
+          "Panatilihin ang pakikipag-ugnayan ng kliyente at pag-unlad tungo sa kasunduan"
+        ]
+      },
+      "product-positioning": {
+        "title": "Pagpoposisyon ng Produkto",
+        "description": "Mag-navigate sa mga objection habang pinapalakas ang core value ng inyong produkto.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng product positioning. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Ipresenta ang mga tampok ng produkto bilang mga espesipikong benepisyo ng kliyente",
+          "I-position ang mga bentahe ng produkto kumpara sa mga alternatibo sa merkado",
+          "Harapin ang mga objection at alalahanin na nauugnay sa produkto",
+          "Lumikha ng urgency at pagnanais para sa inirerekomendang solusyon"
+        ]
+      },
+      "closing": {
+        "title": "Pagtatapos",
+        "description": "Kumpirmahin ang kasunduan at mangalap ng application details.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng closing techniques. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Buuin ang mga napagkasunduang solusyon at benepisyo",
+          "Kumpirmahin ang commitment ng kliyente na magpatuloy",
+          "Mangalap ng kinakailangang impormasyon ng application at dokumentasyon",
+          "Mag-iskedyul ng mga susunod na hakbang at timeline ng pagpapatupad"
+        ]
+      },
+      "review-renewal": {
+        "title": "Rebyu / Pagpapanibago",
+        "description": "Muling tingnan ang kasalukuyang coverage upang mag-renew, mag-adjust, o mag-upsell.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng renewal conversations. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Suriin ang kasalukuyang coverage at pagganap ng policy",
+          "Tukuyin ang mga pagbabago sa mga pangangailangan at sitwasyon ng kliyente",
+          "Ipresenta ang mga pagpipilian sa renewal at mga potensyal na pagpapabuti",
+          "Makakuha ng commitment sa renewal o mga oportunidad sa upselling"
+        ]
+      },
+      "fna": {
+        "title": "Pagsusuri ng Pangangailangan sa Finansya",
+        "description": "Isagawa ang komprehensibong pagsusuri ng pangangailangan sa finansya upang tukuyin ang mga pangangailangan sa proteksyon, pag-iipon, at pamlalo ng kliyente.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng Financial Needs Analysis. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Pagpapakilala: Batiin ng pangalan, sabihin ang iyong papel bilang tagapayo at ang mga kredibilidad ng Manulife/CSR upang itaguyod ang kredibilidad.",
+          "Magbuo ng rapport at suriin ang mga pangangailangan: Lakarin ang mga yugto ng buhay, suriin ang mga pangyayari at mga pangarap, gawin ang mga katanungan ng pagkakapare-pareho, at sukatin ang mga pangangailangan sa proteksyon/kalusugan/edukasyon/retiro.",
+          "Pagsasara (susunod na hakbang): Ipadala/kumpirmahin ang mga papel, iskedyul ang susunod na pagpupulong, kumuha ng pahintulot sa pagkontak, kumuha ng mga reperensiya at imbitahan ng feedback. "
+        ]
+      },
+      "manulife-product-pitch": {
+        "title": "Product Pitch",
+        "description": "Tuklasin ang mga layuning pinansyal ng kliyente at irekomenda ang angkop na mga produkto ng Manulife bilang mga solusyon upang makatulong sa kanila na makamit ang kanilang mga layuning pinansyal.",
+        "objectives": [
+          "Bumuo ng rapport at magtayo ng tiwala",
+          "Kumpirmahin muli ang kanilang nangungunang prioridad mula sa FNA",
+          "Ipresenta ang produkto nang malinaw at may kumpiyansa",
+          "Harapin ang mga pagtutol nang may empatiya at kalinawan",
+          "Gabayan sila tungo sa susunod na hakbang (application o follow-up)"
+        ]
+      },
+      "goalready": {
+        "title": "Product Pitch · Goal Ready",
+        "description": "Magsanay sa pagpresenta ng GoalReady long-term savings at retirement planning product ng Manulife para sa mga negosyante at self-employed.",
+        "initialMessage": "Maligayang pagdating! Magsanay tayo ng GoalReady product pitch. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Pagbati at Konteksto: Batiin nang mainit ang kliyente, kumpirmahin na ito ay nakatakdang GoalReady pitch meeting, at magbuo ng unang rapport.",
+          "Ipresenta ang GoalReady Features: Ipaliwanag ang long-term savings structure, retirement benefits, guaranteed returns, education funding capabilities, at flexible premium payment options para sa variable income.",
+          "Harapin ang mga Objection: Tugunan ang mga alalahanin tungkol sa affordability ng premium, retirement timing ('Mayroon pa akong oras'), at 'kailangan pag-isipan/konsultahin ang pamilya' gamit ang LAPR o 3F frameworks.",
+          "Pagsasara at Susunod na Hakbang: Gumamit ng proven closing techniques, humingi ng commitment, at gabayan tungo sa specific next steps (application, follow-up meeting)."
+        ]
+      },
+      "manulife-goalready": {
+        "title": "GoalReady",
+        "description": "Tuklasin ang mga layuning pinansyal ng kliyente at irekomenda ang GoalReady bilang solusyon upang makatulong sa kanila na magtayo ng long-term savings at maghanda para sa retirement.",
+        "initialMessage": "Maligayang pagdating! Magsanay tayo ng GoalReady. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Bumuo ng rapport at magtayo ng tiwala",
+          "Kumpirmahin muli ang kanilang nangungunang prioridad mula sa FNA",
+          "Ipresenta ang GoalReady nang malinaw at may kumpiyansa",
+          "Harapin ang mga pagtutol nang may empatiya at kalinawan",
+          "Gabayan sila tungo sa susunod na hakbang (application o follow-up)"
+        ]
+      },
+      "needs-analysis": {
+        "title": "Pagsusuri ng Pangangailangan sa Insurance",
+        "description": "Suriin ang risk profile ng kliyente at mga requirement sa coverage.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng insurance needs analysis. Ano ang inyong sales challenge ngayon?"
+      },
+      "policy-explanation": {
+        "title": "Pagpapaliwanag ng Patakaran",
+        "description": "Ipaliwanag nang malinaw ang mga komplikadong insurance terms at benefits.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng policy explanations. Ano ang inyong sales challenge ngayon?"
+      },
+      "risk-assessment": {
+        "title": "Pagsusuri ng Panganib",
+        "description": "Tukuyin at iparating ang mga potensyal na panganib at protection needs.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng risk assessment. Ano ang inyong sales challenge ngayon?"
+      },
+      "premium-discussion": {
+        "title": "Usapang Premium",
+        "description": "Pakitunguhan ang mga usapang presyo at payment options.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng premium discussions. Ano ang inyong sales challenge ngayon?"
+      },
+      "policy-closing": {
+        "title": "Pagtatapos ng Patakaran",
+        "description": "Tapusin ang insurance application at dokumentasyon.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng policy closing. Ano ang inyong sales challenge ngayon?"
+      },
+      "policy-renewal": {
+        "title": "Pagpapanibago ng Patakaran",
+        "description": "Suriin ang kasalukuyang coverage at pag-usapan ang renewal options.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng policy renewals. Ano ang inyong sales challenge ngayon?"
+      },
+      "solution-discovery": {
+        "title": "Pagtuklas ng Solusyon",
+        "description": "Tukuyin ang mga technical requirements at business challenges.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng solution discovery. Ano ang inyong sales challenge ngayon?"
+      },
+      "demo-presentation": {
+        "title": "Pagpapakita ng Demo",
+        "description": "Ipakita ang mga feature ng produkto at technical capabilities.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng demo presentations. Ano ang inyong sales challenge ngayon?"
+      },
+      "technical-objections": {
+        "title": "Mga Teknikal na Tutol",
+        "description": "Tugunan ang mga technical concerns at implementation questions.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng pag-handle ng technical objections. Ano ang inyong sales challenge ngayon?"
+      },
+      "pricing-negotiation": {
+        "title": "Negosasyon sa Presyo",
+        "description": "Makipag-negotiate sa licensing, implementation, at ongoing costs.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng pricing negotiations. Ano ang inyong sales challenge ngayon?"
+      },
+      "contract-closing": {
+        "title": "Pagtatapos ng Kontrata",
+        "description": "Tapusin ang mga terms, conditions, at service agreements.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng contract closing. Ano ang inyong sales challenge ngayon?"
+      },
+      "axa-ph-unit-manager-recruitment": {
+        "title": "Pagre-recruit ng Unit Manager",
+        "description": "Pagre-recruit ng mga bagong recruit na dating nagpakita ng interes sa financial advising oportunidad pero ngayon ay hindi sigurado kung magpapatuloy sa next step",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng unit manager recruitment. Ano ang inyong recruitment challenge ngayon?",
+        "objectives": [
+          "Gawing relatable ang role sa pamamagitan ng pagpapakita kung paanong ang mga araw-araw na strengths (pag-manage ng schedule, pag-budget, pagpaplano, pakikipag-usap) ay pareho ng skills na ginagamit sa financial advising",
+          "Address ang time concerns sa pamamagitan ng pagpapaliwanag kung paano ang role ay flexible at maaaring gawin sa mga quiet pockets ng araw",
+          "Reassure sila na maaari silang magsimula sa kanilang sariling pace at ang training ay gagabay sa kanila step by step",
+          "Tulungan silang makaramdam ng mas kumpiyansa at hikayatin silang mag-attend ng training session"
+        ]
+      },
+      "axa-ph-financial-needs-analysis": {
+        "title": "Pagsusuri ng Pangangailangan sa Pinansyal",
+        "description": "Gabayan ang isang first-time client sa isang simple, low-commitment na financial needs discussion habang tinutugunan ang mga alalahanin tungkol sa affordability, flexibility, at maagang access sa pondo",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng financial needs analysis. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Bumuo ng rapport sa isang first-time client",
+          "Magsagawa ng fact-finding tungkol sa kita, lifestyle, at mga financial goals sa hinaharap",
+          "Ipresenta ang isang simple at affordable na starter solution na may guaranteed returns",
+          "Tugunan ang mga alalahanin tungkol sa commitment, flexibility, at maagang access sa pondo"
+        ]
+      },
+      "axa-ph-general-objection-handling": {
+        "title": "Pamamahala ng mga Pagtutol",
+        "description": "Harapin ang mga karaniwang pagtutol tungkol sa pagpopondo sa edukasyon at proteksyon ng pamilya, kabilang ang mga alalahanin tulad ng kawalan ng pera, kawalan ng pangangailangan, kawalan ng pagmamadali, kawalan ng oras at wala sa merkado",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng pamamahala ng mga pagtutol. Anong objection ang gusto ninyong pagpraktisan?",
+        "objectives": [
+          "Bumuo ng rapport at tiwala sa client",
+          "Tugunan ang mga alalahanin tungkol sa flexibility ng pagbabayad at affordability",
+          "Ipaliwanag ang mga benepisyo kumpara sa mga alternatibo tulad ng bank savings",
+          "Harapin ang mga pagtutol tungkol sa maagang withdrawal at mga garantiya",
+          "Gabayan ang usapan patungo sa mga susunod na hakbang"
+        ]
+      },
+      "prudential-ph-appointment-setting": {
+        "title": "Pag-set ng Appointment",
+        "description": "Makipag-ugnayan sa isang prospect, bumuo ng magandang ugnayan, at magtakda ng appointment upang mas masuri ang kanilang mga pinansyal na layunin at mithiin.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng cold-call appointment setting. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Ipakilala ang iyong sarili at ang Pru Life UK nang malinaw, at humingi ng pahintulot na magpatuloy",
+          "Magbigay ng nakakahimok na value proposition na naka-align sa buhay ng prospect",
+          "Harapin ang mga pagtutol nang may empatiya at determinasyon",
+          "Makakuha ng kasunduan para sa isang follow-up meeting"
+        ]
+      },
+      "prudential-ph-fact-finding": {
+        "title": "Product Pitch (in-person meeting)",
+        "description": "Makipagkita sa prospect nang harapan para sa naka-schedule na appointment, bumuo ng rapport sa pamamagitan ng natural na pag-uusap, magsagawa ng fact-finding gamit ang SPIN methodology, at ipresenta ang Pru Life UK solution.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng in-person fact-finding at product pitch meeting. Ano ang inyong sales challenge ngayon?",
+        "objectives": [
+          "Batiin ang prospect nang mainit at bumuo ng rapport sa pamamagitan ng natural na small talk bago lumipat sa negosyo.",
+          "Gumamit ng SPIN questions (Situation, Problem, Implication, Need-Payoff) upang matuklasan ang pangangailangan at prioridad ng prospect.",
+          "Pumili ng pinaka-angkop na Pru Life UK product batay sa profile, pangangailangan, at budget ng prospect.",
+          "Ipresenta ang features at advantages ng produkto nang malinaw at tumpak.",
+          "Ikonekta ang benefits ng produkto sa partikular na sitwasyon at alalahanin ng prospect."
+        ]
+      },
+      "account-expansion": {
+        "title": "Pagpapalaki ng Account",
+        "description": "Tukuyin ang mga oportunidad sa upselling at cross-selling.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng account expansion. Ano ang inyong sales challenge ngayon?"
+      },
+      "general-sales": {
+        "title": "Pangkalahatang Pagsasanay sa Benta",
+        "description": "Mag-practice ng general sales conversations at techniques.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng general sales techniques. Ano ang inyong sales challenge ngayon?"
+      },
+      "cold-calling": {
+        "title": "Malamig na Pagtawag",
+        "description": "Matutunan ang kumpletong cold calling process mula sa opening hanggang appointment setting.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng cold calling. Ako ang magiging prospect na tinatawagan ninyo sa unang beses. Anong scenario ang gusto ninyong i-practice?"
+      },
+      "discovery-call-meddpicc": {
+        "title": "Tawag para sa Pagtuklas",
+        "description": "Tuklasin ang mga pain points, pangangailangan, at budget ng kliyente gamit ang MEDDPICC methodology.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng Discovery Call na nakatuon sa pag-unawa sa business needs, challenges, at decision-making process ng inyong prospect. Ano ang inyong approach?",
+        "objectives": [
+          "Tukuyin at sukatin ang mga business metrics at mga pangunahing performance indicators",
+          "Maintindihan ang economic impact at mga budget considerations",
+          "I-map ang decision-making process at tukuyin ang mga key stakeholders",
+          "Tuklasin ang mga pain points, implications, at mga critical business needs"
+        ]
+      },
+      "deal-closure": {
+        "title": "Deal Closure",
+        "description": "Makipag-negotiate sa prospect para mag-align sa key commercial details at i-close ang deal.",
+        "initialMessage": "Welcome! Mag-practice tayo ng Deal Closure kung saan mag-focus tayo sa late-stage negotiations, pag-align ng commercial terms, at pag-drive ng deal tungo sa signature gamit ang MEDDPICC methodology. Ano ang inyong approach sa final stage na ito?",
+        "objectives": [
+          "I-confirm ang agreed metrics at ROI documentation sa business case",
+          "Kumuha ng final sign-off mula sa economic buyer sa pricing at terms",
+          "I-navigate ang paper process at i-address ang legal/compliance requirements",
+          "Mag-drive ng urgency habang naka-maintain ng value focus para ma-achieve ang signature"
+        ]
+      },
+      "telesales": {
+        "title": "Tele Sales",
+        "description": "Gumawa ng mga epektibong telemarketing calls upang makabuo ng mga leads at makipag-close ng mga benta nang malayo.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng telesales calls. Ano ang inyong telemarketing challenge ngayon?",
+        "objectives": [
+          "Bumuo ng rapport at iposisyon ang produkto bilang may kaugnayan sa mga pangangailangan ng kliyente",
+          "Harapin ang mga objection at ipaliwanag ang value nang malinaw",
+          "Isara ang benta—o tapusin ang tawag nang propesyonal kung hindi interesado ang kliyente"
+        ]
+      },
+      "grab-mex": {
+        "title": "Pag-handle ng Budget Constraints",
+        "description": "Mag-practice sa pag-handle ng budget constraints ng merchant at P&L concerns habang nag-ddrive ng campaign participation.",
+        "initialMessage": "Maligayang pagdating sa Budget Constraint Handling training! Mag-practice tayo ng pag-address sa merchant P&L concerns at budget limitations habang nag-pposisyon ng campaign value. Paano natin matutulungan sila na ma-overcome ang kanilang funding objections ngayon?",
+        "objectives": [
+          "Gamitin ang LAER framework para mag-handle ng objections",
+          "Ma-overcome ang merchant budget constraints at P&L concerns sa pamamagitan ng pagpapakita ng campaign ROI",
+          "I-position ang $145,000 media value proposition at cost-benefit analysis",
+          "I-apply ang MEDDPICC methodology para ma-qualify ang opportunities at ma-close ang campaign deals"
+        ]
+      },
+      "bbl-client-upgrade": {
+        "title": "Client Upgrade (pagpupulong nang harapan)",
+        "description": "Makipag-ugnayan sa existing client upang i-upgrade sila sa Wealth services.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng client upgrade conversations. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Batiin ang client sa Wealth at pansinin ang anumang recent na pagbabago sa buhay o career.",
+          "Ipresenta ang mga key Wealth services at benefits na tumugma sa mga goals ng client.",
+          "Galugarin ang profile at priorities ng client upang makuha ang essential updates.",
+          "Makakuha ng kasunduan para sa follow-up investment advisory session."
+        ]
+      },
+      "bbl-goal-planning": {
+        "title": "Goal Planning (pagpupulong nang harapan)",
+        "description": "Tukuyin, sukatin, at planuhin ang mga financial goals gamit ang tailored solutions at next steps.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng goal planning sessions. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Kilalanin at linawin ang mga key financial goals at priorities ng client.",
+          "I-quantify ang timelines, amounts, at risk tolerance para sa bawat goal.",
+          "Ipresenta ang tailored solutions na aligned sa kanilang objectives.",
+          "Makakuha ng commitment para magpatuloy sa goal-based planning services."
+        ]
+      },
+      "bbl-client-revival": {
+        "title": "Client Revival (pagpupulong nang harapan)",
+        "description": "Makipag-reconnect sa mga inactive clients at magpatungkat ng re-engagement.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng client revival conversations. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Muling itatag ang relasyon at kilalanin ang kamakailang kawalan ng aktibidad o threshold ng balanse",
+          "Tukuyin ang mga pangunahing dahilan ng kawalan ng aktibidad at mga hadlang sa muling pakikipag-ugnayan",
+          "Galugarin ang kasalukuyang mga prioridad at gumuhit ng malinaw na landas ng muling pakikipag-ugnayan",
+          "Hikayatin ang agarang hakbang at siguruhin ang susunod na touchpoint"
+        ]
+      },
+      "bbl-portfolio-review": {
+        "title": "Portfolio Review (pagpupulong nang harapan)",
+        "description": "I-review ang portfolio performance, pag-usapan ang market impact, mag-propose ng adjustments, at kumpirmahin ang next steps.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng portfolio review conversations. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Magbukas ng meeting na may warm welcome at recap ng recent life o financial updates.",
+          "Ipakilala ang dahilan para sa portfolio review, i-link ito sa market movements o personal milestones.",
+          "I-review ang current portfolio performance at tukuyin ang key gaps o imbalances.",
+          "Mag-recommend ng tailored rebalancing o top-up solutions aligned sa kanilang goals at risk appetite, na nag-prioritize sa top-up solutions muna.",
+          "Kumpirmahin ang next steps, makuha ang agreement to proceed, at mag-schedule ng follow-up review tungkol sa portfolio."
+        ]
+      },
+
+      "hsbc-client-onboarding": {
+        "title": "Client Onboarding",
+        "description": "Pagpapakilala ng HSBC & Wealth sa mga Bagong Kliyente ng Bangko (NTB)",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng client onboarding conversations. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Batiin ang kliyente at magtatag ng rapport habang ipinapakilala ang wealth management relationship model ng bangko.",
+          "Ipakilala ang wealth proposition ng bangko sa paraang nagha-highlight ng pagkakaiba at pagkaka-align sa mga prioridad ng kliyente.",
+          "Maintindihan ang financial profile ng kliyente, risk appetite, at onboarding requirements.",
+          "Gabayan ang kliyente tungo sa unang pakikipag-ugnayan sa wealth products at itatag ang ritmo ng relasyon.",
+          "Mag-setup ng personal na pagpupulong upang pag-usapan nang detalyado ang mga alok ng HSBC Wealth."
+        ]
+      },
+      "hsbc-client-upgrade": {
+        "title": "Baguhan sa Wealth",
+        "description": "Makipag-ugnayan sa existing client upang simulan ang wealth journey kasama ang HSBC",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng client upgrade conversations. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Batiin ang client sa Wealth at pansinin ang anumang recent na pagbabago sa buhay o career.",
+          "Ipresenta ang mga key Wealth services at benefits na tumugma sa mga goals ng client.",
+          "Galugarin ang profile at priorities ng client upang makuha ang essential updates.",
+          "Makakuha ng kasunduan para sa follow-up investment advisory session.",
+          "Mag-setup ng personal na pagpupulong upang pag-usapan nang detalyado ang mga alok ng HSBC Wealth."
+        ]
+      },
+      "hsbc-goal-planning": {
+        "title": "Goal Planning",
+        "description": "Tukuyin, sukatin, at planuhin ang mga financial goals gamit ang tailored solutions at next steps.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng goal planning sessions. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Kilalanin at linawin ang mga key financial goals at priorities ng client.",
+          "I-quantify ang timelines, amounts, at risk tolerance para sa bawat goal.",
+          "Ipresenta ang tailored solutions na aligned sa kanilang objectives.",
+          "Makakuha ng commitment para magpatuloy sa goal-based planning services."
+        ]
+      },
+      "hsbc-client-revival": {
+        "title": "Client Revival",
+        "description": "Makipag-reconnect sa mga inactive clients at magpatungkat ng re-engagement.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng client revival conversations. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Muling itatag ang relasyon at kilalanin ang kamakailang kawalan ng aktibidad o threshold ng balanse",
+          "Tukuyin ang mga pangunahing dahilan ng kawalan ng aktibidad at mga hadlang sa muling pakikipag-ugnayan",
+          "Galugarin ang kasalukuyang mga prioridad at gumuhit ng malinaw na landas ng muling pakikipag-ugnayan",
+          "Hikayatin ang agarang hakbang at siguruhin ang susunod na touchpoint"
+        ]
+      },
+      "hsbc-portfolio-review": {
+        "title": "Portfolio Review",
+        "description": "I-review ang portfolio performance, pag-usapan ang market impact, mag-propose ng adjustments, at kumpirmahin ang next steps.",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng portfolio review conversations. Ano ang inyong advisory challenge ngayon?",
+        "objectives": [
+          "Magbukas ng tawag na may warm welcome at recap ng recent life o financial updates.",
+          "Ipakilala ang dahilan para sa portfolio review, i-link ito sa market movements o personal milestones.",
+          "I-review ang current portfolio performance at tukuyin ang key gaps o imbalances.",
+          "Mag-recommend ng tailored rebalancing o top-up solutions aligned sa kanilang goals at risk appetite.",
+          "Kumpirmahin ang next steps, makuha ang agreement to proceed, at mag-schedule ng follow-up review."
+        ]
+      },
+      "mtl-prospect-practice": {
+        "title": "Pagkadalubhasa sa Pitch",
+        "description": "Baligtad na papel: Ikaw ay gaganap bilang prospect na nagmamasid sa isang top-performing insurance agent",
+        "initialMessage": "Maligayang pagdating! Mag-practice tayo ng pagiging prospect. Ano ang inyong challenge ngayon?",
+        "objectives": [
+          "Ipahayag ang inyong financial goals at priorities nang malinaw bilang isang realistic prospect",
+          "Magtanong ng makabuluhang tanong na tatanungin ng tunay na prospect tungkol sa savings at investment options",
+          "Tumugon nang natural sa discovery questions at product explanations ng agent",
+          "Ipakita ang realistic progression sa inyong pag-iisip habang natutugunan ang mga concerns",
+          "Kumpletuhin ang needs discovery at product explanation sa isang pag-uusap"
+        ]
+      }
+    }
+  },
+  "products": {
+    "product": "Produkto"
+  },
+  "personas": {
+    "persona": "Persona"
+  },
+  "common": {
+    "goals": {
+      "cold-call": "Ang inyong layunin ay maikling ipakilala ang aming firm, magbigay ng interes, at mag-book ng 30-minute discovery meeting",
+      "discovery": "Ang inyong layunin ay maintindihan ang kanilang kasalukuyang sitwasyon at tukuyin ang mga tiyak na pangangailangan",
+      "competitive-proposal": "Ang inyong layunin ay ipresenta ang inyong solusyon at magtangi mula sa mga kakompetensya",
+      "objection-handling": "Ang inyong layunin ay tugunan ang kanilang mga alalahanin at panatilihin ang focus sa value",
+      "closing": "Ang inyong layunin ay makakuha ng kasunduan at tapusin ang application",
+      "review-renewal": "Ang inyong layunin ay suriin ang kasalukuyang coverage at pag-usapan ang renewal o upgrade options",
+      "needs-analysis": "Ang inyong layunin ay magsagawa ng masusing needs assessment at risk analysis",
+      "policy-explanation": "Ang inyong layunin ay malinaw na ipaliwanag ang mga policy terms at benefits",
+      "risk-assessment": "Ang inyong layunin ay tukuyin at iparating ang kanilang mga protection needs",
+      "premium-discussion": "Ang inyong layunin ay pag-usapan ang pricing at payment options",
+      "policy-closing": "Ang inyong layunin ay tapusin ang insurance application",
+      "policy-renewal": "Ang inyong layunin ay suriin ang kasalukuyang coverage at makakuha ng renewal",
+      "solution-discovery": "Ang inyong layunin ay tukuyin ang mga technical requirements at business challenges",
+      "demo-presentation": "Ang inyong layunin ay ipakita ang solusyon at ipakita ang value",
+      "discovery-call-meddpicc": "Ang inyong layunin ay tuklasin ang mga pain points, maintindihan ang decision-making process, at i-qualify ang budget gamit ang MEDDPICC methodology",
+      "telesales": "Ang inyong layunin ay gumawa ng mga epektibong telemarketing calls, ipresenta ang mga produkto nang malinaw, at makipag-close ng mga benta nang malayo",
+      "deal-closure": "Ang inyong goal ay i-navigate ang final negotiations, mag-align sa commercial terms, at makuha ang contract signature gamit ang MEDDPICC principles",
+      "grab-mex": "Ang inyong layunin ay ma-overcome ang merchant budget constraints at P&L concerns sa pamamagitan ng pag-demonstrate ng campaign ROI, pag-address ng food cost funding objections, at pag-position ng $145,000 media value proposition para makuha ang campaign participation",
+      "axa-ph-unit-manager-recruitment": "Ang inyong layunin ay mag-recruit ng potensyal na kandidato sa pamamagitan ng pagtugon sa kanilang mga alalahanin at pagpapakita ng halaga ng pagsali bilang financial advisor",
+      "axa-ph-financial-needs-analysis": "Ang inyong layunin ay gabayan ang isang first-time client sa pamamagitan ng financial needs discussion, bumuo ng rapport, maintindihan ang kanilang kita at mga layunin, at ipresenta ang AXA Secure Future bilang isang ligtas at flexible na starter solution habang tinutugunan ang mga alalahanin tungkol sa affordability, commitment, at maagang access sa pondo",
+      "axa-ph-general-objection-handling": "Ang inyong layunin ay harapin ang mga pagtutol tungkol sa education funding at family protection sa pamamagitan ng pagtugon sa mga alalahanin tungkol sa affordability, flexibility, maagang withdrawal, at mga garantiya habang bumubuo ng tiwala at ginagabayan ang usapan patungo sa mga susunod na hakbang",
+      "prudential-ph-appointment-setting": "Ang inyong layunin ay ipakilala ang iyong sarili at ang Pru Life UK, magbigay ng nakakahimok na value proposition, harapin ang mga pagtutol ng prospect, at makakuha ng kasunduan para sa isang follow-up meeting",
+      "prudential-ph-fact-finding": "Ang inyong layunin ay batiin ang prospect nang mainit, bumuo ng rapport sa pamamagitan ng small talk, gumamit ng SPIN questions upang matuklasan ang kanilang pangangailangan, ipresenta ang pinaka-angkop na Pru Life UK product, at ikonekta ang mga benepisyo sa kanilang partikular na sitwasyon",
+      "manulife-product-pitch": "Ang iyong layunin ay magmungkahi ng pangmatagalang solusyon sa ipon na nagse-secure ng kinabukasan ng kanyang anak habang tinutugunan ang kanyang sariling pangangailangan sa pagreretiro at katatagan ng negosyo.",
+      "default": "Ang inyong layunin ay makabuo ng rapport at tuklasin ang kanilang mga pangangailangan"
+    }
+  },
+  "assessment": {
+    "overview": "Pangkalahatang-ideya",
+    "title": "Pagtatasa ng Roleplay",
+    "completedOn": "Nakumpleto noong",
+    "salesTechnique": "Teknik sa pagbebenta",
+    "salesTechniqueDescription": "Sinusukat ang kakayahang sundin ang itinakdang framework upang magdala ng matagumpay na pag-uusap.",
+    "productKnowledge": "Kaalaman sa produkto",
+    "productKnowledgeDescription": "Sinusukat ang kakayahang tumpak na iparating ang mga katangian ng produkto, benepisyo, at mahahalagang detalye.",
+    "softSkills": "Soft skills",
+    "technicalKnowledge": "Teknikal na kaalaman",
+    "technicalKnowledgeDescription": "Sinusukat ang kakayahang tumpak na iparating ang mga katangian ng produkto, benepisyo, at mahahalagang detalye.",
+    "operationalKnowledge": "Kaalaman sa operasyon",
+    "advisoryTechnique": "Teknik sa Payo",
+    "advisoryTechniqueDescription": "Sinusukat ang kakayahang gumamit ng advisory techniques upang magdala ng matagumpay na pag-uusap.",
+    "processAdherence": "Pagsunod sa Proseso",
+    "processAdherenceDescription": "Sinusukat kung gaano kabuti sinusunod ang mga best-practice na proseso ng kumpanya upang magdala ng matagumpay na pag-uusap.",
+    "communicationAndPresence": "Komunikasyon at Presensya",
+    "communicationAndPresenceDescription": "Sinusukat kung gaano kabuti ginagamit ang komunikasyon at presensya upang magdala ng matagumpay na pag-uusap.",
+    "relationshipManagement": "Pamamahala ng Relasyon",
+    "relationshipManagementDescription": "Sinusukat ang kakayahang bumuo at panatilihin ang matatag na relasyon sa kliyente.",
+    "overallScore": "Kabuuang puntos",
+    "summary": "Buod",
+    "suggestedNextSteps": "Mga iminumungkahing susunod na hakbang",
+    "why": "Bakit",
+    "strengths": "Mga kalakasan",
+    "toImprove": "Dapat pahusayin",
+    "correction": "Pagwawasto",
+    "suggestion": "Mungkahi",
+    "completed": "Natapos",
+    "incomplete": "Hindi Kumpleto",
+    "expert": "Eksperto",
+    "intermediate": "Katamtaman",
+    "beginner": "Baguhan",
+    "needsImprovement": "Kailangan ng Pagpapabuti",
+    "ratings": {
+      "poor": "Mahina",
+      "fair": "Katamtaman",
+      "good": "Mabuti",
+      "excellent": "Napakahusay"
+    },
+    "standings": {
+      "currentSession": "Standing ng Session",
+      "notAvailable": "Hindi Available",
+      "clientVerification": "Pag-verify ng Kliyente",
+      "objectionHandling": "Pagtugon sa Tutol",
+      "dynamicFramework": "{{framework}}",
+      "threeFExecution": "Pagpapatupad ng 3F",
+      "fourCExecution": "Pagpapatupad ng 4C",
+      "mandatory": "Kailangan",
+      "incomplete": "Hindi Kumpleto",
+      "intermediate": "Katamtaman",
+      "beginner": "Baguhan",
+      "expert": "Eksperto"
+    },
+    "prudentialMandatoryNotMet": {
+      "summary": "Hindi pa natutugunan ang mga kinakailangang kriteria. Pakitapos muna ang pag-verify ng kliyente bago magpatuloy.",
+      "nextStepsTitle": "Mga Susunod na Hakbang",
+      "suggestedNextStep": "Kumpletuhin ang pag-verify ng kliyente at subukang muli ang assessment."
+    },
+    "introduction": "Pangunahin",
+    "presentation": "Presentasyon",
+    "communication": "Komunikasyon",
+    "salesConfirmation": "Patunayan ng Transaksyon",
+    "mandatoryDisclosure": "Patunayan ng Kagawasan",
+    "closure": "Tutupan",
+    "salesNovice": "Penjual Novis",
+    "skilledAdvisor": "Konsipyante na Mahusay",
+    "strategicConsultant": "Konsipyante Stratejiko",
+    "emergingSeller": "Penjual na Nabigay",
+    "mandatoryFailed": "Hindi magagamit ang Standing: Angkin kang kinakailangang kriteria hindi na-tutugunan.",
+    "msigNextStepsTitle": "I-focus sa mga susunod na hakbang para magpatuloy ang iyong standing:",
+    "msigMandatoryNotMetSummary": "Hindi mo makapagana ng standing dahil mayroon ka ng isang kinakailangang kriteria na kailangan mo na tumutugunan. Mag-usap ang iyong pang-usap sa ibang mga area para makita ang ano na masasarap, at siguro mag-tutugunan mo na kumpletuhon ang lahat ng mga pagtatakbuhang mga langkah sa susunod na pagtatapos upang makakuha ng iyong standing.",
+    "msigMandatoryNotMetNextStep": "Kumpletuhin ang ating lahat ng kinakailangang kriteria."
+  }
+}

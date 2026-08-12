@@ -1,0 +1,596 @@
+{
+  "modules": {
+    "groups": {
+      "module": "Module",
+      "prospecting": "Prospecting & Discovery",
+      "relationship": "Relationship Building",
+      "closing": "Closing & Negotiation",
+      "retention": "Retention & Upselling"
+    },
+    "items": {
+      "cold-call": {
+        "title": "Cold Call",
+        "description": "Contact a new lead to secure a first meeting.",
+        "initialMessage": "Welcome! Let's practice cold calling. What's your sales challenge today?",
+        "objectives": [
+          "Capture attention and establish credibility with the prospect",
+          "Build rapport and gather context about their current situation",
+          "Identify potential challenges or risks they may be facing",
+          "Secure agreement for a follow-up meeting or next conversation"
+        ]
+      },
+      "discovery": {
+        "title": "Discovery",
+        "description": "Probe the client's situation to uncover needs and facts.",
+        "initialMessage": "Welcome! Let's practice discovery conversations. What's your sales challenge today?",
+        "objectives": [
+          "Understand the client's current financial situation and goals",
+          "Uncover underlying needs and pain points through probing questions",
+          "Identify decision-making criteria and timeline",
+          "Gather facts needed to propose appropriate solutions"
+        ]
+      },
+      "competitive-proposal": {
+        "title": "Competitive Proposal",
+        "description": "Present your solution and out-position rival products the client is weighing.",
+        "initialMessage": "Welcome! Let's practice competitive proposals. What's your sales challenge today?",
+        "objectives": [
+          "Present your solution with clear value propositions",
+          "Differentiate your offering from competitor alternatives",
+          "Address client concerns about competing products",
+          "Secure commitment to move forward with your proposal"
+        ]
+      },
+      "objection-handling": {
+        "title": "Objection Handling Drill",
+        "description": "Rapid-fire pushbacks on price, need, or timing and keep value anchored.",
+        "initialMessage": "Welcome! Let's practice objection handling. What's your sales challenge today?",
+        "objectives": [
+          "Actively listen to understand the root cause of objections",
+          "Respond with relevant value propositions and benefits",
+          "Overcome price, timing, and need-based concerns",
+          "Maintain client engagement and progress toward agreement"
+        ]
+      },
+      "product-positioning": {
+        "title": "Product Positioning",
+        "description": "Navigate objections while reinforcing your product's core value.",
+        "initialMessage": "Welcome! Let's practice product positioning. What's your sales challenge today?",
+        "objectives": [
+          "Present product features in terms of client-specific benefits",
+          "Position product advantages against market alternatives",
+          "Handle product-related objections and concerns",
+          "Create urgency and desire for the recommended solution"
+        ]
+      },
+      "closing": {
+        "title": "Closing",
+        "description": "Confirm agreement and collect application details.",
+        "initialMessage": "Welcome! Let's practice closing techniques. What's your sales challenge today?",
+        "objectives": [
+          "Summarize agreed-upon solutions and benefits",
+          "Confirm client commitment to move forward",
+          "Collect necessary application information and documentation",
+          "Schedule next steps and implementation timeline"
+        ]
+      },
+      "review-renewal": {
+        "title": "Review / Renewal",
+        "description": "Revisit current coverage to renew, tweak, or upsell.",
+        "initialMessage": "Welcome! Let's practice renewal conversations. What's your sales challenge today?",
+        "objectives": [
+          "Review current coverage and policy performance",
+          "Identify changes in client circumstances and needs",
+          "Present renewal options and potential enhancements",
+          "Secure renewal commitment or upsell opportunities"
+        ]
+      },
+      "fna": {
+        "title": "Financial Needs Analysis",
+        "description": "Conduct comprehensive financial needs assessments to identify client protection, savings, and investment requirements.",
+        "initialMessage": "Welcome! Let's practice Financial Needs Analysis. What's your sales challenge today?",
+        "objectives": [
+          "Introduction: Greet by name, state your advisor role and Manulife's credentials/CSR to establish credibility.",
+          "Build rapport & surface needs: Walk life stages, probe disruptions/dreams, run suitability questions, and quantify protection/health/education/retirement needs.",
+          "Closing (next steps): Send/confirm paperwork, schedule the follow-up, get consent to contact, capture referrals and invite feedback. "
+        ]
+      },
+      "goalready": {
+        "title": "Product Pitch · Goal Ready",
+        "description": "Practice presenting Manulife's GoalReady long-term savings and retirement planning product to entrepreneurs and self-employed individuals.",
+        "initialMessage": "Welcome! Let's practice your GoalReady product pitch. What's your sales challenge today?",
+        "objectives": [
+          "Greeting & Context: Welcome the client warmly, confirm this is a scheduled GoalReady pitch meeting, and build initial rapport.",
+          "Present GoalReady Features: Explain long-term savings structure, retirement benefits, guaranteed returns, education funding capabilities, and flexible premium payment options for variable income.",
+          "Handle Objections: Address concerns about premium affordability, retirement timing ('I have time later'), and 'need to think/consult family' using LAPR or 3F frameworks.",
+          "Close & Next Steps: Use proven closing techniques, ask for commitment, and guide toward specific next steps (application, follow-up meeting)."
+        ]
+      },
+      "needs-analysis": {
+        "title": "Insurance Needs Analysis",
+        "description": "Analyze client risk profile and coverage requirements.",
+        "initialMessage": "Welcome! Let's practice insurance needs analysis. What's your sales challenge today?"
+      },
+      "policy-explanation": {
+        "title": "Policy Explanation",
+        "description": "Explain complex insurance terms and benefits clearly.",
+        "initialMessage": "Welcome! Let's practice policy explanations. What's your sales challenge today?"
+      },
+      "risk-assessment": {
+        "title": "Risk Assessment",
+        "description": "Evaluate and communicate potential risks and protection needs.",
+        "initialMessage": "Welcome! Let's practice risk assessment. What's your sales challenge today?"
+      },
+      "premium-discussion": {
+        "title": "Premium Discussion",
+        "description": "Handle pricing conversations and payment options.",
+        "initialMessage": "Welcome! Let's practice premium discussions. What's your sales challenge today?"
+      },
+      "policy-closing": {
+        "title": "Policy Closing",
+        "description": "Finalize insurance application and documentation.",
+        "initialMessage": "Welcome! Let's practice policy closing. What's your sales challenge today?"
+      },
+      "policy-renewal": {
+        "title": "Policy Renewal",
+        "description": "Review existing coverage and discuss renewal options.",
+        "initialMessage": "Welcome! Let's practice policy renewals. What's your sales challenge today?"
+      },
+      "solution-discovery": {
+        "title": "Solution Discovery",
+        "description": "Identify technical requirements and business challenges.",
+        "initialMessage": "Welcome! Let's practice solution discovery. What's your sales challenge today?"
+      },
+      "demo-presentation": {
+        "title": "Demo Presentation",
+        "description": "Showcase product features and technical capabilities.",
+        "initialMessage": "Welcome! Let's practice demo presentations. What's your sales challenge today?"
+      },
+      "technical-objections": {
+        "title": "Technical Objections",
+        "description": "Address technical concerns and implementation questions.",
+        "initialMessage": "Welcome! Let's practice handling technical objections. What's your sales challenge today?"
+      },
+      "pricing-negotiation": {
+        "title": "Pricing Negotiation",
+        "description": "Negotiate licensing, implementation, and ongoing costs.",
+        "initialMessage": "Welcome! Let's practice pricing negotiations. What's your sales challenge today?"
+      },
+      "contract-closing": {
+        "title": "Contract Closing",
+        "description": "Finalize terms, conditions, and service agreements.",
+        "initialMessage": "Welcome! Let's practice contract closing. What's your sales challenge today?"
+      },
+      "account-expansion": {
+        "title": "Account Expansion",
+        "description": "Identify upselling and cross-selling opportunities.",
+        "initialMessage": "Welcome! Let's practice account expansion. What's your sales challenge today?"
+      },
+      "general-sales": {
+        "title": "General Sales Practice",
+        "description": "Practice general sales conversations and techniques.",
+        "initialMessage": "Welcome! Let's practice general sales techniques. What's your sales challenge today?"
+      },
+      "discovery-call-meddpicc": {
+        "title": "Discovery Call",
+        "description": "Uncover client pain points, needs, and budget using MEDDPICC methodology.",
+        "initialMessage": "Welcome! Let's practice a Discovery Call focused on understanding your prospect's business needs, challenges, and decision-making process. What's your approach?",
+        "objectives": [
+          "Identify and quantify business metrics and key performance indicators",
+          "Understand economic impact and budget considerations",
+          "Map decision-making process and identify key stakeholders",
+          "Uncover pain points, implications, and critical business needs"
+        ]
+      },
+      "deal-closure": {
+        "title": "Deal Closure",
+        "description": "Negotiate with the prospect to align on key commercial details and close the deal.",
+        "initialMessage": "Welcome! Let's practice Deal Closure where we'll focus on late-stage negotiations, aligning on commercial terms, and driving the deal to signature using MEDDPICC methodology. How are you approaching this final stage?",
+        "objectives": [
+          "Confirm agreed metrics and ROI documentation in the business case",
+          "Secure final sign-off from economic buyer on pricing and terms",
+          "Navigate paper process and address legal/compliance requirements",
+          "Drive urgency while maintaining value focus to achieve signature"
+        ]
+      },
+      "telesales": {
+        "title": "Tele Sales",
+        "description": "Make effective telemarketing calls to generate leads and close sales remotely.",
+        "initialMessage": "Welcome! Let's practice telesales calls. What's your telemarketing challenge today?",
+        "objectives": [
+          "Build rapport and position the product as relevant to client's needs",
+          "Handle objections and communicate value clearly",
+          "Close the sale—or exit the call professionally if the client is not interested"
+        ]
+      },
+      "agency-sales": {
+        "title": "Agency Sales",
+        "description": "Establish credibility and drive growth through consultative selling.",
+        "initialMessage": "Welcome! Let's practice agency sales calls. What's your agency sales challenge today?",
+        "objectives": [
+          "Build rapport and position the product as relevant to client's needs",
+          "Handle objections and communicate value clearly",
+          "Close the sale—or exit the call professionally if the client is not interested"
+        ]
+      },
+      "grab-mex": {
+        "title": "Budget Constraint Handling",
+        "description": "Practice handling merchant budget constraints and P&L concerns while driving campaign participation.",
+        "initialMessage": "Welcome to Budget Constraint Handling training! Let's practice addressing merchant P&L concerns and budget limitations while positioning campaign value. How can we help overcome their funding objections today?",
+        "objectives": [
+          "Use LAER framework to handle objections",
+          "Overcome merchant budget constraints and P&L concerns by demonstrating campaign ROI",
+          "Position the $145,000 media value proposition and cost-benefit analysis",
+          "Apply MEDDPICC methodology to qualify opportunities and close campaign deals"
+        ]
+      },
+      "bbl-client-upgrade": {
+        "title": "Client Upgrade (in-person meeting)",
+        "description": "Contact an existing client to upgrade them to Wealth services.",
+        "initialMessage": "Welcome! Let's practice client upgrade conversations. What's your advisory challenge today?",
+        "objectives": [
+          "Welcome the client to Wealth and note any recent life or career changes.",
+          "Present key Wealth services and benefits that fit the client's goals.",
+          "Explore the client's profile and priorities to capture essential updates.",
+          "Secure agreement for a follow-up investment advisory session."
+        ]
+      },
+      "bbl-goal-planning": {
+        "title": "Goal Planning (in-person meeting)",
+        "description": "Define, size, and plan financial goals with tailored solutions and next steps.",
+        "initialMessage": "Welcome! Let's practice goal planning sessions. What's your advisory challenge today?",
+        "objectives": [
+          "Identify and clarify the client's key financial goals and priorities.",
+          "Quantify timelines, amounts, and risk tolerance for each goal.",
+          "Present tailored solutions that align with their objectives.",
+          "Secure commitment to proceed with goal-based planning services."
+        ]
+      },
+      "bbl-client-revival": {
+        "title": "Client Revival (in-person meeting)",
+        "description": "Reconnect with inactive clients and spark re-engagement.",
+        "initialMessage": "Welcome! Let's practice client revival conversations. What's your advisory challenge today?",
+        "objectives": [
+          "Re-establish the relationship and acknowledge recent inactivity or balance thresholds",
+          "Identify key reasons for inactivity and barriers to re-engagement",
+          "Explore current priorities and map a clear re-engagement path",
+          "Encourage an immediate step and secure the next touchpoint"
+        ]
+      },
+      "bbl-portfolio-review": {
+        "title": "Portfolio Review (in-person meeting)",
+        "description": "Review portfolio performance, discuss market impact, propose adjustments, and confirm next steps.",
+        "initialMessage": "Welcome! Let's practice portfolio review conversations. What's your advisory challenge today?",
+        "objectives": [
+          "Open the meeting with a warm welcome and recap of recent life or financial updates.",
+          "Introduce the reason for the portfolio review, linking it to market movements or personal milestones.",
+          "Review current portfolio performance and identify key gaps or imbalances.",
+          "Recommend tailored rebalancing or top-up solutions aligned to his goals and risk appetite, prioritizing proposing top-up solutions first.",
+          "Confirm next steps, secure agreement to proceed, and schedule a follow-up review with regards to the portfolio."
+        ]
+      },
+      "hsbc-client-onboarding": {
+        "title": "Client Onboarding",
+        "description": "Introducing HSBC & Wealth to New to Bank (NTB) clients",
+        "initialMessage": "Welcome! Let's practice client onboarding conversations. What's your advisory challenge today?",
+        "objectives": [
+          "Welcome the client and establish rapport while introducing the bank's wealth management relationship model.",
+          "Introduce the bank's wealth proposition in a way that highlights differentiation and alignment with client's priorities.",
+          "Understand the client's financial profile, risk appetite, and onboarding requirements.",
+          "Guide the client toward first engagement in wealth products and establish the relationship rhythm.",
+          "Set up an in-person meeting to discuss HSBC Wealth's offerings in further detail."
+        ]
+      },
+      "hsbc-client-upgrade": {
+        "title": "New to Wealth",
+        "description": "Contact an existing client to initiate a wealth journey with HSBC",
+        "initialMessage": "Welcome! Let's practice client upgrade conversations. What's your advisory challenge today?",
+        "objectives": [
+          "Welcome the client to Wealth and note any recent life or career changes.",
+          "Present key Wealth services and benefits that fit the client's goals.",
+          "Explore the client's profile and priorities to capture essential updates.",
+          "Secure agreement for a follow-up investment advisory session.",
+          "Set up an in-person meeting to discuss HSBC Wealth's offerings in further detail."
+        ]
+      },
+      "hsbc-goal-planning": {
+        "title": "Goal Planning",
+        "description": "Define, size, and plan financial goals with tailored solutions and next steps.",
+        "initialMessage": "Welcome! Let's practice goal planning sessions. What's your advisory challenge today?",
+        "objectives": [
+          "Identify and clarify the client's key financial goals and priorities.",
+          "Quantify timelines, amounts, and risk tolerance for each goal.",
+          "Present tailored solutions that align with their objectives.",
+          "Secure commitment to proceed with goal-based planning services."
+        ]
+      },
+      "hsbc-client-revival": {
+        "title": "Client Revival",
+        "description": "Reconnect with inactive clients and spark re-engagement.",
+        "initialMessage": "Welcome! Let's practice client revival conversations. What's your advisory challenge today?",
+        "objectives": [
+          "Re-establish the relationship and acknowledge recent inactivity or balance thresholds",
+          "Identify key reasons for inactivity and barriers to re-engagement",
+          "Explore current priorities and map a clear re-engagement path",
+          "Encourage an immediate step and secure the next touchpoint"
+        ]
+      },
+      "hsbc-portfolio-review": {
+        "title": "Portfolio Review",
+        "description": "Review portfolio performance, discuss market impact, propose adjustments, and confirm next steps.",
+        "initialMessage": "Welcome! Let's practice portfolio review conversations. What's your advisory challenge today?",
+        "objectives": [
+          "Open the call with a warm welcome and recap of recent life or financial updates.",
+          "Introduce the reason for the portfolio review, linking it to market movements or personal milestones.",
+          "Review current portfolio performance and identify key gaps or imbalances.",
+          "Recommend tailored rebalancing or top-up solutions aligned to his goals and risk appetite.",
+          "Confirm next steps, secure agreement to proceed, and schedule a follow-up review."
+        ]
+      },
+      "mtl-prospect-practice": {
+        "title": "Pitch Mastery",
+        "description": "Roles reversed: You play the prospect while observing a top-performing insurance agent conduct needs discovery and product explanation",
+        "initialMessage": "Welcome! Let's practice being a prospect. What's your challenge today?",
+        "objectives": [
+          "Express your financial goals and priorities clearly as a realistic prospect",
+          "Ask meaningful questions a real prospect would ask about savings and investment options",
+          "Respond naturally to the agent's discovery questions and product explanations",
+          "Show realistic progression in your thinking as concerns are addressed",
+          "Complete needs discovery and product explanation in one conversation"
+        ]
+      },
+      "axa-ph-unit-manager-recruitment": {
+        "title": "Unit Manager Recruitment",
+        "description": "Recruit new prospects who showed interest in the financial advising opportunity but are now unsure about taking the next step",
+        "initialMessage": "Welcome! Let's practice unit manager recruitment. What's your recruitment challenge today?",
+        "objectives": [
+          "Make the role relatable by showing how their daily strengths (managing schedule, budgeting, planning, communication) are the same skills used in financial advising",
+          "Address time concerns by explaining how the role is flexible and can be done in quiet pockets of time",
+          "Reassure them that they can start at their own pace and the training will guide them step by step",
+          "Help them feel more confident and encourage them to attend the training session"
+        ]
+      },
+      "axa-ph-financial-needs-analysis": {
+        "title": "Financial Needs Analysis",
+        "description": "Guide a first-time client through a simple, low-commitment financial needs discussion while addressing concerns about affordability, flexibility, and early access to funds",
+        "initialMessage": "Welcome! Let's practice financial needs analysis. What's your sales challenge today?",
+        "objectives": [
+          "Build rapport with a first-time client",
+          "Conduct fact-finding on income, lifestyle, and future financial goals",
+          "Present a simple, affordable starter solution with guaranteed returns",
+          "Address concerns about commitment, flexibility, and early access to funds"
+        ]
+      },
+      "axa-ph-general-objection-handling": {
+        "title": "Objection Handling",
+        "description": "Handle common objections about education funding and family protection, including concerns like no money, no need, no hurry, no time and not in the market",
+        "initialMessage": "Welcome! Let's practice handling objections. What objection would you like to work on?",
+        "objectives": [
+          "Build rapport and trust with the client",
+          "Address concerns about payment flexibility and affordability",
+          "Explain benefits compared to alternatives like bank savings",
+          "Handle objections about early withdrawal and guarantees",
+          "Guide the conversation toward next steps"
+        ]
+      },
+      "kt-axa-agent-recruitment": {
+        "title": "Recruitment of Prospective Agents",
+        "description": "Recruit prospects by exploring their goals and challenges, presenting the insurance agent career opportunity, and guiding them to register for the company's career opportunity seminar.",
+        "initialMessage": "Welcome! Let's practice agent recruitment. What's your recruitment challenge today?",
+        "objectives": [
+          "Build rapport with prospects",
+          "Conduct fact-finding on income, lifestyle, and challenges faced in current job",
+          "Present the career of an insurance agent as a solution highlighting job details and growth opportunities to address their concerns",
+          "Handle objections related to job security, income, flexibility and support from supervisors/company",
+          "Close the prospect by guiding them to register for the company's career opportunity seminar (BOP)"
+        ]
+      },
+      "kt-axa-fna-product-pitch": {
+        "title": "FNA & Product Pitch",
+        "description": "Explore the client's financial needs and propose Life Ready with CI 123 Critical Illness Rider to address their coverage needs, including protection against critical illnesses.",
+        "initialMessage": "Welcome! Let's practice Financial Needs Analysis and product pitching. What's your sales challenge today?",
+        "objectives": [
+          "Build rapport with the prospect who reached out via Facebook showing interest in insurance",
+          "Conduct thorough fact-finding on age, occupation, income, financial goals, family situation, and existing coverage",
+          "Present Life Ready whole life insurance with tax deduction benefits tailored to their situation",
+          "Introduce CI 123 Critical Illness Rider covering 123 diseases with lump sum payment benefit",
+          "Handle objections about premium cost, existing coverage, and comparison with other products",
+          "Close by securing agreement or scheduling a follow-up meeting"
+        ]
+      },
+      "kt-axa-wealthplus-close-call": {
+        "title": "WealthPlus Ready Follow Up Call",
+        "description": "Follow up with a high-value prospect previously introduced to WealthPlus Ready 90/8 to position it as a legacy planning tool, address sophisticated objections, and close the sale.",
+        "initialMessage": "Welcome! Let's practice closing a WealthPlus Ready 90/8 sale with a high-value prospect. What's your sales challenge today?",
+        "objectives": [
+          "Build rapport and relationship with the high-value prospect",
+          "Conduct fact-finding on financial situation, family structure, retirement goals, and legacy planning needs",
+          "Position WealthPlus Ready 90/8 as a legacy planning and wealth transfer solution with maturity benefit",
+          "Demonstrate tax benefits and estate planning advantages (10% annual cash return, 8-year premium payment, coverage to age 90, escalating death benefit 100%-800%)",
+          "Handle sophisticated objections about price, product comparison, IRR, and fit with overall wealth strategy",
+          "Close by guiding the prospect to complete the application"
+        ]
+      },
+      "prudential-ph-appointment-setting": {
+        "title": "Appointment Setting",
+        "description": "Touch base with a prospect, build rapport, and set an appointment to explore more on their financial goals and objectives.",
+        "initialMessage": "Welcome! Let's practice cold-call appointment setting. What's your sales challenge today?",
+        "objectives": [
+          "Introduce yourself and Pru Life UK clearly, and gain permission to continue",
+          "Deliver a compelling value proposition tied to the prospect's life stage",
+          "Handle objections with empathy and persistence",
+          "Secure agreement for a follow-up meeting"
+        ]
+      },
+      "prudential-ph-fact-finding": {
+        "title": "Product Pitch (in-person meeting)",
+        "description": "Meet a prospect face-to-face for a prescheduled appointment, build rapport through natural conversation, conduct fact-finding using SPIN methodology, and present the Pru Life UK solution.",
+        "initialMessage": "Welcome! Let's practice an in-person fact-finding and product pitch meeting. What's your sales challenge today?",
+        "objectives": [
+          "Greet the prospect warmly and build rapport through natural small talk before transitioning to business",
+          "Use SPIN questions to uncover prospect needs and priorities",
+          "Select the most appropriate Pru Life UK product based on prospect profile and needs",
+          "Present product features clearly and connect benefits to the prospect's situation",
+          "Handle objections with empathy and specificity"
+        ]
+      },
+      "great-eastern-fact-find": {
+        "title": "Fact Finding (Stage 1)",
+        "description": "Conduct a financial need analysis with a cold prospect to collect financial details, clarify goals, timeframes and risk comfort.",
+        "initialMessage": "Welcome! Let's practice fact finding. What's your sales challenge today?",
+        "objectives": [
+          "Build rapport with the client",
+          "Practice asking questions to identify the client's real needs",
+          "Handle objections relating to trust, company preference, and insurance perception",
+          "Follow market conduct principles in providing suitable recommendations"
+        ]
+      },
+      "great-eastern-product-pitch": {
+        "title": "Product Pitch (Stage 2)",
+        "description": "(Please attempt after completing Stage 1) Explore the client's financial needs and propose Great Wealth Advantage 4 to address their coverage needs.",
+        "initialMessage": "Welcome! Let's practice product pitch with Great Wealth Advantage 4. What's your sales challenge today?",
+        "objectives": [
+          "Build rapport with the client",
+          "Practice asking questions to identify the client's real needs",
+          "Present the product clearly and completely",
+          "Handle objections related to pricing, coverage and comparative prices",
+          "Follow market conduct principles in providing suitable recommendations"
+        ]
+      },
+      "great-eastern-post-sales": {
+        "title": "Post Sale Service (Stage 3)",
+        "description": "(Please attempt after completing Stage 1 & Stage 2) Address client concerns about market conditions and sub-fund performance one year after purchasing Great Wealth Advantage 4",
+        "initialMessage": "Welcome! Let's practice post sale service. What's your sales challenge today?",
+        "objectives": [
+          "Build rapport with the client",
+          "Address worries about market volatility and product performance",
+          "Reassure on long-term nature, risk profile and dollar cost averaging",
+          "Handle objections about withdrawal and maintain trust"
+        ]
+      }
+    }
+  },
+  "assessment": {
+    "overview": "Overview",
+    "title": "Roleplay Assessment",
+    "completedOn": "Completed on",
+    "salesTechnique": "Sales technique",
+    "salesTechniqueDescription": "Measures the ability to follow set framework to drive a successful conversation.",
+    "productKnowledge": "Product knowledge",
+    "productKnowledgeDescription": "Measures the ability to accurately convey product features, benefits, and key details.",
+    "softSkills": "Soft skills",
+    "technicalKnowledge": "Technical knowledge",
+    "technicalKnowledgeDescription": "Measures the ability to accurately convey product features, benefits, and key details.",
+    "operationalKnowledge": "Operational knowledge",
+    "advisoryTechnique": "Advisory Technique",
+    "advisoryTechniqueDescription": "Measures the ability to use advisory techniques to drive a successful conversation.",
+    "processAdherence": "Process Adherence",
+    "processAdherenceDescription": "Measures how well company best-practice processes are followed to drive a successful conversation.",
+    "communicationAndPresence": "Communication and Presence",
+    "communicationAndPresenceDescription": "Measures how well communication and presence are used to drive a successful conversation.",
+    "relationshipManagement": "Relationship Management",
+    "relationshipManagementDescription": "Measures the ability to build and maintain strong client relationships.",
+    "overallScore": "Overall score",
+    "summary": "Summary",
+    "suggestedNextSteps": "Suggested next steps",
+    "why": "Why",
+    "strengths": "Strengths",
+    "toImprove": "To improve",
+    "correction": "Correction",
+    "suggestion": "Suggestion",
+    "completed": "Completed",
+    "incomplete": "Incomplete",
+    "expert": "Expert",
+    "intermediate": "Intermediate",
+    "beginner": "Beginner",
+    "needsImprovement": "Needs Improvement",
+    "ratings": {
+      "poor": "Poor",
+      "fair": "Fair",
+      "good": "Good",
+      "excellent": "Excellent"
+    },
+    "standings": {
+      "currentSession": "Current Standing",
+      "notAvailable": "Not Available",
+      "clientVerification": "Client Verification",
+      "objectionHandling": "Objection Handling",
+      "dynamicFramework": "{{framework}}",
+      "threeFExecution": "3F Execution",
+      "fourCExecution": "4C Execution",
+      "mandatory": "Mandatory",
+      "incomplete": "Incomplete",
+      "intermediate": "Intermediate",
+      "beginner": "Beginner",
+      "expert": "Expert"
+    },
+    "introduction": "Introduction",
+    "presentation": "Presentation",
+    "communication": "Communication",
+    "salesConfirmation": "Sales Confirmation",
+    "mandatoryDisclosure": "Mandatory Disclosure",
+    "closure": "Closure",
+    "salesNovice": "Sales Novice",
+    "skilledAdvisor": "Skilled Advisor",
+    "strategicConsultant": "Strategic Consultant",
+    "emergingSeller": "Emerging Seller",
+    "mandatoryFailed": "Standing unavailable: Mandatory criteria not met.",
+    "msigNextStepsTitle": "To progress your standing, focus on:",
+    "msigMandatoryNotMetSummary": "Your standing isn't available because you missed a mandatory criteria, which requires full adherence. Review your performance in other areas to see what went well, and make sure to complete all steps next time to receive your standing.",
+    "msigMandatoryNotMetNextStep": "Completing all mandatory criterias.",
+    "prudentialMandatoryNotMet": {
+      "summary": "Mandatory criteria not met. Please complete client verification before proceeding.",
+      "nextStepsTitle": "Next Steps",
+      "suggestedNextStep": "Complete client verification requirements and retry the assessment."
+    },
+    "needsAnalysis": "Needs Analysis",
+    "productPitch": "Product Pitch",
+    "needsHealthExploration": "Needs & Health Exploration",
+    "objectionHandling": "Objection Handling"
+  },
+  "ui": {
+    "hupoLogoAlt": "Hupo Logo",
+    "companyLogoAlt": "Company Logo"
+  },
+  "products": {
+    "product": "Product"
+  },
+  "personas": {
+    "persona": "Persona"
+  },
+  "common": {
+    "goals": {
+      "cold-call": "Your goal is to briefly introduce our firm, spark interest, and book a 30-minute discovery meeting",
+      "discovery": "Your goal is to understand their current situation and identify specific needs",
+      "competitive-proposal": "Your goal is to present your solution and differentiate from competitors",
+      "objection-handling": "Your goal is to address their concerns and maintain value focus",
+      "closing": "Your goal is to secure agreement and finalize the application",
+      "review-renewal": "Your goal is to review current coverage and discuss renewal or upgrade options",
+      "needs-analysis": "Your goal is to conduct thorough needs assessment and risk analysis",
+      "policy-explanation": "Your goal is to clearly explain policy terms and benefits",
+      "risk-assessment": "Your goal is to evaluate and communicate their protection needs",
+      "premium-discussion": "Your goal is to discuss pricing and payment options",
+      "policy-closing": "Your goal is to finalize the insurance application",
+      "policy-renewal": "Your goal is to review existing coverage and secure renewal",
+      "solution-discovery": "Your goal is to identify technical requirements and business challenges",
+      "demo-presentation": "Your goal is to showcase the solution and demonstrate value",
+      "discovery-call-meddpicc": "Your goal is to uncover pain points, understand the decision-making process, and qualify budget using MEDDPICC methodology",
+      "telesales": "Your goal is to make effective telemarketing calls, present products clearly, and close sales remotely",
+      "deal-closure": "Your goal is to navigate final negotiations, align on commercial terms, and secure contract signature using MEDDPICC principles",
+      "grab-mex": "Your goal is to overcome merchant budget constraints and P&L concerns by demonstrating campaign ROI, addressing food cost funding objections, and positioning the $145,000 media value proposition to secure campaign participation",
+      "axa-ph-unit-manager-recruitment": "Your goal is to recruit a potential candidate by addressing their concerns and demonstrating the value of joining as a financial advisor",
+      "axa-ph-financial-needs-analysis": "Your goal is to guide a first-time client through a financial needs discussion, build rapport, understand their income and goals, and present AXA Secure Future as a safe, flexible starter solution while addressing concerns about affordability, commitment, and early access to funds",
+      "axa-ph-general-objection-handling": "Your goal is to handle objections about education funding and family protection by addressing concerns about affordability, flexibility, early withdrawal, and guarantees while building trust and guiding the conversation toward next steps",
+      "kt-axa-agent-recruitment": "Your goal is to recruit a prospective agent by building rapport, conducting fact-finding on their current situation, presenting the KT-AXA insurance agent career opportunity, handling objections about career change, and guiding them to register for the Business Opportunity Program (BOP) seminar",
+      "kt-axa-fna-product-pitch": "Your goal is to conduct a financial needs analysis with a Facebook lead interested in insurance, understand their financial situation and goals, present Life Ready whole life insurance with CI 123 Critical Illness Rider coverage tailored to their needs, handle objections, and secure agreement or schedule a follow-up",
+      "kt-axa-wealthplus-close-call": "Your goal is to position WealthPlus Ready 90/8 as a legacy planning and wealth transfer solution with guaranteed returns, address the prospect's specific concerns and objections, and guide them to complete the application",
+      "prudential-ph-appointment-setting": "Your goal is to introduce yourself and Pru Life UK, deliver a compelling value proposition, handle the prospect's objections, and secure agreement for a follow-up meeting",
+      "prudential-ph-fact-finding": "Your goal is to greet the prospect warmly, build rapport through small talk, use SPIN questions to uncover their needs, present the most appropriate Pru Life UK product, and connect benefits to their specific situation",
+      "great-eastern-fact-find": "Your goal is to conduct a financial need analysis with a cold prospect: collect financial details (income, expenses, assets, debts), clarify goals and risk comfort, and obtain life stage, cash flow, existing coverage and risk profile while handling objections",
+      "great-eastern-product-pitch": "Your goal is to propose Great Wealth Advantage 4 to address the client's coverage needs, present the product clearly, handle objections on price and comparison, and secure the application or a follow-up appointment",
+      "great-eastern-post-sales": "Your goal is to address the client's concerns about market conditions and sub-fund performance, reassure on long-term nature and dollar cost averaging, handle withdrawal objections, and maintain trust",
+      "manulife-product-pitch": "Your goal is to propose a long‑term savings solution that secures her child's future while addressing her own retirement needs and business stability",
+      "default": "Your goal is to build rapport and explore their needs"
+    }
+  }
+}

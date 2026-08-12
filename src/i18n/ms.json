@@ -1,0 +1,432 @@
+{
+  "modules": {
+    "groups": {
+      "module": "Modul",
+      "prospecting": "Pencarian & Penemuan Prospek",
+      "relationship": "Membina Hubungan",
+      "closing": "Penutupan & Rundingan",
+      "retention": "Pengekalan & Penjualan Tambahan"
+    },
+    "items": {
+      "discovery": {
+        "title": "Discovery",
+        "description": "Meneroka situasi pelanggan untuk mendedahkan keperluan dan fakta.",
+        "initialMessage": "Selamat datang! Mari berlatih discovery. Apakah cabaran jualan anda hari ini?",
+        "objectives": [
+          "Memahami situasi kewangan dan matlamat pelanggan semasa",
+          "Mendedahkan keperluan dan masalah melalui soalan yang tepat",
+          "Mengenalpasti kriteria membuat keputusan dan jadual waktu",
+          "Mengumpul fakta yang diperlukan untuk mencadangkan penyelesaian yang sesuai"
+        ]
+      },
+      "competitive-proposal": {
+        "title": "Cadangan Kompetitif",
+        "description": "Bentangkan penyelesaian anda dan mengatasi produk pesaing yang sedang dipertimbangkan pelanggan.",
+        "initialMessage": "Selamat datang! Mari berlatih cadangan kompetitif. Apakah cabaran jualan anda hari ini?",
+        "objectives": [
+          "Mempersembahkan penyelesaian dengan cadangan nilai yang jelas",
+          "Membezakan penawaran anda daripada alternatif pesaing",
+          "Menangani kebimbangan pelanggan tentang produk pesaing",
+          "Mendapatkan komitmen untuk meneruskan cadangan anda"
+        ]
+      },
+      "objection-handling": {
+        "title": "Menangani Bantahan",
+        "description": "Tangani bantahan berturut-turut mengenai harga, keperluan, atau masa dan kekalkan nilai.",
+        "initialMessage": "Selamat datang! Mari berlatih menangani bantahan. Apakah cabaran jualan anda hari ini?",
+        "objectives": [
+          "Mendengar secara aktif untuk memahami punca bantahan",
+          "Merespons dengan cadangan nilai dan manfaat yang relevan",
+          "Mengatasi kebimbangan tentang harga, masa dan keperluan",
+          "Mengekalkan penglibatan pelanggan dan kemajuan ke arah perjanjian"
+        ]
+      },
+      "product-positioning": {
+        "title": "Penempatan Produk",
+        "description": "Presentasikan solusi anda dan kalahkan produk rival yang sedang dipertimbangkan pelanggan.",
+        "initialMessage": "Selamat datang! Mari berlatih penempatan produk. Apakah cabaran jualan anda hari ini?",
+        "objectives": [
+          "Mempersembahkan ciri produk sebagai manfaat khusus pelanggan",
+          "Meletakkan kelebihan produk berbanding alternatif pasaran",
+          "Menangani bantahan dan kebimbangan berkaitan produk",
+          "Mencipta keperluan mendesak dan keinginan untuk penyelesaian yang dicadangkan"
+        ]
+      },
+      "closing": {
+        "title": "Penutupan",
+        "description": "Sahkan perjanjian dan kumpul butiran permohonan.",
+        "initialMessage": "Selamat datang! Mari berlatih teknik closing. Apakah cabaran jualan anda hari ini?",
+        "objectives": [
+          "Merumuskan penyelesaian dan manfaat yang telah dipersetujui",
+          "Mengesahkan komitmen pelanggan untuk meneruskan",
+          "Mengumpul maklumat permohonan dan dokumentasi yang diperlukan",
+          "Menjadualkan langkah seterusnya dan jadual waktu pelaksanaan"
+        ]
+      },
+      "review-renewal": {
+        "title": "Semakan / Pembaharuan",
+        "description": "Semak semula perlindungan semasa untuk memperbaharui, menyesuaikan, atau upselling.",
+        "initialMessage": "Selamat datang! Mari berlatih perbualan pembaharuan. Apakah cabaran jualan anda hari ini?",
+        "objectives": [
+          "Menyemak perlindungan dan prestasi polisi semasa",
+          "Mengenalpasti perubahan keadaan dan keperluan pelanggan",
+          "Mempersembahkan pilihan pembaharuan dan penambahbaikan berpotensi",
+          "Mendapatkan komitmen pembaharuan atau peluang upselling"
+        ]
+      },
+      "fna": {
+        "title": "Analisis Kebutuhan Kewangan",
+        "description": "Mengadakan analisis kebutuhan kewangan yang komprehensif untuk mengenalpasti keperluan perlindungan, simpanan, dan pelaburan pelanggan.",
+        "initialMessage": "Selamat datang! Mari berlatih Analisis Kebutuhan Kewangan. Apakah cabaran jualan anda hari ini?",
+        "objectives": [
+          "Pengenalan: Sapaan dengan nama, nyatakan peranan penasihat dan kelayakan/CSR Manulife untuk menetapkan kredibiliti.",
+          "Membina hubungan & mendedahkan keperluan: Membincangkan tahap hidup, menerokai gangguan/mimpi, menjalankan soalan kebolehterimaan, dan mengukur keperluan perlindungan/kesihatan/pendidikan/persaraan.",
+          "Penutupan (langkah seterusnya): Menghantar/mengesahkan borang, menjadualkan pertemuan susulan, mendapatkan keizinan untuk menghubungi, mengumpul rujukan dan mengundang maklum balas. "
+        ]
+      },
+      "needs-analysis": {
+        "title": "Analisis Keperluan Insurans",
+        "description": "Analisis profil risiko dan keperluan perlindungan pelanggan.",
+        "initialMessage": "Selamat datang! Mari berlatih analisis keperluan insurans. Apakah cabaran jualan anda hari ini?"
+      },
+      "policy-explanation": {
+        "title": "Penjelasan Polisi",
+        "description": "Terangkan terma dan manfaat insurans yang kompleks dengan jelas.",
+        "initialMessage": "Selamat datang! Mari berlatih penjelasan polisi. Apakah cabaran jualan anda hari ini?"
+      },
+      "risk-assessment": {
+        "title": "Penilaian Risiko",
+        "description": "Nilai dan komunikasikan risiko berpotensi serta keperluan perlindungan.",
+        "initialMessage": "Selamat datang! Mari berlatih penilaian risiko. Apakah cabaran jualan anda hari ini?"
+      },
+      "premium-discussion": {
+        "title": "Perbincangan Premium",
+        "description": "Tangani perbualan harga dan pilihan pembayaran.",
+        "initialMessage": "Selamat datang! Mari berlatih perbincangan premium. Apakah cabaran jualan anda hari ini?"
+      },
+      "policy-closing": {
+        "title": "Penutupan Polisi",
+        "description": "Muktamadkan permohonan dan dokumentasi insurans.",
+        "initialMessage": "Selamat datang! Mari berlatih penutupan polisi. Apakah cabaran jualan anda hari ini?"
+      },
+      "policy-renewal": {
+        "title": "Pembaharuan Polisi",
+        "description": "Semak perlindungan sedia ada dan bincang pilihan pembaharuan.",
+        "initialMessage": "Selamat datang! Mari berlatih pembaharuan polisi. Apakah cabaran jualan anda hari ini?"
+      },
+      "solution-discovery": {
+        "title": "Discovery Penyelesaian",
+        "description": "Kenal pasti keperluan teknikal dan cabaran perniagaan.",
+        "initialMessage": "Selamat datang! Mari berlatih discovery penyelesaian. Apakah cabaran jualan anda hari ini?"
+      },
+      "demo-presentation": {
+        "title": "Persembahan Demo",
+        "description": "Tunjukkan ciri produk dan keupayaan teknikal.",
+        "initialMessage": "Selamat datang! Mari berlatih persembahan demo. Apakah cabaran jualan anda hari ini?"
+      },
+      "technical-objections": {
+        "title": "Bantahan Teknikal",
+        "description": "Tangani kebimbangan teknikal dan soalan pelaksanaan.",
+        "initialMessage": "Selamat datang! Mari berlatih menangani bantahan teknikal. Apakah cabaran jualan anda hari ini?"
+      },
+      "pricing-negotiation": {
+        "title": "Rundingan Harga",
+        "description": "Berunding lesen, pelaksanaan, dan kos berterusan.",
+        "initialMessage": "Selamat datang! Mari berlatih rundingan harga. Apakah cabaran jualan anda hari ini?"
+      },
+      "contract-closing": {
+        "title": "Penutupan Kontrak",
+        "description": "Muktamadkan syarat, terma, dan perjanjian perkhidmatan.",
+        "initialMessage": "Selamat datang! Mari berlatih penutupan kontrak. Apakah cabaran jualan anda hari ini?"
+      },
+      "account-expansion": {
+        "title": "Pengembangan Akaun",
+        "description": "Kenal pasti peluang upselling dan cross-selling.",
+        "initialMessage": "Selamat datang! Mari berlatih pengembangan akaun. Apakah cabaran jualan anda hari ini?"
+      },
+      "general-sales": {
+        "title": "Amalan Jualan Umum",
+        "description": "Berlatih perbualan dan teknik jualan secara umum.",
+        "initialMessage": "Selamat datang! Mari berlatih teknik jualan umum. Apakah cabaran jualan anda hari ini?"
+      },
+      "cold-call": {
+        "title": "Cold Call",
+        "description": "Kuasai proses cold call lengkap dari pembukaan hingga penetapan temujanji.",
+        "initialMessage": "Selamat datang! Mari berlatih cold call. Saya akan berperanan sebagai prospek yang anda hubungi buat kali pertama. Senario apa yang ingin anda praktikkan?",
+        "objectives": [
+          "Menarik perhatian dan mewujudkan kredibiliti dengan prospek",
+          "Membina hubungan baik dan mengumpul konteks tentang situasi mereka",
+          "Mengenalpasti cabaran atau risiko berpotensi yang mereka hadapi",
+          "Mendapatkan persetujuan untuk temujanji susulan atau perbualan seterusnya"
+        ]
+      },
+      "discovery-call-meddpicc": {
+        "title": "Panggilan Discovery",
+        "description": "Dedahkan titik kesakitan pelanggan, keperluan, dan bajet menggunakan metodologi MEDDPICC.",
+        "initialMessage": "Selamat datang! Mari berlatih Panggilan Discovery yang berfokus pada memahami keperluan perniagaan, cabaran, dan proses membuat keputusan prospek anda. Apakah pendekatan anda?",
+        "objectives": [
+          "Mengenalpasti dan mengukur metrik perniagaan dan penunjuk prestasi utama",
+          "Memahami kesan ekonomi dan pertimbangan bajet",
+          "Memetakan proses membuat keputusan dan mengenalpasti pihak berkepentingan utama",
+          "Mendedahkan titik kesakitan, implikasi, dan keperluan perniagaan kritikal"
+        ]
+      },
+      "deal-closure": {
+        "title": "Penutupan Tawaran",
+        "description": "Berunding dengan prospek untuk menyelaraskan butiran komersial utama dan menutup tawaran.",
+        "initialMessage": "Selamat datang! Mari berlatih Penutupan Tawaran di mana kita akan fokus pada rundingan peringkat akhir, menyelaraskan terma komersial, dan memacu tawaran ke arah tandatangan menggunakan metodologi MEDDPICC. Bagaimana pendekatan anda di peringkat akhir ini?",
+        "objectives": [
+          "Mengesahkan metrik yang dipersetujui dan dokumentasi ROI dalam kes perniagaan",
+          "Mendapatkan kelulusan akhir daripada pembeli ekonomi mengenai harga dan terma",
+          "Menavigasi proses kertas kerja dan menangani keperluan undang-undang/pematuhan",
+          "Memacu keperluan segera sambil mengekalkan fokus nilai untuk mencapai tandatangan"
+        ]
+      },
+      "telesales": {
+        "title": "Tele Sales",
+        "description": "Membuat panggilan telepemasaran yang berkesan untuk menjana prospek dan menutup jualan secara jauh.",
+        "initialMessage": "Selamat datang! Mari berlatih panggilan telesales. Apakah cabaran telepemasaran anda hari ini?",
+        "objectives": [
+          "Membina hubungan baik dan posisikan produk agar relevan dengan keperluan pelanggan",
+          "Menangani bantahan dan komunikasikan nilai dengan jelas",
+          "Menutup jualan—atau tamatkan panggilan secara profesional jika pelanggan tidak berminat"
+        ]
+      },
+      "grab-mex": {
+        "title": "Pengendalian Kekangan Bajet",
+        "description": "Berlatih mengendalikan kekangan bajet peniaga dan kebimbangan P&L sambil mendorong penyertaan kempen.",
+        "initialMessage": "Selamat datang ke latihan Pengendalian Kekangan Bajet! Mari berlatih menangani kebimbangan P&L peniaga dan had bajet sambil meletakkan nilai kempen. Bagaimana kita boleh membantu mengatasi bantahan pembiayaan mereka hari ini?",
+        "objectives": [
+          "Gunakan framework LAER untuk menangani bantahan",
+          "Mengatasi kekangan bajet peniaga dan kebimbangan P&L dengan menunjukkan ROI kempen",
+          "Meletakkan cadangan nilai media $145,000 dan analisis kos-manfaat",
+          "Menerapkan metodologi MEDDPICC untuk melayakkan peluang dan menutup tawaran kempen"
+        ]
+      },
+      "bbl-client-upgrade": {
+        "title": "Peningkatan Pelanggan (pertemuan bersemuka)",
+        "description": "Menghubungi pelanggan sedia ada untuk meningkatkan mereka kepada perkhidmatan Wealth.",
+        "initialMessage": "Selamat datang! Mari berlatih perbualan peningkatan pelanggan. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Menyambut pelanggan ke Wealth dan mencatat sebarang perubahan hidup atau kerjaya terkini.",
+          "Mempersembahkan perkhidmatan dan faedah utama Wealth yang sesuai dengan matlamat pelanggan.",
+          "Meneroka profil dan keutamaan pelanggan untuk menangkap kemas kini penting.",
+          "Mendapatkan persetujuan untuk sesi nasihat pelaburan susulan."
+        ]
+      },
+      "bbl-goal-planning": {
+        "title": "Perancangan Matlamat (pertemuan bersemuka)",
+        "description": "Mentakrifkan, mengukur, dan merancang matlamat kewangan dengan penyelesaian yang disesuaikan dan langkah seterusnya.",
+        "initialMessage": "Selamat datang! Mari berlatih sesi perancangan matlamat. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Mengenal pasti dan menjelaskan matlamat kewangan utama dan keutamaan pelanggan.",
+          "Mengkuantifikasi garis masa, jumlah, dan toleransi risiko untuk setiap matlamat.",
+          "Mempersembahkan penyelesaian yang disesuaikan yang sejajar dengan objektif mereka.",
+          "Mendapatkan komitmen untuk meneruskan perkhidmatan perancangan berasaskan matlamat."
+        ]
+      },
+      "bbl-client-revival": {
+        "title": "Pemulihan Pelanggan (pertemuan bersemuka)",
+        "description": "Berhubung semula dengan pelanggan tidak aktif dan mencetuskan penglibatan semula.",
+        "initialMessage": "Selamat datang! Mari berlatih perbualan pemulihan pelanggan. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Wujudkan semula hubungan dan akui ketidakaktifan baru-baru ini atau ambang baki",
+          "Kenal pasti sebab utama ketidakaktifan dan halangan untuk penglibatan semula",
+          "Terokai keutamaan semasa dan petakan laluan penglibatan semula yang jelas",
+          "Galakkan langkah segera dan pastikan titik sentuhan seterusnya"
+        ]
+      },
+      "bbl-portfolio-review": {
+        "title": "Semakan Portfolio (pertemuan bersemuka)",
+        "description": "Semak prestasi portfolio, bincang impak pasaran, cadangkan pelarasan, dan sahkan langkah seterusnya.",
+        "initialMessage": "Selamat datang! Mari berlatih perbualan semakan portfolio. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Buka panggilan dengan sambutan mesra dan ringkasan kemas kini hidup atau kewangan terkini.",
+          "Perkenalkan sebab untuk semakan portfolio, menghubungkannya dengan pergerakan pasaran atau pencapaian peribadi.",
+          "Semak prestasi portfolio semasa dan kenal pasti jurang atau ketidakseimbangan utama.",
+          "Cadangkan penyelesaian pengimbangan semula atau tambahan yang disesuaikan dengan matlamat dan selera risiko mereka, mengutamakan penyelesaian tambahan terlebih dahulu.",
+          "Sahkan langkah seterusnya, dapatkan persetujuan untuk meneruskan, dan jadualkan semakan susulan berkaitan portfolio.",
+          "Cuba perkenalkan produk kekayaan baru, nota dwi-mata wang, kepada pelanggan ini."
+        ]
+      },
+
+      "hsbc-client-onboarding": {
+        "title": "Onboarding Pelanggan",
+        "description": "Memperkenalkan HSBC & Wealth kepada pelanggan Baharu ke Bank (NTB)",
+        "initialMessage": "Selamat datang! Mari berlatih perbualan onboarding pelanggan. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Menyambut pelanggan dan membina hubungan baik sambil memperkenalkan model hubungan pengurusan kekayaan bank.",
+          "Memperkenalkan cadangan kekayaan bank dengan cara yang menyerlahkan pembezaan dan penjajaran dengan keutamaan pelanggan.",
+          "Memahami profil kewangan pelanggan, selera risiko, dan keperluan onboarding.",
+          "Membimbing pelanggan ke arah penglibatan pertama dalam produk kekayaan dan mewujudkan irama hubungan.",
+          "Menetapkan pertemuan bersemuka untuk membincangkan penawaran HSBC Wealth dengan lebih terperinci."
+        ]
+      },
+      "hsbc-client-upgrade": {
+        "title": "Baharu ke Wealth",
+        "description": "Menghubungi pelanggan sedia ada untuk memulakan perjalanan kekayaan dengan HSBC",
+        "initialMessage": "Selamat datang! Mari berlatih perbualan peningkatan pelanggan. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Menyambut pelanggan ke Wealth dan mencatat sebarang perubahan hidup atau kerjaya terkini.",
+          "Mempersembahkan perkhidmatan dan faedah utama Wealth yang sesuai dengan matlamat pelanggan.",
+          "Meneroka profil dan keutamaan pelanggan untuk menangkap kemas kini penting.",
+          "Mendapatkan persetujuan untuk sesi nasihat pelaburan susulan.",
+          "Menetapkan pertemuan bersemuka untuk membincangkan penawaran HSBC Wealth dengan lebih terperinci."
+        ]
+      },
+      "hsbc-goal-planning": {
+        "title": "Perancangan Matlamat",
+        "description": "Mentakrifkan, mengukur, dan merancang matlamat kewangan dengan penyelesaian yang disesuaikan dan langkah seterusnya.",
+        "initialMessage": "Selamat datang! Mari berlatih sesi perancangan matlamat. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Mengenal pasti dan menjelaskan matlamat kewangan utama dan keutamaan pelanggan.",
+          "Mengkuantifikasi garis masa, jumlah, dan toleransi risiko untuk setiap matlamat.",
+          "Mempersembahkan penyelesaian yang disesuaikan yang sejajar dengan objektif mereka.",
+          "Mendapatkan komitmen untuk meneruskan perkhidmatan perancangan berasaskan matlamat."
+        ]
+      },
+      "hsbc-client-revival": {
+        "title": "Pemulihan Pelanggan",
+        "description": "Berhubung semula dengan pelanggan tidak aktif dan mencetuskan penglibatan semula.",
+        "initialMessage": "Selamat datang! Mari berlatih perbualan pemulihan pelanggan. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Wujudkan semula hubungan dan akui ketidakaktifan baru-baru ini atau ambang baki",
+          "Kenal pasti sebab utama ketidakaktifan dan halangan untuk penglibatan semula",
+          "Terokai keutamaan semasa dan petakan laluan penglibatan semula yang jelas",
+          "Galakkan langkah segera dan pastikan titik sentuhan seterusnya"
+        ]
+      },
+      "hsbc-portfolio-review": {
+        "title": "Semakan Portfolio",
+        "description": "Semak prestasi portfolio, bincang impak pasaran, cadangkan pelarasan, dan sahkan langkah seterusnya.",
+        "initialMessage": "Selamat datang! Mari berlatih perbualan semakan portfolio. Apakah cabaran nasihat anda hari ini?",
+        "objectives": [
+          "Buka panggilan dengan sambutan mesra dan ringkasan kemas kini hidup atau kewangan terkini.",
+          "Perkenalkan sebab untuk semakan portfolio, menghubungkannya dengan pergerakan pasaran atau pencapaian peribadi.",
+          "Semak prestasi portfolio semasa dan kenal pasti jurang atau ketidakseimbangan utama.",
+          "Cadangkan penyelesaian pengimbangan semula atau tambahan yang disesuaikan dengan matlamat dan selera risiko mereka.",
+          "Sahkan langkah seterusnya, dapatkan persetujuan untuk meneruskan, dan jadualkan semakan susulan."
+        ]
+      },
+      "mtl-prospect-practice": {
+        "title": "Penguasaan Pitch",
+        "description": "Peranan terbalik: Anda memainkan peranan prospek yang memerhatikan ejen insurans berprestasi tinggi",
+        "initialMessage": "Selamat datang! Mari berlatih menjadi prospek. Apakah cabaran anda hari ini?",
+        "objectives": [
+          "Nyatakan matlamat dan keutamaan kewangan anda dengan jelas sebagai prospek yang realistik",
+          "Tanya soalan bermakna yang akan ditanya prospek sebenar tentang pilihan simpanan dan pelaburan",
+          "Balas secara semula jadi kepada soalan penemuan dan penjelasan ejen",
+          "Tunjukkan kemajuan realistik dalam pemikiran anda apabila kebimbangan ditangani",
+          "Bantu perbualan bergerak secara semula jadi ke arah mempertimbangkan temujanji susulan"
+        ]
+      }
+    }
+  },
+  "assessment": {
+    "overview": "Gambaran Keseluruhan",
+    "title": "Penilaian Roleplay",
+    "completedOn": "Diselesaikan pada",
+    "salesTechnique": "Teknik jualan",
+    "salesTechniqueDescription": "Mengukur keupayaan mengikuti rangka kerja yang ditetapkan untuk memacu perbualan yang berjaya.",
+    "productKnowledge": "Pengetahuan produk",
+    "productKnowledgeDescription": "Mengukur keupayaan menyampaikan ciri produk, faedah dan butiran penting dengan tepat.",
+    "softSkills": "Soft skills",
+    "technicalKnowledge": "Pengetahuan teknikal",
+    "technicalKnowledgeDescription": "Mengukur keupayaan menyampaikan ciri produk, faedah dan butiran penting dengan tepat.",
+    "operationalKnowledge": "Pengetahuan operasi",
+    "advisoryTechnique": "Teknik Nasihat",
+    "advisoryTechniqueDescription": "Mengukur keupayaan menggunakan teknik nasihat untuk memacu perbualan yang berjaya.",
+    "processAdherence": "Pematuhan Proses",
+    "processAdherenceDescription": "Mengukur sejauh mana proses amalan terbaik syarikat diikuti untuk memacu perbualan yang berjaya.",
+    "communicationAndPresence": "Komunikasi dan Kehadiran",
+    "communicationAndPresenceDescription": "Mengukur sejauh mana komunikasi dan kehadiran digunakan untuk memacu perbualan yang berjaya.",
+    "relationshipManagement": "Pengurusan Hubungan",
+    "relationshipManagementDescription": "Mengukur keupayaan membina dan mengekalkan hubungan pelanggan yang kukuh.",
+    "overallScore": "Skor keseluruhan",
+    "summary": "Ringkasan",
+    "suggestedNextSteps": "Langkah yang dicadangkan",
+    "why": "Mengapa",
+    "strengths": "Kekuatan",
+    "toImprove": "Untuk diperbaiki",
+    "correction": "Pembetulan",
+    "suggestion": "Cadangan",
+    "completed": "Selesai",
+    "incomplete": "Belum Lengkap",
+    "expert": "Pakar",
+    "intermediate": "Pertengahan",
+    "beginner": "Pemula",
+    "needsImprovement": "Perlu Penambahbaikan",
+    "ratings": {
+      "poor": "Lemah",
+      "fair": "Sederhana",
+      "good": "Baik",
+      "excellent": "Cemerlang"
+    },
+    "standings": {
+      "currentSession": "Kedudukan Sesi Ini",
+      "notAvailable": "Tidak Tersedia",
+      "clientVerification": "Pengesahan Klien",
+      "objectionHandling": "Pengendalian Bantahan",
+      "dynamicFramework": "{{framework}}",
+      "threeFExecution": "Pelaksanaan 3F",
+      "fourCExecution": "Pelaksanaan 4C",
+      "mandatory": "Wajib",
+      "incomplete": "Belum Lengkap",
+      "intermediate": "Pertengahan",
+      "beginner": "Pemula",
+      "expert": "Pakar"
+    },
+    "prudentialMandatoryNotMet": {
+      "summary": "Kriteria wajib belum dipenuhi. Sila lengkapkan pengesahan klien sebelum meneruskan.",
+      "nextStepsTitle": "Langkah Seterusnya",
+      "suggestedNextStep": "Lengkapkan keperluan pengesahan klien dan cuba semula penilaian."
+    },
+    "introduction": "Pengenalan",
+    "presentation": "Penpresentasi",
+    "communication": "Komunikasi",
+    "salesConfirmation": "Pengesahan Jualan",
+    "mandatoryDisclosure": "Penyataan Wajib",
+    "closure": "Tutupan",
+    "salesNovice": "Jualan Pemula",
+    "skilledAdvisor": "Konsultan Berkemah",
+    "strategicConsultant": "Konsultan Strategis",
+    "emergingSeller": "Penjual Bermula",
+    "mandatoryFailed": "Status tidak tersedia: Kriteria wajib tidak dipenuhi.",
+    "msigNextStepsTitle": "Untuk menguatkan status, fokus pada:",
+    "msigMandatoryNotMetSummary": "Status anda tidak tersedia karena anda melewati kriteria wajib yang memerlukan penuh kepatuhan. Semak kinerja anda di sekitaran untuk melihat apa yang berjalan dengan baik, dan pastikan untuk menyelesaikan semua langkah seterusnya untuk menerima status anda.",
+    "msigMandatoryNotMetNextStep": "Mengisi semua kriteria wajib."
+  },
+  "ui": {
+    "hupoLogoAlt": "Logo Hupo",
+    "companyLogoAlt": "Logo Syarikat"
+  },
+  "products": {
+    "product": "Produk"
+  },
+  "personas": {
+    "persona": "Persona"
+  },
+  "common": {
+    "goals": {
+      "cold-call": "Tujuan anda adalah memperkenalkan firma kami secara ringkas, menarik minat, dan menempah mesyuarat discovery 30 minit",
+      "discovery": "Tujuan anda adalah memahami situasi mereka semasa dan mengenal pasti keperluan spesifik",
+      "competitive-proposal": "Tujuan anda adalah mempersembahkan penyelesaian anda dan membezakan dari pesaing",
+      "objection-handling": "Tujuan anda adalah menangani kebimbangan mereka dan memelihara fokus nilai",
+      "closing": "Tujuan anda adalah memperoleh persetujuan dan menyelesaikan permohonan",
+      "review-renewal": "Tujuan anda adalah meninjau cakupan semasa dan mendiskusikan pilihan perpanjangan atau upgrade",
+      "needs-analysis": "Tujuan anda adalah menjalankan penilaian keperluan yang menyeluruh dan analisis risiko",
+      "policy-explanation": "Tujuan anda adalah menjelaskan syarat dan manfaat polis secara jelas",
+      "risk-assessment": "Tujuan anda adalah menilai dan mengkomunikasikan keperluan perlindungan mereka",
+      "premium-discussion": "Tujuan anda adalah mendiskusikan pilihan harga dan pembayaran",
+      "policy-closing": "Tujuan anda adalah menyelesaikan permohonan insurans",
+      "policy-renewal": "Tujuan anda adalah meninjau cakupan yang ada dan memastikan perpanjangan",
+      "solution-discovery": "Tujuan anda adalah mengenal pasti keperluan teknikal dan cabaran perniagaan",
+      "demo-presentation": "Tujuan anda adalah menunjukkan penyelesaian dan mendemonstrasikan nilai",
+      "discovery-call-meddpicc": "Tujuan anda adalah mendedahkan titik kesakitan, memahami proses membuat keputusan, dan melayakkan bajet menggunakan metodologi MEDDPICC",
+      "telesales": "Tujuan anda adalah membuat panggilan telepemasaran yang berkesan, mempersembahkan produk dengan jelas, dan menutup jualan secara jauh",
+      "deal-closure": "Matlamat anda adalah untuk menavigasi rundingan akhir, menyelaraskan terma komersial, dan mendapatkan tandatangan kontrak menggunakan prinsip MEDDPICC",
+      "grab-mex": "Tujuan anda adalah mengatasi kekangan bajet peniaga dan kebimbangan P&L dengan menunjukkan ROI kempen, menangani bantahan pembiayaan kos makanan, dan meletakkan cadangan nilai media $145,000 untuk mendapatkan penyertaan kempen",
+      "default": "Tujuan anda adalah membina hubungan baik dan mengeksplorasi keperluan mereka"
+    }
+  }
+}

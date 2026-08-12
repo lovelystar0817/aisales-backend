@@ -1,0 +1,595 @@
+{
+  "_id": {
+    "$oid": "699bc4c4862f889f1237d920"
+  },
+  "user": {
+    "$oid": "68d62952fd996e263f7f9365"
+  },
+  "teams": [],
+  "callType": "discovery-call-with-prospect-j6ttr6",
+  "assessmentType": "scorecard",
+  "scenario": {
+    "$oid": "699687c181d79576fe376b10"
+  },
+  "product": {
+    "featureHighlight": {
+      "title": "Grab",
+      "description": "Dummy description."
+    },
+    "callCriteria": {
+      "title": "Merchant Onboarding Criteria",
+      "description": "Criteria for merchants to join GrabFood platform and participate in promotional campaigns.",
+      "criteria": [
+        "Dummy criteria"
+      ],
+      "markdown": "- Dummy markdown"
+    },
+    "_id": {
+      "$oid": "6985aef8df2e5f1661cf9a87"
+    },
+    "friendlyId": "grabfood",
+    "name": "Grab",
+    "productType": "own",
+    "keyFeatures": [
+      "Dummy key features"
+    ],
+    "evaluationFocus": [
+      "Dummy evaluation focus"
+    ],
+    "salesTarget": "corporate",
+    "localizations": {},
+    "company": {
+      "$oid": "67f76dea5410cedbd5ae768c"
+    },
+    "createdBy": {
+      "$oid": "694509b442f7d32176e761d1"
+    },
+    "updatedBy": {
+      "$oid": "694509b442f7d32176e761d1"
+    },
+    "documentCount": 1,
+    "roleplayCount": 3,
+    "hasCompetitiveIntelligence": true,
+    "isPlaceholderProduct": false,
+    "createdAt": {
+      "$date": "2026-02-06T09:06:00.391Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-19T03:48:38.764Z"
+    },
+    "__v": 0
+  },
+  "persona": {
+    "_id": {
+      "$oid": "6992db3ca89c869cf912731b"
+    },
+    "name": "Sandy",
+    "age": 42,
+    "occupation": "Dummy occupation",
+    "image": "https://dopmo1eihgbgm.cloudfront.net/685bcbc97aa791b9b111ce52/clara.png",
+    "gender": "female",
+    "details": {
+      "location": "Singapore",
+      "education": "Dummy education",
+      "companySizeAndSpend": "Dummy company size",
+      "keyPriorities": [
+        "Dummy key priorities"
+      ]
+    },
+    "annualIncome": 0,
+    "voice": {
+      "$oid": "6916d3e69ee97e070f96fda7"
+    },
+    "personalityDetails": {
+      "persona": "Dummy persona",
+      "decisionMaking": [
+        "Dummy decision making"
+      ],
+      "communicationStyle": [
+        "Dummy communication style"
+      ]
+    },
+    "localizations": {
+      "id": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "Singapura",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "6927f1eb9a22b2bfcd7cebad"
+        }
+      },
+      "ms": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "Singapura",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "6927f1eb9a22b2bfcd7cebbd"
+        }
+      },
+      "tl": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "Singapore",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "6927f1eb9a22b2bfcd7cebc1"
+        }
+      },
+      "vi": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "Singapore",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "6927f1eb9a22b2bfcd7cebb1"
+        }
+      },
+      "th": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "สิงคโปร์",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "695e3b179b6c81aa99a709eb"
+        }
+      },
+      "ceb": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "Singapore",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "695e48a29b6c81aa99a72c0e"
+        }
+      },
+      "cmn": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "新加坡",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "695e48a29b6c81aa99a72c0b"
+        }
+      },
+      "yue": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "新加坡",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "6916d3e69ee97e070f96fda7"
+        }
+      },
+      "ko": {
+        "occupation": "Dummy occupation",
+        "description": "Dummy description",
+        "details": {
+          "location": "싱가포르",
+          "education": "Dummy education",
+          "companySizeAndSpend": "Dummy company size",
+          "keyPriorities": [
+            "Dummy key priorities"
+          ],
+          "workHistory": null,
+          "financialSituation": null
+        },
+        "personalityDetails": {
+          "persona": "Dummy persona",
+          "communicationStyle": [
+            "Dummy communication style"
+          ],
+          "decisionMaking": [
+            "Dummy decision making"
+          ]
+        },
+        "voice": {
+          "$oid": "6916d3e69ee97e070f96fda7"
+        }
+      }
+    },
+    "company": {
+      "$oid": "67f76dea5410cedbd5ae768c"
+    },
+    "isCustom": true,
+    "createdBy": {
+      "$oid": "694509b442f7d32176e761d1"
+    },
+    "updatedBy": {
+      "$oid": "694509b442f7d32176e761d1"
+    },
+    "voiceId": "ljEOxtzNoGEa58anWyea",
+    "description": "Dummy description",
+    "friendlyId": "sandy-new-k3fof7",
+    "createdAt": {
+      "$date": "2026-02-16T08:54:20.103Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-16T09:52:05.212Z"
+    },
+    "__v": 0
+  },
+  "startedAt": {
+    "$date": "2026-02-23T03:08:52.307Z"
+  },
+  "roleplay": {
+    "objectives": [
+      "• Dummy objective"
+    ],
+    "framework": "THREE_F_MODEL",
+    "selectedObjections": [],
+    "feedback": {
+      "salesTechniquesGenerating": false,
+      "productKnowledgeGenerating": false,
+      "technicalKnowledgeGenerating": false,
+      "advisoryTechniqueGenerating": false,
+      "processAdherenceGenerating": false,
+      "communicationAndPresenceGenerating": false,
+      "isHsbcRelationshipManagementGenerating": false,
+      "isHsbcProcessAdherenceGenerating": false,
+      "isHsbcRepresentationGenerating": false,
+      "isHsbcCommunicationAndPresenceGenerating": false,
+      "grabMexSoftSkillsGenerating": false,
+      "axaPhSoftSkillsGenerating": false,
+      "axaPhKnowledgeSkillsGenerating": false,
+      "ktAxaSoftSkillsGenerating": false,
+      "ktAxaKnowledgeSkillsGenerating": false,
+      "ktAxaProductKnowledgeGenerating": false,
+      "msigTravelEasySoftSkillsGenerating": false,
+      "msigTravelEasyKnowledgeSkillsGenerating": false,
+      "msigTravelEasyProductKnowledgeGenerating": false,
+      "isStandingGenerating": false,
+      "prudentialOHSalesTechniqueGenerating": false,
+      "prudentialOHObjectionHandlingGenerating": false,
+      "prudentialPHAppointmentSettingGenerating": false,
+      "prudentialPHFactFindingTechniqueGenerating": false,
+      "prudentialPHProductKnowledgeGenerating": false,
+      "aiaKoIntroductionGenerating": false,
+      "aiaKoObjectionHandlingGenerating": false,
+      "aiaKoNeedsExplorationGenerating": false,
+      "scorecards": [
+        {
+          "name": "Sales Technique",
+          "isGenerating": false,
+          "overallScore": 73,
+          "maxScore": 100,
+          "sectionType": "custom",
+          "criteria": [
+            {
+              "title": "Metrics",
+              "score": 16,
+              "maxScore": 25,
+              "reason": "Dummy reason",
+              "suggestion": "Dummy suggestion",
+              "strengths": [],
+              "toImprove": [],
+              "_id": {
+                "$oid": "699bcb94862f889f1237e92c"
+              }
+            },
+            {
+              "title": "Economic Buyer",
+              "score": 22,
+              "maxScore": 25,
+              "reason": "Dummy reason",
+              "suggestion": "Dummy suggestion",
+              "strengths": [],
+              "toImprove": [],
+              "_id": {
+                "$oid": "699bcb94862f889f1237e92d"
+              }
+            },
+            {
+              "title": "Identify Pain",
+              "score": 18,
+              "maxScore": 25,
+              "reason": "Dummy reason",
+              "suggestion": "Dummy suggestion",
+              "strengths": [],
+              "toImprove": [],
+              "_id": {
+                "$oid": "699bcb94862f889f1237e92e"
+              }
+            },
+            {
+              "title": "Competition",
+              "score": 17,
+              "maxScore": 25,
+              "reason": "Dummy reason",
+              "suggestion": "Dummy suggestion",
+              "strengths": [],
+              "toImprove": [],
+              "_id": {
+                "$oid": "699bcb94862f889f1237e92f"
+              }
+            }
+          ],
+          "_id": {
+            "$oid": "699bcb94862f889f1237e92b"
+          }
+        },
+        {
+          "name": "Product Knowledge",
+          "isGenerating": false,
+          "overallScore": 67,
+          "maxScore": 100,
+          "sectionType": "product-knowledge",
+          "criteria": [
+            {
+              "title": "Product Pitch",
+              "score": 34,
+              "maxScore": 50,
+              "strengths": [
+                "Effectively positioned Grab as an end-to-end F&B commerce ecosystem beyond just delivery.",
+                "Correctly explained Dineout Deals’ commission-based, pay-for-performance model and no upfront costs."
+              ],
+              "toImprove": [
+                {
+                  "text": "Confused or misstated some modalities/features, especially at first (e.g., reference to 'game modalities', unclear initial explanation of deal formats).",
+                  "status": "warning",
+                  "correction": "Say: 'We offer three main deal types: instant bill-wide discounts, pre-purchase vouchers (available for future redemption), and flash deals to spotlight specific items or times. Happy to explain which best suits your goals.'",
+                  "_id": {
+                    "$oid": "699bcb9d862f889f1237e988"
+                  }
+                },
+                {
+                  "text": "Provided inconsistent or factually incorrect information on funding support for discounts – first stated 15% merchant and 15% Grab co-funding, then corrects to 5% Grab co-funding for first 3 months.",
+                  "status": "error",
+                  "correction": "Say: 'Grab provides 5% co-funding support for your deals during the first three months. Typically, you fund the bulk of the discount and Grab subsidizes up to 5%, making it more attractive to diners at a lower cost to you.'",
+                  "_id": {
+                    "$oid": "699bcb9d862f889f1237e989"
+                  }
+                },
+                {
+                  "text": "Described the commission structure inaccurately in some responses; e.g., commission as 6% for instant deals, then mentioned 6.5% for flash deals (actual Dineout Deals commission is 6% regardless of deal type as per product info).",
+                  "status": "error",
+                  "correction": "Say: 'For all Dineout Deals modalities, Grab charges a simple 6% commission on the post-discount final bill value, with no upfront costs.'",
+                  "_id": {
+                    "$oid": "699bcb9d862f889f1237e98a"
+                  }
+                },
+                {
+                  "text": "Did not leverage the unified customer data dashboard, AI recommendations, or targeted marketing tools that are unique to Grab and could create more value for Sandy.",
+                  "status": "warning",
+                  "correction": "Say: 'In addition to campaigns, Grab’s unique data integration gives you a unified dashboard of both online and dine-in guests—helping you tailor promos and menu updates, and send targeted WhatsApp messages to drive repeat business.'",
+                  "_id": {
+                    "$oid": "699bcb9d862f889f1237e98b"
+                  }
+                }
+              ],
+              "_id": {
+                "$oid": "699bcb9d862f889f1237e987"
+              }
+            },
+            {
+              "title": "Competitor Differentiation",
+              "score": 33,
+              "maxScore": 50,
+              "strengths": [
+                "Outlined how Grab offers a unified ecosystem across delivery, in-store traffic, and operational tools.",
+                "Highlighted campaign reach, pay-for-performance approach, and downstream benefits like possible delivery commission incentives."
+              ],
+              "toImprove": [
+                {
+                  "text": "Failed to clearly articulate Grab’s unique value as the only platform capturing both online and offline customer data, which is a core differentiator.",
+                  "status": "warning",
+                  "correction": "Say: 'Grab uniquely offers a unified ecosystem, letting you see and market to both delivery and dine-in guests in one dashboard—no other platform supports such a holistic growth flywheel.'",
+                  "_id": {
+                    "$oid": "699bcb9d862f889f1237e98d"
+                  }
+                },
+                {
+                  "text": "Missed opportunity to reinforce how each Grab sub-product creates a 'flywheel' where data and customer reach in one area boosts performance in others.",
+                  "status": "warning",
+                  "correction": "Say: 'Every Grab product you use helps strengthen the next—deal participants see not only more footfall, but also higher delivery conversions and even better loan terms, creating compounding growth.'",
+                  "_id": {
+                    "$oid": "699bcb9d862f889f1237e98e"
+                  }
+                },
+                {
+                  "text": "Did not explain unique aspects of campaign scale (e.g., 1M+ monthly impressions for Dine Out Tuesday, 500k+ monthly browsers) as a direct differentiator in marketing support.",
+                  "status": "warning",
+                  "correction": "Say: 'With Dineout Deals visible to over 500,000 diners each month and campaign spikes such as our 'Dine Out Tuesday' driving more than 1 million impressions, merchant partners access unmatched reach on day one.'",
+                  "_id": {
+                    "$oid": "699bcb9d862f889f1237e98f"
+                  }
+                }
+              ],
+              "_id": {
+                "$oid": "699bcb9d862f889f1237e98c"
+              }
+            }
+          ],
+          "_id": {
+            "$oid": "699bcb9d862f889f1237e986"
+          }
+        }
+      ],
+      "overview": "{\"summary\":\"You demonstrated strong product knowledge and effectively addressed the prospect's concerns, progressively building the relationship and moving toward a clear next step. While you managed to clarify complex pricing and operational details, some explanations were overly wordy and occasionally unclear, which risked confusing the prospect. You successfully maintained engagement through active listening and adapted well to the prospect’s priorities, securing a committed follow-up meeting with appropriate stakeholder involvement.\",\"suggestedNextSteps\":[\"Simplify explanations by using concise, clear language and structured points.\",\"Use more natural transitions and avoid filler phrases like 'um' to maintain dialogue flow.\",\"Confirm understanding regularly by asking summarizing questions or recapping key points.\"]}"
+    },
+    "scormCompletionReady": true,
+    "conversation": "https://elevenlabs.io/app/conversational-ai/history/conv_dummy",
+    "duration": 1618.623,
+    "overallScore": 70,
+    "scormCompletionTriggeredAt": {
+      "$date": "2026-02-23T03:38:06.000Z"
+    }
+  },
+  "actionTracking": {
+    "progressPercentage": 0,
+    "completedActions": [],
+    "lastUpdated": {
+      "$date": "2026-02-23T03:08:52.308Z"
+    }
+  },
+  "messages": [
+    {
+      "$oid": "68d3be42fe664b251d1ba4e0"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e1"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e2"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e3"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e4"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e5"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e6"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-02-23T03:08:52.309Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-23T03:38:06.001Z"
+  },
+  "__v": 0,
+  "endedAt": {
+    "$date": "2026-02-23T03:37:50.220Z"
+  }
+}

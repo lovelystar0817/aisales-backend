@@ -1,0 +1,29 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["esnext"],
+    "types": ["@fastify/express", "vitest/globals", "node"],
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "inlineSources": true,
+
+    // Set `sourceRoot` to  "/" to strip the build path prefix
+    // from generated source code references.
+    // This improves issue grouping in Sentry.
+    "sourceRoot": "/"
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

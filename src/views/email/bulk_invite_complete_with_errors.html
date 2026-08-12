@@ -1,0 +1,266 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body style="background-color: white !important">
+    <div
+      class="email-wrapper"
+      style="
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 10px 5px;
+        background-color: rgb(255, 255, 255);
+        font-family:
+          'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans',
+          Tahoma, sans-serif;
+        color: rgb(59, 63, 73);
+        font-size: 16px;
+        line-height: 1.4;
+        background-color: white;
+      "
+    >
+      <div
+        class="email-content-wrapper"
+        style="
+          box-sizing: border-box;
+          max-width: 700px;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 20px;
+        "
+      >
+        <div
+          class="row center"
+          style="
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            text-align: center;
+          "
+        >
+          <div
+            class="browser-link"
+            style="box-sizing: border-box; margin-bottom: 5px"
+          >
+            <div
+              class="email-wrapper"
+              style="
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 20px 5px;
+                font-family:
+                  'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode',
+                  'Lucida Sans', Tahoma, sans-serif;
+                color: rgb(59, 63, 73);
+                font-size: 16px;
+                line-height: 1.4;
+                background-color: white !important;
+              "
+            >
+              <div
+                class="email-content-wrapper"
+                style="
+                  box-sizing: border-box;
+                  max-width: 700px;
+                  margin-right: auto;
+                  margin-left: auto;
+                  border-radius: 20px;
+                "
+              >
+                <div
+                  class="row center"
+                  style="
+                    box-sizing: border-box;
+                    margin-bottom: 10px;
+                    text-align: center;
+                  "
+                >
+                  <div style="box-sizing: border-box">
+                    <a
+                      class="brand-logo w-inline-block"
+                      target="_blank"
+                      href="https://app.hupo.co/"
+                      style="
+                        box-sizing: border-box;
+                        background-color: transparent;
+                        color: #ff4b0a;
+                        text-decoration-line: none;
+                        max-width: 100%;
+                        display: inline-block;
+                      "
+                    >
+                      <img
+                        src="https://dopmo1eihgbgm.cloudfront.net/646f63f5d47205798c220c37/Hupo__Logotype_Orange(noR).png"
+                        style="
+                          box-sizing: border-box;
+                          border: 0px;
+                          max-width: 100%;
+                          vertical-align: middle;
+                          display: inline-block;
+                          margin-bottom: 12px;
+                        "
+                        width="100"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="row-light"
+                  style="
+                    box-sizing: border-box;
+                    margin-bottom: 40px;
+                    padding: 20px;
+                    border-radius: 15px;
+                    background-color: rgb(245, 245, 245);
+                  "
+                >
+                  <div
+                    class="row-content center row"
+                    style="
+                      box-sizing: border-box;
+                      margin-bottom: 20px;
+                      text-align: left;
+                      max-width: 550px;
+                      margin-right: auto;
+                      margin-left: auto;
+                    "
+                  >
+                    <h4
+                      style="
+                        box-sizing: border-box;
+                        margin-bottom: 20px;
+                        font-size: 18px;
+                        line-height: 36px;
+                        margin-top: 20px;
+                        color: #161618;
+                      "
+                    >
+                      Your user import is complete
+                    </h4>
+                    <p
+                      style="
+                        box-sizing: border-box;
+                        margin-top: 0px;
+                        margin-bottom: 16px;
+                        color: #161618;
+                      "
+                    >
+                      Hello!
+                    </p>
+                    <p
+                      style="
+                        box-sizing: border-box;
+                        margin-top: 0px;
+                        margin-bottom: 16px;
+                        color: #161618;
+                      "
+                    >
+                      Your user import has finished, but some users could not be
+                      invited.
+                    </p>
+                    <p
+                      style="
+                        box-sizing: border-box;
+                        margin-top: 0px;
+                        margin-bottom: 16px;
+                        color: #161618;
+                      "
+                    >
+                      The file <%= fileName %> was processed. <%= successCount
+                      %> users were invited successfully, and <%= failedCount +
+                      invalidCount %> users could not be imported due to errors.
+                    </p>
+                    <p
+                      style="
+                        box-sizing: border-box;
+                        margin-top: 0px;
+                        margin-bottom: 16px;
+                        color: #161618;
+                      "
+                    >
+                      You can review the details and download an error report in
+                      the Hupo Admin app.
+                    </p>
+
+                    <p
+                      style="
+                        box-sizing: border-box;
+                        margin-top: 0px;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      Thank you,<br />Hupo Team
+                    </p>
+                  </div>
+                  <div
+                    class="center"
+                    style="
+                      box-sizing: border-box;
+                      text-align: center;
+                      margin-bottom: 24px;
+                      margin-top: 24px;
+                    "
+                  >
+                    <a
+                      class="button-large w-button"
+                      href="<%= link %>"
+                      style="
+                        box-sizing: border-box;
+                        background-color: #ff4b0a;
+                        color: rgb(255, 255, 255);
+                        text-decoration-line: none;
+                        display: inline-block;
+                        padding: 12px 16px;
+                        border: 0px;
+                        line-height: inherit;
+                        cursor: pointer;
+                        border-radius: 50px;
+                        width: 240px;
+                        max-width: 240px;
+                        font-weight: 600;
+                        font-size: 14px;
+                      "
+                      >View import details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row"
+                style="box-sizing: border-box; margin-bottom: 40px"
+              >
+                <div
+                  class="center"
+                  style="box-sizing: border-box; text-align: center"
+                >
+                  <div
+                    class="text-light text-small"
+                    style="
+                      box-sizing: border-box;
+                      color: rgb(150, 156, 170);
+                      font-size: 14px;
+                    "
+                  >
+                    <strong style="box-sizing: border-box"
+                      >&copy; 2025 Hupo &mdash; Ami Labs PTE. LTD</strong
+                    >
+                  </div>
+                  <div
+                    class="text-small text-light"
+                    style="
+                      box-sizing: border-box;
+                      color: rgb(150, 156, 170);
+                      font-size: 14px;
+                    "
+                  >
+                    2 Havelock Rd, #07-13 Havelock 2, Singapore 059763
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+# Environment files - NEVER commit these!
+.env
+.env.dev
+.env.local
+.env.local-py
+.env.production
+.env.backup
+# Google credentials - NEVER commit these!
+google-credentials.json
+*-credentials.json
+credentials.json
+
+# Keep template for reference
+!.env.template
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Docker
+.dockerignore
+
+# Temporary files
+tmp/
+temp/

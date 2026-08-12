@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISales Backend - Architecture Explorer</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-tertiary: #0f3460;
+            --accent: #e94560;
+            --accent-light: #ff6b6b;
+            --text-primary: #eaeaea;
+            --text-secondary: #a0a0a0;
+            --success: #4ade80;
+            --warning: #fbbf24;
+            --info: #60a5fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid var(--bg-tertiary);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--accent), var(--info));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--bg-tertiary);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: var(--text-secondary);
+        }
+
+        .tab:hover, .tab.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .diagram {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid var(--bg-tertiary);
+            overflow-x: auto;
+        }
+
+        .flow-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            min-width: 800px;
+        }
+
+        .flow-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .node {
+            background: var(--bg-tertiary);
+            border: 2px solid var(--info);
+            border-radius: 10px;
+            padding: 15px 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            min-width: 150px;
+            position: relative;
+        }
+
+        .node:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+            border-color: var(--accent);
+        }
+
+        .node.entry {
+            border-color: var(--success);
+            background: rgba(74, 222, 128, 0.1);
+        }
+
+        .node.core {
+            border-color: var(--accent);
+        }
+
+        .node.data {
+            border-color: var(--warning);
+        }
+
+        .node.external {
+            border-color: var(--info);
+        }
+
+        .node-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .node-subtitle {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .node-path {
+            font-size: 0.7rem;
+            color: var(--accent-light);
+            margin-top: 5px;
+            font-family: monospace;
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .section-group {
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .detail-panel {
+            position: fixed;
+            right: -400px;
+            top: 0;
+            width: 400px;
+            height: 100vh;
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--bg-tertiary);
+            padding: 20px;
+            transition: right 0.3s;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        .detail-panel.open {
+            right: 0;
+        }
+
+        .detail-panel h2 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--bg-tertiary);
+        }
+
+        .detail-panel .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        .detail-panel .close:hover {
+            color: var(--accent);
+        }
+
+        .detail-section {
+            margin-bottom: 20px;
+        }
+
+        .detail-section h3 {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .detail-section p {
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+
+        .detail-section code {
+            background: var(--bg-primary);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .file-link {
+            display: block;
+            padding: 8px 12px;
+            background: var(--bg-primary);
+            border-radius: 6px;
+            margin: 5px 0;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: var(--info);
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .file-link:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            border: 2px solid;
+        }
+
+        .legend-color.entry { border-color: var(--success); background: rgba(74, 222, 128, 0.2); }
+        .legend-color.core { border-color: var(--accent); background: rgba(233, 69, 96, 0.2); }
+        .legend-color.data { border-color: var(--warning); background: rgba(251, 191, 36, 0.2); }
+        .legend-color.external { border-color: var(--info); background: rgba(96, 165, 250, 0.2); }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--bg-tertiary);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .highlight {
+            animation: pulse 0.5s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .connections {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .model-card {
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            padding: 15px;
+            border: 1px solid var(--bg-tertiary);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .model-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .model-card h4 {
+            color: var(--accent-light);
+            margin-bottom: 8px;
+        }
+
+        .model-card .fields {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .route-group {
+            margin-bottom: 20px;
+        }
+
+        .route-group h4 {
+            color: var(--info);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .route-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 12px;
+            background: var(--bg-primary);
+            border-radius: 6px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .route-item:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .method {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .method.get { background: var(--success); color: #000; }
+        .method.post { background: var(--warning); color: #000; }
+        .method.put { background: var(--info); color: #000; }
+        .method.delete { background: var(--accent); color: #fff; }
+
+        .job-card {
+            background: var(--bg-primary);
+            border-radius: 8px;
+            padding: 12px;
+            border-left: 3px solid var(--info);
+        }
+
+        .job-card h5 {
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .job-card p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .detail-panel {
+                width: 100%;
+                right: -100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AISales Backend Architecture</h1>
+        <p>Interactive codebase explorer - Click on any component to see details</p>
+    </div>
+
+    <input type="text" class="search-box" placeholder="Search components, files, routes..." id="search">
+
+    <div class="tabs">
+        <div class="tab active" data-tab="startup">Startup Flow</div>
+        <div class="tab" data-tab="routes">Routes</div>
+        <div class="tab" data-tab="models">Data Models</div>
+        <div class="tab" data-tab="jobs">Background Jobs</div>
+        <div class="tab" data-tab="ai">AI/LLM</div>
+        <div class="tab" data-tab="files">File Map</div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item"><div class="legend-color entry"></div> Entry Points</div>
+        <div class="legend-item"><div class="legend-color core"></div> Core Logic</div>
+        <div class="legend-item"><div class="legend-color data"></div> Data Layer</div>
+        <div class="legend-item"><div class="legend-color external"></div> External Services</div>
+    </div>
+
+    <!-- Startup Flow Tab -->
+    <div class="content active" id="startup">
+        <div class="diagram">
+            <div class="flow-container">
+                <div class="node entry" data-id="npm-dev">
+                    <div class="node-title">npm run dev</div>
+                    <div class="node-subtitle">Entry Command</div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="node entry" data-id="server">
+                    <div class="node-title">server.ts</div>
+                    <div class="node-subtitle">Application Entry Point</div>
+                    <div class="node-path">src/server.ts</div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="flow-row">
+                    <div class="node" data-id="polyfills">
+                        <div class="node-title">Polyfills</div>
+                        <div class="node-subtitle">PDF.js Support</div>
+                        <div class="node-path">src/utils/pdfjs-polyfills.js</div>
+                    </div>
+                    <div class="node" data-id="adminjs-adapter">
+                        <div class="node-title">AdminJS</div>
+                        <div class="node-subtitle">Mongoose Adapter</div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="node core" data-id="app">
+                    <div class="node-title">createApp()</div>
+                    <div class="node-subtitle">Fastify Configuration</div>
+                    <div class="node-path">src/app.ts</div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="section-group">
+                    <div class="section-title">Plugins (Registered in Order)</div>
+                    <div class="flow-row">
+                        <div class="node" data-id="cors">
+                            <div class="node-title">CORS</div>
+                            <div class="node-path">@fastify/cors</div>
+                        </div>
+                        <div class="node" data-id="formbody">
+                            <div class="node-title">FormBody</div>
+                            <div class="node-path">@fastify/formbody</div>
+                        </div>
+                        <div class="node" data-id="multipart">
+                            <div class="node-title">Multipart</div>
+                            <div class="node-subtitle">600MB limit</div>
+                            <div class="node-path">@fastify/multipart</div>
+                        </div>
+                        <div class="node" data-id="env">
+                            <div class="node-title">Environment</div>
+                            <div class="node-path">src/env.ts</div>
+                        </div>
+                    </div>
+                    <div class="flow-row" style="margin-top: 15px;">
+                        <div class="node" data-id="cookie">
+                            <div class="node-title">Cookie</div>
+                            <div class="node-path">@fastify/cookie</div>
+                        </div>
+                        <div class="node" data-id="session">
+                            <div class="node-title">Session</div>
+                            <div class="node-subtitle">MongoStore</div>
+                            <div class="node-path">@fastify/session</div>
+                        </div>
+                        <div class="node" data-id="helmet">
+                            <div class="node-title">Helmet</div>
+                            <div class="node-subtitle">Security Headers</div>
+                            <div class="node-path">@fastify/helmet</div>
+                        </div>
+                        <div class="node external" data-id="sentry">
+                            <div class="node-title">Sentry</div>
+                            <div class="node-subtitle">Error Tracking</div>
+                            <div class="node-path">src/sentry-init.ts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="section-group">
+                    <div class="section-title">Custom Plugins (src/plugins/)</div>
+                    <div class="flow-row">
+                        <div class="node core" data-id="auth0-plugin">
+                            <div class="node-title">Auth0</div>
+                            <div class="node-subtitle">JWT Verification</div>
+                            <div class="node-path">src/plugins/auth0.ts</div>
+                        </div>
+                        <div class="node core" data-id="admin-plugin">
+                            <div class="node-title">Admin Panel</div>
+                            <div class="node-subtitle">/admin route</div>
+                            <div class="node-path">src/plugins/admin.ts</div>
+                        </div>
+                        <div class="node core" data-id="s3-plugin">
+                            <div class="node-title">S3</div>
+                            <div class="node-subtitle">File Storage</div>
+                            <div class="node-path">src/plugins/s3.ts</div>
+                        </div>
+                        <div class="node core" data-id="posthog-plugin">
+                            <div class="node-title">PostHog</div>
+                            <div class="node-subtitle">Analytics</div>
+                            <div class="node-path">src/plugins/posthog.ts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="node core" data-id="routes-reg">
+                    <div class="node-title">Register Routes</div>
+                    <div class="node-subtitle">25+ API Endpoints</div>
+                    <div class="node-path">src/routes/*</div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="node" data-id="agenda">
+                    <div class="node-title">Initialize Agenda</div>
+                    <div class="node-subtitle">Background Jobs</div>
+                    <div class="node-path">src/jobs/agenda.ts</div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="flow-row">
+                    <div class="node" data-id="ready">
+                        <div class="node-title">app.ready()</div>
+                        <div class="node-subtitle">Plugins Loaded</div>
+                    </div>
+                    <div class="node external" data-id="email">
+                        <div class="node-title">configureEmail()</div>
+                        <div class="node-subtitle">SendGrid</div>
+                        <div class="node-path">src/utils/email.ts</div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="node data" data-id="mongodb">
+                    <div class="node-title">mongoose.connect()</div>
+                    <div class="node-subtitle">MongoDB Connection Pool</div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="node entry" data-id="listen">
+                    <div class="node-title">app.listen()</div>
+                    <div class="node-subtitle">Server Running</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Routes Tab -->
+    <div class="content" id="routes">
+        <div class="diagram">
+            <div class="route-group">
+                <h4>/auth - Authentication</h4>
+                <div class="route-item" data-id="auth-company"><span class="method post">POST</span> /company - Select company</div>
+                <div class="route-item" data-id="auth-success"><span class="method get">GET</span> /success - OAuth callback</div>
+                <div class="route-item" data-id="auth-guest"><span class="method post">POST</span> /guest - Generate guest token</div>
+                <div class="route-item" data-id="auth-revoke"><span class="method post">POST</span> /revoke - Revoke token</div>
+                <div class="route-item" data-id="auth-status"><span class="method get">GET</span> /check-status - Check auth status</div>
+            </div>
+
+            <div class="route-group">
+                <h4>/sessions - Roleplay Sessions</h4>
+                <div class="route-item" data-id="sessions-basic"><span class="method get">GET</span> / - List sessions</div>
+                <div class="route-item" data-id="sessions-create"><span class="method post">POST</span> / - Create session</div>
+                <div class="route-item" data-id="sessions-roleplay"><span class="method post">POST</span> /:id/roleplay - Roleplay action</div>
+                <div class="route-item" data-id="sessions-assessment"><span class="method post">POST</span> /:id/assessment - Get assessment</div>
+                <div class="route-item" data-id="sessions-persona"><span class="method get">GET</span> /:id/persona - Get persona</div>
+                <div class="route-item" data-id="sessions-report"><span class="method get">GET</span> /:id/report - PDF report</div>
+            </div>
+
+            <div class="route-group">
+                <h4>/feedback - Session Feedback</h4>
+                <div class="route-item" data-id="feedback-generate"><span class="method post">POST</span> /generate - Generate feedback</div>
+                <div class="route-item" data-id="feedback-get"><span class="method get">GET</span> /:sessionId - Get feedback</div>
+            </div>
+
+            <div class="route-group">
+                <h4>/call-analysis - Call Analysis</h4>
+                <div class="route-item" data-id="call-upload"><span class="method post">POST</span> /upload - Upload audio</div>
+                <div class="route-item" data-id="call-get"><span class="method get">GET</span> /:id - Get analysis</div>
+                <div class="route-item" data-id="call-assess"><span class="method post">POST</span> /:id/assess - Assess call</div>
+            </div>
+
+            <div class="route-group">
+                <h4>/livekit - Real-time Voice</h4>
+                <div class="route-item" data-id="livekit-token"><span class="method post">POST</span> /token - Get room token</div>
+                <div class="route-item" data-id="livekit-roleplay"><span class="method post">POST</span> /roleplay - Start voice roleplay</div>
+            </div>
+
+            <div class="route-group">
+                <h4>/manage - Admin Management</h4>
+                <div class="route-item" data-id="manage-users"><span class="method get">GET</span> /users - List users</div>
+                <div class="route-item" data-id="manage-modules"><span class="method get">GET</span> /modules - List modules</div>
+                <div class="route-item" data-id="manage-scenarios"><span class="method get">GET</span> /scenarios - List scenarios</div>
+            </div>
+
+            <div class="route-group">
+                <h4>/standings - Performance</h4>
+                <div class="route-item" data-id="standings-config"><span class="method get">GET</span> /configuration - Get config</div>
+                <div class="route-item" data-id="standings-summary"><span class="method get">GET</span> /summary - Get summary</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Models Tab -->
+    <div class="content" id="models">
+        <div class="diagram">
+            <div class="grid">
+                <div class="model-card" data-id="model-user">
+                    <h4>User</h4>
+                    <div class="fields">email, name, role, company, teams, auth0Id</div>
+                </div>
+                <div class="model-card" data-id="model-company">
+                    <h4>Company</h4>
+                    <div class="fields">name, auth0OrgId, languages, trial, logo</div>
+                </div>
+                <div class="model-card" data-id="model-session">
+                    <h4>SalesSession</h4>
+                    <div class="fields">user, scenario, roleplay, feedback, status, messages</div>
+                </div>
+                <div class="model-card" data-id="model-scenario">
+                    <h4>Scenario</h4>
+                    <div class="fields">module, persona, product, scorecard, difficulty</div>
+                </div>
+                <div class="model-card" data-id="model-persona">
+                    <h4>Persona</h4>
+                    <div class="fields">name, age, occupation, gender, voice, localizations</div>
+                </div>
+                <div class="model-card" data-id="model-module">
+                    <h4>Module</h4>
+                    <div class="fields">title, description, objectives, icon, company</div>
+                </div>
+                <div class="model-card" data-id="model-product">
+                    <h4>SalesProduct</h4>
+                    <div class="fields">name, keyFeatures, callCriteria, knowledge</div>
+                </div>
+                <div class="model-card" data-id="model-scorecard">
+                    <h4>Scorecard</h4>
+                    <div class="fields">name, criteria, scoring, company</div>
+                </div>
+                <div class="model-card" data-id="model-message">
+                    <h4>Message</h4>
+                    <div class="fields">session, role, content, timestamp</div>
+                </div>
+                <div class="model-card" data-id="model-standing">
+                    <h4>UserStanding</h4>
+                    <div class="fields">user, session, metrics, rating</div>
+                </div>
+                <div class="model-card" data-id="model-call">
+                    <h4>CallAnalysis</h4>
+                    <div class="fields">user, company, transcript, assessment, overview</div>
+                </div>
+                <div class="model-card" data-id="model-voice">
+                    <h4>Voice</h4>
+                    <div class="fields">name, provider, voiceId, language</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jobs Tab -->
+    <div class="content" id="jobs">
+        <div class="diagram">
+            <div class="section-group">
+                <div class="section-title">Assessment Jobs</div>
+                <div class="grid">
+                    <div class="job-card" data-id="job-standing">
+                        <h5>calculateUserStanding</h5>
+                        <p>Update user performance metrics after session</p>
+                    </div>
+                    <div class="job-card" data-id="job-audio">
+                        <h5>uploadAudioToS3</h5>
+                        <p>Store session audio recordings</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-group">
+                <div class="section-title">Call Analysis Jobs</div>
+                <div class="grid">
+                    <div class="job-card" data-id="job-transcribe">
+                        <h5>transcribeWithSpeakers</h5>
+                        <p>Speech-to-text with speaker diarization</p>
+                    </div>
+                    <div class="job-card" data-id="job-assess">
+                        <h5>assessCall</h5>
+                        <p>AI analysis of call quality</p>
+                    </div>
+                    <div class="job-card" data-id="job-pii-transcript">
+                        <h5>removePIIFromTranscript</h5>
+                        <p>Remove personal info from transcript</p>
+                    </div>
+                    <div class="job-card" data-id="job-pii-assessment">
+                        <h5>removePIIFromAssessment</h5>
+                        <p>Remove personal info from assessment</p>
+                    </div>
+                    <div class="job-card" data-id="job-pii-overview">
+                        <h5>removePIIFromOverview</h5>
+                        <p>Remove personal info from overview</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-group">
+                <div class="section-title">Product Jobs</div>
+                <div class="grid">
+                    <div class="job-card" data-id="job-embeddings">
+                        <h5>generateEmbeddings</h5>
+                        <p>Create vector embeddings for products</p>
+                    </div>
+                    <div class="job-card" data-id="job-extract">
+                        <h5>extractFields</h5>
+                        <p>Extract structured fields from products</p>
+                    </div>
+                    <div class="job-card" data-id="job-ci">
+                        <h5>generateCompetitiveIntelligence</h5>
+                        <p>Generate competitive analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-group">
+                <div class="section-title">Other Jobs</div>
+                <div class="grid">
+                    <div class="job-card" data-id="job-dashboard">
+                        <h5>calculateDashboardSummary</h5>
+                        <p>Cache dashboard statistics</p>
+                    </div>
+                    <div class="job-card" data-id="job-slack">
+                        <h5>postSlackReport</h5>
+                        <p>Send daily Slack reports</p>
+                    </div>
+                    <div class="job-card" data-id="job-invite">
+                        <h5>inviteUser</h5>
+                        <p>Send user invitation emails</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Tab -->
+    <div class="content" id="ai">
+        <div class="diagram">
+            <div class="flow-container">
+                <div class="section-group" style="width: 100%;">
+                    <div class="section-title">Prompt Templates (src/prompts/)</div>
+                    <div class="grid">
+                        <div class="node" data-id="prompt-technique">
+                            <div class="node-title">Sales Technique</div>
+                            <div class="node-path">sales-technique.ts</div>
+                        </div>
+                        <div class="node" data-id="prompt-product">
+                            <div class="node-title">Product Knowledge</div>
+                            <div class="node-path">product-knowledge.ts</div>
+                        </div>
+                        <div class="node" data-id="prompt-overview">
+                            <div class="node-title">Roleplay Overview</div>
+                            <div class="node-path">roleplay-overview.ts</div>
+                        </div>
+                        <div class="node" data-id="prompt-scorecard">
+                            <div class="node-title">Scorecard Assessment</div>
+                            <div class="node-path">scorecard-assessment.ts</div>
+                        </div>
+                        <div class="node" data-id="prompt-persona">
+                            <div class="node-title">Persona</div>
+                            <div class="node-path">persona.ts</div>
+                        </div>
+                        <div class="node" data-id="prompt-voice">
+                            <div class="node-title">Sales Voice</div>
+                            <div class="node-path">sales-voice.ts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="section-group" style="width: 100%;">
+                    <div class="section-title">Company-Specific Prompts</div>
+                    <div class="grid">
+                        <div class="node core" data-id="prompt-prudential">
+                            <div class="node-title">Prudential</div>
+                            <div class="node-path">prompts/prudential/</div>
+                        </div>
+                        <div class="node core" data-id="prompt-bbl">
+                            <div class="node-title">BBL</div>
+                            <div class="node-path">prompts/bbl/</div>
+                        </div>
+                        <div class="node core" data-id="prompt-hsbc">
+                            <div class="node-title">HSBC</div>
+                            <div class="node-path">prompts/hsbc/</div>
+                        </div>
+                        <div class="node core" data-id="prompt-msig">
+                            <div class="node-title">MSIG</div>
+                            <div class="node-path">msig-assessment.ts</div>
+                        </div>
+                        <div class="node core" data-id="prompt-manulife">
+                            <div class="node-title">Manulife</div>
+                            <div class="node-path">manulife-fna-assessment.ts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="node external" data-id="langchain">
+                    <div class="node-title">LangChain</div>
+                    <div class="node-subtitle">Prompt + Model + Parser</div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="flow-row">
+                    <div class="node external" data-id="anthropic">
+                        <div class="node-title">Anthropic Claude</div>
+                        <div class="node-subtitle">Primary LLM</div>
+                    </div>
+                    <div class="node external" data-id="openai">
+                        <div class="node-title">OpenAI GPT</div>
+                        <div class="node-subtitle">Secondary LLM</div>
+                    </div>
+                    <div class="node external" data-id="elevenlabs">
+                        <div class="node-title">ElevenLabs</div>
+                        <div class="node-subtitle">Text-to-Speech</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Files Tab -->
+    <div class="content" id="files">
+        <div class="diagram">
+            <div class="section-group">
+                <div class="section-title">Entry Points</div>
+                <a class="file-link" href="vscode://file/src/server.ts">src/server.ts - Application entry point</a>
+                <a class="file-link" href="vscode://file/src/app.ts">src/app.ts - Fastify configuration</a>
+                <a class="file-link" href="vscode://file/src/env.ts">src/env.ts - Environment validation</a>
+            </div>
+
+            <div class="section-group">
+                <div class="section-title">Plugins (src/plugins/)</div>
+                <a class="file-link" href="vscode://file/src/plugins/auth0.ts">auth0.ts - JWT verification</a>
+                <a class="file-link" href="vscode://file/src/plugins/admin.ts">admin.ts - AdminJS panel</a>
+                <a class="file-link" href="vscode://file/src/plugins/s3.ts">s3.ts - AWS S3 client</a>
+                <a class="file-link" href="vscode://file/src/plugins/posthog.ts">posthog.ts - Analytics</a>
+                <a class="file-link" href="vscode://file/src/plugins/error.ts">error.ts - Error handling</a>
+            </div>
+
+            <div class="section-group">
+                <div class="section-title">Key Models (src/models/)</div>
+                <a class="file-link" href="vscode://file/src/models/User.ts">User.ts - User accounts</a>
+                <a class="file-link" href="vscode://file/src/models/Company.ts">Company.ts - Tenant companies</a>
+                <a class="file-link" href="vscode://file/src/models/SalesSession.ts">SalesSession.ts - Main entity</a>
+                <a class="file-link" href="vscode://file/src/models/Scenario.ts">Scenario.ts - Training scenarios</a>
+                <a class="file-link" href="vscode://file/src/models/Persona.ts">Persona.ts - AI personas</a>
+            </div>
+
+            <div class="section-group">
+                <div class="section-title">Key Routes (src/routes/)</div>
+                <a class="file-link" href="vscode://file/src/routes/sessions/basic.ts">sessions/basic.ts - Session CRUD</a>
+                <a class="file-link" href="vscode://file/src/routes/sessions/roleplay.ts">sessions/roleplay.ts - Roleplay</a>
+                <a class="file-link" href="vscode://file/src/routes/feedback/index.ts">feedback/index.ts - Feedback</a>
+                <a class="file-link" href="vscode://file/src/routes/auth/guest.ts">auth/guest.ts - Guest auth</a>
+            </div>
+
+            <div class="section-group">
+                <div class="section-title">Configuration</div>
+                <a class="file-link" href="vscode://file/CLAUDE.md">CLAUDE.md - AI guidelines</a>
+                <a class="file-link" href="vscode://file/package.json">package.json - Dependencies</a>
+                <a class="file-link" href="vscode://file/tsconfig.json">tsconfig.json - TypeScript</a>
+                <a class="file-link" href="vscode://file/.prettierrc">.prettierrc - Formatting</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail Panel -->
+    <div class="detail-panel" id="detail-panel">
+        <span class="close" id="close-panel">&times;</span>
+        <h2 id="detail-title">Component Details</h2>
+        <div id="detail-content"></div>
+    </div>
+
+    <script>
+        // Component details database
+        const componentDetails = {
+            'server': {
+                title: 'server.ts',
+                description: 'The application entry point. Bootstraps the Fastify server, connects to MongoDB, and sets up graceful shutdown handlers.',
+                files: ['src/server.ts'],
+                key_points: [
+                    'Imports polyfills for PDF generation',
+                    'Registers AdminJS Mongoose adapter',
+                    'Calls createApp() to configure Fastify',
+                    'Connects to MongoDB with connection pooling',
+                    'Handles SIGINT/SIGTERM for graceful shutdown'
+                ]
+            },
+            'app': {
+                title: 'app.ts - createApp()',
+                description: 'Creates and configures the Fastify application instance with all plugins and routes.',
+                files: ['src/app.ts'],
+                key_points: [
+                    'Creates Fastify with Zod type provider',
+                    'Registers core plugins (CORS, session, helmet)',
+                    'Autoloads custom plugins from src/plugins/',
+                    'Registers 25+ route modules',
+                    'Initializes Agenda job scheduler'
+                ]
+            },
+            'model-session': {
+                title: 'SalesSession Model',
+                description: 'The core entity representing a roleplay training session. Contains all session data, feedback, and references.',
+                files: ['src/models/SalesSession.ts'],
+                key_points: [
+                    'References: User, Scenario (or legacy product+persona)',
+                    'Contains roleplay object with title, objectives, feedback',
+                    'Supports multiple assessment types (regular, prudential, msig, etc.)',
+                    'Tracks action detection for sales techniques',
+                    'Virtual reference to UserStanding'
+                ]
+            },
+            'model-scenario': {
+                title: 'Scenario Model',
+                description: 'Unified container combining Module, Persona, Product, and Scorecard for training scenarios.',
+                files: ['src/models/Scenario.ts'],
+                key_points: [
+                    'References: Module, Persona, SalesProduct, Scorecard, Company',
+                    'Consolidates training configuration in one document',
+                    'Supports difficulty levels: easy, medium, hard',
+                    'Contains voice and context prompts for AI'
+                ]
+            },
+            'auth0-plugin': {
+                title: 'Auth0 Plugin',
+                description: 'Fastify plugin for JWT verification using Auth0.',
+                files: ['src/plugins/auth0.ts'],
+                key_points: [
+                    'Verifies JWT tokens from Auth0',
+                    'Extracts user claims from token',
+                    'Integrates with Fastify auth system'
+                ]
+            },
+            'agenda': {
+                title: 'Agenda Job Scheduler',
+                description: 'Background job processing system for async tasks.',
+                files: ['src/jobs/agenda.ts'],
+                key_points: [
+                    'MongoDB-backed job queue',
+                    'Supports scheduled and immediate jobs',
+                    'Graceful shutdown handling',
+                    'Job retry and error handling'
+                ]
+            },
+            'langchain': {
+                title: 'LangChain Integration',
+                description: 'Abstraction layer for LLM interactions with prompt management.',
+                files: ['src/prompts/'],
+                key_points: [
+                    'Supports Anthropic Claude and OpenAI GPT',
+                    'Prompt templates organized by feature',
+                    'Company-specific prompt overrides',
+                    'Structured output parsing'
+                ]
+            }
+        };
+
+        // Tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Node click handlers
+        document.querySelectorAll('.node, .model-card, .route-item, .job-card').forEach(node => {
+            node.addEventListener('click', () => {
+                const id = node.dataset.id;
+                const details = componentDetails[id];
+
+                const panel = document.getElementById('detail-panel');
+                const title = document.getElementById('detail-title');
+                const content = document.getElementById('detail-content');
+
+                if (details) {
+                    title.textContent = details.title;
+                    content.innerHTML = `
+                        <div class="detail-section">
+                            <h3>Description</h3>
+                            <p>${details.description}</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3>Key Files</h3>
+                            ${details.files.map(f => `<a class="file-link" href="vscode://file/${f}">${f}</a>`).join('')}
+                        </div>
+                        <div class="detail-section">
+                            <h3>Key Points</h3>
+                            <ul style="padding-left: 20px; color: var(--text-secondary);">
+                                ${details.key_points.map(p => `<li style="margin: 5px 0;">${p}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                } else {
+                    title.textContent = node.querySelector('.node-title, h4, h5')?.textContent || 'Component';
+                    const path = node.querySelector('.node-path')?.textContent || '';
+                    const subtitle = node.querySelector('.node-subtitle, .fields, p')?.textContent || '';
+                    content.innerHTML = `
+                        <div class="detail-section">
+                            <h3>Description</h3>
+                            <p>${subtitle}</p>
+                        </div>
+                        ${path ? `<div class="detail-section"><h3>Path</h3><code>${path}</code></div>` : ''}
+                    `;
+                }
+
+                panel.classList.add('open');
+                node.classList.add('highlight');
+                setTimeout(() => node.classList.remove('highlight'), 500);
+            });
+        });
+
+        // Close panel
+        document.getElementById('close-panel').addEventListener('click', () => {
+            document.getElementById('detail-panel').classList.remove('open');
+        });
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            document.querySelectorAll('.node, .model-card, .route-item, .job-card, .file-link').forEach(el => {
+                const text = el.textContent.toLowerCase();
+                if (query && text.includes(query)) {
+                    el.style.border = '2px solid var(--accent)';
+                    el.style.boxShadow = '0 0 10px rgba(233, 69, 96, 0.5)';
+                } else {
+                    el.style.border = '';
+                    el.style.boxShadow = '';
+                }
+            });
+        });
+
+        // Keyboard shortcut to close panel
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.getElementById('detail-panel').classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>

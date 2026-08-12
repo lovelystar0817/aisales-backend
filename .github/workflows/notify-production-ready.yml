@@ -1,0 +1,30 @@
+name: Notify Production Ready
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    name: Notify Production Ready
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Create deployment reminder
+        run: |
+          echo "🚀 **Production deployment ready!**"
+          echo ""
+          echo "**Branch:** main"
+          echo "**Commit:** ${{ github.sha }}"
+          echo "**Author:** ${{ github.actor }}"
+          echo "**Event:** ${{ github.event_name }}"
+          echo ""
+          echo "To deploy to production:"
+          echo "1. Go to Actions → Deploy Production"
+          echo "2. Click 'Run workflow'"
+          echo "3. Type 'deploy' to confirm"
+          echo ""
+          echo "Or SSH to server and run:"
+          echo "cd /home/aicoaching/aisales"
+          echo "./deployment/scripts/deploy.sh production"

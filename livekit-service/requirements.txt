@@ -1,0 +1,32 @@
+# This project requires Python 3.9 or higher
+httpx>=0.24.0
+python-dotenv>=1.0.0
+# Pin types-protobuf to a compatible version before installing livekit packages
+types-protobuf<5,>=4
+# PyTorch will be installed separately in Dockerfile
+livekit>=1.0.6
+livekit-agents~=1.4.3
+livekit-agents[openai,silero,deepgram,cartesia,turn-detector,elevenlabs]~=1.4.3
+livekit-agents[speechmatics]~=1.4.3
+livekit-plugins-noise-cancellation~=0.2.1
+livekit-plugins-openai>=1.4.3
+livekit-plugins-elevenlabs>=1.4.1
+# Azure Speech Services
+livekit-plugins-azure>=1.1.5
+# Google plugin for Gemini Live API
+livekit-agents[google]~=1.4.3
+# Groq plugin for STT
+livekit-plugins-groq>=1.0.0
+# Speechmatics plugin for STT
+livekit-plugins-speechmatics>=1.2.9
+# Cartesia plugin for TTS and STT
+livekit-plugins-cartesia>=0.2.2
+livekit-plugins-turn-detector>=1.0.17
+# xAI plugin for Grok Realtime API
+livekit-agents[xai]~=1.4.3
+
+psutil>=5.9.0
+# # If you're using specific plugins, you may need to add them explicitly
+# elevenlabs
+# openai
+# silero

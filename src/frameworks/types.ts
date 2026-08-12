@@ -1,0 +1,87 @@
+export enum SalesFramework {
+  STRATEGIC_PITCH = 'STRATEGIC_PITCH',
+  THREE_F_MODEL = 'THREE_F_MODEL',
+  MEDDPICC = 'MEDDPICC',
+  GRAB_MEX_MEDDPICC = 'GRAB_MEX_MEDDPICC',
+  FOUR_C_MODEL = 'FOUR_C_MODEL',
+  VERIFY_PLUS_FOUR_C_MODEL = 'VERIFY_PLUS_FOUR_C_MODEL',
+  BBL_CLIENT_UPGRADE_ADVISORY_MODEL = 'BBL_CLIENT_UPGRADE_ADVISORY_MODEL',
+  BBL_CLIENT_REVIVAL_ADVISORY_MODEL = 'BBL_CLIENT_REVIVAL_ADVISORY_MODEL',
+  BBL_GOAL_PLANNING_ADVISORY_MODEL = 'BBL_GOAL_PLANNING_ADVISORY_MODEL',
+  BBL_PORTFOLIO_REVIEW_ADVISORY_MODEL = 'BBL_PORTFOLIO_REVIEW_ADVISORY_MODEL',
+  HSBC_CLIENT_ONBOARDING_ADVISORY_MODEL = 'HSBC_CLIENT_ONBOARDING_ADVISORY_MODEL',
+  HSBC_CLIENT_UPGRADE_ADVISORY_MODEL = 'HSBC_CLIENT_UPGRADE_ADVISORY_MODEL',
+  PRUDENTIAL_COLD_CALL = 'PRUDENTIAL_COLD_CALL',
+  PRUDENTIAL_LAPR_OBJECTION_HANDLING = 'PRUDENTIAL_LAPR_OBJECTION_HANDLING',
+  MTL_RECRUITMENT_FRAMEWORK = 'MTL_RECRUITMENT_FRAMEWORK',
+  MTL_ADVISORY_FRAMEWORK = 'MTL_ADVISORY_FRAMEWORK',
+  MTL_PROSPECT_FRAMEWORK = 'MTL_PROSPECT_FRAMEWORK',
+  AXA_PH_RECRUITMENT_FRAMEWORK = 'AXA_PH_RECRUITMENT_FRAMEWORK',
+  AXA_PH_FNA_FRAMEWORK = 'AXA_PH_FNA_FRAMEWORK',
+  AXA_PH_OBJECTION_HANDLING_FRAMEWORK = 'AXA_PH_OBJECTION_HANDLING_FRAMEWORK',
+  KT_AXA_RECRUITMENT_FRAMEWORK = 'KT_AXA_RECRUITMENT_FRAMEWORK',
+  KT_AXA_FNA_FRAMEWORK = 'KT_AXA_FNA_FRAMEWORK',
+  KT_AXA_WEALTHPLUS_FRAMEWORK = 'KT_AXA_WEALTHPLUS_FRAMEWORK',
+  ALIBABA_TELESALES = 'ALIBABA_TELESALES',
+  PRUDENTIAL_PH_APPOINTMENT_SETTING = 'PRUDENTIAL_PH_APPOINTMENT_SETTING',
+  PRUDENTIAL_PH_FACT_FINDING = 'PRUDENTIAL_PH_FACT_FINDING',
+  AIA_KO_OPENING_OBJECTION_CALL = 'AIA_KO_OPENING_OBJECTION_CALL',
+  AIA_KO_PRODUCT_PITCH = 'AIA_KO_PRODUCT_PITCH',
+  AIA_KO_END_TO_END_OUTBOUND_CALL = 'AIA_KO_END_TO_END_OUTBOUND_CALL',
+  GREAT_EASTERN_FACT_FIND = 'GREAT_EASTERN_FACT_FIND',
+  GREAT_EASTERN_PRODUCT_PITCH = 'GREAT_EASTERN_PRODUCT_PITCH',
+  GREAT_EASTERN_POST_SALES = 'GREAT_EASTERN_POST_SALES',
+  SCB_ADVISORY_FRAMEWORK = 'SCB_ADVISORY_FRAMEWORK',
+  LALAMOVE_DRIVER_RECRUITMENT = 'LALAMOVE_DRIVER_RECRUITMENT',
+  PRUDENTIAL_PH_CLOSING_CALL = 'PRUDENTIAL_PH_CLOSING_CALL',
+}
+
+export type Framework = {
+  type: 'list' | 'single';
+  title: string;
+  friendlyId: string;
+  description?: string;
+  parts?: {
+    title: string;
+    description?: string;
+    items: string[];
+  }[];
+};
+
+export type LocalizedFramework = {
+  title: string;
+  description?: string;
+  parts?: {
+    title: string;
+    description?: string;
+    items: string[];
+  }[];
+};
+
+export type FrameworkConfiguration = {
+  base: {
+    id: string;
+    friendlyId: string;
+    type: 'list' | 'single';
+    // Any other non-localizable properties
+  };
+  localized: {
+    en: LocalizedFramework;
+    id?: LocalizedFramework;
+    ms?: LocalizedFramework;
+    [key: string]: LocalizedFramework | undefined;
+  };
+};
+
+// Helper type to get a specific localized version
+export type LocalizedFrameworkData = {
+  type: 'list' | 'single';
+  title: string;
+  friendlyId: string;
+  description?: string;
+  parts?: {
+    title: string;
+    description?: string;
+    items: string[];
+  }[];
+};

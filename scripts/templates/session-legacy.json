@@ -1,0 +1,150 @@
+{
+  "_id": {
+    "$oid": "68d3bbe5fe664b251d1ba4a9"
+  },
+  "user": {
+    "$oid": "6879f3000efa461b8beb0007"
+  },
+  "callType": "grab-mex",
+  "assessmentType": "regular",
+  "product": {
+    "_id": "1758269873774",
+    "friendlyId": "grab-mex-campaigns",
+    "name": "GrabFood",
+    "promptName": "Grab Mega Sales campaign",
+    "knowledgePrompt": "\n## Dummy knowledge prompt.",
+    "productType": "own",
+    "modules": [
+      "grab-mex"
+    ],
+    "keyFeatures": [
+      "Dummy key feature",
+      {
+        "title": "Case Study",
+        "children": [
+          "Dummy children"
+        ]
+      }
+    ],
+    "featureHighlight": {
+      "title": "Dummy title",
+      "description": "Dummy description."
+    },
+    "evaluationFocus": [
+      "**Dummy Evaluation Focus**: Dummy"
+    ],
+    "callCriteria": {
+      "title": "Dummy Hupo Campaign",
+      "description": "Dummy description",
+      "criteria": [
+        "**Dummy Criteria**: dummy criteria"
+      ],
+      "markdown": "\n## Dummy markdown"
+    }
+  },
+  "persona": {
+    "id": "67f76dea5410cedbd5ae7693",
+    "friendlyId": "rachel-owner-acai-indulgence",
+    "name": "Rachel",
+    "age": null,
+    "gender": "female",
+    "image": "https://dopmo1eihgbgm.cloudfront.net/67f76dea5410cedbd5ae7693/sq-rachel.png",
+    "voiceId": "ljEOxtzNoGEa58anWyea",
+    "annualIncome": null,
+    "occupation": "Dummy occupation",
+    "description": "Dummy description.",
+    "details": {
+      "location": "Singapore",
+      "education": "Dummy education",
+      "occupation": "Dummy occupation",
+      "financialSituation": "Dummy financial situation.",
+      "keyPriorities": [
+        "Dummy key priority"
+      ],
+      "productKnowledge": "Dummy product knowledge.",
+      "mainObjection": "Dummy main objection.",
+      "salesDescription": "Dummy sales description.",
+      "salesGoal": "Dummy sales goal."
+    },
+    "personalityDetails": {
+      "persona": "Dummy persona",
+      "communicationStyle": [
+        "Dummy communiation style"
+      ],
+      "decisionMaking": [
+        "Dummy decision making"
+      ]
+    }
+  },
+  "startedAt": {
+    "$date": "2025-09-24T09:37:41.802Z"
+  },
+  "roleplay": {
+    "objectives": [
+      "Dummy objective"
+    ],
+    "framework": "GRAB_MEX_MEDDPICC",
+    "feedback": {
+      "salesTechniquesGenerating": false,
+      "productKnowledgeGenerating": false,
+      "technicalKnowledgeGenerating": false,
+      "isStandingGenerating": false,
+      "overview": "{\"summary\":\"You demonstrated good empathy and ensured strong alignment with the prospect’s concerns about brand protection and ROI, maintaining control over the conversation and addressing objections clearly. However, your explanations sometimes lacked clarity and concrete details, leading to missed chances to proactively confirm understanding and advance commitment. Deal progression was steady but slow, with opportunities to create more urgency and stronger calls to action.\",\"suggestedNextSteps\":[\"Clarify numerical details proactively to avoid vague or confusing cost explanations.\",\"Use concise summaries to confirm prospect understanding before moving forward.\",\"Deliver stronger, clear calls to action to advance deal stages with urgency.\"]}",
+      "productKnowledge": "{\"description\":\"Measures the ability to clearly communicate product value, align features with customer needs, and differentiate against competitors.\",\"overallScore\":62,\"maxScore\":100,\"sections\":[{\"title\":\"Product Pitch\",\"score\":33,\"maxScore\":50,\"strengths\":[\"You demonstrated an understanding of key merchant concerns such as brand protection, food quality, and campaign ROI.\",\"You addressed campaign management features including media placement, digital promotions, and immediate corrective action, highlighting consultative selling.\"],\"toImprove\":[{\"text\":\"Media value mentioned ($90,000, $100,000) is inconsistent and underrepresents the actual $145,000 value package specified in the product information.\",\"status\":\"error\",\"correction\":\"The full media value package for MEX campaigns is $145,000, which includes 360-degree marketing and paid advertising components.\"},{\"text\":\"You did not reference specific proven ROI metrics such as the 8.5% outperformance or 20% incremental post-campaign sales, which could strengthen ROI claims.\",\"status\":\"warning\",\"correction\":null},{\"text\":\"Campaign mechanics such as the 50% off bestsellers requirement, bundle preference, and flexible redemption caps were not mentioned to clarify deal structure.\",\"status\":\"warning\",\"correction\":null},{\"text\":\"Growth potential segmented by merchant type (Standalone, QSR, Large Chains) was not discussed, missing an opportunity to tailor expected outcomes.\",\"status\":\"warning\",\"correction\":null}]},{\"title\":\"Competitor Differentiation\",\"score\":29,\"maxScore\":50,\"strengths\":[\"You emphasized control over branding and creatives, ensuring merchants do not lose product or brand quality during campaigns.\",\"You highlighted unique benefits such as dedicated campaign managers, transparency, and rapid issue resolution which supports risk mitigation.\"],\"toImprove\":[{\"text\":\"You did not explicitly differentiate MEX from competitors or traditional advertising options, missing chances to showcase unique competitive advantages.\",\"status\":\"warning\",\"correction\":null},{\"text\":\"No mention was made of the 1.1 million engaged users or access to Grab-owned channels compared to competitors, which are key differentiators.\",\"status\":\"warning\",\"correction\":null},{\"text\":\"The campaign’s $145,000 media value versus traditional advertising was not clearly positioned to emphasize superior cost-effectiveness.\",\"status\":\"warning\",\"correction\":null},{\"text\":\"Competitive objections around budget constraints and ROI were addressed anecdotally but without directly referencing MEDDPICC methodology or detailed proof points.\",\"status\":\"warning\",\"correction\":null}]}]}",
+      "salesTechniques": "{\"description\":\"Measures the ability to apply MEX MEDDPICC methodology for budget constraint handling and campaign qualification.\",\"overallScore\":54,\"maxScore\":100,\"sections\":[{\"title\":\"Metrics\",\"score\":7,\"maxScore\":13,\"why\":\"You acknowledged the importance of ROI projections and incremental orders but did not explicitly quantify potential sales lift or reference MEX-specific ROI benchmarks or clear KPIs during discovery.\",\"suggestion\":\"Incorporate sharing MEX ROI benchmarks (e.g., 8.5% outperformance, 20% incremental sales) and directly ask Rachel about the KPIs she uses to measure success. Example: 'Typically, our partners see a 20% lift in orders with campaigns like this. What specific sales or retention metrics are most critical for your branches?'\"},{\"title\":\"Economic Buyer\",\"score\":6,\"maxScore\":13,\"why\":\"You did not explicitly identify or discuss who holds final budget authority or what information they require to approve campaign investment.\",\"suggestion\":\"Directly ask who controls the marketing or campaign budget and what would convince them to approve. For example, 'Who in your organization would sign off on this spend, and what ROI data or assurances can I provide to help them feel confident?'\"},{\"title\":\"Decision Criteria\",\"score\":7,\"maxScore\":13,\"why\":\"You addressed Rachel’s concern about brand protection but did not fully explore all evaluation factors, priorities, or must-haves beyond food quality and upfront cost clarity.\",\"suggestion\":\"Probe what specific criteria beyond brand safety and cost matter most. E.g., 'Besides protecting your brand, what other factors will influence your decision—speed of results, customer retention, or campaign flexibility?'\"},{\"title\":\"Decision Process\",\"score\":5,\"maxScore\":13,\"why\":\"You lightly touched on timing and follow-up but didn’t map the approval workflow or decision timeline including other stakeholders or deadlines.\",\"suggestion\":\"Map the full approval process by asking, 'Can you walk me through the steps and who else needs to be involved before final approval? What timeline are you working with?'\"},{\"title\":\"Paper Process\",\"score\":4,\"maxScore\":12,\"why\":\"You did not inquire about procurement, contract, or compliance requirements, nor offer to provide contract templates or clarify onboarding steps.\",\"suggestion\":\"Ask about vendor onboarding and contract needs, e.g., 'Are there specific procurement or legal requirements we should prepare for? I can send over contract templates to help ease that process.'\"},{\"title\":\"Identify Pain\",\"score\":9,\"maxScore\":12,\"why\":\"You acknowledged Rachel’s concerns about brand and budget pressures empathetically and responded with explanations about quality control and rapid issue resolution, but deeper probing on budget fears was limited.\",\"suggestion\":\"Use LAER more explicitly by asking, 'Is the main challenge cash flow timing or uncertainty about the ROI you’ll get? We can structure a pilot campaign to reduce risk and ensure measurable returns.'\"},{\"title\":\"Champion\",\"score\":5,\"maxScore\":12,\"why\":\"You built rapport and trust with Rachel but did not identify internal advocates or offer to arm them with ROI materials and case studies.\",\"suggestion\":\"Identify internal champions by asking, 'Who else in your team would benefit from this campaign’s success? I can provide tailored ROI case studies to help them champion this internally.'\"},{\"title\":\"Competition\",\"score\":11,\"maxScore\":12,\"why\":\"You positioned the campaign’s brand protection and responsiveness well, highlighting transparency and quick remediation, which distinguishes from competitors, but did not explicitly ask about alternatives Rachel is considering.\",\"suggestion\":\"Ask about alternative options under consideration, e.g., 'Are there other marketing campaigns or channels you’re evaluating? I’d like to share how our approach differs, especially on ROI clarity and risk management.'\"}]}",
+      "grabMexSoftSkillsGenerating": false,
+      "grabMexSoftSkills": "{\"description\":\"Mengukur kemampuan untuk menangani keberatan menggunakan kerangka LAER: Mendengarkan (Listen), Mengakui (Acknowledge), Mengeksplorasi (Explore), dan Menanggapi (Respond).\",\"overallScore\":73,\"maxScore\":100,\"sections\":[{\"title\":\"Mendengarkan (Listen)\",\"score\":18,\"maxScore\":25,\"strengths\":[\"Anda menunjukkan kesabaran dengan membiarkan Rachel menyampaikan kekhawatirannya tanpa menyela.\",\"Anda berusaha memahami konteks dan menghubungkan perhatian Rachel sebelum memberikan jawaban.\"],\"toImprove\":[{\"text\":\"Anda dapat lebih menegaskan pemahaman dengan merangkum kembali poin penting yang disampaikan Rachel.\",\"example\":\"Jadi, Anda khawatir bahwa diskon akan menurunkan persepsi pelanggan terhadap kualitas merek, benar begitu?\"},{\"text\":\"Terkadang respons Anda agak cepat seolah-olah ingin langsung menjual, perlu lebih menahan diri.\",\"example\":\"Mungkin Anda bisa mencoba mendiamkan sesaat setelah Rachel menjelaskan untuk menunjukkan pendengaran aktif.\"}]},{\"title\":\"Mengakui (Acknowledge)\",\"score\":17,\"maxScore\":25,\"strengths\":[\"Anda menggunakan bahasa yang menunjukkan pengertian, seperti mengiyakan kekhawatiran Rachel.\",\"Anda berusaha menempatkan diri pada posisi Rachel untuk memvalidasi perasaan dan keprihatinannya.\"],\"toImprove\":[{\"text\":\"Anda dapat memperkuat empati dengan menyatakan secara eksplisit bahwa kekhawatiran Rachel masuk akal dan sering terjadi.\",\"example\":\"Saya sangat memahami perhatian Anda karena banyak mitra kami awalnya merasakan hal serupa.\"},{\"text\":\"Sesekali Anda terkesan menjawab tanpa mengakui emosi dan keraguan Rachel secara penuh.\",\"example\":\"Alih-alih langsung menawarkan data, coba mulai dengan \\\"Saya tahu betapa pentingnya menjaga reputasi dan kualitas bagi Anda.\\\"\"}]},{\"title\":\"Mengeksplorasi (Explore)\",\"score\":18,\"maxScore\":25,\"strengths\":[\"Anda mengajukan pertanyaan terbuka untuk menggali lebih dalam tentang kekhawatiran Rachel.\",\"Anda mencoba mencari tahu aspek spesifik seperti biaya, dampak pada kualitas, dan risiko reputasi.\"],\"toImprove\":[{\"text\":\"Anda bisa lebih proaktif menggali akar permasalahan dengan bertanya detail mengenai prioritas Rachel.\",\"example\":\"Apakah yang paling Anda khawatirkan, dampak keuangan jangka pendek atau risiko terhadap loyalitas pelanggan?\"},{\"text\":\"Perlu eksplorasi lebih lanjut terkait bagaimana Rachel menilai ROI yang diharapkan secara konkret.\",\"example\":\"Bagaimana Anda biasanya mengukur keberhasilan kampanye pemasaran di cabang Anda?\"}]},{\"title\":\"Menanggapi (Respond)\",\"score\":20,\"maxScore\":25,\"strengths\":[\"Anda memberikan jawaban yang relevan dengan kekhawatiran Rachel seperti jaminan kepatuhan standar dan monitoring kualitas.\",\"Anda menawarkan solusi konkret dan menjanjikan transparansi serta pengelolaan risiko yang jelas.\",\"Anda menyampaikan komitmen tim untuk penanganan cepat jika terjadi masalah dan penjelasan biaya yang rinci. \"],\"toImprove\":[{\"text\":\"Anda dapat lebih menyesuaikan jawaban dengan kebutuhan spesifik Rachel yang berkaitan dengan ROI dan pengaruh pada tiap cabang.\",\"example\":\"Misalnya, menjelaskan proyeksi peningkatan pesanan dan biaya spesifik untuk masing-masing cabang sebagaimana yang Rachel minta.\"},{\"text\":\"Memberikan contoh atau studi kasus yang relevan dari merchant serupa dapat meningkatkan kepercayaan.\",\"example\":\"Kami pernah membantu restoran serupa meningkatkan penjualan 20% tanpa mengorbankan kualitas, saya bisa bagikan studi kasusnya.\"}]}]}"
+    },
+    "scormCompletionReady": true,
+    "conversation": "https://elevenlabs.io/app/conversational-ai/history/conv_8701k5xhdczpe2fvy5r1vkv9q3wr",
+    "duration": 556.669,
+    "overallScore": 58,
+    "scormCompletionTriggeredAt": {
+      "$date": "2026-02-23T07:31:35.600Z"
+    }
+  },
+  "actionTracking": {
+    "progressPercentage": 0,
+    "completedActions": [],
+    "lastUpdated": {
+      "$date": "2025-09-24T09:37:41.803Z"
+    }
+  },
+  "messages": [
+    {
+      "$oid": "68d3be42fe664b251d1ba4e0"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e1"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e2"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e3"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e4"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e5"
+    },
+    {
+      "$oid": "68d3be42fe664b251d1ba4e6"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-09-24T09:37:41.803Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-23T07:31:35.601Z"
+  },
+  "__v": 0,
+  "endedAt": {
+    "$date": "2025-09-24T09:47:47.037Z"
+  },
+  "scores": {
+    "productKnowledge": 62,
+    "salesTechnique": 54
+  }
+}

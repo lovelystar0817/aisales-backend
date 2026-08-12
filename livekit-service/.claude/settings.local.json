@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(python livekit-agent.py dev:*)",
+      "Bash(pip install:*)",
+      "Bash(pip index:*)",
+      "Bash(python3:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

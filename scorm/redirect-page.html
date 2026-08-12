@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentication Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Authentication Required</h2>
+        <p>You need to authenticate to access the training platform.</p>
+        <a href="#" class="btn" onclick="openAuthWindow()">Login</a>
+        <p><small>A new window will open for secure authentication</small></p>
+    </div>
+
+    <script>
+        function openAuthWindow() {
+            const authUrl = 'https://auth.hupo.co/login?redirect=' + encodeURIComponent(window.location.href);
+            const authWindow = window.open(
+                authUrl,
+                'auth-window',
+                'width=500,height=600,scrollbars=yes,resizable=yes'
+            );
+            
+            // Monitor auth window
+            const checkClosed = setInterval(() => {
+                if (authWindow.closed) {
+                    clearInterval(checkClosed);
+                    // Refresh to check auth status
+                    window.location.reload();
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+{
+  "modules": {
+    "groups": {
+      "module": "模組",
+      "prospecting": "開發與探索",
+      "relationship": "關係建立",
+      "closing": "成交與談判",
+      "retention": "維繫與追加銷售"
+    },
+    "items": {
+      "cold-call": {
+        "title": "陌生開發電話",
+        "description": "聯繫潛在客戶以促成首次會面。",
+        "initialMessage": "歡迎！讓我們練習陌生開發電話。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "吸引注意力並在潛在客戶面前建立信譽",
+          "建立融洽關係並了解他們目前的情況",
+          "識別他們可能面臨的潛在挑戰或風險",
+          "確保達成後續會議或下次對話的協議"
+        ]
+      },
+      "discovery": {
+        "title": "需求探索",
+        "description": "深入了解客戶情況以發掘需求和事實。",
+        "initialMessage": "歡迎！讓我們練習需求探索對話。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "了解客戶目前的財務狀況和目標",
+          "通過探詢問題發掘潛在需求和痛點",
+          "確定決策標準和時間表",
+          "收集提出適當解決方案所需的事實"
+        ]
+      },
+      "competitive-proposal": {
+        "title": "競爭提案",
+        "description": "展示您的解決方案並在客戶考慮的競爭產品中脫穎而出。",
+        "initialMessage": "歡迎！讓我們練習競爭提案。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "以清晰的價值主張展示您的解決方案",
+          "將您的產品與競爭對手的替代方案區分開來",
+          "解決客戶對競爭產品的顧慮",
+          "確保承諾推進您的提案"
+        ]
+      },
+      "objection-handling": {
+        "title": "異議處理演練",
+        "description": "快速回應價格、需求或時機的質疑，並保持價值錨定。",
+        "initialMessage": "歡迎！讓我們練習異議處理。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "積極傾聽以了解異議的根本原因",
+          "以相關的價值主張和利益回應",
+          "克服基於價格、時機和需求的顧慮",
+          "保持客戶參與並朝著達成協議前進"
+        ]
+      },
+      "product-positioning": {
+        "title": "產品定位",
+        "description": "在處理異議的同時強化產品的核心價值。",
+        "initialMessage": "歡迎！讓我們練習產品定位。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "根據客戶特定利益展示產品特點",
+          "將產品優勢與市場替代方案進行對比定位",
+          "處理與產品相關的異議和顧慮",
+          "為推薦的解決方案創造緊迫感和渴望"
+        ]
+      },
+      "closing": {
+        "title": "成交",
+        "description": "確認協議並收集申請詳情。",
+        "initialMessage": "歡迎！讓我們練習成交技巧。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "總結已達成共識的解決方案和利益",
+          "確認客戶繼續推進的承諾",
+          "收集必要的申請信息和文件",
+          "安排後續步驟和實施時間表"
+        ]
+      },
+      "review-renewal": {
+        "title": "檢視/續約",
+        "description": "回顧目前的保障以進行續約、調整或追加銷售。",
+        "initialMessage": "歡迎！讓我們練習續約對話。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "檢視目前的保障和保單表現",
+          "識別客戶情況和需求的變化",
+          "展示續約選項和潛在的加強方案",
+          "確保續約承諾或追加銷售機會"
+        ]
+      },
+      "fna": {
+        "title": "財務需求分析",
+        "description": "進行全面的財務需求評估，以識別客戶的保障、儲蓄和投資需求。",
+        "initialMessage": "歡迎！讓我們練習財務需求分析。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "介紹：以姓名問候，說明您的顧問角色和宏利的資質/企業社會責任以建立信譽。",
+          "建立融洽關係並發掘需求：走過人生階段，探詢變故/夢想，進行適合性問題，量化保障/健康/教育/退休需求。",
+          "結案（後續步驟）：發送/確認文件，安排後續會面，獲得聯繫同意，獲取轉介並邀請回饋。"
+        ]
+      },
+      "needs-analysis": {
+        "title": "保險需求分析",
+        "description": "分析客戶風險概況和保障需求。",
+        "initialMessage": "歡迎！讓我們練習保險需求分析。您今天想解決什麼銷售挑戰？"
+      },
+      "policy-explanation": {
+        "title": "保單說明",
+        "description": "清楚解釋複雜的保險條款和利益。",
+        "initialMessage": "歡迎！讓我們練習保單說明。您今天想解決什麼銷售挑戰？"
+      },
+      "risk-assessment": {
+        "title": "風險評估",
+        "description": "評估並傳達潛在風險和保障需求。",
+        "initialMessage": "歡迎！讓我們練習風險評估。您今天想解決什麼銷售挑戰？"
+      },
+      "premium-discussion": {
+        "title": "保費討論",
+        "description": "處理定價對話和付款選項。",
+        "initialMessage": "歡迎！讓我們練習保費討論。您今天想解決什麼銷售挑戰？"
+      },
+      "policy-closing": {
+        "title": "保單成交",
+        "description": "完成保險申請和文件。",
+        "initialMessage": "歡迎！讓我們練習保單成交。您今天想解決什麼銷售挑戰？"
+      },
+      "policy-renewal": {
+        "title": "保單續約",
+        "description": "檢視現有保障並討論續約選項。",
+        "initialMessage": "歡迎！讓我們練習保單續約。您今天想解決什麼銷售挑戰？"
+      },
+      "solution-discovery": {
+        "title": "解決方案探索",
+        "description": "識別技術需求和業務挑戰。",
+        "initialMessage": "歡迎！讓我們練習解決方案探索。您今天想解決什麼銷售挑戰？"
+      },
+      "demo-presentation": {
+        "title": "產品演示",
+        "description": "展示產品功能和技術能力。",
+        "initialMessage": "歡迎！讓我們練習產品演示。您今天想解決什麼銷售挑戰？"
+      },
+      "technical-objections": {
+        "title": "技術異議",
+        "description": "解決技術顧慮和實施問題。",
+        "initialMessage": "歡迎！讓我們練習處理技術異議。您今天想解決什麼銷售挑戰？"
+      },
+      "pricing-negotiation": {
+        "title": "價格談判",
+        "description": "談判授權、實施和持續成本。",
+        "initialMessage": "歡迎！讓我們練習價格談判。您今天想解決什麼銷售挑戰？"
+      },
+      "contract-closing": {
+        "title": "合約成交",
+        "description": "敲定條款、條件和服務協議。",
+        "initialMessage": "歡迎！讓我們練習合約成交。您今天想解決什麼銷售挑戰？"
+      },
+      "account-expansion": {
+        "title": "帳戶擴展",
+        "description": "識別追加銷售和交叉銷售機會。",
+        "initialMessage": "歡迎！讓我們練習帳戶擴展。您今天想解決什麼銷售挑戰？"
+      },
+      "general-sales": {
+        "title": "通用銷售練習",
+        "description": "練習一般銷售對話和技巧。",
+        "initialMessage": "歡迎！讓我們練習通用銷售技巧。您今天想解決什麼銷售挑戰？"
+      },
+      "discovery-call-meddpicc": {
+        "title": "需求探索電話",
+        "description": "使用 MEDDPICC 方法論發掘客戶痛點、需求和預算。",
+        "initialMessage": "歡迎！讓我們練習需求探索電話，專注於了解潛在客戶的業務需求、挑戰和決策過程。您的做法是什麼？",
+        "objectives": [
+          "識別並量化業務指標和關鍵績效指標",
+          "了解經濟影響和預算考量",
+          "繪製決策過程並識別關鍵利害關係人",
+          "發掘痛點、影響和關鍵業務需求"
+        ]
+      },
+      "deal-closure": {
+        "title": "交易成交",
+        "description": "與潛在客戶談判以就關鍵商業細節達成一致並完成交易。",
+        "initialMessage": "歡迎！讓我們練習交易成交，我們將專注於後期談判、商業條款的一致性，以及使用 MEDDPICC 方法論推動交易達成簽約。您如何處理這個最後階段？",
+        "objectives": [
+          "確認商業案例中已商定的指標和投資報酬率文件",
+          "獲得經濟買家對定價和條款的最終簽核",
+          "處理文件流程並解決法律/合規要求",
+          "在保持價值焦點的同時推動緊迫感以達成簽約"
+        ]
+      },
+      "telesales": {
+        "title": "電話銷售",
+        "description": "進行有效的電話行銷以產生潛在客戶並遠程完成銷售。",
+        "initialMessage": "歡迎！讓我們練習電話銷售。您今天想解決什麼電話行銷挑戰？",
+        "objectives": [
+          "建立融洽關係並將產品定位為與客戶需求相關",
+          "處理異議並清楚傳達價值",
+          "完成銷售——或者如果客戶沒有興趣則專業地結束通話"
+        ]
+      },
+      "grab-mex": {
+        "title": "預算限制處理",
+        "description": "練習處理商家預算限制和損益顧慮，同時推動活動參與。",
+        "initialMessage": "歡迎來到預算限制處理培訓！讓我們練習解決商家損益顧慮和預算限制，同時定位活動價值。我們今天如何幫助克服他們的資金異議？",
+        "objectives": [
+          "使用 LAER 框架處理異議",
+          "通過展示活動投資報酬率克服商家預算限制和損益顧慮",
+          "定位 145,000 美元媒體價值主張和成本效益分析",
+          "應用 MEDDPICC 方法論來資格審查機會並完成活動交易"
+        ]
+      },
+      "bbl-client-upgrade": {
+        "title": "客戶升級（面對面會議）",
+        "description": "聯繫現有客戶以將其升級到財富服務。",
+        "initialMessage": "歡迎！讓我們練習客戶升級對話。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "歡迎客戶加入財富服務並記錄任何近期的生活或職業變化。",
+          "展示符合客戶目標的關鍵財富服務和利益。",
+          "探索客戶的概況和優先事項以獲取重要更新。",
+          "確保達成後續投資顧問會議的協議。"
+        ]
+      },
+      "bbl-goal-planning": {
+        "title": "目標規劃（面對面會議）",
+        "description": "通過量身定制的解決方案和後續步驟定義、量化和規劃財務目標。",
+        "initialMessage": "歡迎！讓我們練習目標規劃會議。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "識別並澄清客戶的關鍵財務目標和優先事項。",
+          "為每個目標量化時間表、金額和風險承受度。",
+          "展示符合其目標的量身定制解決方案。",
+          "確保繼續推進目標導向規劃服務的承諾。"
+        ]
+      },
+      "bbl-client-revival": {
+        "title": "客戶喚醒（面對面會議）",
+        "description": "重新聯繫不活躍客戶並激發重新參與。",
+        "initialMessage": "歡迎！讓我們練習客戶喚醒對話。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "重建關係並確認近期的不活躍或餘額門檻",
+          "識別不活躍的關鍵原因和重新參與的障礙",
+          "探索當前優先事項並繪製清晰的重新參與路徑",
+          "鼓勵立即行動並確保下一個接觸點"
+        ]
+      },
+      "bbl-portfolio-review": {
+        "title": "投資組合檢視（面對面會議）",
+        "description": "檢視投資組合表現，討論市場影響，提出調整建議，並確認後續步驟。",
+        "initialMessage": "歡迎！讓我們練習投資組合檢視對話。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "以熱情的問候開始通話，並回顧近期的生活或財務更新。",
+          "介紹投資組合檢視的原因，將其與市場變動或個人里程碑聯繫起來。",
+          "檢視當前投資組合表現並識別關鍵差距或失衡。",
+          "推薦符合其目標和風險偏好的量身定制再平衡或追加解決方案，優先提出追加解決方案。",
+          "確認後續步驟，確保繼續推進的協議，並安排有關投資組合的後續檢視。",
+          "嘗試向此客戶介紹新的財富產品——雙幣票據。"
+        ]
+      },
+      "hsbc-client-onboarding": {
+        "title": "客戶迎新",
+        "description": "向新客戶介紹滙豐及財富管理服務",
+        "initialMessage": "歡迎！讓我們練習客戶入門對話。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "歡迎客戶並建立聯繫，同時介紹本行的財富管理關係模式。",
+          "以突出差異化及符合客戶優先需求的方式，介紹本行的財富管理方案。",
+          "瞭解客戶的財務狀況、風險承受能力及開戶要求。",
+          "引導客戶初步參與財富產品，並建立關係互動節奏。",
+          "安排面對面會議以更詳細地討論 HSBC 財富的產品。"
+        ]
+      },
+      "hsbc-client-upgrade": {
+        "title": "財富新客戶",
+        "description": "聯繫現有客戶以開始與 HSBC 的財富之旅",
+        "initialMessage": "歡迎！讓我們練習客戶升級對話。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "歡迎客戶加入財富服務並記錄任何近期的生活或職業變化。",
+          "展示符合客戶目標的關鍵財富服務和利益。",
+          "探索客戶的概況和優先事項以獲取重要更新。",
+          "確保達成後續投資顧問會議的協議。",
+          "安排面對面會議以更詳細地討論 HSBC 財富的產品。"
+        ]
+      },
+      "hsbc-goal-planning": {
+        "title": "目標規劃",
+        "description": "通過量身定制的解決方案和後續步驟定義、量化和規劃財務目標。",
+        "initialMessage": "歡迎！讓我們練習目標規劃會議。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "識別並澄清客戶的關鍵財務目標和優先事項。",
+          "為每個目標量化時間表、金額和風險承受度。",
+          "展示符合其目標的量身定制解決方案。",
+          "確保繼續推進目標導向規劃服務的承諾。"
+        ]
+      },
+      "hsbc-client-revival": {
+        "title": "客戶喚醒",
+        "description": "重新聯繫不活躍客戶並激發重新參與。",
+        "initialMessage": "歡迎！讓我們練習客戶喚醒對話。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "重建關係並確認近期的不活躍或餘額門檻",
+          "識別不活躍的關鍵原因和重新參與的障礙",
+          "探索當前優先事項並繪製清晰的重新參與路徑",
+          "鼓勵立即行動並確保下一個接觸點"
+        ]
+      },
+      "hsbc-portfolio-review": {
+        "title": "投資組合檢視",
+        "description": "檢視投資組合表現，討論市場影響，提出調整建議，並確認後續步驟。",
+        "initialMessage": "歡迎！讓我們練習投資組合檢視對話。您今天想解決什麼顧問挑戰？",
+        "objectives": [
+          "以熱情的問候開始通話，並回顧近期的生活或財務更新。",
+          "介紹投資組合檢視的原因，將其與市場變動或個人里程碑聯繫起來。",
+          "檢視當前投資組合表現並識別關鍵差距或失衡。",
+          "推薦符合其目標和風險偏好的量身定制再平衡或追加解決方案。",
+          "確認後續步驟，確保繼續推進的協議，並安排後續檢視。"
+        ]
+      },
+      "mtl-prospect-practice": {
+        "title": "推銷精通",
+        "description": "角色互換：您扮演潛在客戶，同時觀察頂尖保險代理人進行需求探索和產品說明",
+        "initialMessage": "歡迎！讓我們練習成為潛在客戶。您今天想解決什麼挑戰？",
+        "objectives": [
+          "作為真實的潛在客戶清楚表達您的財務目標和優先事項",
+          "提出真正的潛在客戶會問的關於儲蓄和投資選項的有意義問題",
+          "對代理人的探索問題和產品說明做出自然回應",
+          "隨著顧慮得到解決，在思維上展現真實的進展",
+          "在一次對話中完成需求探索和產品說明"
+        ]
+      },
+      "axa-ph-unit-manager-recruitment": {
+        "title": "單位經理招募",
+        "description": "招募對財務顧問機會表現出興趣但現在對下一步不確定的新人",
+        "initialMessage": "歡迎！讓我們練習單位經理招募。您今天想解決什麼招募挑戰？",
+        "objectives": [
+          "通過展示他們的日常優勢（管理時間表、預算、規劃、溝通）如何與財務顧問使用的技能相同，使角色變得容易理解",
+          "通過解釋該角色的靈活性以及可以在空閒時間完成來解決時間顧慮",
+          "向他們保證可以按自己的節奏開始，培訓會一步步指導他們",
+          "幫助他們感到更有信心並鼓勵他們參加培訓課程"
+        ]
+      },
+      "axa-ph-financial-needs-analysis": {
+        "title": "財務需求分析",
+        "description": "引導首次客戶進行簡單、低承諾的財務需求討論，同時解決有關負擔能力、靈活性和提前取用資金的顧慮",
+        "initialMessage": "歡迎！讓我們練習財務需求分析。您今天想解決什麼銷售挑戰？",
+        "objectives": [
+          "與首次客戶建立融洽關係",
+          "就收入、生活方式和未來財務目標進行事實調查",
+          "展示具有保證回報的簡單、負擔得起的入門解決方案",
+          "解決有關承諾、靈活性和提前取用資金的顧慮"
+        ]
+      }
+    }
+  },
+  "assessment": {
+    "overview": "概覽",
+    "title": "角色扮演評估",
+    "completedOn": "完成於",
+    "salesTechnique": "銷售技巧",
+    "salesTechniqueDescription": "衡量遵循既定框架進行成功對話的能力。",
+    "productKnowledge": "產品知識",
+    "productKnowledgeDescription": "衡量準確傳達產品特點、利益和關鍵細節的能力。",
+    "softSkills": "軟技能",
+    "technicalKnowledge": "技術知識",
+    "technicalKnowledgeDescription": "衡量準確傳達產品特點、利益和關鍵細節的能力。",
+    "operationalKnowledge": "營運知識",
+    "advisoryTechnique": "諮詢技巧",
+    "advisoryTechniqueDescription": "衡量使用顧問技巧進行成功對話的能力。",
+    "processAdherence": "流程遵循",
+    "processAdherenceDescription": "衡量遵循公司最佳實踐流程進行成功對話的程度。",
+    "communicationAndPresence": "溝通同現場感",
+    "communicationAndPresenceDescription": "衡量如何善用溝通和臨場表現來進行成功對話。",
+    "relationshipManagement": "關係管理",
+    "relationshipManagementDescription": "衡量建立和維護良好客戶關係的能力。",
+    "overallScore": "整體分數",
+    "summary": "總結",
+    "suggestedNextSteps": "建議",
+    "why": "原因",
+    "strengths": "優勢",
+    "toImprove": "待改進",
+    "correction": "糾正",
+    "suggestion": "建議",
+    "completed": "已完成",
+    "incomplete": "未完成",
+    "expert": "專家",
+    "intermediate": "中級",
+    "beginner": "初學者",
+    "needsImprovement": "需要改進",
+    "ratings": {
+      "poor": "差",
+      "fair": "一般",
+      "good": "良好",
+      "excellent": "優秀"
+    },
+    "standings": {
+      "currentSession": "目前表現",
+      "notAvailable": "不適用",
+      "clientVerification": "客戶驗證",
+      "objectionHandling": "異議處理",
+      "dynamicFramework": "{{framework}}",
+      "threeFExecution": "3F 執行",
+      "fourCExecution": "4C 執行",
+      "mandatory": "必要項目",
+      "incomplete": "未完成",
+      "intermediate": "中級",
+      "beginner": "初學者",
+      "expert": "專家"
+    },
+    "introduction": "介紹",
+    "presentation": "展示",
+    "communication": "溝通",
+    "salesConfirmation": "銷售確認",
+    "mandatoryDisclosure": "強制揭露",
+    "closure": "結案",
+    "salesNovice": "銷售新手",
+    "skilledAdvisor": "熟練顧問",
+    "strategicConsultant": "策略顧問",
+    "emergingSeller": "新興銷售員",
+    "mandatoryFailed": "表現不適用：未達到必要標準。",
+    "msigNextStepsTitle": "若要提升您的表現，請專注於：",
+    "msigMandatoryNotMetSummary": "您的表現不適用，因為您錯過了需要完全遵循的必要標準。請檢視其他方面的表現以了解哪些做得好，並確保下次完成所有步驟以獲得您的表現評定。",
+    "msigMandatoryNotMetNextStep": "完成所有必要標準。",
+    "prudentialMandatoryNotMet": {
+      "summary": "未達到必要標準。請在繼續之前完成客戶驗證。",
+      "nextStepsTitle": "後續步驟",
+      "suggestedNextStep": "完成客戶驗證要求並重試評估。"
+    }
+  },
+  "ui": {
+    "hupoLogoAlt": "Hupo 標誌",
+    "companyLogoAlt": "公司標誌"
+  },
+  "products": {
+    "product": "產品"
+  },
+  "personas": {
+    "persona": "人物角色"
+  },
+  "common": {
+    "goals": {
+      "cold-call": "您的目標是簡要介紹我們公司，激發興趣，並預約一場 30 分鐘的需求探索會議",
+      "discovery": "您的目標是了解他們目前的情況並識別具體需求",
+      "competitive-proposal": "您的目標是展示您的解決方案並與競爭對手區分開來",
+      "objection-handling": "您的目標是解決他們的顧慮並保持價值焦點",
+      "closing": "您的目標是確保達成協議並完成申請",
+      "review-renewal": "您的目標是檢視目前的保障並討論續約或升級選項",
+      "needs-analysis": "您的目標是進行徹底的需求評估和風險分析",
+      "policy-explanation": "您的目標是清楚解釋保單條款和利益",
+      "risk-assessment": "您的目標是評估並傳達他們的保障需求",
+      "premium-discussion": "您的目標是討論定價和付款選項",
+      "policy-closing": "您的目標是完成保險申請",
+      "policy-renewal": "您的目標是檢視現有保障並確保續約",
+      "solution-discovery": "您的目標是識別技術需求和業務挑戰",
+      "demo-presentation": "您的目標是展示解決方案並證明價值",
+      "discovery-call-meddpicc": "您的目標是使用 MEDDPICC 方法論發掘痛點、了解決策過程和資格審查預算",
+      "telesales": "您的目標是進行有效的電話行銷、清楚展示產品並遠程完成銷售",
+      "deal-closure": "您的目標是處理最終談判、就商業條款達成一致，並使用 MEDDPICC 原則確保合約簽署",
+      "grab-mex": "您的目標是通過展示活動投資報酬率、解決食品成本資金異議，並定位 145,000 美元媒體價值主張來克服商家預算限制和損益顧慮，以確保活動參與",
+      "axa-ph-unit-manager-recruitment": "您的目標是通過解決他們的顧慮並展示加入成為財務顧問的價值來招募潛在候選人",
+      "axa-ph-financial-needs-analysis": "您的目標是引導首次客戶進行財務需求討論，建立融洽關係，了解他們的收入和目標，並將 AXA Secure Future 展示為安全、靈活的入門解決方案，同時解決有關負擔能力、承諾和提前取用資金的顧慮",
+      "default": "您的目標是建立融洽關係並探索他們的需求"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+name: Deploy Staging
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  deploy:
+    name: Deploy to Staging
+    runs-on: [self-hosted, staging]
+    
+    steps:
+      - name: Deploy to staging server
+        run: |
+          echo "🚀 Starting staging deployment..."
+          
+          # Navigate to project directory
+          cd /home/aicoaching/aisales/aisales-backend
+          
+          # Set deploy environment
+          export DEPLOY_ENV="staging"
+          
+          echo "📥 Step 1: Pulling latest changes"
+          git checkout staging
+          git pull origin staging
+          
+          echo "📦 Step 2: Install dependencies if needed"
+          if git diff --name-only HEAD@{1} HEAD | grep -qE 'package.json|package-lock.json'; then
+              echo "Changes detected in package.json or package-lock.json, running npm install"
+              npm ci --loglevel=error
+          else
+              echo "No changes detected in package.json or package-lock.json, skipping npm install"
+          fi
+          
+          echo "🔨 Step 3: Build application"
+          npm run build
+          
+          echo "🔄 Step 4: Restart staging PM2 process"
+          pm2 restart aisales-staging
+          
+          echo "📊 Step 5: Send sourcemaps to Sentry (if configured)"
+          npm run sentry:sourcemaps > /dev/null 2>&1 || true
+          
+          echo "📝 Step 6: Record deployment"
+          CURRENT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
+          COMMIT_INFO=$(git log -1 --pretty=format:"%h - %an : %s")
+          echo "${CURRENT_DATE} github-actions staging ${COMMIT_INFO}" >> /home/aicoaching/aisales/history.txt
+          
+          echo "✅ Staging deployment completed!"
+          echo "Deployed commit: ${COMMIT_INFO}"
+          
+      - name: Check deployment health
+        run: |
+          echo "🏥 Checking staging server health..."
+          sleep 5
+          
+          # Check if the staging server is responding
+          if curl -f -s -o /dev/null https://staging.trainapi.hupo.co/health; then
+              echo "✅ Staging server is healthy!"
+          else
+              echo "❌ Staging server health check failed!"
+              exit 1
+          fi

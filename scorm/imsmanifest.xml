@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="com.hupo.aisales.scorm" version="1.0" 
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" 
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd 
+                              http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd 
+                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+      <general>
+        <identifier>com.hupo.aisales.training</identifier>
+        <title>
+          <langstring xml:lang="en">AI Sales Training Platform</langstring>
+        </title>
+        <description>
+          <langstring xml:lang="en">Interactive AI-powered sales training with real-time feedback and assessment</langstring>
+        </description>
+        <language>en</language>
+        <keyword>
+          <langstring xml:lang="en">sales training</langstring>
+        </keyword>
+        <keyword>
+          <langstring xml:lang="en">AI coaching</langstring>
+        </keyword>
+        <keyword>
+          <langstring xml:lang="en">roleplay</langstring>
+        </keyword>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="en">1.0</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="en">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="en">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <technical>
+        <format>text/html</format>
+        <location>index.html</location>
+        <requirement>
+          <type>
+            <source>
+              <langstring xml:lang="en">LOMv1.0</langstring>
+            </source>
+            <value>
+              <langstring xml:lang="en">browser</langstring>
+            </value>
+          </type>
+          <name>
+            <source>
+              <langstring xml:lang="en">LOMv1.0</langstring>
+            </source>
+            <value>
+              <langstring xml:lang="en">any</langstring>
+            </value>
+          </name>
+        </requirement>
+        <requirement>
+          <type>
+            <source>
+              <langstring xml:lang="en">LOMv1.0</langstring>
+            </source>
+            <value>
+              <langstring xml:lang="en">operating system</langstring>
+            </value>
+          </type>
+          <name>
+            <source>
+              <langstring xml:lang="en">LOMv1.0</langstring>
+            </source>
+            <value>
+              <langstring xml:lang="en">microphone access required</langstring>
+            </value>
+          </name>
+          <minimumversion>
+            <langstring xml:lang="en">HTML5 getUserMedia API</langstring>
+          </minimumversion>
+        </requirement>
+      </technical>
+      <educational>
+        <interactivitytype>
+          <source>
+            <langstring xml:lang="en">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="en">active</langstring>
+          </value>
+        </interactivitytype>
+        <learningresourcetype>
+          <source>
+            <langstring xml:lang="en">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="en">simulation</langstring>
+          </value>
+        </learningresourcetype>
+        <interactivitylevel>
+          <source>
+            <langstring xml:lang="en">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="en">high</langstring>
+          </value>
+        </interactivitylevel>
+      </educational>
+    </lom>
+  </metadata>
+
+  <organizations default="org1">
+    <organization identifier="org1">
+      <title>AI Sales Training Course</title>
+      <item identifier="item1" identifierref="resource1">
+        <title>Sales Training Module</title>
+        <adlcp:prerequisites type="aicc_prerequisite">
+          <adlcp:none/>
+        </adlcp:prerequisites>
+        <adlcp:maxtimeallowed>PT2H</adlcp:maxtimeallowed>
+        <adlcp:timelimitaction>continue,no message</adlcp:timelimitaction>
+        <adlcp:datafromlms></adlcp:datafromlms>
+        <adlcp:masteryscore>80</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+
+  <resources>
+    <resource identifier="resource1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="config.js"/>
+      <file href="scorm-api.js"/>
+      <file href="app.js"/>
+      <file href="styles.css"/>
+      <dependency identifierref="common_files"/>
+    </resource>
+    <resource identifier="common_files" type="webcontent" adlcp:scormtype="asset">
+      <file href="scorm-api.js"/>
+      <file href="config.js"/>
+    </resource>
+  </resources>
+
+</manifest>

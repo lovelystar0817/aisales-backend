@@ -1,0 +1,68 @@
+name: Deploy Production
+
+on:
+  workflow_dispatch:  # Manual trigger only
+    inputs:
+      confirm:
+        description: 'Type "deploy" to confirm production deployment'
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    name: Deploy to Production
+    runs-on: [self-hosted, linux]
+    if: github.event.inputs.confirm == 'deploy'
+    
+    steps:
+      - name: Deploy to production server
+        run: |
+          echo "🚀 Starting production deployment..."
+          
+          # Navigate to project directory
+          cd /home/aicoaching/aisales/aisales-backend
+          
+          # Set deploy environment
+          export DEPLOY_ENV="production"
+          
+          echo "📥 Step 1: Pulling latest changes"
+          git checkout main
+          git pull origin main
+          
+          echo "📦 Step 2: Install dependencies if needed"
+          if git diff --name-only HEAD@{1} HEAD | grep -qE 'package.json|package-lock.json'; then
+              echo "Changes detected in package.json or package-lock.json, running npm install"
+              npm ci --loglevel=error
+          else
+              echo "No changes detected in package.json or package-lock.json, skipping npm install"
+          fi
+          
+          echo "🔨 Step 3: Build application"
+          npm run build
+          
+          echo "🔄 Step 4: Restart production PM2 process"
+          pm2 restart aisales
+          
+          echo "📊 Step 5: Send sourcemaps to Sentry"
+          npm run sentry:sourcemaps > /dev/null 2>&1 || true
+          
+          echo "📝 Step 6: Record deployment"
+          CURRENT_DATE=$(date "+%Y-%m-%d %H:%M:%S")
+          COMMIT_INFO=$(git log -1 --pretty=format:"%h - %an : %s")
+          echo "${CURRENT_DATE} github-actions production ${COMMIT_INFO}" >> /home/aicoaching/aisales/history.txt
+          
+          echo "✅ Production deployment completed!"
+          echo "Deployed commit: ${COMMIT_INFO}"
+          
+      - name: Check deployment health
+        run: |
+          echo "🏥 Checking production server health..."
+          sleep 5
+          
+          # Check if the production server is responding
+          if curl -f -s -o /dev/null https://trainapi.hupo.co/health; then
+              echo "✅ Production server is healthy!"
+          else
+              echo "❌ Production server health check failed!"
+              exit 1
+          fi

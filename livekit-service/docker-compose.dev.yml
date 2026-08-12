@@ -1,0 +1,52 @@
+# This file is automatically used by docker compose for local development
+# It extends/overrides the main docker-compose.yml
+
+services:
+  livekit-agent:
+    # Override container name for dev to avoid conflicts
+    container_name: aisales-livekit-agent-dev
+
+    # Mount code for live editing - changes reflect immediately
+    volumes:
+      - ./livekit-agent.py:/app/livekit-agent.py:ro
+      - ./logs:/app/logs:rw
+      # Mount Google credentials from path specified in .env (overrides base)
+      - ${GOOGLE_CREDENTIALS_PATH}:/app/google-credentials.json:ro
+
+    # Use different resource limits for local dev
+    mem_limit: 4g
+    mem_reservation: 2g
+    cpus: 2.0
+
+    # Add debug environment
+    environment:
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+      - ENVIRONMENT=dev
+      - AGENT_MAX_MEMORY_MB=4000
+      - AGENT_MAX_FDS=10000
+
+    # Override ulimits for development
+    ulimits:
+      nofile:
+        soft: 10000
+        hard: 10000
+
+    # Override CMD for development mode with restart on failure
+    command: ['./start-agent.sh']
+
+    # More aggressive restart policy for development
+    restart: always
+
+    # Shorter health check intervals for faster feedback
+    healthcheck:
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+# Override network configuration for dev to use externally managed network
+networks:
+  livekit-network:
+    external: true
+    name: aisales-dev_livekit-network
